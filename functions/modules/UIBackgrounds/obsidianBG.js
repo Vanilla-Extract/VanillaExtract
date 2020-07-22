@@ -1,6 +1,6 @@
 const path = require('path');
 
-const addSlicedSwords = async function(formatData, archive, bucket){
+const addToFile = async function(formatData, archive, bucket){
     // Add options BG
     await bucket.file(path.join("packfiles", formatData.packFilesPath, formatData.file.name)).download().then((data) => {
         const contents = data[0];
@@ -11,7 +11,7 @@ const addSlicedSwords = async function(formatData, archive, bucket){
 
 module.exports = {
     name: "ObsidianBG",
-    addToFile: addSlicedSwords,
+    addToFile: addToFile,
     format54: {
         packFilesPath: "modules/Backgrounds/",
         file: {

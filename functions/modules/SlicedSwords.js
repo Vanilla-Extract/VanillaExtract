@@ -1,7 +1,7 @@
 const path = require('path');
 const asyncForEach = require('../asyncForEach.js');
 
-const addSlicedSwords = async function(formatData, archive, bucket){
+const addToFile = async function(formatData, archive, bucket){
     // Add each sword to file
     await asyncForEach(formatData.files, async (fileData) => {
         await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
@@ -14,7 +14,7 @@ const addSlicedSwords = async function(formatData, archive, bucket){
 
 module.exports = {
     name: "SlicedSwords",
-    addToFile: addSlicedSwords,
+    addToFile: addToFile,
     format5: {
         packFilesPath: "modules/SlicedSwords/",
         files: [
