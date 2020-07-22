@@ -1,3 +1,6 @@
+// Module Data
+var mcModules = require("./modules.js");
+
 // Archiver
 const archiver = require('archiver');
 const fs = require('fs');
@@ -6,24 +9,23 @@ const path = require('path');
 
 // Usefull tools
 const { v4: uuidv4 } = require('uuid');
-const semver = require('semver');
 
 // Firebase
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-admin.initializeApp({
-    storageBucket: "faithfultweaks.appspot.com"
-});
+const firebaseApp = require('./firebaseadmin.js');
 
 // Create a zip file from file in storage ----- CLOUD FUNCTION -----
 exports.makePack = functions.https.onRequest(async (req, res) => {
     const bucket = admin.storage().bucket(); // Storage bucket
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
+    const format = req.body.format;
+    const modules = req.body.modules;
 
     // ----- CREATE THE ARCHIVE -----
-    var output = fs.createWriteStream(tempFilePath); // create a file to stream archive data to.
+    let output = fs.createWriteStream(tempFilePath); // create a file to stream archive data to.
     // init zip file
-    var archive = archiver('zip', {
+    let archive = archiver('zip', {
         zlib: { level: 9 } // Sets the compression level.
     });
     output.on('close', () => { console.log('Archiver has been finalized and the output file descriptor has closed. File size: ' + archive.pointer() + ' bytes'); }); // Log when file has been made
@@ -32,7 +34,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     // Catch warnings
     archive.on('warning', (err) => {
     if (err.code === 'ENOENT') {
-        console.log("WARNING: "+err)
+        console.log("WARNING: "+err);
     } else {
         // throw error
         throw err;
@@ -45,13 +47,14 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
 
 
     // ----- ADD FILES TO THE ARCHIVE -----
-    archive.append(mcMeta('1.16.1'), {name: 'pack.mcmeta'}); // add mcmeta file
-
-    // Download and add icon
+    archive.append(mcMeta(format), {name: 'pack.mcmeta'}); // add mcmeta file
+    // Download and add pack icon
     await bucket.file('packfiles/pack.png').download().then((data) => {
         const contents = data[0];
         archive.append(contents, {name: 'pack.png'});
     });
+    
+    await mcModules.addModules(format, archive, modules); // Add modules to the pack
     
     archive.finalize(); // finalize the archive
 
@@ -90,27 +93,28 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
 });
 
 // Make the mcmeta file
-function mcMeta(ver) {
-    var format;
-    if (semver.satisfies(ver, "<=1.8.9")) {
-        format = 1;
-    } else if (semver.satisfies(ver, ">=1.9 <=1.10.2")) {
-        format = 2;
-    } else if (semver.satisfies(ver, ">=1.11 <=1.12.2")) {
-        format = 3;
-    } else if (semver.satisfies(ver, ">=1.13 <=1.14.4")) {
-        format = 4;
-    } else if (semver.satisfies(ver, ">=1.15 <=1.16.2")) {
-        format = 5;
+function mcMeta(format) {
+    // Get version from pack format
+    let ver;
+    if (format === 1) {
+        ver = "1.6.1 - 1.8.9";
+    } else if (format === 2) {
+        ver = "1.9 - 1.10.2";
+    } else if (format === 3) {
+        ver = "1.11 - 1.12.2";
+    } else if (format === 4) {
+        ver = "1.13 - 1.14.4";
+    } else if (format === 5) {
+        ver = "1.15 - 1.16.1";
     } else {
-        format = 0;
+        return;
     }
 
     return (
 `{
     "pack": {
         "pack_format": `+format+`,
-        "description": "§aFaithful Tweaks §6- §c`+ver+`\\n§b§nwebsite.com"
+        "description": "§aFaithful Tweaks §6- §c`+ver+`\\n§b§nfaithfultweaks.web.app"
     }
 }`
     );
