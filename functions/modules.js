@@ -19,8 +19,10 @@ const addModules = async function(format, archive, modules){
         // FORMAT 1
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
+                // Sliced Swords
                 await SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket);
             } else if (modName === obsidianBG.name) {
+                // obsidianBG
                 await obsidianBG.addToFile(obsidianBG.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
@@ -30,8 +32,10 @@ const addModules = async function(format, archive, modules){
         // FORMAT 2
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
+                // Sliced Swords
                 await SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket);
             } else if (modName === obsidianBG.name) {
+                // obsidianBG
                 await obsidianBG.addToFile(obsidianBG.format321, archive, bucket);
             } else if (modName === LowShield.name) {
                 // Low Shield
@@ -44,8 +48,10 @@ const addModules = async function(format, archive, modules){
         // FORMAT 3
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
+                // Sliced Swords
                 await SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket);
             } else if (modName === obsidianBG.name) {
+                // obsidianBG
                 await obsidianBG.addToFile(obsidianBG.format321, archive, bucket);
             } else if (modName === LowShield.name) {
                 // Low Shield
@@ -58,8 +64,10 @@ const addModules = async function(format, archive, modules){
         // FORMAT 4
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
+                // Sliced Swords
                 await SlicedSwords.addToFile(SlicedSwords.format4, archive, bucket);
             } else if (modName === obsidianBG.name) {
+                // obsidianBG
                 await obsidianBG.addToFile(obsidianBG.format54, archive, bucket);
             } else if (modName === LowShield.name) {
                 // Low Shield
@@ -72,8 +80,10 @@ const addModules = async function(format, archive, modules){
         // FORMAT 5
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
+                // Sliced Swords
                 await SlicedSwords.addToFile(SlicedSwords.format5, archive, bucket);
             } else if (modName === obsidianBG.name) {
+                // obsidianBG
                 await obsidianBG.addToFile(obsidianBG.format54, archive, bucket);
             } else if (modName === LowShield.name) {
                 // Low Shield
