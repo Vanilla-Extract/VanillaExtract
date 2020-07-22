@@ -84,27 +84,27 @@ module.exports = {
         packFilesPath: "modules/SlicedSwords/",
         files: [
             {
-                name: "diamond_sword.png",
+                name: "diamond_sword_old.png",
                 inPackName: "diamond_sword.png",
                 path: "assets/minecraft/textures/items"
             },
             {
-                name: "golden_sword.png",
+                name: "gold_sword_old.png",
                 inPackName: "gold_sword.png",
                 path: "assets/minecraft/textures/items"
             },
             {
-                name: "iron_sword.png",
+                name: "iron_sword_old.png",
                 inPackName: "iron_sword.png",
                 path: "assets/minecraft/textures/items"
             },
             {
-                name: "stone_sword.png",
+                name: "stone_sword_old.png",
                 inPackName: "stone_sword.png",
                 path: "assets/minecraft/textures/items"
             },
             {
-                name: "wooden_sword.png",
+                name: "wood_sword_old.png",
                 inPackName: "wood_sword.png",
                 path: "assets/minecraft/textures/items"
             },
