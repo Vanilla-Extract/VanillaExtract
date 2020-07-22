@@ -14,14 +14,43 @@ const bucket = admin.storage().bucket();
 // Figure out which modules to add
 const addModules = async function(format, archive, modules){
     if (format === 1) {
-        
+        // FORMAT 1
+        await asyncForEach(modules, async (modName) => {
+            if (modName === SlicedSwords.name) {
+                await SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket);
+            } else {
+                console.log(modName +" is not a real module.");
+            }
+        });
     } else if (format === 2) {
-
+        // FORMAT 2
+        await asyncForEach(modules, async (modName) => {
+            if (modName === SlicedSwords.name) {
+                await SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket);
+            } else {
+                console.log(modName +" is not a real module.");
+            }
+        });
     } else if (format === 3) {
-
+        // FORMAT 3
+        await asyncForEach(modules, async (modName) => {
+            if (modName === SlicedSwords.name) {
+                await SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket);
+            } else {
+                console.log(modName +" is not a real module.");
+            }
+        });
     } else if (format === 4) {
-
+        // FORMAT 4
+        await asyncForEach(modules, async (modName) => {
+            if (modName === SlicedSwords.name) {
+                await SlicedSwords.addToFile(SlicedSwords.format4, archive, bucket);
+            } else {
+                console.log(modName +" is not a real module.");
+            }
+        });
     } else if (format === 5) {
+        // FORMAT 5
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
                 await SlicedSwords.addToFile(SlicedSwords.format5, archive, bucket);
