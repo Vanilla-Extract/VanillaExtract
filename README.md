@@ -12,3 +12,15 @@ Avalable Modules:
 - NoVignette
 - SlicedSwords
 - ReducedPumpkinBlur
+- ColoredBows
+
+Coming Soon:
+- OreBorders
+- LowFire
+- StickyPistonSides
+
+Planned:
+- Blue Wither Hearts
+- Colored Ping Indecators
+- RainbowXP Bar
+- DarkUI
