@@ -9,6 +9,7 @@ const asyncForEach = require('./asyncForEach.js');
 const obsidianBG = require('./modules/UIBackgrounds/obsidianBG.js');
 const SlicedSwords = require('./modules/SlicedSwords.js');
 const LowShield = require('./modules/LowShield.js');
+const NoVignette = require('./modules/NoVignette.js');
 
 // Storage bucket
 const bucket = admin.storage().bucket();
@@ -24,6 +25,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === obsidianBG.name) {
                 // obsidianBG
                 await obsidianBG.addToFile(obsidianBG.format321, archive, bucket);
+            } else if (modName === NoVignette.name) {
+                // No Vignette
+                await NoVignette.addToFile(NoVignette.format54321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -40,6 +44,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === LowShield.name) {
                 // Low Shield
                 await LowShield.addToFile(LowShield.format5432, archive, bucket);
+            } else if (modName === NoVignette.name) {
+                // No Vignette
+                await NoVignette.addToFile(NoVignette.format54321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -56,6 +63,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === LowShield.name) {
                 // Low Shield
                 await LowShield.addToFile(LowShield.format5432, archive, bucket);
+            } else if (modName === NoVignette.name) {
+                // No Vignette
+                await NoVignette.addToFile(NoVignette.format54321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -72,6 +82,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === LowShield.name) {
                 // Low Shield
                 await LowShield.addToFile(LowShield.format5432, archive, bucket);
+            } else if (modName === NoVignette.name) {
+                // No Vignette
+                await NoVignette.addToFile(NoVignette.format54321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -88,6 +101,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === LowShield.name) {
                 // Low Shield
                 await LowShield.addToFile(LowShield.format5432, archive, bucket);
+            } else if (modName === NoVignette.name) {
+                // No Vignette
+                await NoVignette.addToFile(NoVignette.format54321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
