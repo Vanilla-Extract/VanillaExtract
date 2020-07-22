@@ -6,6 +6,7 @@ const firebaseApp = require('./firebaseadmin.js');
 const asyncForEach = require('./asyncForEach.js');
 
 // Modules
+const obsidianBG = require('./modules/UIBackgrounds/obsidianBG.js');
 const SlicedSwords = require('./modules/SlicedSwords.js');
 
 // Storage bucket
@@ -18,6 +19,8 @@ const addModules = async function(format, archive, modules){
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
                 await SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket);
+            } else if (modName === obsidianBG.name) {
+                await obsidianBG.addToFile(obsidianBG.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -27,6 +30,8 @@ const addModules = async function(format, archive, modules){
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
                 await SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket);
+            } else if (modName === obsidianBG.name) {
+                await obsidianBG.addToFile(obsidianBG.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -36,6 +41,8 @@ const addModules = async function(format, archive, modules){
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
                 await SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket);
+            } else if (modName === obsidianBG.name) {
+                await obsidianBG.addToFile(obsidianBG.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -45,6 +52,8 @@ const addModules = async function(format, archive, modules){
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
                 await SlicedSwords.addToFile(SlicedSwords.format4, archive, bucket);
+            } else if (modName === obsidianBG.name) {
+                await obsidianBG.addToFile(obsidianBG.format54, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -54,6 +63,8 @@ const addModules = async function(format, archive, modules){
         await asyncForEach(modules, async (modName) => {
             if (modName === SlicedSwords.name) {
                 await SlicedSwords.addToFile(SlicedSwords.format5, archive, bucket);
+            } else if (modName === obsidianBG.name) {
+                await obsidianBG.addToFile(obsidianBG.format54, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
