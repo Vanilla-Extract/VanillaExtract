@@ -1,4 +1,5 @@
 const path = require('path');
+const asyncForEach = require('../asyncForEach.js');
 
 const addToFile = async function(formatData, archive, bucket){
     // Add each fire texture to file

@@ -1,5 +1,6 @@
 // Module Data
 var mcModules = require("./modules.js");
+var mcIconModules = require("./iconModules.js");
 
 // Archiver
 const archiver = require('archiver');
@@ -19,8 +20,11 @@ const firebaseApp = require('./firebaseadmin.js');
 exports.makePack = functions.https.onRequest(async (req, res) => {
     const bucket = admin.storage().bucket(); // Storage bucket
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
+
+    // Get body data
     const format = req.body.format;
     const modules = req.body.modules;
+    const iconModules = req.body.iconModules;
 
     // ----- CREATE THE ARCHIVE -----
     let output = fs.createWriteStream(tempFilePath); // create a file to stream archive data to.
@@ -55,6 +59,8 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     });
     
     await mcModules.addModules(format, archive, modules); // Add modules to the pack
+
+    await mcIconModules.addIconModules(iconModules, archive);
     
     archive.finalize(); // finalize the archive
 

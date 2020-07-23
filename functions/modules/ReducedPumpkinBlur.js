@@ -2,12 +2,12 @@ const path = require('path');
 
 const addToFile = async function(formatData, archive, bucket){
     // Add pumpkin overlay
-    await bucket.file(path.join("packfiles", formatData.packFilesPath, formatData.file[0].name)).download().then((data) => {
+    await bucket.file(path.join("packfiles", formatData.packFilesPath, formatData.files[0].name)).download().then((data) => {
         const contents = data[0];
-        archive.append(contents, {name: path.join(formatData.file[0].path, formatData.file[0].inPackName)});
+        archive.append(contents, {name: path.join(formatData.files[0].path, formatData.files[0].inPackName)});
     });
     // Add overlay metadata
-    archive.append(formatData.file[1].data, {name: path.join(formatData.file[0].path, formatData.file[0].inPackName)});
+    archive.append(formatData.files[1].data, {name: path.join(formatData.files[1].path, formatData.files[1].inPackName)});
     return;
 };
 
