@@ -22,62 +22,62 @@ module.exports = {
             {
                 name: "ancient_debris_top.png",
                 inPackName: "ancient_debris_top.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "ancient_debris_side.png",
                 inPackName: "ancient_debris_side.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "coal_ore.png",
                 inPackName: "coal_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "diamond_ore.png",
                 inPackName: "diamond_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "emerald_ore.png",
                 inPackName: "emerald_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "gilded_blackstone.png",
                 inPackName: "gilded_blackstone.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "gold_ore.png",
                 inPackName: "gold_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "iron_ore.png",
                 inPackName: "iron_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "lapis_ore.png",
                 inPackName: "lapis_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "nether_gold_ore.png",
                 inPackName: "nether_gold_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "nether_quartz_ore.png",
                 inPackName: "nether_quartz_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "redstone_ore.png",
                 inPackName: "redstone_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             // Nether Quartz
             {
@@ -109,42 +109,42 @@ module.exports = {
             {
                 name: "coal_ore.png",
                 inPackName: "coal_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "diamond_ore.png",
                 inPackName: "diamond_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "emerald_ore.png",
                 inPackName: "emerald_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "gold_ore.png",
                 inPackName: "gold_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "iron_ore.png",
                 inPackName: "iron_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "lapis_ore.png",
                 inPackName: "lapis_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "nether_quartz_ore.png",
                 inPackName: "nether_quartz_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             {
                 name: "redstone_ore.png",
                 inPackName: "redstone_ore.png",
-                path: "assets/minecraft/textures/blocks"
+                path: "assets/minecraft/textures/block"
             },
             // Nether Quartz
             {

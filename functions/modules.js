@@ -59,7 +59,7 @@ const addModules = async function(format, archive, modules){
                 await obsidianBG.addToFile(obsidianBG.format321, archive, bucket);
             } else if (modName === LowShield.name) {
                 // Low Shield
-                await LowShield.addToFile(LowShield.format5432, archive, bucket);
+                await LowShield.addToFile(LowShield.format32, archive, bucket);
             } else if (modName === NoVignette.name) {
                 // No Vignette
                 await NoVignette.addToFile(NoVignette.format54321, archive, bucket);
@@ -90,7 +90,7 @@ const addModules = async function(format, archive, modules){
                 await obsidianBG.addToFile(obsidianBG.format321, archive, bucket);
             } else if (modName === LowShield.name) {
                 // Low Shield
-                await LowShield.addToFile(LowShield.format5432, archive, bucket);
+                await LowShield.addToFile(LowShield.format32, archive, bucket);
             } else if (modName === NoVignette.name) {
                 // No Vignette
                 await NoVignette.addToFile(NoVignette.format54321, archive, bucket);
@@ -121,7 +121,7 @@ const addModules = async function(format, archive, modules){
                 await obsidianBG.addToFile(obsidianBG.format54, archive, bucket);
             } else if (modName === LowShield.name) {
                 // Low Shield
-                await LowShield.addToFile(LowShield.format5432, archive, bucket);
+                await LowShield.addToFile(LowShield.format54, archive, bucket);
             } else if (modName === NoVignette.name) {
                 // No Vignette
                 await NoVignette.addToFile(NoVignette.format54321, archive, bucket);
@@ -152,7 +152,7 @@ const addModules = async function(format, archive, modules){
                 await obsidianBG.addToFile(obsidianBG.format54, archive, bucket);
             } else if (modName === LowShield.name) {
                 // Low Shield
-                await LowShield.addToFile(LowShield.format5432, archive, bucket);
+                await LowShield.addToFile(LowShield.format54, archive, bucket);
             } else if (modName === NoVignette.name) {
                 // No Vignette
                 await NoVignette.addToFile(NoVignette.format54321, archive, bucket);
@@ -161,7 +161,7 @@ const addModules = async function(format, archive, modules){
                 await ReducedPumpkinBlur.addToFile(ReducedPumpkinBlur.format54321, archive, bucket);
             } else if (modName === ColoredBows.name) {
                 // Colored Bows
-                await ColoredBows.addToFile(ColoredBows.format354, archive, bucket);
+                await ColoredBows.addToFile(ColoredBows.format54, archive, bucket);
             } else if (modName === OreBorders.name) {
                 // Ore Borders
                 await ColoredBows.addToFile(OreBorders.format5, archive, bucket);

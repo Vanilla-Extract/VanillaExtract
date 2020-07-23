@@ -26,11 +26,11 @@ module.exports = {
             {
                 name: "fire_0.png",
                 inPackName: "fire_0.png",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
             },
             {
                 inPackName: "fire_0.png.mcmeta",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
                 data: `{
                     "animation": {
                         "frames": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
@@ -41,11 +41,11 @@ module.exports = {
             {
                 name: "fire_1.png",
                 inPackName: "fire_1.png",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
             },
             {
                 inPackName: "fire_1.png.mcmeta",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
                 data: `{
                     "animation": {
                         "frames": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
@@ -57,11 +57,11 @@ module.exports = {
             {
                 name: "soul_fire_0.png",
                 inPackName: "fire_0.png",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
             },
             {
                 inPackName: "soul_fire_0.png.mcmeta",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
                 data: `{
                     "animation": {
                         "frames": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
@@ -72,11 +72,11 @@ module.exports = {
             {
                 name: "soul_fire_1.png",
                 inPackName: "soul_fire_1.png",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
             },
             {
                 inPackName: "soul_fire_1.png.mcmeta",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
                 data: `{
                     "animation": {
                         "frames": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
@@ -92,11 +92,11 @@ module.exports = {
             {
                 name: "fire_0.png",
                 inPackName: "fire_0.png",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
             },
             {
                 inPackName: "fire_0.png.mcmeta",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
                 data: `{
                     "animation": {
                         "frames": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
@@ -107,11 +107,11 @@ module.exports = {
             {
                 name: "fire_1.png",
                 inPackName: "fire_1.png",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
             },
             {
                 inPackName: "fire_1.png.mcmeta",
-                path: "assets/minecraft/textures/blocks",
+                path: "assets/minecraft/textures/block",
                 data: `{
                     "animation": {
                         "frames": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]

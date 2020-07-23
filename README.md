@@ -18,6 +18,7 @@ Avalable Modules:
 
 Coming Soon:
 - StickyPistonSides
+- DirectionalHoppers
 
 Planned:
 - Blue Wither Hearts
