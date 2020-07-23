@@ -6,13 +6,14 @@ const firebaseApp = require('./firebaseadmin.js');
 const asyncForEach = require('./asyncForEach.js');
 
 // Modules
-const obsidianBG = require('./modules/UIBackgrounds/obsidianBG.js');
-const SlicedSwords = require('./modules/SlicedSwords.js');
-const LowShield = require('./modules/LowShield.js');
-const NoVignette = require('./modules/NoVignette.js');
-const ReducedPumpkinBlur = require('./modules/ReducedPumpkinBlur.js');
-const ColoredBows = require('./modules/ColoredBows.js');
-const OreBorders = require('./modules/OreBorders.js');
+const obsidianBG           = require('./modules/UIBackgrounds/obsidianBG.js');
+const SlicedSwords         = require('./modules/SlicedSwords.js');
+const LowShield            = require('./modules/LowShield.js');
+const NoVignette           = require('./modules/NoVignette.js');
+const ReducedPumpkinBlur   = require('./modules/ReducedPumpkinBlur.js');
+const ColoredBows          = require('./modules/ColoredBows.js');
+const OreBorders           = require('./modules/OreBorders.js');
+const LowFire              = require('./modules/LowFire.js');
 
 // Storage bucket
 const bucket = admin.storage().bucket();
@@ -40,6 +41,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === OreBorders.name) {
                 // Ore Borders
                 await ColoredBows.addToFile(OreBorders.format321, archive, bucket);
+            } else if (modName === LowFire.name) {
+                // Low Fire
+                await LowFire.addToFile(LowFire.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -68,6 +72,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === OreBorders.name) {
                 // Ore Borders
                 await ColoredBows.addToFile(OreBorders.format321, archive, bucket);
+            } else if (modName === LowFire.name) {
+                // Low Fire
+                await LowFire.addToFile(LowFire.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -96,6 +103,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === OreBorders.name) {
                 // Ore Borders
                 await ColoredBows.addToFile(OreBorders.format321, archive, bucket);
+            } else if (modName === LowFire.name) {
+                // Low Fire
+                await LowFire.addToFile(LowFire.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -124,6 +134,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === OreBorders.name) {
                 // Ore Borders
                 await ColoredBows.addToFile(OreBorders.format4, archive, bucket);
+            } else if (modName === LowFire.name) {
+                // Low Fire
+                await LowFire.addToFile(LowFire.format4, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -152,6 +165,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === OreBorders.name) {
                 // Ore Borders
                 await ColoredBows.addToFile(OreBorders.format5, archive, bucket);
+            } else if (modName === LowFire.name) {
+                // Low Fire
+                await LowFire.addToFile(LowFire.format5, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }

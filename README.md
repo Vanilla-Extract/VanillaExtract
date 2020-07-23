@@ -14,9 +14,9 @@ Avalable Modules:
 - ReducedPumpkinBlur
 - ColoredBows
 - OreBorders
+- LowFire
 
 Coming Soon:
-- LowFire
 - StickyPistonSides
 
 Planned:
