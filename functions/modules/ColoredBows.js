@@ -73,7 +73,7 @@ module.exports = {
         ]
     },
     format321: {
-        packFilesPath: "modules/SlicedSwords/",
+        packFilesPath: "modules/ColoredBows/",
         files: [
             {
                 name: "bow_pulling_0.png",

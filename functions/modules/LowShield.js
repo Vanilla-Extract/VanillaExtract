@@ -13,7 +13,6 @@ module.exports = {
     name: "LowShield",
     addToFile: addToFile,
     format5432: {
-        packFilesPath: "modules/SlicedSwords/",
         files: [
             {
                 data: `{
