@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Faithful Tweaks</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.16.1/firebase-app.js"></script>
@@ -14,52 +14,151 @@
     <script defer src="/__/firebase/7.16.1/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <h1>Faithful Tweaks</h1>
+    <p>View on <a href="https://github.com/Banakin/FaithfulTweaks">Github</a></p>
+    <form>
+      <!-- Pack format -->
+      <div>
+        <label for="format">Format:</label>
+        <select id="format" name="format">
+          <option value="5">5: 1.15 - 1.16.1</option>
+          <option value="4">4: 1.13 - 1.14.4</option>
+          <option value="3">3: 1.11 - 1.12.2</option>
+          <option value="2">2: 1.9 - 1.10.2</option>
+          <option value="1">1: 1.6.1 - 1.8.9</option>
+        </select>
+      </div>
 
+      <!-- Regular Modules -->
+      <p>Modules:</p>
+      <div>
+        <input type="checkbox" id="obsidianBG" name="obsidianBG">
+        <label for="obsidianBG">obsidianBG: Change the menu from dirt do obsidian</label>
+      </div>
+      <div>
+        <input type="checkbox" id="LowShield" name="LowShield">
+        <label for="LowShield">LowShield: Lower the shield</label>
+      </div>
+      <div>
+        <input type="checkbox" id="NoVignette" name="NoVignette">
+        <label for="NoVignette">NoVignette: Remove the vignette</label>
+      </div>
+      <div>
+        <input type="checkbox" id="SlicedSwords" name="SlicedSwords">
+        <label for="SlicedSwords">SlicedSwords: Shortened swords</label>
+      </div>
+      <div>
+        <input type="checkbox" id="ReducedPumpkinBlur" name="ReducedPumpkinBlur">
+        <label for="ReducedPumpkinBlur">ReducedPumpkinBlur: Reduce the pumpkin overlay</label>
+      </div>
+      <div>
+        <input type="checkbox" id="ColoredBows" name="ColoredBows">
+        <label for="ColoredBows">ColoredBows: Show bow pullback with colors</label>
+      </div>
+      <div>
+        <input type="checkbox" id="OreBorders" name="OreBorders">
+        <label for="OreBorders">OreBorders: Put borders around the ores</label>
+      </div>
+      <div>
+        <input type="checkbox" id="LowFire" name="LowFire">
+        <label for="LowFire">LowFire: Lower the fire animation</label>
+      </div>
+      <div>
+        <input type="checkbox" id="StickyPistonSides" name="StickyPistonSides">
+        <label for="StickyPistonSides">StickyPistonSides: Give the sides of sticky pistions a sticky look</label>
+      </div>
+
+      <!-- Icon Modules -->
+      <p>Icon Modules:</p>
+      <div>
+        <input type="checkbox" id="MelonHunger" name="MelonHunger">
+        <label for="MelonHunger">MelonHunger: Change the hunger icons to melons</label>
+      </div>
+      <div>
+        <input type="checkbox" id="ColoredPing" name="ColoredPing">
+        <label for="ColoredPing">ColoredPing: Ping icons are colored</label>
+      </div>
+      <div>
+        <input type="checkbox" id="BlueWitherHearts" name="BlueWitherHearts">
+        <label for="BlueWitherHearts">BlueWitherHearts: Make your hearts blue when you're witherd</label>
+      </div>
+      <div>
+        <input type="checkbox" id="RainbowXP" name="RainbowXP">
+        <label for="RainbowXP">RainbowXP: Make the XP bar rainbow</label>
+      </div>
+
+      <!-- Download pack button -->
+      <button type="button" onclick="submitForm();">Download</button> 
+    </form>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      function submitForm() {
+        console.log("Downloading Resourcepack");
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+        var format = 0; // Format
+        const modules = []; // Modules
+        const iconModules = []; // Icon Modules
+
+        $('form').serializeArray().forEach((item) => {
+          // Format
+          if (item.name == "format") {
+            format = item.value
+          }
+          // Modules
+          else if (item.name == "obsidianBG" && item.value == "on") {
+            modules.push("obsidianBG");
+          } else if (item.name == "LowShield" && item.value == "on") {
+            modules.push("LowShield");
+          } else if (item.name == "NoVignette" && item.value == "on") {
+            modules.push("NoVignette");
+          } else if (item.name == "SlicedSwords" && item.value == "on") {
+            modules.push("SlicedSwords");
+          } else if (item.name == "ReducedPumpkinBlur" && item.value == "on") {
+            modules.push("ReducedPumpkinBlur");
+          } else if (item.name == "ColoredBows" && item.value == "on") {
+            modules.push("ColoredBows");
+          } else if (item.name == "OreBorders" && item.value == "on") {
+            modules.push("OreBorders");
+          } else if (item.name == "LowFire" && item.value == "on") {
+            modules.push("LowFire");
+          } else if (item.name == "StickyPistonSides" && item.value == "on") {
+            modules.push("StickyPistonSides");
+          }
+          // Icon Modules
+          else if (item.name == "MelonHunger" && item.value == "on") {
+            iconModules.push("MelonHunger");
+          } else if (item.name == "ColoredPing" && item.value == "on") {
+            iconModules.push("ColoredPing");
+          } else if (item.name == "BlueWitherHearts" && item.value == "on") {
+            iconModules.push("BlueWitherHearts");
+          } else if (item.name == "RainbowXP" && item.value == "on") {
+            iconModules.push("RainbowXP");
+          }
+          // Else
+          else {
+            console.log("Form item not set up: "+item.name);
+          }
+        });
+
+        $.post(
+          "https://us-central1-faithfultweaks.cloudfunctions.net/makePack",
+          {
+            "format": format,
+            "modules": modules,
+            "iconModules": iconModules,
+          },
+          function(data) {
+            console.log("Finished Downloading");
+            window.location.href = data.url;
+          },
+          "json"
+        );
+        return;
+      };
     </script>
+    <!-- jQuery 3.5.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>

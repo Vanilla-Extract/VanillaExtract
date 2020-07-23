@@ -1,18 +1,22 @@
 const path = require('path');
-const asyncForEach = require('../asyncForEach.js');
 
 const addToFile = async function(formatData, archive, bucket){
     // Add each fire texture to file
-    await asyncForEach(formatData.files, async (fileData) => {
+    const promises = [];
+    formatData.files.forEach((fileData) => {
         if (fileData.name === undefined || fileData.name === null) {
             archive.append(fileData.data, {name: path.join(fileData.path, fileData.inPackName)});
         } else {
-            await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-                const contents = data[0];
-                archive.append(contents, {name: path.join(fileData.path, fileData.inPackName)});
-            });
+            promises.push(
+                bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+                    const contents = data[0];
+                    archive.append(contents, {name: path.join(fileData.path, fileData.inPackName)});
+                    return;
+                })
+            );
         }
     });
+    await Promise.all(promises);
     return;
 };
 

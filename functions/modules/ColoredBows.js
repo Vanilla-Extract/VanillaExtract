@@ -1,14 +1,18 @@
 const path = require('path');
-const asyncForEach = require('../asyncForEach.js');
 
 const addToFile = async function(formatData, archive, bucket){
     // Add each bow to file
-    await asyncForEach(formatData.files, async (fileData) => {
-        await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-            const contents = data[0];
-            archive.append(contents, {name: path.join(fileData.path, fileData.inPackName)});
-        });
+    const promises = [];
+    formatData.files.forEach((fileData) => {
+        promises.push(
+            bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+                const contents = data[0];
+                archive.append(contents, {name: path.join(fileData.path, fileData.inPackName)});
+                return;
+            })
+        );
     });
+    await Promise.all(promises);
     return;
 };
 

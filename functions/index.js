@@ -18,6 +18,9 @@ const firebaseApp = require('./firebaseadmin.js');
 
 // Create a zip file from file in storage ----- CLOUD FUNCTION -----
 exports.makePack = functions.https.onRequest(async (req, res) => {
+    res.set('Access-Control-Allow-Origin', 'https://faithfultweaks.web.app');
+    res.set('Content-Type', 'application/json');
+
     const bucket = admin.storage().bucket(); // Storage bucket
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
 
@@ -52,16 +55,22 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
 
     // ----- ADD FILES TO THE ARCHIVE -----
     archive.append(mcMeta(format), {name: 'pack.mcmeta'}); // add mcmeta file
+    
     // Download and add pack icon
     await bucket.file('packfiles/pack.png').download().then((data) => {
         const contents = data[0];
         archive.append(contents, {name: 'pack.png'});
+        return;
     });
     
-    await mcModules.addModules(format, archive, modules); // Add modules to the pack
+    if (modules != undefined && modules != null) {
+        await mcModules.addModules(format, archive, modules); // Add modules to the pack
+    }
 
-    await mcIconModules.addIconModules(iconModules, archive);
-    
+    if (iconModules != undefined && iconModules != null) {
+        await mcIconModules.addIconModules(iconModules, archive); // Add icon modules to icons.png
+    }
+
     archive.finalize(); // finalize the archive
 
     // ----- UPLOAD THE ARCHIVE -----
@@ -89,9 +98,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
 
     // ----- FINISH THE FUNCTION -----
     // Respond with file URL
-    res.json({
-        url: file
-    });
+    res.status(200).send({ "url": file });
 
     // Clear zip from mem and return
     fs.unlinkSync(tempFilePath);
@@ -113,7 +120,7 @@ function mcMeta(format) {
     } else if (format === 5) {
         ver = "1.15 - 1.16.1";
     } else {
-        return;
+        ver = "error making pack"
     }
 
     return (

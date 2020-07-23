@@ -35,7 +35,7 @@ Example body of POST request:
 }
 ```
 
-Example response of POST request:
+Example response from POST request:
 ```json
 {
 	"url": "https://firebasestorage.googleapis.com/v0/b/faithfultweaks.appspot.com/o/FaithfulTweaks%2F900000000-0000-0000-0000-000000000000.zip?alt=media&token=00000000-0000-0000-0000-000000000000"
