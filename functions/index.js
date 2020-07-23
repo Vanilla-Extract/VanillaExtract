@@ -25,7 +25,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
 
     // Get body data
-    const format = req.body.format;
+    const format = Number(req.body.format);
     const modules = req.body.modules;
     const iconModules = req.body.iconModules;
 

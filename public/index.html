@@ -104,17 +104,7 @@
         $('form').serializeArray().forEach((item) => {
           // Format
           if (item.name == "format") {
-            if (item.value == 5) {
-              format = 5;
-            } else if (item.value == 4) {
-              format = 4;
-            } else if (item.value == 3) {
-              format = 3;
-            } else if (item.value == 2) {
-              format = 2;
-            } else if (item.value == 1) {
-              format = 1;
-            }
+            format = item.value;
           }
           // Modules
           else if (item.name == "obsidianBG" && item.value == "on") {
