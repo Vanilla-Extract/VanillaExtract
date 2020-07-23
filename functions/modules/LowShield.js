@@ -331,7 +331,7 @@ module.exports = {
     }
 }`,
                 inPackName: "shield_blocking.json",
-                path: "assets/minecraft/models/items"
+                path: "assets/minecraft/models/item"
             },
             {
                 data: `{
@@ -472,7 +472,7 @@ module.exports = {
     ]
 }`,
                 inPackName: "shield.json",
-                path: "assets/minecraft/models/items"
+                path: "assets/minecraft/models/item"
             },
         ]
     },
