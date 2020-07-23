@@ -15,9 +15,9 @@ Avalable Modules:
 - ColoredBows
 - OreBorders
 - LowFire
+- StickyPistonSides
 
 Coming Soon:
-- StickyPistonSides
 - DirectionalHoppers
 
 Planned:

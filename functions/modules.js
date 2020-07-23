@@ -14,6 +14,7 @@ const ReducedPumpkinBlur   = require('./modules/ReducedPumpkinBlur.js');
 const ColoredBows          = require('./modules/ColoredBows.js');
 const OreBorders           = require('./modules/OreBorders.js');
 const LowFire              = require('./modules/LowFire.js');
+const StickyPistonSides    = require('./modules/StickyPistonSides.js');
 
 // Storage bucket
 const bucket = admin.storage().bucket();
@@ -44,6 +45,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === LowFire.name) {
                 // Low Fire
                 await LowFire.addToFile(LowFire.format321, archive, bucket);
+            } else if (modName === StickyPistonSides.name) {
+                // Sticky Piston Sides
+                await StickyPistonSides.addToFile(StickyPistonSides.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -75,6 +79,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === LowFire.name) {
                 // Low Fire
                 await LowFire.addToFile(LowFire.format321, archive, bucket);
+            } else if (modName === StickyPistonSides.name) {
+                // Sticky Piston Sides
+                await StickyPistonSides.addToFile(StickyPistonSides.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -106,6 +113,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === LowFire.name) {
                 // Low Fire
                 await LowFire.addToFile(LowFire.format321, archive, bucket);
+            } else if (modName === StickyPistonSides.name) {
+                // Sticky Piston Sides
+                await StickyPistonSides.addToFile(StickyPistonSides.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -137,6 +147,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === LowFire.name) {
                 // Low Fire
                 await LowFire.addToFile(LowFire.format4, archive, bucket);
+            } else if (modName === StickyPistonSides.name) {
+                // Sticky Piston Sides
+                await StickyPistonSides.addToFile(StickyPistonSides.format54, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -168,6 +181,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === LowFire.name) {
                 // Low Fire
                 await LowFire.addToFile(LowFire.format5, archive, bucket);
+            } else if (modName === StickyPistonSides.name) {
+                // Sticky Piston Sides
+                await StickyPistonSides.addToFile(StickyPistonSides.format54, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
