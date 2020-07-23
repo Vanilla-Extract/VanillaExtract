@@ -1,19 +1,7 @@
-
 # Faithful Tweaks (MC 1.6.1 - 1.16.1)
+An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/)
 
-
-Credits:
--  [Banakin](https://banakin.github.io): Making the website and various tweaks
--  [The Faithful Team](https://faithful.team/): Making the Faithful Texture Pack
--  [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/): Inspiration
--  [Stridey](https://www.planetminecraft.com/member/stridey/): LowShield
-- Redcoke26: MelonHunger
--  [Nekzuris](https://twitter.com/Nekzuris): ColoredPing
-- Pomik108: RainbowXPBar
-
-  
-
-Avalable Modules:
+### Avalable Modules
 - obsidianBG
 - LowShield
 - NoVignette
@@ -24,20 +12,21 @@ Avalable Modules:
 - LowFire
 - StickyPistonSides
 
-Icon Modules:
+### Icon Modules
 - MelonHunger (ICON)
 - ColoredPing (ICON)
 - BlueWitherHearts (ICON)
 - RainbowXP (ICON)
 
-Coming Soon:
+`Notice: Modules labeled "(ICON)" modify the icon.png file and are not implemented like traditional modules.`
+
+### Coming Soon
 - DirectionalHoppers
 - DarkUI
 
 
-Notice: Modules labeled "(ICON)" modify the icon.png file and are not implemented like traditional modules.
-
-Body of POST request:
+## Making requests to the Cloud Function
+Example body of POST request:
 ```json
 {
 	"format":  5,
@@ -46,9 +35,18 @@ Body of POST request:
 }
 ```
 
-Response of POST request:
+Example response of POST request:
 ```json
 {
-	"url": "https://example.com/pack.zip"
+	"url": "https://firebasestorage.googleapis.com/v0/b/faithfultweaks.appspot.com/o/FaithfulTweaks%2F900000000-0000-0000-0000-000000000000.zip?alt=media&token=00000000-0000-0000-0000-000000000000"
 }
 ```
+
+## Credits
+-  [Banakin](https://banakin.github.io): Making the website and various tweaks
+-  [The Faithful Team](https://faithful.team/): Making the Faithful Texture Pack
+-  [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/): Inspiration
+-  [Stridey](https://www.planetminecraft.com/member/stridey/): LowShield
+- Redcoke26: MelonHunger
+-  [Nekzuris](https://twitter.com/Nekzuris): ColoredPing
+- Pomik108: RainbowXPBar
