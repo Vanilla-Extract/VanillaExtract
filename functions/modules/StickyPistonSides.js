@@ -60,7 +60,14 @@ module.exports = {
             {
                 inPackName: "sticky_piston.json",
                 path: "assets/minecraft/models/block",
-                data: ``,
+                data: `{
+                    "parent": "block/template_piston",
+                    "textures": {
+                        "bottom": "block/piston_bottom",
+                        "side": "block/piston_side_sticky",
+                        "platform": "block/piston_top_sticky"
+                    }
+                }`,
             },
             {
                 inPackName: "sticky_piston_inventory.json",
