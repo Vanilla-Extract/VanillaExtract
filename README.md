@@ -2,7 +2,7 @@
 An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/)
 
 ### Avalable Modules
-- obsidianBG
+- ObsidianBG
 - LowShield
 - NoVignette
 - SlicedSwords
@@ -30,7 +30,7 @@ Example body of POST request:
 ```json
 {
 	"format":  5,
-	"modules":  ["obsidianBG", "LowShield", "NoVignette", "SlicedSwords", "ReducedPumpkinBlur", "ColoredBows", "OreBorders", "LowFire", "StickyPistonSides"],
+	"modules":  ["ObsidianBG", "LowShield", "NoVignette", "SlicedSwords", "ReducedPumpkinBlur", "ColoredBows", "OreBorders", "LowFire", "StickyPistonSides"],
 	"iconModules": ["MelonHunger", "ColoredPing", "BlueWitherHearts", "RainbowXP"]
 }
 ```

@@ -3,7 +3,7 @@ const admin = require('firebase-admin');
 const firebaseApp = require('./firebaseadmin.js');
 
 // Modules
-const obsidianBG           = require('./modules/UIBackgrounds/obsidianBG.js');
+const ObsidianBG           = require('./modules/UIBackgrounds/ObsidianBG.js');
 const SlicedSwords         = require('./modules/SlicedSwords.js');
 const LowShield            = require('./modules/LowShield.js');
 const NoVignette           = require('./modules/NoVignette.js');
@@ -25,9 +25,9 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket));
-            } else if (modName === obsidianBG.name) {
-                // obsidianBG
-                promises.push(obsidianBG.addToFile(obsidianBG.format321, archive, bucket));
+            } else if (modName === ObsidianBG.name) {
+                // ObsidianBG
+                promises.push(ObsidianBG.addToFile(ObsidianBG.format321, archive, bucket));
             } else if (modName === NoVignette.name) {
                 // No Vignette
                 promises.push(NoVignette.addToFile(NoVignette.format54321, archive, bucket));
@@ -59,9 +59,9 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket));
-            } else if (modName === obsidianBG.name) {
-                // obsidianBG
-                promises.push(obsidianBG.addToFile(obsidianBG.format321, archive, bucket));
+            } else if (modName === ObsidianBG.name) {
+                // ObsidianBG
+                promises.push(ObsidianBG.addToFile(ObsidianBG.format321, archive, bucket));
             } else if (modName === LowShield.name) {
                 // Low Shield
                 promises.push(LowShield.addToFile(LowShield.format5432, archive, bucket));
@@ -96,9 +96,9 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket));
-            } else if (modName === obsidianBG.name) {
-                // obsidianBG
-                promises.push(obsidianBG.addToFile(obsidianBG.format321, archive, bucket));
+            } else if (modName === ObsidianBG.name) {
+                // ObsidianBG
+                promises.push(ObsidianBG.addToFile(ObsidianBG.format321, archive, bucket));
             } else if (modName === LowShield.name) {
                 // Low Shield
                 promises.push(LowShield.addToFile(LowShield.format5432, archive, bucket));
@@ -133,9 +133,9 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format4, archive, bucket));
-            } else if (modName === obsidianBG.name) {
-                // obsidianBG
-                promises.push(obsidianBG.addToFile(obsidianBG.format54, archive, bucket));
+            } else if (modName === ObsidianBG.name) {
+                // ObsidianBG
+                promises.push(ObsidianBG.addToFile(ObsidianBG.format54, archive, bucket));
             } else if (modName === LowShield.name) {
                 // Low Shield
                 promises.push(LowShield.addToFile(LowShield.format5432, archive, bucket));
@@ -170,9 +170,9 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format5, archive, bucket));
-            } else if (modName === obsidianBG.name) {
-                // obsidianBG
-                promises.push(obsidianBG.addToFile(obsidianBG.format54, archive, bucket));
+            } else if (modName === ObsidianBG.name) {
+                // ObsidianBG
+                promises.push(ObsidianBG.addToFile(ObsidianBG.format54, archive, bucket));
             } else if (modName === LowShield.name) {
                 // Low Shield
                 promises.push(LowShield.addToFile(LowShield.format5432, archive, bucket));
