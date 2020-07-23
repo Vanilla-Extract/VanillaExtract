@@ -12,6 +12,7 @@ const LowShield = require('./modules/LowShield.js');
 const NoVignette = require('./modules/NoVignette.js');
 const ReducedPumpkinBlur = require('./modules/ReducedPumpkinBlur.js');
 const ColoredBows = require('./modules/ColoredBows.js');
+const OreBorders = require('./modules/OreBorders.js');
 
 // Storage bucket
 const bucket = admin.storage().bucket();
@@ -36,6 +37,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === ColoredBows.name) {
                 // Colored Bows
                 await ColoredBows.addToFile(ColoredBows.format321, archive, bucket);
+            } else if (modName === OreBorders.name) {
+                // Ore Borders
+                await ColoredBows.addToFile(OreBorders.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -61,6 +65,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === ColoredBows.name) {
                 // Colored Bows
                 await ColoredBows.addToFile(ColoredBows.format321, archive, bucket);
+            } else if (modName === OreBorders.name) {
+                // Ore Borders
+                await ColoredBows.addToFile(OreBorders.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -86,6 +93,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === ReducedPumpkinBlur.name) {
                 // Reduced Pumpkin Blur
                 await ReducedPumpkinBlur.addToFile(ReducedPumpkinBlur.format54321, archive, bucket);
+            } else if (modName === OreBorders.name) {
+                // Ore Borders
+                await ColoredBows.addToFile(OreBorders.format321, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -111,6 +121,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === ColoredBows.name) {
                 // Colored Bows
                 await ColoredBows.addToFile(ColoredBows.format54, archive, bucket);
+            } else if (modName === OreBorders.name) {
+                // Ore Borders
+                await ColoredBows.addToFile(OreBorders.format4, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }
@@ -136,6 +149,9 @@ const addModules = async function(format, archive, modules){
             } else if (modName === ColoredBows.name) {
                 // Colored Bows
                 await ColoredBows.addToFile(ColoredBows.format354, archive, bucket);
+            } else if (modName === OreBorders.name) {
+                // Ore Borders
+                await ColoredBows.addToFile(OreBorders.format5, archive, bucket);
             } else {
                 console.log(modName +" is not a real module.");
             }

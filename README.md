@@ -13,9 +13,9 @@ Avalable Modules:
 - SlicedSwords
 - ReducedPumpkinBlur
 - ColoredBows
+- OreBorders
 
 Coming Soon:
-- OreBorders
 - LowFire
 - StickyPistonSides
 
