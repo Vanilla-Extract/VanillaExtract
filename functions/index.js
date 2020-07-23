@@ -63,11 +63,11 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
         return;
     });
     
-    if (modules != undefined && modules != null) {
+    if (modules !== undefined && modules !== null) {
         await mcModules.addModules(format, archive, modules); // Add modules to the pack
     }
 
-    if (iconModules != undefined && iconModules != null) {
+    if (iconModules !== undefined && iconModules !== null) {
         await mcIconModules.addIconModules(iconModules, archive); // Add icon modules to icons.png
     }
 
@@ -91,7 +91,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     const file = await bucket.upload(tempFilePath, {
         destination: newPackPath,
         metadata: metadata,
-    }).then(function(data) {
+    }).then((data) => {
         const file = data[0];
         return Promise.resolve("https://firebasestorage.googleapis.com/v0/b/" + bucket.name + "/o/" + encodeURIComponent(file.name) + "?alt=media&token=" + tokenUUID);
     });

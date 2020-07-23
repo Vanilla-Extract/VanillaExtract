@@ -18,7 +18,7 @@ const bucket = admin.storage().bucket();
 
 // Figure out which modules to add
 const addModules = async function(format, archive, modules){
-    if (format == 1) {
+    if (format === 1) {
         // FORMAT 1
         const promises = [];
         modules.forEach((modName) => {
@@ -52,7 +52,7 @@ const addModules = async function(format, archive, modules){
         });
         await Promise.all(promises);
         return;
-    } else if (format == 2) {
+    } else if (format === 2) {
         // FORMAT 2
         const promises = [];
         modules.forEach((modName) => {
@@ -89,7 +89,7 @@ const addModules = async function(format, archive, modules){
         });
         await Promise.all(promises);
         return;
-    } else if (format == 3) {
+    } else if (format === 3) {
         // FORMAT 3
         const promises = [];
         modules.forEach((modName) => {
@@ -126,7 +126,7 @@ const addModules = async function(format, archive, modules){
         });
         await Promise.all(promises);
         return;
-    } else if (format == 4) {
+    } else if (format === 4) {
         // FORMAT 4
         const promises = [];
         modules.forEach((modName) => {
@@ -163,7 +163,7 @@ const addModules = async function(format, archive, modules){
         });
         await Promise.all(promises);
         return;
-    } else if (format == 5) {
+    } else if (format === 5) {
         // FORMAT 5
         const promises = [];
         modules.forEach((modName) => {
