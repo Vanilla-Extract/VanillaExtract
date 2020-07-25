@@ -1,6 +1,8 @@
 # Faithful Tweaks (MC 1.6.1 - 1.16.1)
 An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/)
 
+For an example commit check out [this commit](https://github.com/Banakin/FaithfulTweaks/commit/289d1dc68b6eab63027fb9f9afcf7a6f910bdfc8)
+
 ### Avalable Modules
 - ObsidianBG
 - LowShield
