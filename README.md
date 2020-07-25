@@ -3,6 +3,8 @@ An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/r
 
 For an example commit check out [this commit](https://github.com/Banakin/FaithfulTweaks/commit/289d1dc68b6eab63027fb9f9afcf7a6f910bdfc8)
 
+I plan on redoing the frontend to accomodate for new backgrounds and version specific modules. Also I need to drop Bootsrap Studio asap (Also add the discord to the website).
+
 ### Avalable Modules
 - ObsidianBG
 - LowShield
@@ -25,6 +27,40 @@ For an example commit check out [this commit](https://github.com/Banakin/Faithfu
 ### Coming Soon
 - DirectionalHoppers
 - DarkUI
+- BetterObservers
+- BrighterNether
+- CherryPicking
+- DirectionalHoppers
+- MineProgressBar
+- PebblelessCoarseDirt
+- PebblelessDirt
+- SidewaysNuggets
+- SolidHoney
+- UnbundledHayBales
+- UnobtrusiveRain
+- UnobtrusiveScaffolding
+- UnobtrusiveWater
+
+
+### Backgrounds Coming Soon
+- AcaciaPlanksBG
+- AncientDebrisBG
+- AndesiteBG
+- BedrockBG
+- BetterBedrockBG
+- BirchPlanksBG
+- DarkOakPlanksBG
+- DioriteBG
+- EndStoneBG
+- GraniteBG
+- HoneycombBG
+- JunglePlanksBG
+- NetherackBG
+- NetherackBrightBG
+- OakPlanksBG
+- SprucePlanksBG
+- StoneBG
+
 
 
 ## Making requests to the Cloud Function
