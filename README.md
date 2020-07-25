@@ -52,3 +52,4 @@ Example response from POST request:
 - Redcoke26: MelonHunger
 -  [Nekzuris](https://twitter.com/Nekzuris): ColoredPing
 - Pomik108: RainbowXPBar
+- Seirin-Blu: Unobtrusive Rain, Unobtrusive Water
