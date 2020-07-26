@@ -80,7 +80,7 @@ Example body of POST request:
 	"modules":  ["ObsidianBG", "LowShield", "NoVignette", "SlicedSwords", "ReducedPumpkinBlur", "ColoredBows", "OreBorders", "LowFire", "StickyPistonSides"],
 	"iconModules": ["MelonHunger", "ColoredPing", "BlueWitherHearts", "RainbowXP"],
 	"optionsBackground": "ObsidianBG",
-    "panoOption": "ClassicPano"
+	"panoOption": "ClassicPano"
 }
 ```
 

@@ -1,0 +1,36 @@
+name: Functions CD
+
+on:
+  push:
+    branches: 
+      - master
+    paths:
+      - 'functions/**'
+
+jobs:
+  deploy_functions:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: functions
+
+      - name: Lint functions
+        run: npm run lint
+        working-directory: functions
+
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only functions
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

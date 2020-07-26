@@ -1,0 +1,20 @@
+name: Storage CD
+
+on:
+  push:
+    branches: 
+      - master
+    paths:
+      - 'Storage/**'
+
+jobs:
+  deploy_functions:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Upload Storage
+        uses: GoogleCloudPlatform/github-actions/upload-cloud-storage@master
+        with:
+          credentials: ${{ secrets.GCP_CREDENTIALS }}
+          path: /Storage
+          destination: faithfultweaks
