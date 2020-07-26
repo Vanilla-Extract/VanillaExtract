@@ -16,6 +16,23 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const firebaseApp = require('./firebaseadmin.js');
 
+// Delete all the genrated packs every day (ABOUT MIDNIGHT EST)
+exports.deletePacks = functions.pubsub.schedule('0 4 * * *').onRun(async (cxt) => {
+    const bucket = admin.storage().bucket(); // Storage bucket
+
+    // Delete everything in FaithfulTweaks/
+    bucket.deleteFiles({
+        prefix: `FaithfulTweaks/`
+    }, function(err) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(`All the zip files FaithfulTweaks/ have been deleted`);
+        }
+    });
+
+});
+
 // Create a zip file from file in storage ----- CLOUD FUNCTION -----
 exports.makePack = functions.https.onRequest(async (req, res) => {
     res.set('Access-Control-Allow-Origin', 'https://faithfultweaks.web.app');
@@ -55,6 +72,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
 
     // ----- ADD FILES TO THE ARCHIVE -----
     archive.append(mcMeta(format), {name: 'pack.mcmeta'}); // add mcmeta file
+    archive.append(creditsTxt, {name: 'credits.txt'}); // add credits.txt file
     
     // Download and add pack icon
     await bucket.file('packfiles/pack.png').download().then((data) => {
@@ -132,3 +150,11 @@ function mcMeta(format) {
 }`
     );
 }
+
+// Make the credits.txt file contents
+const creditsTxt = `Credits:
+Vanilla Tweaks by Xisumavoid: https://www.xisumavoid.com/vanillatweaks
+Faithful Textures by xMrVizzy: https://faithful.team
+
+This pack is a modification of The Faithful 32x pack. 
+Modifications are based off of/inspired by the packs by Vanilla tweaks.`
