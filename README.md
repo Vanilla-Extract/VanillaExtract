@@ -5,8 +5,9 @@ For an example commit check out [this commit](https://github.com/Banakin/Faithfu
 
 I plan on redoing the frontend to accomodate for new backgrounds and version specific modules. Also I need to drop Bootsrap Studio asap (Also add the discord to the website).
 
+`Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the raditional fashon`
+
 ### Avalable Modules
-- ObsidianBG
 - LowShield
 - NoVignette
 - SlicedSwords
@@ -17,12 +18,36 @@ I plan on redoing the frontend to accomodate for new backgrounds and version spe
 - StickyPistonSides
 
 ### Icon Modules
-- MelonHunger (ICON)
-- ColoredPing (ICON)
-- BlueWitherHearts (ICON)
-- RainbowXP (ICON)
+- MelonHunger
+- ColoredPing
+- BlueWitherHearts
+- RainbowXP
 
-`Notice: Modules labeled "(ICON)" modify the icon.png file and are not implemented like traditional modules.`
+### Backgrounds
+- ObsidianBG
+- AcaciaPlanksBG
+- AncientDebrisBG
+- AndesiteBG
+- BedrockBG
+- BetterBedrockBG
+- BirchPlanksBG
+- DarkOakPlanksBG
+- DioriteBG
+- EndStoneBG
+- GraniteBG
+- HoneycombBG
+- JunglePlanksBG
+- NetherrackBG
+- NetherrackBrightBG
+- OakPlanksBG
+- SprucePlanksBG
+- StoneBG
+- PebblelessDirtBG
+
+### Panoramas
+- ClassicPano
+- BastionPano
+- SeirinsPano
 
 ### Coming Soon
 - ClearPumpkinBlur
@@ -45,40 +70,15 @@ I plan on redoing the frontend to accomodate for new backgrounds and version spe
 - BorderlessGlass
 - CleanAndBorderlessGlass
 
-
-### Panoramas Coming Soon
-- ClassicPano
-- BastionPano
-
-
-### Backgrounds Coming Soon
-- AcaciaPlanksBG
-- AncientDebrisBG
-- AndesiteBG
-- BedrockBG
-- BetterBedrockBG
-- BirchPlanksBG
-- DarkOakPlanksBG
-- DioriteBG
-- EndStoneBG
-- GraniteBG
-- HoneycombBG
-- JunglePlanksBG
-- NetherackBG
-- NetherackBrightBG
-- OakPlanksBG
-- SprucePlanksBG
-- StoneBG
-
-
-
 ## Making requests to the Cloud Function
 Example body of POST request:
 ```json
 {
 	"format":  5,
 	"modules":  ["ObsidianBG", "LowShield", "NoVignette", "SlicedSwords", "ReducedPumpkinBlur", "ColoredBows", "OreBorders", "LowFire", "StickyPistonSides"],
-	"iconModules": ["MelonHunger", "ColoredPing", "BlueWitherHearts", "RainbowXP"]
+	"iconModules": ["MelonHunger", "ColoredPing", "BlueWitherHearts", "RainbowXP"],
+	"optionsBackground": "ObsidianBG",
+    "panoOption": "ClassicPano"
 }
 ```
 

@@ -1,9 +1,4 @@
-// Firebase
-const admin = require('firebase-admin');
-const firebaseApp = require('./firebaseadmin.js');
-
 // Modules
-const ObsidianBG           = require('./modules/UIBackgrounds/ObsidianBG.js');
 const SlicedSwords         = require('./modules/SlicedSwords.js');
 const LowShield            = require('./modules/LowShield.js');
 const NoVignette           = require('./modules/NoVignette.js');
@@ -13,11 +8,8 @@ const OreBorders           = require('./modules/OreBorders.js');
 const LowFire              = require('./modules/LowFire.js');
 const StickyPistonSides    = require('./modules/StickyPistonSides.js');
 
-// Storage bucket
-const bucket = admin.storage().bucket();
-
 // Figure out which modules to add
-const addModules = async function(format, archive, modules){
+const addModules = async function(format, archive, modules, bucket){
     if (format === 1) {
         // FORMAT 1
         const promises = [];
@@ -25,9 +17,6 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket));
-            } else if (modName === ObsidianBG.name) {
-                // ObsidianBG
-                promises.push(ObsidianBG.addToFile(ObsidianBG.format321, archive, bucket));
             } else if (modName === NoVignette.name) {
                 // No Vignette
                 promises.push(NoVignette.addToFile(NoVignette.format54321, archive, bucket));
@@ -59,9 +48,6 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket));
-            } else if (modName === ObsidianBG.name) {
-                // ObsidianBG
-                promises.push(ObsidianBG.addToFile(ObsidianBG.format321, archive, bucket));
             } else if (modName === LowShield.name) {
                 // Low Shield
                 promises.push(LowShield.addToFile(LowShield.format5432, archive, bucket));
@@ -96,9 +82,6 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format321, archive, bucket));
-            } else if (modName === ObsidianBG.name) {
-                // ObsidianBG
-                promises.push(ObsidianBG.addToFile(ObsidianBG.format321, archive, bucket));
             } else if (modName === LowShield.name) {
                 // Low Shield
                 promises.push(LowShield.addToFile(LowShield.format5432, archive, bucket));
@@ -133,9 +116,6 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format4, archive, bucket));
-            } else if (modName === ObsidianBG.name) {
-                // ObsidianBG
-                promises.push(ObsidianBG.addToFile(ObsidianBG.format54, archive, bucket));
             } else if (modName === LowShield.name) {
                 // Low Shield
                 promises.push(LowShield.addToFile(LowShield.format5432, archive, bucket));
@@ -170,9 +150,6 @@ const addModules = async function(format, archive, modules){
             if (modName === SlicedSwords.name) {
                 // Sliced Swords
                 promises.push(SlicedSwords.addToFile(SlicedSwords.format5, archive, bucket));
-            } else if (modName === ObsidianBG.name) {
-                // ObsidianBG
-                promises.push(ObsidianBG.addToFile(ObsidianBG.format54, archive, bucket));
             } else if (modName === LowShield.name) {
                 // Low Shield
                 promises.push(LowShield.addToFile(LowShield.format5432, archive, bucket));

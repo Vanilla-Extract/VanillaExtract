@@ -1,19 +1,12 @@
 // ICON MODULES ARE HANDLED DIFFERENTLY THAN REGULAR MODULES
-// Firebase
-const admin = require('firebase-admin');
-const firebaseApp = require('./firebaseadmin.js');
-
 // Path
 const path = require('path');
 
 // Image merging
-const { createCanvas, loadImage, Image } = require('canvas')
-
-// Storage bucket
-const bucket = admin.storage().bucket();
+const { createCanvas, loadImage, Image } = require('canvas');
 
 // Figure out which modules to add
-const addIconModules = async function(modules, archive){
+const addIconModules = async function(modules, archive, bucket){
     // Set all modes to default
     let hungerMode = 0;
     let pingMode = 0;
@@ -61,19 +54,19 @@ const addIconModules = async function(modules, archive){
     });
 
     // Get defualt icons.png
-    await bucket.file(path.join("packfiles/modules/IconsFileMods", "default.png")).download().then((data) => {
+    await bucket.file(path.join("packfiles/IconsFileMods", "default.png")).download().then((data) => {
         defaultIcons.src = data[0];
         return;
     });
 
     // Get hunger icons
     if (hungerMode === 0) {
-        await bucket.file(path.join("packfiles/modules/IconsFileMods", "hunger", "default.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/IconsFileMods", "hunger", "default.png")).download().then((data) => {
             hungerIcons.src = data[0];
             return;
         });
     } else if (hungerMode === 1) {
-        await bucket.file(path.join("packfiles/modules/IconsFileMods", "hunger", "melons.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/IconsFileMods", "hunger", "melons.png")).download().then((data) => {
             hungerIcons.src = data[0];
             return;
         });
@@ -81,12 +74,12 @@ const addIconModules = async function(modules, archive){
 
     // Get ping icons
     if (pingMode === 0) {
-        await bucket.file(path.join("packfiles/modules/IconsFileMods", "ping", "default.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/IconsFileMods", "ping", "default.png")).download().then((data) => {
             pingIcons.src = data[0];
             return;
         });
     } else if (pingMode === 1) {
-        await bucket.file(path.join("packfiles/modules/IconsFileMods", "ping", "colored.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/IconsFileMods", "ping", "colored.png")).download().then((data) => {
             pingIcons.src = data[0];
             return;
         });
@@ -94,12 +87,12 @@ const addIconModules = async function(modules, archive){
 
     // Get wither icons
     if (witherHeartsMode === 0) {
-        await bucket.file(path.join("packfiles/modules/IconsFileMods", "witherhearts", "default.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/IconsFileMods", "witherhearts", "default.png")).download().then((data) => {
             witherIcons.src = data[0];
             return;
         });
     } else if (witherHeartsMode === 1) {
-        await bucket.file(path.join("packfiles/modules/IconsFileMods", "witherhearts", "blue.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/IconsFileMods", "witherhearts", "blue.png")).download().then((data) => {
             witherIcons.src = data[0];
             return;
         });
@@ -107,12 +100,12 @@ const addIconModules = async function(modules, archive){
 
     // Get XP icons
     if (xpMode === 0) {
-        await bucket.file(path.join("packfiles/modules/IconsFileMods", "xp", "default.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/IconsFileMods", "xp", "default.png")).download().then((data) => {
             xpIcons.src = data[0];
             return;
         });
     } else if (xpMode === 1) {
-        await bucket.file(path.join("packfiles/modules/IconsFileMods", "xp", "rainbow.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/IconsFileMods", "xp", "rainbow.png")).download().then((data) => {
             xpIcons.src = data[0];
             return;
         });
