@@ -25,6 +25,7 @@ I plan on redoing the frontend to accomodate for new backgrounds and version spe
 `Notice: Modules labeled "(ICON)" modify the icon.png file and are not implemented like traditional modules.`
 
 ### Coming Soon
+- ClearPumpkinBlur
 - DirectionalHoppers
 - DarkUI
 - BetterObservers
@@ -40,6 +41,14 @@ I plan on redoing the frontend to accomodate for new backgrounds and version spe
 - UnobtrusiveRain
 - UnobtrusiveScaffolding
 - UnobtrusiveWater
+- CleanGlass
+- BorderlessGlass
+- CleanAndBorderlessGlass
+
+
+### Panoramas Coming Soon
+- ClassicPano
+- BastionPano
 
 
 ### Backgrounds Coming Soon
