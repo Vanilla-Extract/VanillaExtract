@@ -69,6 +69,8 @@ I plan on redoing the frontend to accomodate for new backgrounds and version spe
 - CleanGlass
 - BorderlessGlass
 - CleanAndBorderlessGlass
+- InvisibleTotem (model file only)
+- AlternateEnchantGlint
 
 ## Making requests to the Cloud Function
 Example body of POST request:
