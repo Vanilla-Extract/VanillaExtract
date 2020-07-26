@@ -1,24 +1,7 @@
 const path = require('path');
 
-const addToFile = async function(formatData, archive, bucket){
-    // Add each bow to file
-    const promises = [];
-    formatData.files.forEach((fileData) => {
-        promises.push(
-            bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-                const contents = data[0];
-                archive.append(contents, {name: path.join(fileData.path, fileData.inPackName)});
-                return;
-            })
-        );
-    });
-    await Promise.all(promises);
-    return;
-};
-
-module.exports = {
-    name: "OreBorders",
-    addToFile: addToFile,
+// Module Data
+const moduleData = {
     format5: {
         packFilesPath: "modules/OreBorders/new",
         files: [
@@ -91,17 +74,17 @@ module.exports = {
             },
             {
                 name: "quartz/1.png",
-                inPackName: "0.png",
+                inPackName: "1.png",
                 path: "assets/minecraft/textures/custom/block/nether_quartz_ore"
             },
             {
                 name: "quartz/2.png",
-                inPackName: "0.png",
+                inPackName: "2.png",
                 path: "assets/minecraft/textures/custom/block/nether_quartz_ore"
             },
             {
                 name: "quartz/3.png",
-                inPackName: "0.png",
+                inPackName: "3.png",
                 path: "assets/minecraft/textures/custom/block/nether_quartz_ore"
             },
         ]
@@ -158,17 +141,17 @@ module.exports = {
             },
             {
                 name: "quartz/1.png",
-                inPackName: "0.png",
+                inPackName: "1.png",
                 path: "assets/minecraft/textures/ctm/nether_quartz_ore"
             },
             {
                 name: "quartz/2.png",
-                inPackName: "0.png",
+                inPackName: "2.png",
                 path: "assets/minecraft/textures/ctm/nether_quartz_ore"
             },
             {
                 name: "quartz/3.png",
-                inPackName: "0.png",
+                inPackName: "3.png",
                 path: "assets/minecraft/textures/ctm/nether_quartz_ore"
             },
         ]
@@ -219,3 +202,33 @@ module.exports = {
         ]
     },
 };
+
+// Module function
+module.exports = async function(format, archive, bucket){
+    // Change data based on format
+    let formatData;
+    if (format === 1 || format === 2 || format === 3) {
+        formatData = moduleData.format321
+    } else if (format === 4) {
+        formatData = moduleData.format4
+    } else if (format === 5) {
+        formatData = moduleData.format5
+    } else {
+        console.log('format not addressed');
+        return;
+    }
+
+    // Add blank ores to file
+    const promises = [];
+    formatData.files.forEach((fileData) => {
+        promises.push(
+            bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+                const contents = data[0];
+                archive.append(contents, {name: path.join(fileData.path, fileData.inPackName)});
+                return;
+            })
+        );
+    });
+    await Promise.all(promises);
+    return;
+}

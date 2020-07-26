@@ -17,7 +17,9 @@ const { v4: uuidv4 } = require('uuid');
 // Firebase
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-const firebaseApp = require('./firebaseadmin.js');
+admin.initializeApp({
+    storageBucket: "faithfultweaks.appspot.com"
+});
 
 // Delete all the genrated packs every day (ABOUT MIDNIGHT EST)
 exports.deletePacks = functions.pubsub.schedule('0 4 * * *').onRun(async (cxt) => {

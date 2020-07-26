@@ -1,28 +1,7 @@
 const path = require('path');
 
-const addToFile = async function(formatData, archive, bucket){
-    // Add each piston model and texture to file
-    const promises = [];
-    formatData.files.forEach((fileData) => {
-        if (fileData.name === undefined || fileData.name === null) {
-            archive.append(fileData.data, {name: path.join(fileData.path, fileData.inPackName)});
-        } else {
-            promises.push(
-                bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-                    const contents = data[0];
-                    archive.append(contents, {name: path.join(fileData.path, fileData.inPackName)});
-                    return;
-                })
-            );
-        }
-    });
-    await Promise.all(promises);
-    return;
-};
-
-module.exports = {
-    name: "StickyPistonSides",
-    addToFile: addToFile,
+// Module Data
+const moduleData = {
     format54: {
         packFilesPath: "modules/StickyPistonSides/",
         files: [
@@ -280,3 +259,35 @@ module.exports = {
         ]
     },
 };
+
+// Module function
+module.exports = async function(format, archive, bucket){
+    // Change data based on format
+    let formatData;
+    if (format === 1 || format === 2 || format === 3) {
+        formatData = moduleData.format321
+    } else if (format === 4 || format === 5) {
+        formatData = moduleData.format54
+    } else {
+        console.log('format not addressed');
+        return;
+    }
+
+    // Add each piston model and texture to file
+    const promises = [];
+    formatData.files.forEach((fileData) => {
+        if (fileData.name === undefined || fileData.name === null) {
+            archive.append(fileData.data, {name: path.join(fileData.path, fileData.inPackName)});
+        } else {
+            promises.push(
+                bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+                    const contents = data[0];
+                    archive.append(contents, {name: path.join(fileData.path, fileData.inPackName)});
+                    return;
+                })
+            );
+        }
+    });
+    await Promise.all(promises);
+    return;
+}
