@@ -11,7 +11,7 @@ const moduleData = {
         },
     },
 };
-
+{
 // Module function
 module.exports = async function(format, archive, bucket){
     // Change data based on format
