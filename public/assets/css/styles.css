@@ -1,0 +1,92 @@
+.module-selector {
+  background-color: #e0e0e0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.module-selector:hover {
+  background-color: #9ba2a9;
+}
+
+.module-selector.enabled {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.collapsible a:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.collapsible a[aria-expanded=false]:before {
+  content: "\f067 ";
+}
+
+.collapsible a[aria-expanded=true]:before {
+  content: "\f068 ";
+}
+
+#download-alert, #created-alert, #creating-alert, #fail-alert {
+  display: none;
+}
+
+.mod-icon {
+  image-rendering: pixelated !important;
+  border-radius: 10px;
+  image-rendering: crisp-edges !important;
+}
+
+.mod-icon.vt-origin {
+  border: 4px solid #ED9741;
+}
+
+.mod-icon.ft-origin {
+  border: 4px solid #5870f7;
+}
+
+.mod-icon.community-origin {
+  border: 4px solid #b200ff;
+}
+
+.btn-orange {
+  background-color: #ed9741;
+  border-color: #ed9741;
+}
+
+.btn-orange:hover {
+  background-color: #d78b3e;
+  border-color: #d78b3e;
+}
+
+.btn-orange:active {
+  background-color: #ad6e2e !important;
+  border-color: #ad6e2e !important;
+}
+
+.btn-discord {
+  background-color: #7289DA;
+  border-color: #7289DA;
+}
+
+.btn-discord:hover {
+  background-color: #4E5D94;
+  border-color: #4E5D94;
+}
+
+.btn-discord:active {
+  background-color: #344069 !important;
+  border-color: #344069 !important;
+}
+
+.text-link {
+  color: #ed9741;
+}
+
+.text-link:hover {
+  color: #d78b3e;
+}
+
