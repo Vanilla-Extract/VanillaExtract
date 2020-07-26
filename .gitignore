@@ -63,6 +63,8 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# macOS files
 Storage/packfiles/modules/UnobtrusiveWater/.DS_Store
 Storage/packfiles/modules/UnobtrusiveScaffolding/.DS_Store
 Storage/packfiles/modules/UnobtrusiveRain/.DS_Store
