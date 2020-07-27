@@ -143,6 +143,9 @@ function setIconModule() {
 
 // Download the resource pack
 function downloadPack() {
+    // Hide alerts
+    $(".alert").hide();
+    // Create alert
     $('#creating-alert').show();
     $.post(
         "https://us-central1-faithfultweaks.cloudfunctions.net/makePack",
