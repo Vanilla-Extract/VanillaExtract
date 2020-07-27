@@ -1,0 +1,105 @@
+$orange: #ed9741;
+$blue: #5870f7;
+$purple: #b200ff;
+
+$discord: #7289DA;
+
+$theme-colors: (
+  "orange": $orange,
+  "purple": $purple,
+  "blue": $blue,
+  "discord": $discord,
+);
+// $body-bg: $mainBG;
+// $body-color: $textColor;
+
+@import "./scss/bootstrap/bootstrap";
+@import "./scss/fontawesome/fontawesome";
+
+.module-selector{
+    background-color: #e0e0e0;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #9ba2a9;
+    }
+    .enabled {
+        background-color: #343a40;
+        color: #fff;
+    }
+}
+
+.mod-icon {
+    image-rendering: pixelated !important;
+    border-radius: 10px;
+    image-rendering: crisp-edges !important;
+
+    &.vt-origin {
+        border: 4px solid $orange;
+    }
+    &.ft-origin {
+        border: 4px solid $blue;
+    }
+        
+    &.community-origin {
+        border: 4px solid $purple;
+    }
+}
+
+// .btn-orange {
+//     background-color: $orange;
+//     border-color: $orange;
+    
+//     &:hover {
+//         background-color: #d78b3e;
+//         border-color: #d78b3e;
+//     }
+//     &:active {
+//         background-color: #ad6e2e !important;
+//         border-color: #ad6e2e !important;
+//     }
+// }
+
+// .btn-discord {
+//     background-color: $discord;
+//     border-color: $discord;
+
+//     &:hover {
+//         background-color: #4E5D94;
+//         border-color: #4E5D94;
+//     }
+//     &:active {
+//         background-color: #344069 !important;
+//         border-color: #344069 !important;
+//     }
+// }
+
+.text-link {
+    color: #ed9741;
+
+    &:hover {
+        color: #d78b3e;
+    }
+}
+
+#download-alert, #created-alert, #creating-alert, #fail-alert {
+    display: none;
+}
+
+.collapsible a{
+    &:before {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    &[aria-expanded=true]:before {
+        content: "\f068 ";
+    }
+    &[aria-expanded=false]:before {
+        content: "\f067 ";
+    }
+}

@@ -1,0 +1,38 @@
+baseURL = "https://faithfultweaks.web.app/"
+languageCode = "en-us"
+title = "Faithful Tweaks"
+publishDir = "../public"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[module]
+    [[module.mounts]]
+    source = "assets"
+    target = "assets"
+
+    [[module.mounts]]
+    source = "static"
+    target = "static"
+
+    [[module.mounts]]
+    source = "./node_modules/bootstrap/scss/"
+    target = "assets/scss/bootstrap"
+
+    [[module.mounts]]
+    source = "./node_modules/bootstrap/dist/js"
+    target = "assets/js/bootstrap"
+
+    [[module.mounts]]
+    source = "./node_modules/@fortawesome/fontawesome-free/scss"
+    target = "assets/scss/fontawesome"
+
+    [[module.mounts]]
+    source = "./node_modules/@fortawesome/fontawesome-free/webfonts"
+    target = "static/webfonts"
+
+    [[module.mounts]]
+    source = "./node_modules/jquery/dist"
+    target = "assets/js/jquery"
+
+    [[module.mounts]]
+    source = "./node_modules/popper.js/dist"
+    target = "assets/js/popper"
