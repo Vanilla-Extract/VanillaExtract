@@ -15,7 +15,7 @@ $theme-colors: (
 
 @import "./bootstrap/bootstrap"; // Bootstrap
 @import "./fontawesome/fontawesome"; // Fontawesome
-@import "./footer-clean"; // Footer
+@import "./footer-clean.scss"; // Footer
 
 .btn {
     border-radius: 999px;
@@ -33,7 +33,7 @@ $theme-colors: (
     &:hover {
         background-color: #9ba2a9;
     }
-    .enabled {
+    &.enabled {
         background-color: #343a40;
         color: #fff;
     }

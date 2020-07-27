@@ -1,6 +1,19 @@
 ---
 title: Home
 
+formats:
+    - id: 1
+      display: "1.6.1 - 1.8.9"
+    - id: 2
+      display: "1.9 - 1.10.2"
+    - id: 3
+      display: "1.11 - 1.12.2"
+    - id: 4
+      display: "1.13 - 1.14.4"
+    - id: 5
+      display: "1.15.1 - 1.16.1"
+
+
 # Normal modules
 normal_modules:
 # ----- KEY TO MODULES LIST -----

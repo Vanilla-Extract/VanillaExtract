@@ -12,8 +12,8 @@
   <!-- More meta tags -->
   <meta name="theme-color" content="#ed9741">
   <meta name="twitter:title" content="Faithful Tweaks">
-  <meta property="og:image" content="/assets/img/logo.png">
-  <meta name="twitter:image" content="/assets/img/logo.png">
+  <meta property="og:image" content="/images/logo.png">
+  <meta name="twitter:image" content="/images/logo.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
   <meta name="description" content="Pick and choose how you would like to experience the Faithful resource pack. Supports all versions of Minecraft since 1.6.1.">
@@ -22,13 +22,13 @@
 
   <!-- Favicon -->
   {{ $favicon := resources.Get "favicon.ico"}}
-  <link rel="icon" href="{{ $favicon.Permalink }}" type="image/x-icon">
-  <link rel="shortcut icon" href="{{ $favicon.Permalink }}" type="image/x-icon">
-  <link rel="shortcut icon" href="{{ $favicon.Permalink }}" type="image/vnd.microsoft.icon">
+  <link rel="icon" href="{{ $favicon.RelPermalink }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="image/vnd.microsoft.icon">
 
   <!-- Custom Styles & Bootsrap -->
   {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
   {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
