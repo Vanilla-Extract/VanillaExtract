@@ -22,77 +22,77 @@ normal_modules:
 #     image = The url to the image (should be in the website/static/images/ folder)
 #     description = A description of what the module should do
 #     origin = Where the module came from, should be "community" unless told otherwise (options are vanillatweaks, faithfultweaks, community)
-#     notcompatable = Resource pack formats that the module is incompatible with (options are format1, format2, format3, format4, format5)
+#     notcompatable = Resource pack formats that the module is incompatible with (options are 1, 2, 3, 4, 5)
 
-    - id: "LowSheild"
-      name: "Low Sheild"
-      image: "/static/images/normal/LowSheild.png"
+    - id: "LowShield"
+      name: "Low Shield"
+      image: "/images/normal/LowShield.png"
       description: "Lowers the sheild when its held"
       origin: "vanillatweaks"
       notcompatable:
-        - "format1"
+        - 1
     
     - id: "NoVignette"
       name: "No Vignette"
-      image: "/static/images/normal/NoVignette.png"
+      image: "/images/normal/NoVignette.png"
       origin: "vanillatweaks"
     
     - id: "SlicedSwords"
       name: "Sliced Swords"
-      image: "/static/images/normal/SlicedSwords.png"
+      image: "/images/normal/SlicedSwords.png"
       origin: "faithfultweaks"
     
     - id: "ReducedPumpkinBlur"
       name: "Reduced Pumpkin Blur"
-      image: "/static/images/normal/ReducedPumpkinBlur.png"
+      image: "/images/normal/ReducedPumpkinBlur.png"
       origin: "vanillatweaks"
     
     - id: "ColoredBows"
       name: "Colored Bow Stages"
-      image: "/static/images/normal/ColoredBows.png"
+      image: "/images/normal/ColoredBows.png"
       origin: "faithfultweaks"
     
     - id: "OreBorders"
       name: "Ore Borders"
-      image: "/static/images/normal/OreBorders.png"
+      image: "/images/normal/OreBorders.png"
       origin: "vanillatweaks"
     
     - id: "LowFire"
       name: "Low Fire"
-      image: "/static/images/normal/LowFire.png"
+      image: "/images/normal/LowFire.png"
       origin: "vanillatweaks"
     
     - id: "StickyPistonSides"
       name: "Sticky Piston Sides"
-      image: "/static/images/normal/StickyPistonSides.png"
+      image: "/images/normal/StickyPistonSides.png"
       origin: "vanillatweaks"
 
 # Options backgrounds
 options_bakcgrounds:
     - id: "ObsidianBG"
       name: "Obsidian"
-      image: "/static/images/optionsbg/Obsidian.png"
+      image: "/images/optionsbg/Obsidian.png"
       origin: "faithfultweaks"
 
 # Hud modules
 HUD_modules:
     - id: "MelonHunger"
       name: "Melon Hunger"
-      image: "/static/images/hudmods/MelonHunger.png"
+      image: "/images/hudmods/MelonHunger.png"
       origin: "faithfultweaks"
 
     - id: "ColoredPing"
       name: "Colored Ping"
-      image: "/static/images/hudmods/MelonHunger.png"
+      image: "/images/hudmods/ColoredPing.png"
       origin: "vanillatweaks"
       
     - id: "BlueWitherHearts"
       name: "Blue Wither Hearts"
-      image: "/static/images/hudmods/MelonHunger.png"
+      image: "/images/hudmods/BlueWitherHearts.png"
       origin: "faithfultweaks"
       
     - id: "RainbowXP"
       name: "Rainbow XP Bar"
-      image: "/static/images/hudmods/MelonHunger.png"
+      image: "/images/hudmods/RainbowXP.png"
       origin: "vanillatweaks"
 ---

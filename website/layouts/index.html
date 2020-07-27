@@ -33,48 +33,31 @@
                 <div class="text-center shadow d-flex flex-column justify-content-lg-center align-items-lg-center justify-content-xl-center"
                     style="border-radius: 20px;padding: 10px;margin-bottom: 40px;">
                     <h3 style="width: 100%;text-align: left;margin-left: 20px;margin-bottom: 15px;">Select Modules:</h3>
-                    <div class="bg-light collapsible"
-                        style="width: 100%;padding: 15px;border-radius: 20px;margin: 0px;"><a class="btn btn-dark"
-                            data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1"
-                            role="button"
-                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;">&nbsp;Normal
-                            Modules</a>
+                    <div class="bg-light collapsible" style="width: 100%;padding: 15px;border-radius: 20px;margin: 0px;">
+                        <a class="btn btn-dark" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button" style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;"> Normal Modules</a>
                         <div class="collapse show" id="collapse-1" style="border-radius: 2px;">
-                            <div
-                                class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
-                                <div id="LowShield" class="module-selector hideFormat1"><img class="mod-icon vt-origin"
-                                        src="/assets/img/normal/LowShield.png">
-                                    <h5 style="margin-top: 10px;">Low Shield</h5>
-                                </div>
-                                <div id="NoVignette" class="module-selector"><img class="mod-icon vt-origin"
-                                        src="/assets/img/normal/NoVignette.png">
-                                    <h5 style="margin-top: 10px;">No Vignette</h5>
-                                </div>
-                                <div id="SlicedSwords" class="module-selector"><img class="mod-icon ft-origin"
-                                        src="/assets/img/normal/SlicedSwords.png">
-                                    <h5 style="margin-top: 10px;">Sliced Swords</h5>
-                                </div>
-                                <div id="ReducedPumpkinBlur" class="module-selector"><img class="mod-icon vt-origin"
-                                        src="/assets/img/normal/ReducedPumpkinBlur.png">
-                                    <h5 style="margin-top: 10px;">Reduced Pumpkin Blur</h5>
-                                </div>
-                                <div id="ColoredBows" class="module-selector"><img class="mod-icon ft-origin"
-                                        src="/assets/img/normal/ColoredBows.png">
-                                    <h5 style="margin-top: 10px;">Colored Bow Stages</h5>
-                                </div>
-                                <div id="OreBorders" class="module-selector"><img class="mod-icon vt-origin"
-                                        src="/assets/img/normal/OreBorders.png">
-                                    <h5 style="margin-top: 10px;">Ore Borders</h5>
-                                </div>
-                                <div id="LowFire" class="module-selector"><img class="mod-icon vt-origin"
-                                        src="/assets/img/normal/LowFire.png">
-                                    <h5 style="margin-top: 10px;">Low Fire</h5>
-                                </div>
-                                <div id="StickyPistonSides" class="module-selector"
-                                    style="margin: 15px;padding: 15px;border-radius: 20px;width: 160px;height: 160p;">
-                                    <img class="mod-icon vt-origin" src="/assets/img/normal/StickyPistonSides.png">
-                                    <h5 style="margin-top: 10px;">Sticky Piston Sides</h5>
-                                </div>
+                            <div class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
+                                
+                                {{ range .Params.normal_modules}}
+                                    <div id="{{ .id }}" class='module-selector
+                                        {{ if isset . "notcompatable" }}
+                                            {{ range .notcompatable }}
+                                                hideFormat{{ . }}
+                                            {{ end }}
+                                        {{ end }}
+                                    '>
+                                        <img class='mod-icon
+                                            {{ if eq .origin "vanillatweaks" }}
+                                                vt-origin
+                                            {{ else if eq .origin "faithfultweaks" }}
+                                                ft-origin
+                                            {{ else }}
+                                                community-origin
+                                            {{ end }}
+                                        ' src="{{ .image }}">
+                                        <h5 style="margin-top: 10px;">{{ .name }}</h5>
+                                    </div>
+                                {{ end }}
                             </div>
                         </div>
                     </div>
@@ -82,7 +65,7 @@
                         style="width: 100%;padding: 15px;border-radius: 20px;margin: 0px;"><a class="btn btn-dark"
                             data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2"
                             role="button"
-                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;">&nbsp;Options
+                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;"> Options
                             Background</a>
                         <div class="collapse" id="collapse-2" style="border-radius: 2px;">
                             <div
@@ -98,7 +81,7 @@
                         style="width: 100%;padding: 15px;border-radius: 20px;margin: 0px;"><a class="btn btn-dark"
                             data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3"
                             role="button"
-                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;">&nbsp;HUD
+                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;"> HUD
                             Modules</a>
                         <div class="collapse" id="collapse-3" style="border-radius: 2px;">
                             <div
