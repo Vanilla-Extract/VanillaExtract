@@ -1,9 +1,9 @@
 {
-    "adsfasdfasdfasdf": "cd ../ && rm -rf public && cd website && hugo",
     "name": "website",
     "description": "Hugo Website",
     "scripts": {
-        "server": "hugo server --disableFastRender"
+        "server": "hugo server --disableFastRender",
+        "build": "cd ../ && rm -rf public && cd website && hugo"
     },
     "engines": {
         "node": "10"
