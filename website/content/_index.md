@@ -68,7 +68,7 @@ normal_modules:
       origin: "vanillatweaks"
 
 # Options backgrounds
-options_bakcgrounds:
+options_backgrounds:
     - id: "ObsidianBG"
       name: "Obsidian"
       image: "/images/optionsbg/Obsidian.png"

@@ -37,13 +37,10 @@
                         <a class="btn btn-dark" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button" style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;"> Normal Modules</a>
                         <div class="collapse show" id="collapse-1" style="border-radius: 2px;">
                             <div class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
-                                
                                 {{ range .Params.normal_modules}}
                                     <div id="{{ .id }}" class='module-selector
-                                        {{ if isset . "notcompatable" }}
-                                            {{ range .notcompatable }}
-                                                hideFormat{{ . }}
-                                            {{ end }}
+                                        {{ range .notcompatable }}
+                                            hideFormat{{ . }}
                                         {{ end }}
                                     '>
                                         <img class='mod-icon
@@ -68,12 +65,25 @@
                             style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;"> Options
                             Background</a>
                         <div class="collapse" id="collapse-2" style="border-radius: 2px;">
-                            <div
-                                class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
-                                <div id="ObsidianBG" class="module-selector"><img class="mod-icon ft-origin"
-                                        src="/assets/img/optionsbg/Obsidian.png">
-                                    <h5 style="margin-top: 10px;">Obsidian</h5>
-                                </div>
+                            <div class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
+                                {{ range .Params.options_backgrounds}}
+                                    <div id="{{ .id }}" class='module-selector
+                                        {{ range .notcompatable }}
+                                            hideFormat{{ . }}
+                                        {{ end }}
+                                    '>
+                                        <img class='mod-icon
+                                            {{ if eq .origin "vanillatweaks" }}
+                                                vt-origin
+                                            {{ else if eq .origin "faithfultweaks" }}
+                                                ft-origin
+                                            {{ else }}
+                                                community-origin
+                                            {{ end }}
+                                        ' src="{{ .image }}">
+                                        <h5 style="margin-top: 10px;">{{ .name }}</h5>
+                                    </div>
+                                {{ end }}
                             </div>
                         </div>
                     </div>
@@ -84,24 +94,25 @@
                             style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;"> HUD
                             Modules</a>
                         <div class="collapse" id="collapse-3" style="border-radius: 2px;">
-                            <div
-                                class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
-                                <div id="MelonHunger" class="module-selector"><img class="mod-icon ft-origin"
-                                        src="/assets/img/hudmods/MelonHunger.png">
-                                    <h5 style="margin-top: 10px;">Melon Hunger</h5>
-                                </div>
-                                <div id="ColoredPing" class="module-selector"><img class="mod-icon vt-origin"
-                                        src="/assets/img/hudmods/ColoredPing.png">
-                                    <h5 style="margin-top: 10px;">Colored Ping</h5>
-                                </div>
-                                <div id="BlueWitherHearts" class="module-selector"><img class="mod-icon ft-origin"
-                                        src="/assets/img/hudmods/BlueWitherHearts.png">
-                                    <h5 style="margin-top: 10px;">Blue Wither Hearts</h5>
-                                </div>
-                                <div id="RainbowXP" class="module-selector"><img class="mod-icon vt-origin"
-                                        src="/assets/img/hudmods/RainbowXP.png">
-                                    <h5 style="margin-top: 10px;">Rainbow XP Bar</h5>
-                                </div>
+                            <div class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
+                                {{ range .Params.HUD_modules}}
+                                    <div id="{{ .id }}" class='module-selector
+                                        {{ range .notcompatable }}
+                                            hideFormat{{ . }}
+                                        {{ end }}
+                                    '>
+                                        <img class='mod-icon
+                                            {{ if eq .origin "vanillatweaks" }}
+                                                vt-origin
+                                            {{ else if eq .origin "faithfultweaks" }}
+                                                ft-origin
+                                            {{ else }}
+                                                community-origin
+                                            {{ end }}
+                                        ' src="{{ .image }}">
+                                        <h5 style="margin-top: 10px;">{{ .name }}</h5>
+                                    </div>
+                                {{ end }}
                             </div>
                         </div>
                     </div>
