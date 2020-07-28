@@ -70,10 +70,100 @@ normal_modules:
 
 # Options backgrounds
 options_backgrounds:
+    - id: "AcaciaPlanksBG"
+      name: "Acacia Planks"
+      image: "/images/modules/optionsbg/AcaciaPlanks.png"
+      origin: "vanillatweaks"
+
+    - id: "AncientDebrisBG"
+      name: "Ancient Debris"
+      image: "/images/modules/optionsbg/AncientDebris.png"
+      origin: "vanillatweaks"
+
+    - id: "AndesiteBG"
+      name: "Andesite"
+      image: "/images/modules/optionsbg/andesite.png"
+      origin: "vanillatweaks"
+
+    - id: "BedrockBG"
+      name: "Bedrock"
+      image: "/images/modules/optionsbg/bedrock.png"
+      origin: "vanillatweaks"
+
+    - id: "BetterBedrockBG"
+      name: "Better Bedrock"
+      image: "/images/modules/optionsbg/BetterBedrock.png"
+      origin: "faithfultweaks"
+
+    - id: "BirchPlanksBG"
+      name: "Birch Planks"
+      image: "/images/modules/optionsbg/BirchPlanks.png"
+      origin: "vanillatweaks"
+
+    - id: "DarkOakPlanksBG"
+      name: "Dark Oak Planks"
+      image: "/images/modules/optionsbg/DarkOakPlanks.png"
+      origin: "vanillatweaks"
+
+    - id: "DioriteBG"
+      name: "Diorite"
+      image: "/images/modules/optionsbg/diorite.png"
+      origin: "vanillatweaks"
+
+    - id: "EndStoneBG"
+      name: "End Stone"
+      image: "/images/modules/optionsbg/EndStone.png"
+      origin: "vanillatweaks"
+
+    - id: "GraniteBG"
+      name: "Granite"
+      image: "/images/modules/optionsbg/granite.png"
+      origin: "vanillatweaks"
+
+    - id: "HoneycombBG"
+      name: "Honeycomb"
+      image: "/images/modules/optionsbg/HoneycombBlock.png"
+      origin: "vanillatweaks"
+
+    - id: "JunglePlanksBG"
+      name: "Jungle Planks"
+      image: "/images/modules/optionsbg/JunglePlanks.png"
+      origin: "vanillatweaks"
+
+    - id: "NetherrackBG"
+      name: "Netherrack"
+      image: "/images/modules/optionsbg/netherrack.png"
+      origin: "vanillatweaks"
+
+    - id: "NetherrackBrightBG"
+      name: "Bright Netherrack"
+      image: "/images/modules/optionsbg/NetherrackBright.png"
+      origin: "faithfultweaks"
+
+    - id: "OakPlanksBG"
+      name: "Oak Planks"
+      image: "/images/modules/optionsbg/OakPlanks.png"
+      origin: "vanillatweaks"
+    
     - id: "ObsidianBG"
       name: "Obsidian"
       image: "/images/modules/optionsbg/Obsidian.png"
       origin: "faithfultweaks"
+
+    - id: "PebblelessDirtBG"
+      name: "Pebbleless Dirt"
+      image: "/images/modules/optionsbg/PebblelessDirt.png"
+      origin: "faithfultweaks"
+
+    - id: "SprucePlanksBG"
+      name: "Spruce Planks"
+      image: "/images/modules/optionsbg/SprucePlanks.png"
+      origin: "vanillatweaks"
+
+    - id: "StoneBG"
+      name: "Stone"
+      image: "/images/modules/optionsbg/stone.png"
+      origin: "vanillatweaks"
 
 # Hud modules
 HUD_modules:

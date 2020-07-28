@@ -22,7 +22,25 @@ $(document).ready(function(){
     $('#format5').click(setFormat);
 
     // Backgrounds
+    $('#AcaciaPlanksBG').click(setBackground);
+    $('#AncientDebrisBG').click(setBackground);
+    $('#AndesiteBG').click(setBackground);
+    $('#BedrockBG').click(setBackground);
+    $('#BetterBedrockBG').click(setBackground);
+    $('#BirchPlanksBG').click(setBackground);
+    $('#DarkOakPlanksBG').click(setBackground);
+    $('#DioriteBG').click(setBackground);
+    $('#EndStoneBG').click(setBackground);
+    $('#GraniteBG').click(setBackground);
+    $('#HoneycombBG').click(setBackground);
+    $('#JunglePlanksBG').click(setBackground);
+    $('#NetherrackBG').click(setBackground);
+    $('#NetherrackBrightBG').click(setBackground);
+    $('#OakPlanksBG').click(setBackground);
     $('#ObsidianBG').click(setBackground);
+    $('#PebblelessDirtBG').click(setBackground);
+    $('#SprucePlanksBG').click(setBackground);
+    $('#StoneBG').click(setBackground);
 
     // Panoramas
     // $('#ClassicPano').click(setPano);
