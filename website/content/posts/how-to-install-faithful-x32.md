@@ -1,7 +1,7 @@
 ---
 title: "How to Install Faithful X32"
 date: 2020-07-27T20:59:28-04:00
-draft: true
+draft: false
 ---
 A guide on installing your custom resource pack.
 
