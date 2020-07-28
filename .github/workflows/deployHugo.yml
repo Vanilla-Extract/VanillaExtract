@@ -1,14 +1,14 @@
-name: Functions CD
+name: Website CD
 
 on:
   push:
     branches: 
       - master
     paths:
-      - 'functions/**'
+      - 'website/**'
 
 jobs:
-  deploy_functions:
+  deploy_hugo:
     runs-on: ubuntu-latest
     
     steps:
@@ -20,17 +20,23 @@ jobs:
         with:
           node-version: 10
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.73.0'
+          extended: true
+
       - name: Install Dependencies
         run: npm ci
-        working-directory: functions
+        working-directory: website
 
-      - name: Lint Functions
-        run: npm run lint
-        working-directory: functions
+      - name: Build Website
+        run: npm run build
+        working-directory: website
 
       - name: Deploy To Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy --only functions
+          args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
