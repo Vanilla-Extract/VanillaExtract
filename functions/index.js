@@ -27,12 +27,12 @@ exports.deletePacks = functions.pubsub.schedule('0 4 * * *').onRun(async (cxt) =
 
     // Delete everything in FaithfulTweaks/
     bucket.deleteFiles({
-        prefix: `FaithfulTweaks/`
-    }, function(err) {
+        prefix: 'FaithfulTweaks/'
+    }, (err) => {
         if (err) {
             console.log(err);
         } else {
-            console.log(`All the zip files FaithfulTweaks/ have been deleted`);
+            console.log('All the zip files FaithfulTweaks/ have been deleted');
         }
     });
 
