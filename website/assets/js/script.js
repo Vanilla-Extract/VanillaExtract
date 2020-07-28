@@ -11,59 +11,19 @@ $(document).ready(function(){
         $(this).parent().hide();
     });
 
-    // Download
-    $('#downloadPack').click(downloadPack);
-
-    // Format buttons
-    $('#format1').click(setFormat);
-    $('#format2').click(setFormat);
-    $('#format3').click(setFormat);
-    $('#format4').click(setFormat);
-    $('#format5').click(setFormat);
-
-    // Backgrounds
-    $('#AcaciaPlanksBG').click(setBackground);
-    $('#AncientDebrisBG').click(setBackground);
-    $('#AndesiteBG').click(setBackground);
-    $('#BedrockBG').click(setBackground);
-    $('#BetterBedrockBG').click(setBackground);
-    $('#BirchPlanksBG').click(setBackground);
-    $('#DarkOakPlanksBG').click(setBackground);
-    $('#DioriteBG').click(setBackground);
-    $('#EndStoneBG').click(setBackground);
-    $('#GraniteBG').click(setBackground);
-    $('#HoneycombBG').click(setBackground);
-    $('#JunglePlanksBG').click(setBackground);
-    $('#NetherrackBG').click(setBackground);
-    $('#NetherrackBrightBG').click(setBackground);
-    $('#OakPlanksBG').click(setBackground);
-    $('#ObsidianBG').click(setBackground);
-    $('#PebblelessDirtBG').click(setBackground);
-    $('#SprucePlanksBG').click(setBackground);
-    $('#StoneBG').click(setBackground);
-
-    // Panoramas
-    // $('#ClassicPano').click(setPano);
-
-    // Modules
-    $('#LowShield').click(setModule);
-    $('#NoVignette').click(setModule);
-    $('#SlicedSwords').click(setModule);
-    $('#ReducedPumpkinBlur').click(setModule);
-    $('#ColoredBows').click(setModule);
-    $('#OreBorders').click(setModule);
-    $('#LowFire').click(setModule);
-    $('#StickyPistonSides').click(setModule);
-
-    // Icon modules
-    $('#MelonHunger').click(setIconModule);
-    $('#ColoredPing').click(setIconModule);
-    $('#BlueWitherHearts').click(setIconModule);
-    $('#RainbowXP').click(setIconModule);
+    
+    $('#downloadPack').click(downloadPack); // Download
+    $('#formatGroup').on('click', '> *', setFormat); // Format buttons
+    $('#normalSection').on('click', '>> *', setModule); // Modules
+    $('#hudSection').on('click', '>> *', setIconModule); // Hud modules
+    $('#optionsbgSection').on('click', '>> *', setBackground); // Backgrounds
+    $('#panoramasSection').on('click', '>> *', setPano); // Panoramas
 })
+
 
 // Set format to the last number of ID
 function setFormat() {
+    console.log($(this).attr('id'));
     $(this).siblings().attr("class","btn btn-light");
     $(this).attr("class","btn btn-dark");
     format = $(this).attr('id').slice(-1);
@@ -105,34 +65,6 @@ function setFormat() {
 
 }
 
-// Set background function
-function setBackground() {
-    $(this).siblings().removeClass("enabled");
-
-    if ($(this).hasClass('enabled')) {
-        // If already enabled then disable and clear var
-        optionsBackground = undefined;
-    } else {
-        // If disabled then enable
-        optionsBackground = $(this).attr('id');
-    }
-    $(this).toggleClass('enabled'); // Toggle class    
-}
-
-// Set pano function
-function setBackground() {
-    $(this).siblings().removeClass("enabled");
-
-    if ($(this).hasClass('enabled')) {
-        // If already enabled then disable and clear var
-        panoOption = undefined;
-    } else {
-        // If disabled then enable
-        panoOption = $(this).attr('id');
-    }
-    $(this).toggleClass('enabled'); // Toggle class 
-}
-
 // Set module function
 function setModule() {
     if ($(this).hasClass('enabled')) {
@@ -157,6 +89,34 @@ function setIconModule() {
         iconModules.push($(this).attr('id'));
     }
     $(this).toggleClass('enabled'); // Toggle class
+}
+
+// Set background function
+function setBackground() {
+    $(this).siblings().removeClass("enabled");
+
+    if ($(this).hasClass('enabled')) {
+        // If already enabled then disable and clear var
+        optionsBackground = undefined;
+    } else {
+        // If disabled then enable
+        optionsBackground = $(this).attr('id');
+    }
+    $(this).toggleClass('enabled'); // Toggle class    
+}
+
+// Set pano function
+function setPano() {
+    $(this).siblings().removeClass("enabled");
+
+    if ($(this).hasClass('enabled')) {
+        // If already enabled then disable and clear var
+        panoOption = undefined;
+    } else {
+        // If disabled then enable
+        panoOption = $(this).attr('id');
+    }
+    $(this).toggleClass('enabled'); // Toggle class 
 }
 
 // Download the resource pack
