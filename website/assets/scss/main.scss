@@ -75,17 +75,20 @@ $theme-colors: (
 
 .collapsible a{
     &:before {
+        font-family: "Font Awesome 5 Free";
         display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
         font-size: inherit;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
     &[aria-expanded=true]:before {
-        content: "\f068 ";
+        content: "\f068";
     }
     &[aria-expanded=false]:before {
-        content: "\f067 ";
+        content: "\f067";
     }
 }

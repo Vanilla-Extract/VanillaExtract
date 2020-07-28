@@ -12,6 +12,7 @@ formats:
       display: "1.13 - 1.14.4"
     - id: 5
       display: "1.15.1 - 1.16.1"
+      default: true
 
 
 # Normal modules

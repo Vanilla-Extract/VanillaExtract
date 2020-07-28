@@ -23,27 +23,31 @@
                 <div class="text-center shadow d-flex flex-column justify-content-lg-center align-items-lg-center justify-content-xl-center"
                     style="border-radius: 20px;padding: 10px;margin-bottom: 40px;">
                     <h3 style="width: 100%;text-align: left;margin-left: 20px;margin-bottom: 15px;">Choose Version:</h3>
-                    <div class="btn-group" role="group"><button class="btn btn-light" id="format1" type="button">1.6.1 -
-                            1.8.9</button><button class="btn btn-light" id="format2" type="button">1.9 -
-                            1.10.2</button><button class="btn btn-light" id="format3" type="button">1.11 -
-                            1.12.2</button>
-                        <button class="btn btn-light" id="format4" type="button">1.13 - 1.14.4</button><button
-                            class="btn btn-dark" id="format5" type="button">1.15-1.16.1</button></div>
+                    <div class="btn-group" role="group">
+                        {{ range .Params.formats }}
+                            <button class="btn {{ if .default }} btn-dark {{ else }} btn-light {{ end }}" id="format{{ .id }}" type="button">{{ .display }}</button>
+                        {{ end }}
+                    </div>
                 </div>
                 <div class="text-center shadow d-flex flex-column justify-content-lg-center align-items-lg-center justify-content-xl-center"
                     style="border-radius: 20px;padding: 10px;margin-bottom: 40px;">
                     <h3 style="width: 100%;text-align: left;margin-left: 20px;margin-bottom: 15px;">Select Modules:</h3>
-                    <div class="bg-light collapsible" style="width: 100%;padding: 15px;border-radius: 20px;margin-bottom: 15px;">
-                        <a class="btn btn-dark" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button" style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;"> Normal Modules</a>
+                    <div class="bg-light collapsible"
+                        style="width: 100%;padding: 15px;border-radius: 20px;margin-bottom: 15px;">
+                        <a class="btn btn-dark" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1"
+                            href="#collapse-1" role="button"
+                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;">
+                            Normal Modules</a>
                         <div class="collapse show" id="collapse-1" style="border-radius: 2px;">
-                            <div class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
-                                {{ range .Params.normal_modules}}
-                                    <div id="{{ .id }}" class='module-selector
+                            <div
+                                class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
+                                {{ range .Params.normal_modules }}
+                                <div id="{{ .id }}" class='module-selector
                                         {{ range .notcompatable }}
                                             hideFormat{{ . }}
                                         {{ end }}
                                     '>
-                                        <img class='mod-icon
+                                    <img class='mod-icon
                                             {{ if eq .origin "vanillatweaks" }}
                                                 vt-origin
                                             {{ else if eq .origin "faithfultweaks" }}
@@ -52,27 +56,29 @@
                                                 community-origin
                                             {{ end }}
                                         ' src="{{ .image }}">
-                                        <h5 style="margin-top: 10px;">{{ .name }}</h5>
-                                    </div>
+                                    <h5 style="margin-top: 10px;">{{ .name }}</h5>
+                                </div>
                                 {{ end }}
                             </div>
                         </div>
                     </div>
                     <div class="bg-light collapsible"
-                        style="width: 100%;padding: 15px;border-radius: 20px;margin-bottom: 15px;"><a class="btn btn-dark"
-                            data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2"
-                            role="button"
-                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;"> Options
+                        style="width: 100%;padding: 15px;border-radius: 20px;margin-bottom: 15px;"><a
+                            class="btn btn-dark" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2"
+                            href="#collapse-2" role="button"
+                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;">
+                            Options
                             Background</a>
                         <div class="collapse" id="collapse-2" style="border-radius: 2px;">
-                            <div class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
+                            <div
+                                class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
                                 {{ range .Params.options_backgrounds}}
-                                    <div id="{{ .id }}" class='module-selector
+                                <div id="{{ .id }}" class='module-selector
                                         {{ range .notcompatable }}
                                             hideFormat{{ . }}
                                         {{ end }}
                                     '>
-                                        <img class='mod-icon
+                                    <img class='mod-icon
                                             {{ if eq .origin "vanillatweaks" }}
                                                 vt-origin
                                             {{ else if eq .origin "faithfultweaks" }}
@@ -81,8 +87,8 @@
                                                 community-origin
                                             {{ end }}
                                         ' src="{{ .image }}">
-                                        <h5 style="margin-top: 10px;">{{ .name }}</h5>
-                                    </div>
+                                    <h5 style="margin-top: 10px;">{{ .name }}</h5>
+                                </div>
                                 {{ end }}
                             </div>
                         </div>
@@ -91,17 +97,19 @@
                         style="width: 100%;padding: 15px;border-radius: 20px;margin: 0px;"><a class="btn btn-dark"
                             data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3"
                             role="button"
-                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;"> HUD
+                            style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;">
+                            HUD
                             Modules</a>
                         <div class="collapse" id="collapse-3" style="border-radius: 2px;">
-                            <div class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
+                            <div
+                                class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
                                 {{ range .Params.HUD_modules}}
-                                    <div id="{{ .id }}" class='module-selector
+                                <div id="{{ .id }}" class='module-selector
                                         {{ range .notcompatable }}
                                             hideFormat{{ . }}
                                         {{ end }}
                                     '>
-                                        <img class='mod-icon
+                                    <img class='mod-icon
                                             {{ if eq .origin "vanillatweaks" }}
                                                 vt-origin
                                             {{ else if eq .origin "faithfultweaks" }}
@@ -110,8 +118,8 @@
                                                 community-origin
                                             {{ end }}
                                         ' src="{{ .image }}">
-                                        <h5 style="margin-top: 10px;">{{ .name }}</h5>
-                                    </div>
+                                    <h5 style="margin-top: 10px;">{{ .name }}</h5>
+                                </div>
                                 {{ end }}
                             </div>
                         </div>
