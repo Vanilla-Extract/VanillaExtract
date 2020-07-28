@@ -1,0 +1,36 @@
+<head>
+  {{ $currentPage := . }}
+  {{ $title := site.Title }}
+  {{ if not .IsHome }}
+  {{ $title = printf "%s - %s" site.Title .Title }}
+  {{ end }}
+  <title>{{ $title }}</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- More meta tags -->
+  <meta name="theme-color" content="#ed9741">
+  <meta name="twitter:title" content="Faithful Tweaks">
+  <meta property="og:image" content="/images/logo.png">
+  <meta name="twitter:image" content="/images/logo.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="description" content="Pick and choose how you would like to experience the Faithful resource pack. Supports all versions of Minecraft since 1.6.1.">
+  <meta property="og:description" content="Pick and choose how you would like to experience the Faithful resource pack.">
+  <meta name="twitter:description" content="Pick and choose how you would like to experience the Faithful resource pack.">
+
+  <!-- Favicon -->
+  {{ $favicon := resources.Get "favicon.ico"}}
+  <link rel="icon" href="{{ $favicon.RelPermalink }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="image/vnd.microsoft.icon">
+
+  <!-- Custom Styles & Bootsrap -->
+  {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+</head>

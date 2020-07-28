@@ -1,0 +1,118 @@
+$orange: #ed9741;
+$blue: #5870f7;
+$purple: #b200ff;
+
+$discord: #7289DA;
+
+$theme-colors: (
+  "orange": $orange,
+  "purple": $purple,
+  "blue": $blue,
+  "discord": $discord,
+);
+
+// Fontawesome
+@import "./fontawesome/fontawesome";
+@import "./fontawesome/brands";
+@import "./fontawesome/regular";
+@import "./fontawesome/solid";
+
+@import "./bootstrap/bootstrap"; // Bootstrap
+@import "./footer-clean.scss"; // Footer
+
+.btn {
+    border-radius: 999px;
+}
+
+.module-selector {
+    background-color: #e0e0e0;
+    transition: 0.2s;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    width: 160px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #9ba2a9;
+    }
+    &.enabled {
+        background-color: #343a40;
+        color: #fff;
+    }
+}
+
+.mod-icon {
+    image-rendering: pixelated !important;
+    border-radius: 10px;
+    image-rendering: crisp-edges !important;
+    height: 85px;
+    width: 85px;
+
+    &.vt-origin {
+        border: 4px solid $orange;
+    }
+    &.ft-origin {
+        border: 4px solid $blue;
+    }
+        
+    &.community-origin {
+        border: 4px solid $purple;
+    }
+}
+
+.text-link {
+    color: #ed9741;
+    text-decoration: underline;
+    &:hover {
+        color: #d78b3e;
+    }
+}
+
+#download-alert, #created-alert, #creating-alert, #fail-alert {
+    display: none;
+}
+
+.collapsible a {
+    &:before {
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    &[aria-expanded=true]:before {
+        content: "\f068";
+    }
+    &[aria-expanded=false]:before {
+        content: "\f067";
+    }
+}
+
+.article {
+    font-size: 20px;
+
+    h1 {
+        font-weight: bold;
+    }
+    h3 {
+        text-decoration: underline;
+    }
+    a {
+        @extend .text-link;
+    }
+    img {
+        margin-bottom: 16px;
+        width: 100%;
+        max-width: 800px;
+    }
+    .btn {
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 0;
+    }
+}
