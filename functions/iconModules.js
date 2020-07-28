@@ -115,6 +115,9 @@ const addIconModules = async function(modules, archive, bucket){
     const canvas = createCanvas(512, 512); // Make canvas
     const ctx = canvas.getContext('2d'); // Canvas context
 
+    // Specify settings
+    ctx.antialias = 'none';
+
     // Draw icons
     ctx.drawImage(defaultIcons, 0, 0);
     ctx.drawImage(hungerIcons, 0, 0);
@@ -123,7 +126,13 @@ const addIconModules = async function(modules, archive, bucket){
     ctx.drawImage(xpIcons, 0, 0);
     
     // Add image to zip archive
-    archive.append(canvas.toBuffer(), {name: path.join("assets/minecraft/textures/gui", "icons.png")});
+    const iconsPng = canvas.toBuffer(
+        'image/png', 
+        {
+            compressionLevel: 9,
+        }
+    );
+    archive.append(iconsPng, {name: path.join("assets/minecraft/textures/gui", "icons.png")});
 
     return;
 }
