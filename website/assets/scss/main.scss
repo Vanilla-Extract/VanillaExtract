@@ -10,11 +10,14 @@ $theme-colors: (
   "blue": $blue,
   "discord": $discord,
 );
-// $body-bg: $mainBG;
-// $body-color: $textColor;
+
+// Fontawesome
+@import "./fontawesome/fontawesome";
+@import "./fontawesome/brands";
+@import "./fontawesome/regular";
+@import "./fontawesome/solid";
 
 @import "./bootstrap/bootstrap"; // Bootstrap
-@import "./fontawesome/fontawesome"; // Fontawesome
 @import "./footer-clean.scss"; // Footer
 
 .btn {
