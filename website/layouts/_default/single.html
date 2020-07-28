@@ -4,7 +4,10 @@
     <body>
         {{- partial "header.html" . -}}
         <div id="content">
-            {{ .Content }}
+            <div class="container shadow article" style="margin-top: 40px;border-radius: 20px;margin-bottom: 40px;padding: 30px;padding-top: 15px;padding-bottom: 15px;">
+                <h1>{{ .Page.Params.title }}</h1>
+                {{ .Content }}
+            </div>
         </div>
         {{- partial "footer.html" . -}}
         {{- partial "bottom.html" . -}}

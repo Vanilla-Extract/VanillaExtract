@@ -2,7 +2,7 @@
     "name": "website",
     "description": "Hugo Website",
     "scripts": {
-        "server": "hugo server --disableFastRender",
+        "server": "hugo server --disableFastRender -D",
         "build": "cd ../ && rm -rf public && cd website && hugo"
     },
     "engines": {

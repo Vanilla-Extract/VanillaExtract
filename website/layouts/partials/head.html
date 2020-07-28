@@ -2,7 +2,7 @@
   {{ $currentPage := . }}
   {{ $title := site.Title }}
   {{ if not .IsHome }}
-  {{ $title = printf "%s | %s" .Title site.Title }}
+  {{ $title = printf "%s - %s" site.Title .Title }}
   {{ end }}
   <title>{{ $title }}</title>
   <!-- Required meta tags -->

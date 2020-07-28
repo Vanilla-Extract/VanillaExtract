@@ -63,7 +63,7 @@ $theme-colors: (
 
 .text-link {
     color: #ed9741;
-
+    text-decoration: underline;
     &:hover {
         color: #d78b3e;
     }
@@ -73,7 +73,7 @@ $theme-colors: (
     display: none;
 }
 
-.collapsible a{
+.collapsible a {
     &:before {
         font-family: "Font Awesome 5 Free";
         display: inline-block;
@@ -90,5 +90,29 @@ $theme-colors: (
     }
     &[aria-expanded=false]:before {
         content: "\f067";
+    }
+}
+
+.article {
+    font-size: 20px;
+
+    h1 {
+        font-weight: bold;
+    }
+    h3 {
+        text-decoration: underline;
+    }
+    a {
+        @extend .text-link;
+    }
+    img {
+        margin-bottom: 16px;
+        width: 100%;
+        max-width: 800px;
+    }
+    .btn {
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 0;
     }
 }
