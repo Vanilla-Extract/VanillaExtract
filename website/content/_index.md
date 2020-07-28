@@ -191,4 +191,23 @@ sections:
         name: "Stone"
         image: "/images/modules/optionsbg/stone.png"
         origin: "vanillatweaks"
+    
+  # Panoramas Background modules
+  - id: "panoramasSection"
+    display: "Menu Panorama"
+    modules:
+      - id: "ClassicPano"
+        name: "Classic Panorama"
+        image: "/images/modules/panos/Classic.png"
+        origin: "vanillatweaks"
+
+      - id: "BastionPano"
+        name: "Piglin Bastion"
+        image: "/images/modules/panos/Bastion.png"
+        origin: "faithfultweaks"
+
+      - id: "SeirinsPano"
+        name: "Seirin's Survival World"
+        image: "/images/modules/panos/Seirin.png"
+        origin: "faithfultweaks"
 ---
