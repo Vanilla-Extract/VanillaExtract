@@ -124,7 +124,7 @@ const addIconModules = async function(modules, archive, bucket){
     ctx.drawImage(pingIcons, 0, 0);
     ctx.drawImage(witherIcons, 0, 0);
     ctx.drawImage(xpIcons, 0, 0);
-    
+    // test
     // Add image to zip archive
     const iconsPng = canvas.toBuffer(
         'image/png', 
