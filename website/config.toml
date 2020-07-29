@@ -34,5 +34,5 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     target = "assets/js/jquery"
 
     [[module.mounts]]
-    source = "./node_modules/popper.js/dist"
+    source = "./node_modules/popper.js/dist/umd"
     target = "assets/js/popper"

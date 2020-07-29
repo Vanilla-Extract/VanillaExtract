@@ -11,6 +11,11 @@ $(document).ready(function(){
         $(this).parent().hide();
     });
 
+    // Description popovers
+    $('[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger : 'hover'
+    });
     
     $('#downloadPack').click(downloadPack); // Download
     $('#formatGroup').on('click', '> *', setFormat); // Format buttons

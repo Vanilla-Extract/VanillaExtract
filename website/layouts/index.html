@@ -64,7 +64,11 @@
                                                 {{ else }}
                                                     community-origin
                                                 {{ end }}
-                                            '>
+                                            '
+                                            {{ if isset . "description" }}
+                                                data-toggle="popover" title="{{ .name }}" data-content="{{ .description }}"
+                                            {{ end }}
+                                            >
                                             <img class='mod-icon' src="{{ .image }}">
                                             <h5 style="margin-top: 10px;">{{ .name }}</h5>
                                         </div>
