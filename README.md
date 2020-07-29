@@ -1,4 +1,4 @@
-<img src="https://faithfultweaks.web.app/images/logo.png" alt="Faithful Tweaks Logo" width="150px" />
+[<img src="https://faithfultweaks.web.app/images/logo.png" alt="Faithful Tweaks Logo" width="150px" />](https://faithfultweaks.web.app/)
 
 # Faithful Tweaks
 [![Website Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Website%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
