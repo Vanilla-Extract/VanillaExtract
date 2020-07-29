@@ -1,4 +1,4 @@
-name: Storage CD
+name: Storage Deploy
 
 on:
   push:

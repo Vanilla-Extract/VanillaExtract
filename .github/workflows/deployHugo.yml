@@ -1,4 +1,4 @@
-name: Website CD
+name: Website Deploy
 
 on:
   push:

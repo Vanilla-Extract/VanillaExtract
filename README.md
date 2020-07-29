@@ -1,30 +1,33 @@
-# Faithful Tweaks (MC 1.6.1 - 1.16.1)
-An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/)
+<img src="https://faithfultweaks.web.app/images/logo.png" alt="Faithful Tweaks Logo" width="150px" />
 
-For an example commit check out [this commit](https://github.com/Banakin/FaithfulTweaks/commit/289d1dc68b6eab63027fb9f9afcf7a6f910bdfc8)
+# Faithful Tweaks
+[![Website Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Website%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
+[![Functions Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Functions%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
+[![Storage Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Storage%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
 
-I plan on redoing the frontend to accomodate for new backgrounds and version specific modules. Also I need to drop Bootsrap Studio asap (Also add the discord to the website).
+An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/).
+
+A guide on making modules is coming soon so stay tuned!
 
 `Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the raditional fashon`
 
 ### Avalable Modules
+- ColoredBows
+- LowFire
 - LowShield
 - NoVignette
-- SlicedSwords
-- ReducedPumpkinBlur
-- ColoredBows
 - OreBorders
-- LowFire
+- ReducedPumpkinBlur
+- SlicedSwords
 - StickyPistonSides
 
 ### Icon Modules
-- MelonHunger
-- ColoredPing
 - BlueWitherHearts
+- ColoredPing
+- MelonHunger
 - RainbowXP
 
 ### Backgrounds
-- ObsidianBG
 - AcaciaPlanksBG
 - AncientDebrisBG
 - AndesiteBG
@@ -40,23 +43,29 @@ I plan on redoing the frontend to accomodate for new backgrounds and version spe
 - NetherrackBG
 - NetherrackBrightBG
 - OakPlanksBG
+- ObsidianBG
+- PebblelessDirtBG
 - SprucePlanksBG
 - StoneBG
-- PebblelessDirtBG
 
 ### Panoramas
-- ClassicPano
 - BastionPano
+- ClassicPano
 - SeirinsPano
 
 ### Coming Soon
-- ClearPumpkinBlur
-- DirectionalHoppers
-- DarkUI
+- AlternateEnchantGlint
 - BetterObservers
+- BorderlessGlass
 - BrighterNether
 - CherryPicking
+- CleanAndBorderlessGlass
+- CleanGlass
+- ClearPumpkinBlur
+- DarkUI
 - DirectionalHoppers
+- DirectionalHoppers
+- InvisibleTotem (model file only)
 - MineProgressBar
 - PebblelessCoarseDirt
 - PebblelessDirt
@@ -66,20 +75,15 @@ I plan on redoing the frontend to accomodate for new backgrounds and version spe
 - UnobtrusiveRain
 - UnobtrusiveScaffolding
 - UnobtrusiveWater
-- CleanGlass
-- BorderlessGlass
-- CleanAndBorderlessGlass
-- InvisibleTotem (model file only)
-- AlternateEnchantGlint
 
 ## Making requests to the Cloud Function
 Example body of POST request:
 ```json
 {
 	"format":  5,
-	"modules":  ["ObsidianBG", "LowShield", "NoVignette", "SlicedSwords", "ReducedPumpkinBlur", "ColoredBows", "OreBorders", "LowFire", "StickyPistonSides"],
+	"modules":  ["SlicedSwords", "ReducedPumpkinBlur", "ColoredBows", "OreBorders", "StickyPistonSides"],
 	"iconModules": ["MelonHunger", "ColoredPing", "BlueWitherHearts", "RainbowXP"],
-	"optionsBackground": "ObsidianBG",
+	"optionsBackground": "AcaciaPlanksBG",
 	"panoOption": "ClassicPano"
 }
 ```
@@ -100,3 +104,14 @@ Example response from POST request:
 -  [Nekzuris](https://twitter.com/Nekzuris): ColoredPing
 - Pomik108: RainbowXPBar
 - Seirin-Blu: Unobtrusive Rain, Unobtrusive Water
+
+## Tech Used
+- [Firebase](https://firebase.google.com/) - Backend (API, Hosting, Storage)
+- [node.js](https://nodejs.org/) - Used for the API
+- [Canvas](https://github.com/Automattic/node-canvas) - Combining images
+- [Archiver](https://github.com/archiverjs/node-archiver) - Creating the ZIP file
+- [Hugo](https://gohugo.io/) - Website framework
+- [Bootstrap](https://getbootstrap.com/) - CSS framework for the website
+- [jQuery](https://jquery.com/) - JavaScript Framework for the website
+- [Popper](https://popper.js.org/) - Engine for description popups
+- [Font Awesome](https://fontawesome.com/) - Icons used on the website

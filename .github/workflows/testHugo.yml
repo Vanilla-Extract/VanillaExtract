@@ -1,4 +1,4 @@
-name: Website CI
+name: Website Integration
 
 on:
   pull_request:
