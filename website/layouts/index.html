@@ -44,28 +44,28 @@
                     <h3 style="width: 100%;text-align: left;margin-left: 20px;margin-bottom: 15px;">Select Modules:</h3>
                     
                     <!-- START OF CATEGORIES -->
-                    {{ range $i, $section := .Params.sections}}
+                    {{ range $i, $section := .Params.sections }}
                         <div class="bg-light collapsible" style="width: 100%;padding: 15px;border-radius: 20px;margin-bottom: 15px;">
                             <a class="btn btn-dark" data-toggle="collapse" aria-expanded="{{ if (eq $i 0) }}true{{else}}false{{ end }}" aria-controls="{{ $section.id }}" href="#{{ $section.id }}" role="button" style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;">
                                 {{ $section.display }}
                             </a>
                             <div class="collapse {{ if (eq $i 0) }}show{{ end }}" id="{{ .id }}" style="border-radius: 2px;">
                                 <div class="d-flex d-xl-flex flex-row justify-content-center flex-wrap justify-content-xl-center">
-                                    {{ range $section.modules }}
+                                    {{ range sort $section.modules "name"}}
                                         <div id="{{ .id }}" class='module-selector
                                                 {{ range .notcompatable }}
                                                     hideFormat{{ . }}
                                                 {{ end }}
+
+                                                {{ if eq .origin "vanillatweaks" }}
+                                                    vt-origin
+                                                {{ else if eq .origin "faithfultweaks" }}
+                                                    ft-origin
+                                                {{ else }}
+                                                    community-origin
+                                                {{ end }}
                                             '>
-                                            <img class='mod-icon
-                                                    {{ if eq .origin "vanillatweaks" }}
-                                                        vt-origin
-                                                    {{ else if eq .origin "faithfultweaks" }}
-                                                        ft-origin
-                                                    {{ else }}
-                                                        community-origin
-                                                    {{ end }}
-                                                ' src="{{ .image }}">
+                                            <img class='mod-icon' src="{{ .image }}">
                                             <h5 style="margin-top: 10px;">{{ .name }}</h5>
                                         </div>
                                     {{ end }}
