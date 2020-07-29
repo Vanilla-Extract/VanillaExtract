@@ -1,6 +1,6 @@
 [<img src="https://faithfultweaks.web.app/images/logo.png" alt="Faithful Tweaks Logo" width="150px" />](https://faithfultweaks.web.app/)
 
-# [Faithful Tweaks](https://faithfultweaks.web.app/)
+# Faithful Tweaks
 [![Website Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Website%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
 [![Functions Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Functions%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
 [![Storage Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Storage%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
