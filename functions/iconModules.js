@@ -117,7 +117,7 @@ const addIconModules = async function(modules, archive, bucket){
 
     // Specify settings
     ctx.antialias = 'none';
-
+//
     // Draw icons
     ctx.drawImage(defaultIcons, 0, 0);
     ctx.drawImage(hungerIcons, 0, 0);
