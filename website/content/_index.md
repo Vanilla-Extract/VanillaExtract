@@ -37,6 +37,7 @@ sections:
       - id: "NoVignette"
         name: "No Vignette"
         image: "/images/modules/normal/NoVignette.png"
+        description: "Removes the darkened corners of the screen that occur in darker areas when graphics are set to 'fancy'."
         origin: "vanillatweaks"
       
       - id: "SlicedSwords"
@@ -47,6 +48,7 @@ sections:
       - id: "ReducedPumpkinBlur"
         name: "Reduced Pumpkin Blur"
         image: "/images/modules/normal/ReducedPumpkinBlur.png"
+        description: "Increases visibility when wearing Pumpkins."
         origin: "vanillatweaks"
       
       - id: "ColoredBows"
@@ -57,16 +59,19 @@ sections:
       - id: "OreBorders"
         name: "Ore Borders"
         image: "/images/modules/normal/OreBorders.png"
+        description: "Places a border around ores for easier visibility."
         origin: "vanillatweaks"
       
       - id: "LowFire"
         name: "Low Fire"
         image: "/images/modules/normal/LowFire.png"
+        description: "Lowers the height of fire."
         origin: "vanillatweaks"
       
       - id: "StickyPistonSides"
         name: "Sticky Piston Sides"
         image: "/images/modules/normal/StickyPistonSides.png"
+        description: "Displays Slime on the sides of Sticky Pistons to easily differentiate them from regular pistons."
         origin: "vanillatweaks"
   
   # Hud modules
@@ -76,21 +81,25 @@ sections:
       - id: "MelonHunger"
         name: "Melon Hunger"
         image: "/images/modules/hudmods/MelonHunger.png"
+        description: "Replaces hunger bar with melon icons."
         origin: "faithfultweaks"
 
       - id: "ColoredPing"
         name: "Colored Ping"
         image: "/images/modules/hudmods/ColoredPing.png"
+        description: "Changes the color of the ping bars based on your connection."
         origin: "vanillatweaks"
         
       - id: "BlueWitherHearts"
         name: "Blue Wither Hearts"
         image: "/images/modules/hudmods/BlueWitherHearts.png"
+        description: "Makes Hearts blue for better visibility while you're under the wither effect."
         origin: "faithfultweaks"
         
       - id: "RainbowXP"
         name: "Rainbow XP Bar"
         image: "/images/modules/hudmods/RainbowXP.png"
+        description: "Changes the XP bar to a rainbow XP bar."
         origin: "vanillatweaks"
     
   # Options Background modules
@@ -199,11 +208,13 @@ sections:
       - id: "ClassicPano"
         name: "Classic Panorama"
         image: "/images/modules/panos/Classic.png"
+        description: "The classic beta 1.8 background."
         origin: "vanillatweaks"
 
       - id: "BastionPano"
         name: "Piglin Bastion"
         image: "/images/modules/panos/Bastion.png"
+        description: "A partially rebuilt Piglin Bastion."
         origin: "faithfultweaks"
 
       - id: "SeirinsPano"
