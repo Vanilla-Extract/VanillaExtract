@@ -8,7 +8,7 @@ on:
       - 'Storage/**'
 
 jobs:
-  deploy_functions:
+  deploy_storage:
     runs-on: ubuntu-latest
     
     steps:
