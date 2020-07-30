@@ -10,6 +10,7 @@ const modulesData = {
     SlicedSwords         : require('./modules/SlicedSwords.js'),
     StickyPistonSides    : require('./modules/StickyPistonSides.js'),
     ClearPumpkinBlur     : require('./modules/ClearPumpkinBlur.js'),
+    AlternateEnchantGlint: require('./modules/AlternateEnchantGlint.js'),
 }
 
 // Figure out which modules to add

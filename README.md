@@ -54,10 +54,10 @@ A guide on making modules is coming soon so stay tuned!
 - SeirinsPano
 
 ### Implemented but not on website
+- AlternateEnchantGlint
 - ClearPumpkinBlur
 
 ### Coming Soon
-- AlternateEnchantGlint
 - BetterObservers
 - BorderlessGlass
 - BrighterNether
