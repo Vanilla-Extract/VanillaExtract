@@ -11,6 +11,7 @@ const modulesData = {
     StickyPistonSides    : require('./modules/StickyPistonSides.js'),
     ClearPumpkinBlur     : require('./modules/ClearPumpkinBlur.js'),
     AlternateEnchantGlint: require('./modules/AlternateEnchantGlint.js'),
+    CherryPicking        : require('./modules/CherryPicking.js'),
 }
 
 // Figure out which modules to add

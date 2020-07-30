@@ -56,12 +56,12 @@ A guide on making modules is coming soon so stay tuned!
 ### Implemented but not on website
 - AlternateEnchantGlint
 - ClearPumpkinBlur
+- CherryPicking
 
 ### Coming Soon
 - BetterObservers
 - BorderlessGlass
 - BrighterNether
-- CherryPicking
 - CleanAndBorderlessGlass
 - CleanGlass
 - DarkUI
