@@ -12,6 +12,7 @@ const modulesData = {
     ClearPumpkinBlur     : require('./modules/ClearPumpkinBlur.js'),
     AlternateEnchantGlint: require('./modules/AlternateEnchantGlint.js'),
     CherryPicking        : require('./modules/CherryPicking.js'),
+    DirectionalHoppers   : require('./modules/DirectionalHoppers.js'),
 }
 
 // Figure out which modules to add

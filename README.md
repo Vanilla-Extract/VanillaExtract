@@ -57,6 +57,7 @@ A guide on making modules is coming soon so stay tuned!
 - AlternateEnchantGlint
 - ClearPumpkinBlur
 - CherryPicking
+- DirectionalHoppers
 
 ### Coming Soon
 - BetterObservers
@@ -65,8 +66,6 @@ A guide on making modules is coming soon so stay tuned!
 - CleanAndBorderlessGlass
 - CleanGlass
 - DarkUI
-- DirectionalHoppers
-- DirectionalHoppers
 - InvisibleTotem (model file only)
 - MineProgressBar
 - PebblelessCoarseDirt
