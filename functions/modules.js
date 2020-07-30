@@ -13,6 +13,7 @@ const modulesData = {
     ReducedPumpkinBlur   : require('./modules/ReducedPumpkinBlur.js'),
     SlicedSwords         : require('./modules/SlicedSwords.js'),
     StickyPistonSides    : require('./modules/StickyPistonSides.js'),
+    InvisibleTotem       : require('./modules/InvisibleTotem.js'),
 }
 
 // Figure out which modules to add

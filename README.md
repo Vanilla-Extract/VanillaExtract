@@ -58,6 +58,7 @@ A guide on making modules is coming soon so stay tuned!
 - ClearPumpkinBlur
 - CherryPicking
 - DirectionalHoppers
+- InvisibleTotem
 
 ### Coming Soon
 - BetterObservers
@@ -66,7 +67,6 @@ A guide on making modules is coming soon so stay tuned!
 - CleanAndBorderlessGlass
 - CleanGlass
 - DarkUI
-- InvisibleTotem (model file only)
 - MineProgressBar
 - PebblelessCoarseDirt
 - PebblelessDirt
