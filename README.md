@@ -53,6 +53,9 @@ A guide on making modules is coming soon so stay tuned!
 - ClassicPano
 - SeirinsPano
 
+### Implemented but not on website
+- ClearPumpkinBlur
+
 ### Coming Soon
 - AlternateEnchantGlint
 - BetterObservers
@@ -61,7 +64,6 @@ A guide on making modules is coming soon so stay tuned!
 - CherryPicking
 - CleanAndBorderlessGlass
 - CleanGlass
-- ClearPumpkinBlur
 - DarkUI
 - DirectionalHoppers
 - DirectionalHoppers
