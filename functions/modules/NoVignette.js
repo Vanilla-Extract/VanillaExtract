@@ -25,8 +25,7 @@ module.exports = async function(format, archive, bucket){
 
     // Add blank vignette to file
     await bucket.file(path.join("packfiles", formatData.packFilesPath, formatData.file.name)).download().then((data) => {
-        const contents = data[0];
-        archive.append(contents, {name: path.join(formatData.file.path, formatData.file.inPackName)});
+        archive.append(data[0], {name: path.join(formatData.file.path, formatData.file.inPackName)});
         return;
     });
     return;

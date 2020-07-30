@@ -1,7 +1,11 @@
 // ----- IMPORTS -----
 const modulesData = {
 //  Module ID            : require('./path/to/module.js'),
+    AlternateEnchantGlint: require('./modules/AlternateEnchantGlint.js'),
+    CherryPicking        : require('./modules/CherryPicking.js'),
+    ClearPumpkinBlur     : require('./modules/ClearPumpkinBlur.js'),
     ColoredBows          : require('./modules/ColoredBows.js'),
+    DirectionalHoppers   : require('./modules/DirectionalHoppers.js'),
     LowFire              : require('./modules/LowFire.js'),
     LowShield            : require('./modules/LowShield.js'),
     NoVignette           : require('./modules/NoVignette.js'),
@@ -9,10 +13,6 @@ const modulesData = {
     ReducedPumpkinBlur   : require('./modules/ReducedPumpkinBlur.js'),
     SlicedSwords         : require('./modules/SlicedSwords.js'),
     StickyPistonSides    : require('./modules/StickyPistonSides.js'),
-    ClearPumpkinBlur     : require('./modules/ClearPumpkinBlur.js'),
-    AlternateEnchantGlint: require('./modules/AlternateEnchantGlint.js'),
-    CherryPicking        : require('./modules/CherryPicking.js'),
-    DirectionalHoppers   : require('./modules/DirectionalHoppers.js'),
 }
 
 // Figure out which modules to add

@@ -385,8 +385,7 @@ module.exports = async function(format, archive, bucket){
     moduleData.files.forEach((fileData) => {
         promises.push(
             bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.fileName)).download().then((data) => {
-                const contents = data[0];
-                archive.append(contents, {name: path.join(filePath, fileData.inPackName)});
+                archive.append(data[0], {name: path.join(filePath, fileData.inPackName)});
                 return;
             })
         );

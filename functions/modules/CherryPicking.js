@@ -36,14 +36,12 @@ module.exports = async function(format, archive, bucket){
 
     // Add cake top
     await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.cakeTop.name)).download().then((data) => {
-        const contents = data[0];
-        archive.append(contents, {name: path.join(formatData.cakeTopPath, moduleData.cakeTop.inPackName)});
+        archive.append(data[0], {name: path.join(formatData.cakeTopPath, moduleData.cakeTop.inPackName)});
         return;
     });
     // Add cake item
     await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.cakeItem.name)).download().then((data) => {
-        const contents = data[0];
-        archive.append(contents, {name: path.join(formatData.cakeItemPath, moduleData.cakeItem.inPackName)});
+        archive.append(data[0], {name: path.join(formatData.cakeItemPath, moduleData.cakeItem.inPackName)});
         return;
     });
 

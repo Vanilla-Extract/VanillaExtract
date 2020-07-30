@@ -33,14 +33,14 @@ module.exports = async function(format, archive, bucket){
         console.log('format not addressed');
         return;
     }
+    
+    // Add metadata
+    archive.append(formatData.files[1].data, {name: path.join(formatData.files[1].path, formatData.files[1].inPackName)});
 
     // Add enchant glint
     await bucket.file(path.join("packfiles", formatData.packFilesPath, formatData.files[0].name)).download().then((data) => {
-        const contents = data[0];
-        archive.append(contents, {name: path.join(formatData.files[0].path, formatData.files[0].inPackName)});
+        archive.append(data[0], {name: path.join(formatData.files[0].path, formatData.files[0].inPackName)});
         return;
     });
-    // Add metadata
-    archive.append(formatData.files[1].data, {name: path.join(formatData.files[1].path, formatData.files[1].inPackName)});
     return;
 }
