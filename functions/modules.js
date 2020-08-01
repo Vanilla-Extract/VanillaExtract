@@ -20,7 +20,8 @@ const modulesData = {
     UnobtrusiveScaffolding : require('./modules/UnobtrusiveScaffolding.js'),
     SolidHoney             : require('./modules/SolidHoney.js'),
     BorderlessGlass        : require('./modules/BorderlessGlass.js'),
-    CleanBorderlessGlass: require('./modules/CleanBorderlessGlass.js'),
+    CleanBorderlessGlass   : require('./modules/CleanBorderlessGlass.js'),
+    CleanGlass             : require('./modules/CleanGlass.js')
 }
 
 // Figure out which modules to add

@@ -66,11 +66,11 @@ A guide on making modules is coming soon so stay tuned!
 - SolidHoney
 - BorderlessGlass
 - CleanBorderlessGlass
+- CleanGlass
 
 ### Coming Soon
 - BetterObservers
 - BrighterNether
-- CleanGlass
 - DarkUI
 - MineProgressBar
 - PebblelessDirt
