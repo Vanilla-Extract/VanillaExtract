@@ -50,7 +50,7 @@ module.exports = async function(format, archive, bucket){
 
     // Add files
     const promises = [];
-    formatData.files.forEach((fileData) => {
+    moduleData.files.forEach((fileData) => {
         promises.push(
             bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
                 archive.append(data[0], {name: path.join(pathData.blockTexture, fileData.inPackName)});
