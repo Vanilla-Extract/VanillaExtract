@@ -55,18 +55,18 @@ A guide on making modules is coming soon so stay tuned!
 
 ### Implemented but not on website
 - AlternateEnchantGlint
-- ClearPumpkinBlur
-- CherryPicking
-- DirectionalHoppers
-- InvisibleTotem
-- SidewaysNuggets
-- UnbundledHayBales
-- PebblelessCoarseDirt
-- UnobtrusiveScaffolding
-- SolidHoney
 - BorderlessGlass
+- CherryPicking
 - CleanBorderlessGlass
 - CleanGlass
+- ClearPumpkinBlur
+- DirectionalHoppers
+- InvisibleTotem
+- PebblelessCoarseDirt
+- SidewaysNuggets
+- SolidHoney
+- UnbundledHayBales
+- UnobtrusiveScaffolding
 
 ### Coming Soon
 - BetterObservers
