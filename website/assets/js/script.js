@@ -30,44 +30,63 @@ $(document).ready(function(){
 
 // Set format to the last number of ID
 function setFormat() {
-    console.log($(this).attr('id'));
     $(this).siblings().attr("class","btn btn-light");
     $(this).attr("class","btn btn-dark");
     format = $(this).attr('id').slice(-1);
 
     // Hide things incompatible with 1.6.1 - 1.8.9
     if (format == 1) {
+        // Show all
+        $('.hideFormat2').show();
+        $('.hideFormat3').show();
+        $('.hideFormat4').show();
+        $('.hideFormat5').show();
+        // Hide format one
         $('.hideFormat1').hide();
-    } else {
-        $('.hideFormat1').show();
     }
 
     // Hide things incompatible with 1.9 - 1.10.2
     if (format == 2) {
+        // Show all
+        $('.hideFormat1').show();
+        $('.hideFormat3').show();
+        $('.hideFormat4').show();
+        $('.hideFormat5').show();
+        // Hide format one
         $('.hideFormat2').hide();
-    } else {
-        $('.hideFormat2').show();
     }
 
     // Hide things incompatible with 1.11 - 1.12.2
     if (format == 3) {
+        // Show all
+        $('.hideFormat1').show();
+        $('.hideFormat2').show();
+        $('.hideFormat4').show();
+        $('.hideFormat5').show();
+        // Hide format one
         $('.hideFormat3').hide();
-    } else {
-        $('.hideFormat3').show();
     }
 
     // Hide things incompatible with 1.13 - 1.14.4
     if (format == 4) {
+        // Show all
+        $('.hideFormat1').show();
+        $('.hideFormat2').show();
+        $('.hideFormat3').show();
+        $('.hideFormat5').show();
+        // Hide format one
         $('.hideFormat4').hide();
-    } else {
-        $('.hideFormat4').show();
     }
 
     // Hide things incompatible with 1.15 - 1.16.1
     if (format == 5) {
+        // Show all
+        $('.hideFormat1').show();
+        $('.hideFormat2').show();
+        $('.hideFormat3').show();
+        $('.hideFormat4').show();
+        // Hide format one
         $('.hideFormat5').hide();
-    } else {
-        $('.hideFormat5').show();
     }
 
 }
