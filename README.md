@@ -12,14 +12,28 @@ A guide on making modules is coming soon so stay tuned!
 `Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the raditional fashon`
 
 ### Avalable Modules
+- AlternateEnchantGlint
+- BetterObservers
+- BorderlessGlass
+- CherryPicking
+- CleanBorderlessGlass
+- CleanGlass
+- ClearPumpkinBlur
 - ColoredBows
+- DirectionalHoppers
+- InvisibleTotem
 - LowFire
 - LowShield
 - NoVignette
 - OreBorders
+- PebblelessCoarseDirt
 - ReducedPumpkinBlur
+- SidewaysNuggets
 - SlicedSwords
+- SolidHoney
 - StickyPistonSides
+- UnbundledHayBales
+- UnobtrusiveScaffolding
 
 ### Icon Modules
 - BlueWitherHearts
@@ -52,22 +66,6 @@ A guide on making modules is coming soon so stay tuned!
 - BastionPano
 - ClassicPano
 - SeirinsPano
-
-### Implemented but not on website
-- AlternateEnchantGlint
-- BetterObservers
-- BorderlessGlass
-- CherryPicking
-- CleanBorderlessGlass
-- CleanGlass
-- ClearPumpkinBlur
-- DirectionalHoppers
-- InvisibleTotem
-- PebblelessCoarseDirt
-- SidewaysNuggets
-- SolidHoney
-- UnbundledHayBales
-- UnobtrusiveScaffolding
 
 ### Coming Soon
 - BrighterNether

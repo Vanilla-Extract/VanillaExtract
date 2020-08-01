@@ -73,7 +73,81 @@ sections:
         image: "/images/modules/normal/StickyPistonSides.png"
         description: "Displays Slime on the sides of Sticky Pistons to easily differentiate them from regular pistons."
         origin: "vanillatweaks"
+        
+      - id: "AlternateEnchantGlint"
+        name: "Alternate Enchantment Glint"
+        image: "/images/modules/normal/AlternateEnchantGlint.png"
+        origin: "vanillatweaks"
+
+      - id: "BetterObservers"
+        name: "Better Observers"
+        image: "/images/modules/normal/BetterObservers.png"
+        origin: "vanillatweaks"
+
+      - id: "CherryPicking"
+        name: "Cherry Picking"
+        image: "/images/modules/normal/CherryPicking.png"
+        origin: "vanillatweaks"
+
+      - id: "ClearPumpkinBlur"
+        name: "Clear Pumpkin Blur"
+        image: "/images/modules/normal/ClearPumpkinBlur.png"
+        origin: "vanillatweaks"
+
+      - id: "DirectionalHoppers"
+        name: "Directional Hoppers"
+        image: "/images/modules/normal/DirectionalHoppers.png"
+        origin: "vanillatweaks"
+
+      - id: "InvisibleTotem"
+        name: "Invisible Totem"
+        image: "/images/modules/normal/InvisibleTotem.png"
+        origin: "vanillatweaks"
+
+      - id: "PebblelessCoarseDirt"
+        name: "Pebbleless Coarse Dirt"
+        image: "/images/modules/normal/PebblelessCoarseDirt.png"
+        origin: "vanillatweaks"
+
+      - id: "SidewaysNuggets"
+        name: "Sideways Nuggets"
+        image: "/images/modules/normal/SidewaysNuggets.png"
+        origin: "vanillatweaks"
+
+      - id: "SolidHoney"
+        name: "Solid Honey Blocks"
+        image: "/images/modules/normal/SolidHoney.png"
+        origin: "vanillatweaks"
+
+      - id: "UnbundledHayBales"
+        name: "Unbundled Hay Bales"
+        image: "/images/modules/normal/UnbundledHayBales.png"
+        origin: "vanillatweaks"
+
+      - id: "UnobtrusiveScaffolding"
+        name: "Unobtrusive Scaffolding"
+        image: "/images/modules/normal/UnobtrusiveScaffolding.png"
+        origin: "vanillatweaks"
   
+  # Glass Modules
+  - id: "glassSection"
+    display: "Glass Modules"
+    modules:
+      - id: "BorderlessGlass"
+        name: "Borderless Glass"
+        image: "/images/modules/normal/BorderlessGlass.png"
+        origin: "vanillatweaks"
+
+      - id: "CleanBorderlessGlass"
+        name: "Clean Borderless Glass"
+        image: "/images/modules/normal/CleanBorderlessGlass.png"
+        origin: "vanillatweaks"
+
+      - id: "CleanGlass"
+        name: "Clean Glass"
+        image: "/images/modules/normal/CleanGlass.png"
+        origin: "vanillatweaks"
+
   # Hud modules
   - id: "hudSection"
     display: "HUD Modules"

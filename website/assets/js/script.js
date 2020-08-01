@@ -1,5 +1,6 @@
 let format = "5";
 let modules = [];
+let glassModule;
 let iconModules = [];
 let optionsBackground;
 let panoOption;
@@ -20,6 +21,7 @@ $(document).ready(function(){
     $('#downloadPack').click(downloadPack); // Download
     $('#formatGroup').on('click', '> *', setFormat); // Format buttons
     $('#normalSection').on('click', '>> *', setModule); // Modules
+    $('#glassSection').on('click', '>> *', setGlass); // Glass Modules
     $('#hudSection').on('click', '>> *', setIconModule); // Hud modules
     $('#optionsbgSection').on('click', '>> *', setBackground); // Backgrounds
     $('#panoramasSection').on('click', '>> *', setPano); // Panoramas
@@ -83,6 +85,20 @@ function setModule() {
     $(this).toggleClass('enabled'); // Toggle class
 }
 
+// Set glass module function
+function setGlass() {
+    $(this).siblings().removeClass("enabled");
+
+    if ($(this).hasClass('enabled')) {
+        // If already enabled then disable and clear var
+        glassModule = undefined;
+    } else {
+        // If disabled then enable
+        glassModule = $(this).attr('id');
+    }
+    $(this).toggleClass('enabled'); // Toggle class
+}
+
 // Set icon module function
 function setIconModule() {
     if ($(this).hasClass('enabled')) {
@@ -126,6 +142,12 @@ function setPano() {
 
 // Download the resource pack
 function downloadPack() {
+    let downloadModules = modules;
+    // If glass is set
+    if (glassModule !== undefined) {
+        downloadModules.push(glassModule);
+    }
+
     // Hide alerts
     $(".alert").hide();
     // Create alert
@@ -134,7 +156,7 @@ function downloadPack() {
         "https://us-central1-faithfultweaks.cloudfunctions.net/makePack",
         {
             "format": format,
-            "modules": modules,
+            "modules": downloadModules,
             "iconModules": iconModules,
             "optionsBackground": optionsBackground,
             "panoOption": panoOption,
