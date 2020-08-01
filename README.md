@@ -55,6 +55,7 @@ A guide on making modules is coming soon so stay tuned!
 
 ### Implemented but not on website
 - AlternateEnchantGlint
+- BetterObservers
 - BorderlessGlass
 - CherryPicking
 - CleanBorderlessGlass
@@ -69,7 +70,6 @@ A guide on making modules is coming soon so stay tuned!
 - UnobtrusiveScaffolding
 
 ### Coming Soon
-- BetterObservers
 - BrighterNether
 - DarkUI
 - MineProgressBar
