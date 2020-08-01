@@ -5,8 +5,8 @@ const moduleData = {
     packFilesPath: "modules/UnbundledHayBales/",
     name: "hay_block_side.png",
     inPackName: "hay_block_side.png",
-    path54: "assets/minecraft/textures/item",
-    path321: "assets/minecraft/textures/items",
+    path54: "assets/minecraft/textures/block",
+    path321: "assets/minecraft/textures/blocks",
 };
 
 // Module function

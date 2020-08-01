@@ -5,8 +5,8 @@ const moduleData = {
     packFilesPath: "modules/PebblelessCoarseDirt/",
     name: "coarse_dirt.png",
     inPackName: "coarse_dirt.png",
-    path54: "assets/minecraft/textures/item",
-    path321: "assets/minecraft/textures/items",
+    path54: "assets/minecraft/textures/block",
+    path321: "assets/minecraft/textures/blocks",
 };
 
 // Module function
