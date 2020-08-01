@@ -61,6 +61,7 @@ A guide on making modules is coming soon so stay tuned!
 - InvisibleTotem
 - SidewaysNuggets
 - UnbundledHayBales
+- PebblelessCoarseDirt
 
 ### Coming Soon
 - BetterObservers
@@ -70,7 +71,6 @@ A guide on making modules is coming soon so stay tuned!
 - CleanGlass
 - DarkUI
 - MineProgressBar
-- PebblelessCoarseDirt
 - PebblelessDirt
 - SolidHoney
 - UnobtrusiveRain
