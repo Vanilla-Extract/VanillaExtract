@@ -60,6 +60,7 @@ A guide on making modules is coming soon so stay tuned!
 - DirectionalHoppers
 - InvisibleTotem
 - SidewaysNuggets
+- UnbundledHayBales
 
 ### Coming Soon
 - BetterObservers
@@ -72,7 +73,6 @@ A guide on making modules is coming soon so stay tuned!
 - PebblelessCoarseDirt
 - PebblelessDirt
 - SolidHoney
-- UnbundledHayBales
 - UnobtrusiveRain
 - UnobtrusiveScaffolding
 - UnobtrusiveWater
