@@ -14,6 +14,7 @@ const modulesData = {
     SlicedSwords         : require('./modules/SlicedSwords.js'),
     StickyPistonSides    : require('./modules/StickyPistonSides.js'),
     InvisibleTotem       : require('./modules/InvisibleTotem.js'),
+    SidewaysNuggets       : require('./modules/SidewaysNuggets.js'),
 }
 
 // Figure out which modules to add

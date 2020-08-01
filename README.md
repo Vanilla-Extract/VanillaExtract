@@ -59,6 +59,7 @@ A guide on making modules is coming soon so stay tuned!
 - CherryPicking
 - DirectionalHoppers
 - InvisibleTotem
+- SidewaysNuggets
 
 ### Coming Soon
 - BetterObservers
@@ -70,7 +71,6 @@ A guide on making modules is coming soon so stay tuned!
 - MineProgressBar
 - PebblelessCoarseDirt
 - PebblelessDirt
-- SidewaysNuggets
 - SolidHoney
 - UnbundledHayBales
 - UnobtrusiveRain
