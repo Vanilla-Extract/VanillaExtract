@@ -74,6 +74,14 @@ sections:
         description: "Displays Slime on the sides of Sticky Pistons to easily differentiate them from regular pistons."
         origin: "vanillatweaks"
         
+
+
+
+
+
+
+
+        
       - id: "AlternateEnchantGlint"
         name: "Alternate Enchantment Glint"
         image: "/images/modules/normal/AlternateEnchantGlint.png"
@@ -83,6 +91,9 @@ sections:
         name: "Better Observers"
         image: "/images/modules/normal/BetterObservers.png"
         origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
 
       - id: "CherryPicking"
         name: "Cherry Picking"
@@ -103,6 +114,9 @@ sections:
         name: "Invisible Totem"
         image: "/images/modules/normal/InvisibleTotem.png"
         origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
 
       - id: "PebblelessCoarseDirt"
         name: "Pebbleless Coarse Dirt"
@@ -113,11 +127,19 @@ sections:
         name: "Sideways Nuggets"
         image: "/images/modules/normal/SidewaysNuggets.png"
         origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
 
       - id: "SolidHoney"
         name: "Solid Honey Blocks"
         image: "/images/modules/normal/SolidHoney.png"
         origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
+          - 3
+          - 4
 
       - id: "UnbundledHayBales"
         name: "Unbundled Hay Bales"
@@ -128,6 +150,10 @@ sections:
         name: "Unobtrusive Scaffolding"
         image: "/images/modules/normal/UnobtrusiveScaffolding.png"
         origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
+          - 3
       
       - id: "BetterBedrock"
         name: "Better Bedrock"
