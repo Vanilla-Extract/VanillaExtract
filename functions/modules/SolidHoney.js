@@ -46,7 +46,7 @@ module.exports = async function(format, archive, bucket){
     }
 
     // Add model
-    archive.append(moduleData.model.data, {name: path.join(pathData.blockTexture, moduleData.model.inPackName)});
+    archive.append(moduleData.model.data, {name: path.join(pathData.blockModel, moduleData.model.inPackName)});
 
     // Add files
     const promises = [];
