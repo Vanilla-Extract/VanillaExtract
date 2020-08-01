@@ -64,10 +64,10 @@ A guide on making modules is coming soon so stay tuned!
 - PebblelessCoarseDirt
 - UnobtrusiveScaffolding
 - SolidHoney
+- BorderlessGlass
 
 ### Coming Soon
 - BetterObservers
-- BorderlessGlass
 - BrighterNether
 - CleanAndBorderlessGlass
 - CleanGlass

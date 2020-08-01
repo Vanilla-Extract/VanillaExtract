@@ -19,6 +19,7 @@ const modulesData = {
     PebblelessCoarseDirt   : require('./modules/PebblelessCoarseDirt.js'),
     UnobtrusiveScaffolding : require('./modules/UnobtrusiveScaffolding.js'),
     SolidHoney             : require('./modules/SolidHoney.js'),
+    BorderlessGlass        : require('./modules/BorderlessGlass.js'),
 }
 
 // Figure out which modules to add
