@@ -7,7 +7,7 @@
 
 An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/).
 
-A guide on making modules is coming soon so stay tuned!
+A guide on making modules is coming soon so stay tuned! For now check out [this commit](https://github.com/Banakin/FaithfulTweaks/commit/4591749e34ed5151675eec693b40d28588471928).
 
 `Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the raditional fashon`
 
