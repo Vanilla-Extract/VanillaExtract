@@ -2,6 +2,7 @@
 const modulesData = {
 //  Module ID              : require('./path/to/module.js'),
     AlternateEnchantGlint  : require('./modules/AlternateEnchantGlint.js'),
+    BetterBedrock          : require('./modules/BetterBedrock.js'),
     BetterObservers        : require('./modules/BetterObservers.js'),
     BorderlessGlass        : require('./modules/BorderlessGlass.js'),
     CherryPicking          : require('./modules/CherryPicking.js'),

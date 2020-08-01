@@ -13,6 +13,7 @@ A guide on making modules is coming soon so stay tuned!
 
 ### Avalable Modules
 - AlternateEnchantGlint
+- BetterBedrock
 - BetterObservers
 - BorderlessGlass
 - CherryPicking

@@ -128,6 +128,11 @@ sections:
         name: "Unobtrusive Scaffolding"
         image: "/images/modules/normal/UnobtrusiveScaffolding.png"
         origin: "vanillatweaks"
+      
+      - id: "BetterBedrock"
+        name: "Better Bedrock"
+        image: "/images/modules/normal/BetterBedrock.png"
+        origin: "vanillatweaks"
   
   # Glass Modules
   - id: "glassSection"
