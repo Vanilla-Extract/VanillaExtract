@@ -62,6 +62,7 @@ A guide on making modules is coming soon so stay tuned!
 - SidewaysNuggets
 - UnbundledHayBales
 - PebblelessCoarseDirt
+- UnobtrusiveScaffolding
 
 ### Coming Soon
 - BetterObservers
@@ -74,7 +75,6 @@ A guide on making modules is coming soon so stay tuned!
 - PebblelessDirt
 - SolidHoney
 - UnobtrusiveRain
-- UnobtrusiveScaffolding
 - UnobtrusiveWater
 
 ## Making requests to the Cloud Function
