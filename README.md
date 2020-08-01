@@ -65,11 +65,11 @@ A guide on making modules is coming soon so stay tuned!
 - UnobtrusiveScaffolding
 - SolidHoney
 - BorderlessGlass
+- CleanBorderlessGlass
 
 ### Coming Soon
 - BetterObservers
 - BrighterNether
-- CleanAndBorderlessGlass
 - CleanGlass
 - DarkUI
 - MineProgressBar

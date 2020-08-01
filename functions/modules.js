@@ -1,6 +1,6 @@
 // ----- IMPORTS -----
 const modulesData = {
-//  Module ID            : require('./path/to/module.js'),
+//  Module ID              : require('./path/to/module.js'),
     AlternateEnchantGlint  : require('./modules/AlternateEnchantGlint.js'),
     CherryPicking          : require('./modules/CherryPicking.js'),
     ClearPumpkinBlur       : require('./modules/ClearPumpkinBlur.js'),
@@ -20,6 +20,7 @@ const modulesData = {
     UnobtrusiveScaffolding : require('./modules/UnobtrusiveScaffolding.js'),
     SolidHoney             : require('./modules/SolidHoney.js'),
     BorderlessGlass        : require('./modules/BorderlessGlass.js'),
+    CleanBorderlessGlass: require('./modules/CleanBorderlessGlass.js'),
 }
 
 // Figure out which modules to add
