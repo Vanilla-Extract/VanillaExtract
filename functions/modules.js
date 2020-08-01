@@ -18,6 +18,7 @@ const modulesData = {
     UnbundledHayBales      : require('./modules/UnbundledHayBales.js'),
     PebblelessCoarseDirt   : require('./modules/PebblelessCoarseDirt.js'),
     UnobtrusiveScaffolding : require('./modules/UnobtrusiveScaffolding.js'),
+    SolidHoney             : require('./modules/SolidHoney.js'),
 }
 
 // Figure out which modules to add

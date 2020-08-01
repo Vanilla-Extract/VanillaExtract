@@ -63,6 +63,7 @@ A guide on making modules is coming soon so stay tuned!
 - UnbundledHayBales
 - PebblelessCoarseDirt
 - UnobtrusiveScaffolding
+- SolidHoney
 
 ### Coming Soon
 - BetterObservers
@@ -73,7 +74,6 @@ A guide on making modules is coming soon so stay tuned!
 - DarkUI
 - MineProgressBar
 - PebblelessDirt
-- SolidHoney
 - UnobtrusiveRain
 - UnobtrusiveWater
 
