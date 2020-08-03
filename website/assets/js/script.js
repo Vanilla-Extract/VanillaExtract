@@ -17,6 +17,11 @@ $(document).ready(function(){
         placement : 'top',
         trigger : 'hover'
     });
+
+    // Open All Collapsibles
+    $('#openAll').click(() => {
+        $(".collapse").collapse('show');
+    });
     
     $('#downloadPack').click(downloadPack); // Download
     $('#formatGroup').on('click', '> *', setFormat); // Format buttons
