@@ -14,11 +14,6 @@ formats:
       display: "1.15 - 1.16.1"
       default: true
 
-sections:
-  # Normal modules
-  - id: "normalSection"
-    display: "Normal Modules"
-    modules:
 # ----- KEY TO MODULES LIST -----
 #       id = The id of your module (set in functions/modules.js inside modulesData) THIS IS CASE SENSITIVE 
 #       name = The name that will display on the website
@@ -26,6 +21,117 @@ sections:
 #       description = A description of what the module should do
 #       origin = Where the module came from, should be "community" unless told otherwise (options are vanillatweaks, faithfultweaks, community)
 #       notcompatable = Resource pack formats that the module is incompatible with (options are 1, 2, 3, 4, 5)
+
+sections:
+  # Aesthetic
+  - id: "aestheticSection"
+    display: "Aesthetic"
+    modules:
+      - id: "CherryPicking"
+        name: "Cherry Picking"
+        image: "/images/modules/normal/CherryPicking.png"
+        description: "Changes the texture of cake to remove the large cherry in the center."
+        origin: "vanillatweaks"
+
+      - id: "UnbundledHayBales"
+        name: "Unbundled Hay Bales"
+        image: "/images/modules/normal/UnbundledHayBales.png"
+        description: "Gets rid of the red strings around Hay Bales."
+        origin: "vanillatweaks"
+
+      - id: "SolidHoney"
+        name: "Solid Honey Blocks"
+        image: "/images/modules/normal/SolidHoney.png"
+        description: "Eliminates Honey Block transparency."
+        origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
+          - 3
+          - 4
+
+      - id: "SidewaysNuggets"
+        name: "Sideways Nuggets"
+        image: "/images/modules/normal/SidewaysNuggets.png"
+        description: "Rotates Iron Nuggets to be consistent with the other nugget textures."
+        origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
+  
+  # Terrain
+  - id: "terrainSection"
+    display: "Terrain"
+    modules:
+      - id: "BetterBedrock"
+        name: "Better Bedrock"
+        image: "/images/modules/normal/BetterBedrock.png"
+        description: "Changes the texture of Bedrock to be less noisy and more natural-looking."
+        origin: "vanillatweaks"
+
+      - id: "PebblelessCoarseDirt"
+        name: "Pebbleless Coarse Dirt"
+        image: "/images/modules/normal/PebblelessCoarseDirt.png"
+        description: "Gets rid of the white pebbles in Coarse Dirt."
+        origin: "vanillatweaks"
+  
+  # Utility
+  - id: "utilitySection"
+    display: "Utility"
+    modules:
+      - id: "OreBorders"
+        name: "Ore Borders"
+        image: "/images/modules/normal/OreBorders.png"
+        description: "Places a border around ores for easier visibility."
+        origin: "vanillatweaks"
+      
+      - id: "StickyPistonSides"
+        name: "Sticky Piston Sides"
+        image: "/images/modules/normal/StickyPistonSides.png"
+        description: "Displays Slime on the sides of Sticky Pistons to easily differentiate them from regular pistons."
+        origin: "vanillatweaks"
+
+      - id: "DirectionalHoppers"
+        name: "Directional Hoppers"
+        image: "/images/modules/normal/DirectionalHoppers.png"
+        description: "Gives Hoppers arrows on top to indicate in which direction they are pointing."
+        origin: "vanillatweaks"
+
+      - id: "BetterObservers"
+        name: "Better Observers"
+        image: "/images/modules/normal/BetterObservers.png"
+        description: "Gives all sides of the Observer block directional indicators which display updates."
+        origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
+      
+      - id: "ColoredBows"
+        name: "Colored Bow Stages"
+        image: "/images/modules/normal/ColoredBows.png"
+        description: "Colors the bow handle to show how far back you've pulled." 
+        origin: "faithfultweaks"
+
+  # Unobtrusive
+  - id: "unobtrusiveSection"
+    display: "Unobtrusive"
+    modules:
+      - id: "UnobtrusiveScaffolding"
+        name: "Unobtrusive Scaffolding"
+        image: "/images/modules/normal/UnobtrusiveScaffolding.png"
+        description: "Creates a hole in the top of scaffolding, allowing you to traverse up and down them more comfortably."
+        origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
+          - 3
+      
+      - id: "LowFire"
+        name: "Low Fire"
+        image: "/images/modules/normal/LowFire.png"
+        description: "Lowers the height of fire."
+        origin: "vanillatweaks"
+
       - id: "LowShield"
         name: "Low Shield"
         image: "/images/modules/normal/LowShield.png"
@@ -40,125 +146,38 @@ sections:
         description: "Removes the darkened corners of the screen that occur in darker areas when graphics are set to 'fancy'."
         origin: "vanillatweaks"
       
-      - id: "SlicedSwords"
-        name: "Sliced Swords"
-        image: "/images/modules/normal/SlicedSwords.png"
-        origin: "faithfultweaks"
-      
       - id: "ReducedPumpkinBlur"
         name: "Reduced Pumpkin Blur"
         image: "/images/modules/normal/ReducedPumpkinBlur.png"
         description: "Increases visibility when wearing Pumpkins."
         origin: "vanillatweaks"
-      
-      - id: "ColoredBows"
-        name: "Colored Bow Stages"
-        image: "/images/modules/normal/ColoredBows.png"
-        origin: "faithfultweaks"
-      
-      - id: "OreBorders"
-        name: "Ore Borders"
-        image: "/images/modules/normal/OreBorders.png"
-        description: "Places a border around ores for easier visibility."
-        origin: "vanillatweaks"
-      
-      - id: "LowFire"
-        name: "Low Fire"
-        image: "/images/modules/normal/LowFire.png"
-        description: "Lowers the height of fire."
-        origin: "vanillatweaks"
-      
-      - id: "StickyPistonSides"
-        name: "Sticky Piston Sides"
-        image: "/images/modules/normal/StickyPistonSides.png"
-        description: "Displays Slime on the sides of Sticky Pistons to easily differentiate them from regular pistons."
-        origin: "vanillatweaks"
-        
-
-
-
-
-
-
-
-        
-      - id: "AlternateEnchantGlint"
-        name: "Alternate Enchantment Glint"
-        image: "/images/modules/normal/AlternateEnchantGlint.png"
-        origin: "vanillatweaks"
-
-      - id: "BetterObservers"
-        name: "Better Observers"
-        image: "/images/modules/normal/BetterObservers.png"
-        origin: "vanillatweaks"
-        notcompatable:
-          - 1
-          - 2
-
-      - id: "CherryPicking"
-        name: "Cherry Picking"
-        image: "/images/modules/normal/CherryPicking.png"
-        origin: "vanillatweaks"
 
       - id: "ClearPumpkinBlur"
         name: "Clear Pumpkin Blur"
         image: "/images/modules/normal/ClearPumpkinBlur.png"
+        description: "Removes the pumpkin overlay completely when worn."
         origin: "vanillatweaks"
 
-      - id: "DirectionalHoppers"
-        name: "Directional Hoppers"
-        image: "/images/modules/normal/DirectionalHoppers.png"
+      - id: "AlternateEnchantGlint"
+        name: "Alternate Enchantment Glint"
+        image: "/images/modules/normal/AlternateEnchantGlint.png"
+        description: "Changes the enchantment glint to a much more sleek and less overpowering glint."
         origin: "vanillatweaks"
 
       - id: "InvisibleTotem"
         name: "Invisible Totem"
         image: "/images/modules/normal/InvisibleTotem.png"
+        description: "Renders the Totem of Undying as completely invisible when in first person mode."
         origin: "vanillatweaks"
         notcompatable:
           - 1
           - 2
-
-      - id: "PebblelessCoarseDirt"
-        name: "Pebbleless Coarse Dirt"
-        image: "/images/modules/normal/PebblelessCoarseDirt.png"
-        origin: "vanillatweaks"
-
-      - id: "SidewaysNuggets"
-        name: "Sideways Nuggets"
-        image: "/images/modules/normal/SidewaysNuggets.png"
-        origin: "vanillatweaks"
-        notcompatable:
-          - 1
-          - 2
-
-      - id: "SolidHoney"
-        name: "Solid Honey Blocks"
-        image: "/images/modules/normal/SolidHoney.png"
-        origin: "vanillatweaks"
-        notcompatable:
-          - 1
-          - 2
-          - 3
-          - 4
-
-      - id: "UnbundledHayBales"
-        name: "Unbundled Hay Bales"
-        image: "/images/modules/normal/UnbundledHayBales.png"
-        origin: "vanillatweaks"
-
-      - id: "UnobtrusiveScaffolding"
-        name: "Unobtrusive Scaffolding"
-        image: "/images/modules/normal/UnobtrusiveScaffolding.png"
-        origin: "vanillatweaks"
-        notcompatable:
-          - 1
-          - 2
-          - 3
       
-      - id: "BetterBedrock"
-        name: "Better Bedrock"
-        image: "/images/modules/normal/BetterBedrock.png"
-        origin: "vanillatweaks"
+      - id: "SlicedSwords"
+        name: "Sliced Swords"
+        image: "/images/modules/normal/SlicedSwords.png"
+        description: "Changes the sword texture to be shorter for more visibility."
+        origin: "faithfultweaks"
   
   # Glass Modules
   - id: "glassSection"
@@ -167,16 +186,19 @@ sections:
       - id: "BorderlessGlass"
         name: "Borderless Glass"
         image: "/images/modules/normal/BorderlessGlass.png"
+        description: "Gets rid of the border on the edges of the glass textures to provide for cleaner and more transparent glass."
         origin: "vanillatweaks"
 
       - id: "CleanBorderlessGlass"
         name: "Clean Borderless Glass"
         image: "/images/modules/normal/CleanBorderlessGlass.png"
+        description: "Gets rid of the border and glass streaks."
         origin: "vanillatweaks"
 
       - id: "CleanGlass"
         name: "Clean Glass"
         image: "/images/modules/normal/CleanGlass.png"
+        description: "Gets rid of glass streaks, resulting in clean-looking glass."
         origin: "vanillatweaks"
 
   # Hud modules
@@ -325,5 +347,6 @@ sections:
       - id: "SeirinsPano"
         name: "Seirin's Survival World"
         image: "/images/modules/panos/Seirin.png"
+        description: "The survival world of Seirin"
         origin: "faithfultweaks"
 ---

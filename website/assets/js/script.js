@@ -20,7 +20,13 @@ $(document).ready(function(){
     
     $('#downloadPack').click(downloadPack); // Download
     $('#formatGroup').on('click', '> *', setFormat); // Format buttons
-    $('#normalSection').on('click', '>> *', setModule); // Modules
+
+    // Modules
+    $('#aestheticSection').on('click', '>> *', setModule); // Aesthetic
+    $('#terrainSection').on('click', '>> *', setModule); // Terrain
+    $('#utilitySection').on('click', '>> *', setModule); // Utility
+    $('#unobtrusiveSection').on('click', '>> *', setModule); // Unobtrusive
+
     $('#glassSection').on('click', '>> *', setGlass); // Glass Modules
     $('#hudSection').on('click', '>> *', setIconModule); // Hud modules
     $('#optionsbgSection').on('click', '>> *', setBackground); // Backgrounds
