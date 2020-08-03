@@ -54,6 +54,6 @@ module.exports = async function(format, archive, bucket){
     }
 
     // Add each json file to zip
-    archive.append(formatData.file.data, {name: path.join(formatData.file.path, file.inPackName)});
+    archive.append(formatData.file.data, {name: path.join(formatData.file.path, formatData.file.inPackName)});
     return;
 }
