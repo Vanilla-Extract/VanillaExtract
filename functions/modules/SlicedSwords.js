@@ -125,5 +125,4 @@ module.exports = async function(format, archive, bucket){
         );
     });
     await Promise.all(promises);
-    return;
 }

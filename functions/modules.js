@@ -35,8 +35,7 @@ const addModules = async function(format, archive, modules, bucket){
             promises.push(modulesData[modName](format, archive, bucket));
         }
     });
-    await Promise.all(promises);
-    return;
+    return Promise.all(promises);
 }
 
 // ----- EXPORTS -----
