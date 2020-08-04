@@ -36,13 +36,11 @@ module.exports = async function(format, archive, bucket){
 
     // Add cake top
     await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.cakeTop.name)).download().then((data) => {
-        archive.append(data[0], {name: path.join(formatData.cakeTopPath, moduleData.cakeTop.inPackName)});
-        return;
+        return archive.append(data[0], {name: path.join(formatData.cakeTopPath, moduleData.cakeTop.inPackName)});
     });
     // Add cake item
     await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.cakeItem.name)).download().then((data) => {
-        archive.append(data[0], {name: path.join(formatData.cakeItemPath, moduleData.cakeItem.inPackName)});
-        return;
+        return archive.append(data[0], {name: path.join(formatData.cakeItemPath, moduleData.cakeItem.inPackName)});
     });
 
     return;

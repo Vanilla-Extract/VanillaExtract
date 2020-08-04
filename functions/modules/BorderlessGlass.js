@@ -169,8 +169,7 @@ module.exports = async function(format, archive, bucket){
     formatData.files.forEach((fileData) => {
         promises.push(
             bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
-                archive.append(data[0], {name: path.join(formatData.path, fileData.inPackName)});
-                return;
+                return archive.append(data[0], {name: path.join(formatData.path, fileData.inPackName)});
             })
         );
     });

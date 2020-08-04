@@ -84,8 +84,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     
     // Download and add pack icon
     await bucket.file('packfiles/pack.png').download().then((data) => {
-        archive.append(data[0], {name: 'pack.png'});
-        return;
+        return archive.append(data[0], {name: 'pack.png'});
     });
     
     if (modules !== undefined && modules !== null) {

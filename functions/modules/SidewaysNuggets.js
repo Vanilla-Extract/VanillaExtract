@@ -24,7 +24,6 @@ module.exports = async function(format, archive, bucket){
 
     // Add nugget
     await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.name)).download().then((data) => {
-        archive.append(data[0], {name: path.join(pathData, moduleData.inPackName)});
-        return;
+        return archive.append(data[0], {name: path.join(pathData, moduleData.inPackName)});
     });
 }
