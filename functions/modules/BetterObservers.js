@@ -271,13 +271,10 @@ module.exports = async function(format, archive, bucket){
     archive.append(moduleData.models.files[1].data, {name: path.join(moduleData.models.path, moduleData.models.files[1].inPackName)});
 
     // Add files
-    const promises = [];
-    formatData.files.forEach((fileData) => {
-        promises.push(
-            bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
-                return archive.append(data[0], {name: path.join(formatData.path, fileData.inPackName)});
-            })
-        );
+    const promises = formatData.files.map(async (fileData, id) => {
+        await bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
+            return archive.append(data[0], {name: path.join(formatData.path, fileData.inPackName)});
+        });
     });
     await Promise.all(promises);
 }

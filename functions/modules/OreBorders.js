@@ -218,14 +218,11 @@ module.exports = async function(format, archive, bucket){
         return;
     }
 
-    // Add blank ores to file
-    const promises = [];
-    formatData.files.forEach((fileData) => {
-        promises.push(
-            bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-                return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
-            })
-        );
+    // Add ores to file
+    const promises = formatData.files.map(async (fileData, id) => {
+        await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+            return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
+        });
     });
     await Promise.all(promises);
 }

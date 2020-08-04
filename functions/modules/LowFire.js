@@ -152,16 +152,13 @@ module.exports = async function(format, archive, bucket){
     }
 
     // Add fire
-    const promises = [];
-    formatData.files.forEach((fileData) => {
+    const promises = formatData.files.map(async (fileData, id) => {
         if (fileData.name === undefined || fileData.name === null) {
             archive.append(fileData.data, {name: path.join(fileData.path, fileData.inPackName)});
         } else {
-            promises.push(
-                bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-                    return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
-                })
-            );
+            await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+                return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
+            });
         }
     });
     await Promise.all(promises);

@@ -381,13 +381,10 @@ module.exports = async function(format, archive, bucket){
     archive.append(moduleData.models[1].data, {name: path.join(moduleData.modelsPath, moduleData.models[1].inPackName)});
 
     // Add blank ores to file
-    const promises = [];
-    moduleData.files.forEach((fileData) => {
-        promises.push(
-            bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.fileName)).download().then((data) => {
-                return archive.append(data[0], {name: path.join(filePath, fileData.inPackName)});
-            })
-        );
+    const promises = moduleData.files.map(async (fileData, id) => {
+        await bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.fileName)).download().then((data) => {
+            return archive.append(data[0], {name: path.join(filePath, fileData.inPackName)});
+        });
     });
     await Promise.all(promises);
 }

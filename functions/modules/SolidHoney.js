@@ -49,13 +49,10 @@ module.exports = async function(format, archive, bucket){
     archive.append(moduleData.model.data, {name: path.join(pathData.blockModel, moduleData.model.inPackName)});
 
     // Add files
-    const promises = [];
-    moduleData.files.forEach((fileData) => {
-        promises.push(
-            bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
-                return archive.append(data[0], {name: path.join(pathData.blockTexture, fileData.inPackName)});
-            })
-        );
+    const promises = formatData.files.map(async (fileData, id) => {
+        await bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
+            return archive.append(data[0], {name: path.join(pathData.blockTexture, fileData.inPackName)});
+        });
     });
     await Promise.all(promises);
 }
