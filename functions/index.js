@@ -118,20 +118,15 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     };
     
     // Log and upload when file has been made
-    output.on('close', () => {
+    output.on('close', async () => {
         console.log('Archiver has been finalized and the output file descriptor has closed. File size: ' + archive.pointer() + ' bytes');
         
         // Actual upload
-        bucket.upload(tempFilePath, {
+        await bucket.upload(tempFilePath, {
             destination: newPackPath,
             metadata: metadata,
-        }, (err, file) => {
-            // Catch errors
-            if (err !== null || err !== undefined) {
-                console.error(err);
-                return;
-            }
-            
+        }).then((data) => {
+            const file = data[0];
             // Respond with URL
             res.status(200).send({ "url": "https://firebasestorage.googleapis.com/v0/b/" + bucket.name + "/o/" + encodeURIComponent(file.name) + "?alt=media&token=" + tokenUUID });
             fs.unlinkSync(tempFilePath); // Unlink file
