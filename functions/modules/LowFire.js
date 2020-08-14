@@ -1,7 +1,7 @@
 const path = require('path');
 
 const moduleData = {
-    format5: {
+    format65: {
         packFilesPath: "modules/LowFire/",
         files: [
             // Fire
@@ -144,8 +144,8 @@ module.exports = async function(format, archive, bucket){
         formatData = moduleData.format321
     } else if (format === 4) {
         formatData = moduleData.format4
-    } else if (format === 5) {
-        formatData = moduleData.format5
+    } else if (format === 5  || format === 6) {
+        formatData = moduleData.format65
     } else {
         console.log('format not addressed');
         return;

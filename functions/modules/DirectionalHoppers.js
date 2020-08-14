@@ -4,7 +4,7 @@ const path = require('path');
 const moduleData = {
     packFilesPath: "modules/DirectionalHoppers",
     path321: "assets/minecraft/textures/blocks",
-    path54: "assets/minecraft/textures/block",
+    path654: "assets/minecraft/textures/block",
     modelsPath: "assets/minecraft/models/block",
     files: [
         {
@@ -369,8 +369,8 @@ module.exports = async function(format, archive, bucket){
     let filePath;
     if (format === 1 || format === 2 || format === 3) {
         filePath = moduleData.path321;
-    } else if (format === 4 || format === 5) {
-        filePath = moduleData.path54;
+    } else if (format === 4 || format === 5 || format === 6) {
+        filePath = moduleData.path654;
     } else {
         console.log('format not addressed');
         return;

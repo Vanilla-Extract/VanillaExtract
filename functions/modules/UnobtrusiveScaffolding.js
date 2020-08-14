@@ -5,15 +5,15 @@ const moduleData = {
     packFilesPath: "modules/UnobtrusiveScaffolding/",
     name: "scaffolding_top.png",
     inPackName: "scaffolding_top.png",
-    path54: "assets/minecraft/textures/block",
+    path654: "assets/minecraft/textures/block",
 };
 
 // Module function
 module.exports = async function(format, archive, bucket){
     // Change data based on format
     let pathData;
-    if (format === 4 || format === 5) {
-        pathData = moduleData.path54;
+    if (format === 4 || format === 5 || format === 6) {
+        pathData = moduleData.path654;
     } else {
         console.log('format not addressed');
         return;

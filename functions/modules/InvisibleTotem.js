@@ -1,7 +1,7 @@
 const path = require('path');
 
 const moduleData = {
-    format543: {
+    format6543: {
         file: {
             data: `{
                 "parent": "builtin/generated",
@@ -46,8 +46,8 @@ const moduleData = {
 module.exports = async function(format, archive, bucket){
     // Change data based on format
     let formatData;
-    if (format === 3 || format === 4 || format === 5) {
-        formatData = moduleData.format543
+    if (format === 3 || format === 4 || format === 5 || format === 6) {
+        formatData = moduleData.format6543
     } else {
         console.log('format not addressed');
         return;

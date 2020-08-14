@@ -153,6 +153,8 @@ function mcMeta(format) {
         ver = "1.13 - 1.14.4";
     } else if (format === 5) {
         ver = "1.15 - 1.16.1";
+    } else if (format === 6) {
+        ver = "1.16.2";
     } else {
         ver = "error making pack"
     }
@@ -181,6 +183,8 @@ function moduleSelection(format, modules, iconModules, optionsBackground, panoOp
         ver = "1.13 - 1.14.4";
     } else if (format === 5) {
         ver = "1.15 - 1.16.1";
+    } else if (format === 6) {
+        ver = "1.16.2";
     } else {
         ver = "error making pack"
     }

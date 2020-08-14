@@ -28,7 +28,7 @@ const moduleData = {
             }
         }`,
     },
-    path5: {
+    path65: {
         blockTexture: "assets/minecraft/textures/block",
         blockModel: "assets/minecraft/models/block",
     },
@@ -38,8 +38,8 @@ const moduleData = {
 module.exports = async function(format, archive, bucket){
     // Change data based on format
     let pathData;
-    if (format === 5) {
-        pathData = moduleData.path5;
+    if (format === 5 || format === 6) {
+        pathData = moduleData.path65;
     } else {
         console.log('format not addressed');
         return;

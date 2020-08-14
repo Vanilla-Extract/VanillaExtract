@@ -11,7 +11,7 @@ const moduleData = {
         name: "cake_item.png",
         inPackName: "cake.png",
     },
-    format54: {
+    format654: {
         cakeTopPath: "assets/minecraft/textures/block",
         cakeItemPath: "assets/minecraft/textures/item",
     },
@@ -27,8 +27,8 @@ module.exports = async function(format, archive, bucket){
     let formatData;
     if (format === 1 || format === 2 || format === 3) {
         formatData = moduleData.format321
-    } else if (format === 4 || format === 5) {
-        formatData = moduleData.format54
+    } else if (format === 4 || format === 5 || format === 6) {
+        formatData = moduleData.format654
     } else {
         console.log('format not addressed');
         return;
