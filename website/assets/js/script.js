@@ -55,25 +55,7 @@ function setFormat() {
     $('.hideFormat6').show();
 
     // Hide incompatible modules
-    if (format == 1) {
-        // Hide things incompatible with 1.6.1 - 1.8.9
-        $('.hideFormat1').hide();
-    } else if (format == 2) {
-        // Hide things incompatible with 1.9 - 1.10.2
-        $('.hideFormat2').hide();
-    } else if (format == 3) {
-        // Hide things incompatible with 1.11 - 1.12.2
-        $('.hideFormat3').hide();
-    } else if (format == 4) {
-        // Hide things incompatible with 1.13 - 1.14.4
-        $('.hideFormat4').hide();
-    } else if (format == 5) {
-        // Hide things incompatible with 1.15 - 1.16.1
-        $('.hideFormat5').hide();
-    } else if (format == 6) {
-        // Hide things incompatible with 1.16.2
-        $('.hideFormat6').hide();
-    }
+    $('.hideFormat'+format).hide();
 }
 
 // Set module function
@@ -166,13 +148,14 @@ function downloadPack() {
             "panoOption": panoOption,
         },
         function(data) {
-            $('#created-alert').show();
             window.location.href = data.url;
-            $('#download-link').attr('href', data.url);
-            $('#download-alert').show();
+            $('#download-link').attr('href', data.url); // Set download link
+            $('#creating-alert').hide(); // Hide old alert
+            $('#created-alert').show(); // Show created alert
         },
         "json"
     ).fail(function(e) {
-        $('#fail-alert').show();
+        $('#creating-alert').hide(); // Hide old alert
+        $('#fail-alert').show(); // Show fail alert
     });
 }
