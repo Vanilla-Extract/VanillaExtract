@@ -12,6 +12,8 @@ formats:
       display: "1.13 - 1.14.4"
     - id: 5
       display: "1.15 - 1.16.1"
+    - id: 6
+      display: "1.16.2"
       default: true
 
 # ----- KEY TO MODULES LIST -----

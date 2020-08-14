@@ -1,4 +1,4 @@
-let format = "5";
+let format = "6";
 let modules = [];
 let glassModule;
 let iconModules = [];
@@ -45,61 +45,35 @@ function setFormat() {
     $(this).attr("class","btn btn-dark");
     format = $(this).attr('id').slice(-1);
 
-    // Hide things incompatible with 1.6.1 - 1.8.9
+
+    // Show all
+    $('.hideFormat1').show();
+    $('.hideFormat2').show();
+    $('.hideFormat3').show();
+    $('.hideFormat4').show();
+    $('.hideFormat5').show();
+    $('.hideFormat6').show();
+
+    // Hide incompatible modules
     if (format == 1) {
-        // Show all
-        $('.hideFormat2').show();
-        $('.hideFormat3').show();
-        $('.hideFormat4').show();
-        $('.hideFormat5').show();
-        // Hide format one
+        // Hide things incompatible with 1.6.1 - 1.8.9
         $('.hideFormat1').hide();
-    }
-
-    // Hide things incompatible with 1.9 - 1.10.2
-    if (format == 2) {
-        // Show all
-        $('.hideFormat1').show();
-        $('.hideFormat3').show();
-        $('.hideFormat4').show();
-        $('.hideFormat5').show();
-        // Hide format one
+    } else if (format == 2) {
+        // Hide things incompatible with 1.9 - 1.10.2
         $('.hideFormat2').hide();
-    }
-
-    // Hide things incompatible with 1.11 - 1.12.2
-    if (format == 3) {
-        // Show all
-        $('.hideFormat1').show();
-        $('.hideFormat2').show();
-        $('.hideFormat4').show();
-        $('.hideFormat5').show();
-        // Hide format one
+    } else if (format == 3) {
+        // Hide things incompatible with 1.11 - 1.12.2
         $('.hideFormat3').hide();
-    }
-
-    // Hide things incompatible with 1.13 - 1.14.4
-    if (format == 4) {
-        // Show all
-        $('.hideFormat1').show();
-        $('.hideFormat2').show();
-        $('.hideFormat3').show();
-        $('.hideFormat5').show();
-        // Hide format one
+    } else if (format == 4) {
+        // Hide things incompatible with 1.13 - 1.14.4
         $('.hideFormat4').hide();
-    }
-
-    // Hide things incompatible with 1.15 - 1.16.1
-    if (format == 5) {
-        // Show all
-        $('.hideFormat1').show();
-        $('.hideFormat2').show();
-        $('.hideFormat3').show();
-        $('.hideFormat4').show();
-        // Hide format one
+    } else if (format == 5) {
+        // Hide things incompatible with 1.15 - 1.16.1
         $('.hideFormat5').hide();
+    } else if (format == 6) {
+        // Hide things incompatible with 1.16.2
+        $('.hideFormat6').hide();
     }
-
 }
 
 // Set module function
