@@ -59,8 +59,6 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     let archive = archiver('zip', {
         zlib: { level: 9 } // Sets the compression level.
     });
-    output.on('close', () => { console.log('Archiver has been finalized and the output file descriptor has closed. File size: ' + archive.pointer() + ' bytes'); }); // Log when file has been made
-    output.on('end', () => { console.log('Data has been drained'); }); // Log when file is drained
 
     // Catch warnings
     archive.on('warning', (err) => {
@@ -72,7 +70,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     }
     });
 
-    archive.on('error', (err) => { throw err; }); // catch errors
+    archive.on('error', (err) => { throw err; }); // Catch errors
 
     archive.pipe(output); // pipe archive data to the file
 
@@ -118,23 +116,27 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
             firebaseStorageDownloadTokens: tokenUUID,
         }
     };
-
-    // Actual upload
-    const file = await bucket.upload(tempFilePath, {
-        destination: newPackPath,
-        metadata: metadata,
-    }).then((data) => {
-        const file = data[0];
-        return Promise.resolve("https://firebasestorage.googleapis.com/v0/b/" + bucket.name + "/o/" + encodeURIComponent(file.name) + "?alt=media&token=" + tokenUUID);
+    
+    // Log and upload when file has been made
+    output.on('close', () => {
+        console.log('Archiver has been finalized and the output file descriptor has closed. File size: ' + archive.pointer() + ' bytes');
+        
+        // Actual upload
+        bucket.upload(tempFilePath, {
+            destination: newPackPath,
+            metadata: metadata,
+        }).then((data) => {
+            const file = data[0];
+            // Respond with URL
+            res.status(200).send({ "url": "https://firebasestorage.googleapis.com/v0/b/" + bucket.name + "/o/" + encodeURIComponent(file.name) + "?alt=media&token=" + tokenUUID });
+            fs.unlinkSync(tempFilePath); // Unlink file
+            return;
+        });
     });
 
-    // ----- FINISH THE FUNCTION -----
-    // Respond with file URL
-    res.status(200).send({ "url": file });
+    output.on('end', () => { console.log('Data has been drained'); }); // Log when file is drained
 
-    // Clear zip from mem and return
-    fs.unlinkSync(tempFilePath);
-    return;
+    
 });
 
 // Make the mcmeta file
