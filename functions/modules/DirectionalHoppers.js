@@ -13,7 +13,7 @@ const moduleData = {
         },
         {
             fileName: "hopper_inside.png",
-            inPackName: "hopper_inside.png",
+            inPackName: "hopper_inside_side.png",
         },
         {
             fileName: "hopper_outside.png",

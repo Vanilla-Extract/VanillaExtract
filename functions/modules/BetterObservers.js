@@ -70,7 +70,7 @@ const moduleData = {
         ],
     },
     models: {
-        path: "assets/minecraft/models/blocks",
+        path: "assets/minecraft/models/block",
         files: [
             {
                 inPackName: "observer.json",
