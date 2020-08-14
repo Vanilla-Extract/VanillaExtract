@@ -125,7 +125,13 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
         bucket.upload(tempFilePath, {
             destination: newPackPath,
             metadata: metadata,
-        }, (file) => {
+        }, (err, file) => {
+            // Catch errors
+            if (err !== null || err !== undefined) {
+                console.error(err);
+                return;
+            }
+            
             // Respond with URL
             res.status(200).send({ "url": "https://firebasestorage.googleapis.com/v0/b/" + bucket.name + "/o/" + encodeURIComponent(file.name) + "?alt=media&token=" + tokenUUID });
             fs.unlinkSync(tempFilePath); // Unlink file
