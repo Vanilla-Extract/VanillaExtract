@@ -15,7 +15,7 @@ Download Faithful x32 from the official sources.
 {{< button "https://faithful.team/faithful-1-13/" >}}1.13{{< /button >}}
 {{< button "https://faithful.team/faithful-1-14/" >}}1.14{{< /button >}}
 {{< button "https://faithful.team/faithful-1-15/" >}}1.15{{< /button >}}
-{{< button "https://faithful.team/faithful-1-16-1/" >}}1.16{{< /button >}}
+{{< button "https://faithful.team/faithful-1-16-2/" >}}1.16{{< /button >}}
 
 ### Step 2:
 Click on "Options..." in the Main Menu.
