@@ -70,8 +70,12 @@ $theme-colors: (
     }
 }
 
-#download-alert, #created-alert, #creating-alert, #fail-alert {
+#creating-alert, #finished-alert, #fail-alert {
     display: none;
+}
+
+.alert-link{
+    text-decoration: underline !important;
 }
 
 .collapsible a {

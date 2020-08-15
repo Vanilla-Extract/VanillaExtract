@@ -28,7 +28,7 @@ const moduleData = {
             }
         }`,
     },
-    path5: {
+    path65: {
         blockTexture: "assets/minecraft/textures/block",
         blockModel: "assets/minecraft/models/block",
     },
@@ -38,8 +38,8 @@ const moduleData = {
 module.exports = async function(format, archive, bucket){
     // Change data based on format
     let pathData;
-    if (format === 5) {
-        pathData = moduleData.path5;
+    if (format === 5 || format === 6) {
+        pathData = moduleData.path65;
     } else {
         console.log('format not addressed');
         return;
@@ -49,14 +49,10 @@ module.exports = async function(format, archive, bucket){
     archive.append(moduleData.model.data, {name: path.join(pathData.blockModel, moduleData.model.inPackName)});
 
     // Add files
-    const promises = [];
-    moduleData.files.forEach((fileData) => {
-        promises.push(
-            bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
-                archive.append(data[0], {name: path.join(pathData.blockTexture, fileData.inPackName)});
-                return;
-            })
-        );
+    const promises = moduleData.files.map(async (fileData, id) => {
+        await bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
+            return archive.append(data[0], {name: path.join(pathData.blockTexture, fileData.inPackName)});
+        });
     });
     await Promise.all(promises);
 }

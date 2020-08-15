@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    format54321: {
+    format654321: {
         packFilesPath: "modules/ReducedPumpkinBlur/",
         files: [
             {
@@ -27,8 +27,8 @@ const moduleData = {
 module.exports = async function(format, archive, bucket){
     // Change data based on format
     let formatData;
-    if (format === 1 || format === 2 || format === 3 || format === 4 || format === 5) {
-        formatData = moduleData.format54321
+    if (format === 1 || format === 2 || format === 3 || format === 4 || format === 5 || format === 6) {
+        formatData = moduleData.format654321
     } else {
         console.log('format not addressed');
         return;
@@ -39,8 +39,7 @@ module.exports = async function(format, archive, bucket){
     
     // Add pumpkin overlay
     await bucket.file(path.join("packfiles", formatData.packFilesPath, formatData.files[0].name)).download().then((data) => {
-        archive.append(data[0], {name: path.join(formatData.files[0].path, formatData.files[0].inPackName)});
-        return;
+        return archive.append(data[0], {name: path.join(formatData.files[0].path, formatData.files[0].inPackName)});
     });
     return;
 }

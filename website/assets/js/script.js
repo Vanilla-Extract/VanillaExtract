@@ -1,4 +1,4 @@
-let format = "5";
+let format = "6";
 let modules = [];
 let glassModule;
 let iconModules = [];
@@ -45,61 +45,17 @@ function setFormat() {
     $(this).attr("class","btn btn-dark");
     format = $(this).attr('id').slice(-1);
 
-    // Hide things incompatible with 1.6.1 - 1.8.9
-    if (format == 1) {
-        // Show all
-        $('.hideFormat2').show();
-        $('.hideFormat3').show();
-        $('.hideFormat4').show();
-        $('.hideFormat5').show();
-        // Hide format one
-        $('.hideFormat1').hide();
-    }
 
-    // Hide things incompatible with 1.9 - 1.10.2
-    if (format == 2) {
-        // Show all
-        $('.hideFormat1').show();
-        $('.hideFormat3').show();
-        $('.hideFormat4').show();
-        $('.hideFormat5').show();
-        // Hide format one
-        $('.hideFormat2').hide();
-    }
+    // Show all
+    $('.hideFormat1').show();
+    $('.hideFormat2').show();
+    $('.hideFormat3').show();
+    $('.hideFormat4').show();
+    $('.hideFormat5').show();
+    $('.hideFormat6').show();
 
-    // Hide things incompatible with 1.11 - 1.12.2
-    if (format == 3) {
-        // Show all
-        $('.hideFormat1').show();
-        $('.hideFormat2').show();
-        $('.hideFormat4').show();
-        $('.hideFormat5').show();
-        // Hide format one
-        $('.hideFormat3').hide();
-    }
-
-    // Hide things incompatible with 1.13 - 1.14.4
-    if (format == 4) {
-        // Show all
-        $('.hideFormat1').show();
-        $('.hideFormat2').show();
-        $('.hideFormat3').show();
-        $('.hideFormat5').show();
-        // Hide format one
-        $('.hideFormat4').hide();
-    }
-
-    // Hide things incompatible with 1.15 - 1.16.1
-    if (format == 5) {
-        // Show all
-        $('.hideFormat1').show();
-        $('.hideFormat2').show();
-        $('.hideFormat3').show();
-        $('.hideFormat4').show();
-        // Hide format one
-        $('.hideFormat5').hide();
-    }
-
+    // Hide incompatible modules
+    $('.hideFormat'+format).hide();
 }
 
 // Set module function
@@ -192,13 +148,14 @@ function downloadPack() {
             "panoOption": panoOption,
         },
         function(data) {
-            $('#created-alert').show();
             window.location.href = data.url;
-            $('#download-link').attr('href', data.url);
-            $('#download-alert').show();
+            $('#download-link').attr('href', data.url); // Set download link
+            $('#creating-alert').hide(); // Hide old alert
+            $('#created-alert').show(); // Show created alert
         },
         "json"
     ).fail(function(e) {
-        $('#fail-alert').show();
+        $('#creating-alert').hide(); // Hide old alert
+        $('#fail-alert').show(); // Show fail alert
     });
 }

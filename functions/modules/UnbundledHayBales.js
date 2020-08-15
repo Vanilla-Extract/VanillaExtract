@@ -5,7 +5,7 @@ const moduleData = {
     packFilesPath: "modules/UnbundledHayBales/",
     name: "hay_block_side.png",
     inPackName: "hay_block_side.png",
-    path54: "assets/minecraft/textures/block",
+    path654: "assets/minecraft/textures/block",
     path321: "assets/minecraft/textures/blocks",
 };
 
@@ -15,8 +15,8 @@ module.exports = async function(format, archive, bucket){
     let pathData;
     if (format === 1 || format === 2 || format === 3) {
         pathData = moduleData.path321;
-    } else if (format === 4 || format === 5) {
-        pathData = moduleData.path54;
+    } else if (format === 4 || format === 5 || format === 6) {
+        pathData = moduleData.path654;
     } else {
         console.log('format not addressed');
         return;
@@ -24,7 +24,6 @@ module.exports = async function(format, archive, bucket){
 
     // Add file
     await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.name)).download().then((data) => {
-        archive.append(data[0], {name: path.join(pathData, moduleData.inPackName)});
-        return;
+        return archive.append(data[0], {name: path.join(pathData, moduleData.inPackName)});
     });
 }

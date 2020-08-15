@@ -76,7 +76,7 @@ const moduleData = {
             },
         ],
     },
-    format54: {
+    format654: {
         path: "assets/minecraft/textures/block",
         files: [
             {
@@ -157,23 +157,18 @@ module.exports = async function(format, archive, bucket){
     let formatData;
     if (format === 1 || format === 2 || format === 3) {
         formatData = moduleData.format321;
-    } else if(format === 4 || format === 5) {
-        formatData = moduleData.format54;
+    } else if(format === 4 || format === 5  || format === 6) {
+        formatData = moduleData.format654;
     } else {
         console.log('format not addressed');
         return;
     }
 
     // Add files
-    const promises = [];
-    formatData.files.forEach((fileData) => {
-        promises.push(
-            bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
-                archive.append(data[0], {name: path.join(formatData.path, fileData.inPackName)});
-                return;
-            })
-        );
+    const promises = formatData.files.map(async (fileData, id) => {
+        await bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
+            return archive.append(data[0], {name: path.join(formatData.path, fileData.inPackName)});
+        });
     });
     await Promise.all(promises);
-    return;
 }

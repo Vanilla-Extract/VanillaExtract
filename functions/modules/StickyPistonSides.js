@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    format54: {
+    format654: {
         packFilesPath: "modules/StickyPistonSides/",
         files: [
             {
@@ -266,27 +266,22 @@ module.exports = async function(format, archive, bucket){
     let formatData;
     if (format === 1 || format === 2 || format === 3) {
         formatData = moduleData.format321
-    } else if (format === 4 || format === 5) {
-        formatData = moduleData.format54
+    } else if (format === 4 || format === 5 || format === 6) {
+        formatData = moduleData.format654
     } else {
         console.log('format not addressed');
         return;
     }
 
     // Add each piston model and texture to file
-    const promises = [];
-    formatData.files.forEach((fileData) => {
+    const promises = formatData.files.map(async (fileData, id) => {
         if (fileData.name === undefined || fileData.name === null) {
             archive.append(fileData.data, {name: path.join(fileData.path, fileData.inPackName)});
         } else {
-            promises.push(
-                bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-                    archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
-                    return;
-                })
-            );
+            await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+                return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
+            });
         }
     });
     await Promise.all(promises);
-    return;
 }

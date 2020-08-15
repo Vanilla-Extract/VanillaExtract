@@ -4,7 +4,7 @@ const path = require('path');
 const moduleData = {
     packFilesPath: "modules/DirectionalHoppers",
     path321: "assets/minecraft/textures/blocks",
-    path54: "assets/minecraft/textures/block",
+    path654: "assets/minecraft/textures/block",
     modelsPath: "assets/minecraft/models/block",
     files: [
         {
@@ -13,7 +13,7 @@ const moduleData = {
         },
         {
             fileName: "hopper_inside.png",
-            inPackName: "hopper_inside.png",
+            inPackName: "hopper_inside_side.png",
         },
         {
             fileName: "hopper_outside.png",
@@ -369,8 +369,8 @@ module.exports = async function(format, archive, bucket){
     let filePath;
     if (format === 1 || format === 2 || format === 3) {
         filePath = moduleData.path321;
-    } else if (format === 4 || format === 5) {
-        filePath = moduleData.path54;
+    } else if (format === 4 || format === 5 || format === 6) {
+        filePath = moduleData.path654;
     } else {
         console.log('format not addressed');
         return;
@@ -381,15 +381,10 @@ module.exports = async function(format, archive, bucket){
     archive.append(moduleData.models[1].data, {name: path.join(moduleData.modelsPath, moduleData.models[1].inPackName)});
 
     // Add blank ores to file
-    const promises = [];
-    moduleData.files.forEach((fileData) => {
-        promises.push(
-            bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.fileName)).download().then((data) => {
-                archive.append(data[0], {name: path.join(filePath, fileData.inPackName)});
-                return;
-            })
-        );
+    const promises = moduleData.files.map(async (fileData, id) => {
+        await bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.fileName)).download().then((data) => {
+            return archive.append(data[0], {name: path.join(filePath, fileData.inPackName)});
+        });
     });
     await Promise.all(promises);
-    return;
 }

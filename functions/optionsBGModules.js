@@ -29,8 +29,7 @@ const addModules = async function(moduleName, archive, bucket){
     // If it exists
     if (files[moduleName] !== undefined && files[moduleName] !== null) {
         await bucket.file(path.join("packfiles", packFilesPath, files[moduleName])).download().then((data) => {
-            archive.append(data[0], {name: path.join(inPackPath, inPackName)});
-            return;
+            return archive.append(data[0], {name: path.join(inPackPath, inPackName)});
         });
     }
     return;

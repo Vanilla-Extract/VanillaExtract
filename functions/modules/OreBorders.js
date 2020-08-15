@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    format5: {
+    format65: {
         packFilesPath: "modules/OreBorders/new",
         files: [
             // Blocks
@@ -211,23 +211,18 @@ module.exports = async function(format, archive, bucket){
         formatData = moduleData.format321
     } else if (format === 4) {
         formatData = moduleData.format4
-    } else if (format === 5) {
-        formatData = moduleData.format5
+    } else if (format === 5 || format === 6) {
+        formatData = moduleData.format65
     } else {
         console.log('format not addressed');
         return;
     }
 
-    // Add blank ores to file
-    const promises = [];
-    formatData.files.forEach((fileData) => {
-        promises.push(
-            bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-                archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
-                return;
-            })
-        );
+    // Add ores to file
+    const promises = formatData.files.map(async (fileData, id) => {
+        await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+            return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
+        });
     });
     await Promise.all(promises);
-    return;
 }
