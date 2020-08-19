@@ -8,11 +8,13 @@
 
 An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/).
 
-A guide on making modules is coming soon so stay tuned! For now check out [teh Better Bedrock commit](https://github.com/Banakin/FaithfulTweaks/commit/4591749e34ed5151675eec693b40d28588471928) or [the Black Nether Bricks commit](https://github.com/Banakin/FaithfulTweaks/commit/bdac7167f59ed335b278229e1e11b3ae5a5915e0).
+## Creating Modules
+
+A guide on making modules is coming soon so stay tuned! For now check out [the Better Bedrock commit](https://github.com/Banakin/FaithfulTweaks/commit/4591749e34ed5151675eec693b40d28588471928) or [the Black Nether Bricks commit](https://github.com/Banakin/FaithfulTweaks/commit/bdac7167f59ed335b278229e1e11b3ae5a5915e0).
 
 These two commits cover updating `README.md` (this file), creating the module's javascript file, adding the module to `/functions/modules.js`, adding the module to the website, and adding the module to `/images`.
 
-`Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the traditional fashion`
+Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the traditional fashion.
 
 ## Available Modules
 
