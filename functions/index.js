@@ -1,8 +1,8 @@
 // Module Data
 const mcModules = require("./modules.js");
-const mcIconModules = require("./iconModules.js");
-const optionsBG = require("./optionsBGModules.js");
-const menuPanorama = require("./panoramaModules.js");
+const mcIconModules = require("./modules/iconModules.js");
+const optionsBG = require("./modules/optionsBGModules.js");
+const menuPanorama = require("./modules/panoramaModules.js");
 
 
 // Archiver

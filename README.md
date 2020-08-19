@@ -24,9 +24,9 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 
 - BlackNetherBricks
 - CherryPicking
-- UnbundledHayBales
-- SolidHoney
 - SidewaysNuggets
+- SolidHoney
+- UnbundledHayBales
 
 ### Terrain
 
@@ -35,23 +35,23 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 
 ### Utility
 
-- OreBorders
-- StickyPistonSides
-- DirectionalHoppers
 - BetterObservers
 - ColoredBows
+- DirectionalHoppers
+- OreBorders
+- StickyPistonSides
 
 ### Unobtrusive
 
-- UnobtrusiveScaffolding
+- AlternateEnchantGlint
+- ClearPumpkinBlur
+- InvisibleTotem
 - LowFire
 - LowShield
 - NoVignette
 - ReducedPumpkinBlur
-- ClearPumpkinBlur
-- AlternateEnchantGlint
-- InvisibleTotem
 - SlicedSwords
+- UnobtrusiveScaffolding
 
 ### Glass
 
