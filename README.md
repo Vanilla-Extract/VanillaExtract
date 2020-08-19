@@ -4,7 +4,7 @@
 
 [![Website Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Website%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
 [![Functions Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Functions%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
-<!-- [![Storage Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Storage%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions) -->
+[![Images Deploy](https://github.com/Banakin/FaithfulTweaks/workflows/Images%20Deploy/badge.svg)](https://github.com/Banakin/FaithfulTweaks/actions)
 
 An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/).
 
