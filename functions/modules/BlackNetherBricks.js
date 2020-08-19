@@ -74,7 +74,7 @@ module.exports = async function(format, archive, bucket){
 
     // Add ores to file
     const promises = formatData.files.map(async (fileData, id) => {
-        await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+        await bucket.file(path.join("packfiles", moduleData.packFilesPath, fileData.name)).download().then((data) => {
             return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
         });
     });
