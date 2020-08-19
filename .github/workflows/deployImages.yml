@@ -23,10 +23,3 @@ jobs:
         with:
           args: -m rsync -d -r images gs://faithfultweaks.appspot.com/
           cli: gsutil
-
-      # - name: Deploy To Firebase
-      #   uses: w9jds/firebase-action@v1.3.1
-      #   with:
-      #     args: deploy --only functions
-      #   env:
-      #     FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
