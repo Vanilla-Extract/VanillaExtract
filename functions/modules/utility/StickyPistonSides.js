@@ -3,7 +3,7 @@ const path = require('path');
 // Module Data
 const moduleData = {
     format654: {
-        packFilesPath: "modules/StickyPistonSides/",
+        packFilesPath: "modules/utility/StickyPistonSides/",
         files: [
             {
                 name: "piston_side_sticky.png",
@@ -137,7 +137,7 @@ const moduleData = {
         ]
     },
     format321: {
-        packFilesPath: "modules/StickyPistonSides/",
+        packFilesPath: "modules/utility/StickyPistonSides/",
         files: [
             {
                 name: "piston_side_sticky_old.png",

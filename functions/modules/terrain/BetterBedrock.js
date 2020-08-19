@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/BetterBedrock/",
+    packFilesPath: "modules/terrain/BetterBedrock/",
     name: "BetterBedrock.png",
     inPackName: "bedrock.png",
     path654: "assets/minecraft/textures/block",

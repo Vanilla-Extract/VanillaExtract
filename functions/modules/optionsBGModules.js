@@ -1,6 +1,6 @@
 const path = require('path');
 
-const packFilesPath = "Backgrounds/";
+const packFilesPath = "modules/optionsBG";
 const inPackName = "options_background.png";
 const inPackPath = "assets/minecraft/textures/gui";
 const files = {

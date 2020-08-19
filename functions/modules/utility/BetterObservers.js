@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/BetterObservers/",
+    packFilesPath: "modules/utility/BetterObservers/",
     format3: {
         path: "assets/minecraft/textures/blocks",
         files: [

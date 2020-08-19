@@ -3,7 +3,7 @@ const path = require('path');
 // Module Data
 const moduleData = {
     format65: {
-        packFilesPath: "modules/SlicedSwords/",
+        packFilesPath: "modules/unobtrusive/SlicedSwords/",
         files: [
             {
                 name: "diamond_sword.png",
@@ -38,7 +38,7 @@ const moduleData = {
         ]
     },
     format4: {
-        packFilesPath: "modules/SlicedSwords/",
+        packFilesPath: "modules/unobtrusive/SlicedSwords/",
         files: [
             {
                 name: "diamond_sword.png",
@@ -68,7 +68,7 @@ const moduleData = {
         ]
     },
     format321: {
-        packFilesPath: "modules/SlicedSwords/",
+        packFilesPath: "modules/unobtrusive/SlicedSwords/",
         files: [
             {
                 name: "diamond_sword_old.png",

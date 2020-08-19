@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/BorderlessGlass/",
+    packFilesPath: "modules/glass/BorderlessGlass/",
     format321: {
         path: "assets/minecraft/textures/blocks",
         files: [

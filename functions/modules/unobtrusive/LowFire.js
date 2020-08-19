@@ -2,7 +2,7 @@ const path = require('path');
 
 const moduleData = {
     format65: {
-        packFilesPath: "modules/LowFire/",
+        packFilesPath: "modules/unobtrusive/LowFire/",
         files: [
             // Fire
             // Fire 1
@@ -69,7 +69,7 @@ const moduleData = {
         ]
     },
     format4: {
-        packFilesPath: "modules/LowFire/",
+        packFilesPath: "modules/unobtrusive/LowFire/",
         files: [
             // Fire 0
             {
@@ -104,7 +104,7 @@ const moduleData = {
         ]
     },
     format321: {
-        packFilesPath: "modules/LowFire/",
+        packFilesPath: "modules/unobtrusive/LowFire/",
         files: [
             // Fire 0
             {

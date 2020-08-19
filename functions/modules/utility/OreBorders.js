@@ -3,7 +3,7 @@ const path = require('path');
 // Module Data
 const moduleData = {
     format65: {
-        packFilesPath: "modules/OreBorders/new",
+        packFilesPath: "modules/utility/OreBorders/new",
         files: [
             // Blocks
             {
@@ -90,7 +90,7 @@ const moduleData = {
         ]
     },
     format4: {
-        packFilesPath: "modules/OreBorders/new",
+        packFilesPath: "modules/utility/OreBorders/new",
         files: [
             // Blocks
             {
@@ -157,7 +157,7 @@ const moduleData = {
         ]
     },
     format321: {
-        packFilesPath: "modules/OreBorders/old",
+        packFilesPath: "modules/utility/OreBorders/old",
         files: [
             {
                 name: "coal_ore.png",

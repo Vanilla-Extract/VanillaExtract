@@ -1,6 +1,6 @@
 const path = require('path');
 
-const packFilesPath = "MenuPanoramas/";
+const packFilesPath = "modules/panoramas";
 const inPackPath = "assets/minecraft/textures/gui/title/background";
 const folders = {
     ClassicPano: "ClassicPanorama",

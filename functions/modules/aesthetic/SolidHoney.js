@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/SolidHoney/",
+    packFilesPath: "modules/aesthetic/SolidHoney/",
     files: [
         {
             name: "honey_block_bottom.png",

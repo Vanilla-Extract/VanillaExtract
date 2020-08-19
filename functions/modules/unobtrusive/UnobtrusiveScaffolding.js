@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/UnobtrusiveScaffolding/",
+    packFilesPath: "modules/unobtrusive/UnobtrusiveScaffolding/",
     name: "scaffolding_top.png",
     inPackName: "scaffolding_top.png",
     path654: "assets/minecraft/textures/block",

@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/BlackNetherBricks",
+    packFilesPath: "modules/aesthetic/BlackNetherBricks",
     format65: {
         files: [
             {

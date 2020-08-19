@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/CherryPicking/",
+    packFilesPath: "modules/aesthetic/CherryPicking/",
     cakeTop: {
         name: "cake_top.png",
         inPackName: "cake_top.png",

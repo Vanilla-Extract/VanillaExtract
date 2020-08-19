@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/DirectionalHoppers",
+    packFilesPath: "modules/utility/DirectionalHoppers",
     path321: "assets/minecraft/textures/blocks",
     path654: "assets/minecraft/textures/block",
     modelsPath: "assets/minecraft/models/block",

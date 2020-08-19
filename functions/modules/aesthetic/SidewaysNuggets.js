@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/SidewaysNuggets/",
+    packFilesPath: "modules/aesthetic/SidewaysNuggets/",
     name: "iron_nugget.png",
     inPackName: "iron_nugget.png",
     path654: "assets/minecraft/textures/item",

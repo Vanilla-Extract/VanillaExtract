@@ -3,7 +3,7 @@ const path = require('path');
 // Module Data
 const moduleData = {
     format654321: {
-        packFilesPath: "modules/NoVignette/",
+        packFilesPath: "modules/unobtrusive/NoVignette/",
         file: {
             name: "vignette.png",
             inPackName: "vignette.png",

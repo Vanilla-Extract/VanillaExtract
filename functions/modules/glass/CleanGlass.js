@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/CleanGlass/",
+    packFilesPath: "modules/glass/CleanGlass/",
     format321: {
         path: "assets/minecraft/textures/blocks",
         files: [

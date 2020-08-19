@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/UnbundledHayBales/",
+    packFilesPath: "modules/aesthetic/UnbundledHayBales/",
     name: "hay_block_side.png",
     inPackName: "hay_block_side.png",
     path654: "assets/minecraft/textures/block",

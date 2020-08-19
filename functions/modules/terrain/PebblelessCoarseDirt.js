@@ -2,7 +2,7 @@ const path = require('path');
 
 // Module Data
 const moduleData = {
-    packFilesPath: "modules/PebblelessCoarseDirt/",
+    packFilesPath: "modules/terrain/PebblelessCoarseDirt/",
     name: "coarse_dirt.png",
     inPackName: "coarse_dirt.png",
     path654: "assets/minecraft/textures/block",

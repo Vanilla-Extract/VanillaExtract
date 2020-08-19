@@ -3,7 +3,7 @@ const path = require('path');
 // Module Data
 const moduleData = {
     format654321: {
-        packFilesPath: "modules/AlternateEnchantGlint/",
+        packFilesPath: "modules/unobtrusive/AlternateEnchantGlint/",
         files: [
             {
                 name: "enchanted_item_glint.png",

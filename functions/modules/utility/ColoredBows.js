@@ -3,7 +3,7 @@ const path = require('path');
 // Module Data
 const moduleData = {
     format654: {
-        packFilesPath: "modules/ColoredBows/",
+        packFilesPath: "modules/utility/ColoredBows/",
         files: [
             // Bow
             {
@@ -60,7 +60,7 @@ const moduleData = {
         ]
     },
     format321: {
-        packFilesPath: "modules/ColoredBows/",
+        packFilesPath: "modules/utility/ColoredBows/",
         files: [
             {
                 name: "bow_pulling_0.png",

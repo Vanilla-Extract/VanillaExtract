@@ -54,19 +54,19 @@ const addIconModules = async function(modules, archive, bucket){
     });
 
     // Get defualt icons.png
-    await bucket.file(path.join("packfiles/IconsFileMods", "default.png")).download().then((data) => {
+    await bucket.file(path.join("packfiles/modules/hud", "default.png")).download().then((data) => {
         defaultIcons.src = data[0];
         return;
     });
 
     // Get hunger icons
     if (hungerMode === 0) {
-        await bucket.file(path.join("packfiles/IconsFileMods", "hunger", "default.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/modules/hud", "hunger", "default.png")).download().then((data) => {
             hungerIcons.src = data[0];
             return;
         });
     } else if (hungerMode === 1) {
-        await bucket.file(path.join("packfiles/IconsFileMods", "hunger", "melons.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/modules/hud", "hunger", "melons.png")).download().then((data) => {
             hungerIcons.src = data[0];
             return;
         });
@@ -74,12 +74,12 @@ const addIconModules = async function(modules, archive, bucket){
 
     // Get ping icons
     if (pingMode === 0) {
-        await bucket.file(path.join("packfiles/IconsFileMods", "ping", "default.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/modules/hud", "ping", "default.png")).download().then((data) => {
             pingIcons.src = data[0];
             return;
         });
     } else if (pingMode === 1) {
-        await bucket.file(path.join("packfiles/IconsFileMods", "ping", "colored.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/modules/hud", "ping", "colored.png")).download().then((data) => {
             pingIcons.src = data[0];
             return;
         });
@@ -87,12 +87,12 @@ const addIconModules = async function(modules, archive, bucket){
 
     // Get wither icons
     if (witherHeartsMode === 0) {
-        await bucket.file(path.join("packfiles/IconsFileMods", "witherhearts", "default.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/modules/hud", "witherhearts", "default.png")).download().then((data) => {
             witherIcons.src = data[0];
             return;
         });
     } else if (witherHeartsMode === 1) {
-        await bucket.file(path.join("packfiles/IconsFileMods", "witherhearts", "blue.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/modules/hud", "witherhearts", "blue.png")).download().then((data) => {
             witherIcons.src = data[0];
             return;
         });
@@ -100,12 +100,12 @@ const addIconModules = async function(modules, archive, bucket){
 
     // Get XP icons
     if (xpMode === 0) {
-        await bucket.file(path.join("packfiles/IconsFileMods", "xp", "default.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/modules/hud", "xp", "default.png")).download().then((data) => {
             xpIcons.src = data[0];
             return;
         });
     } else if (xpMode === 1) {
-        await bucket.file(path.join("packfiles/IconsFileMods", "xp", "rainbow.png")).download().then((data) => {
+        await bucket.file(path.join("packfiles/modules/hud", "xp", "rainbow.png")).download().then((data) => {
             xpIcons.src = data[0];
             return;
         });

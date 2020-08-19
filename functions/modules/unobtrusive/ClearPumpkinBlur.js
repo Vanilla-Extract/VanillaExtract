@@ -3,7 +3,7 @@ const path = require('path');
 // Module Data
 const moduleData = {
     format654321: {
-        packFilesPath: "modules/ReducedPumpkinBlur/",
+        packFilesPath: "modules/unobtrusive/ReducedPumpkinBlur/",
         files: [
             {
                 name: "pumpkinblurClear.png",
