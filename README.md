@@ -16,6 +16,7 @@ A guide on making modules is coming soon so stay tuned! For now check out [this 
 
 ### Aesthetic
 
+- BlackNetherBricks
 - CherryPicking
 - UnbundledHayBales
 - SolidHoney
@@ -89,7 +90,6 @@ A guide on making modules is coming soon so stay tuned! For now check out [this 
 
 ### Coming Soon
 
-- BlackNetherBricks
 - BrighterNether
 - DarkUI
 - MineProgressBar

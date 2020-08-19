@@ -4,6 +4,7 @@ const modulesData = {
     AlternateEnchantGlint  : require('./modules/AlternateEnchantGlint.js'),
     BetterBedrock          : require('./modules/BetterBedrock.js'),
     BetterObservers        : require('./modules/BetterObservers.js'),
+    BlackNetherBricks      : require('./modules/BlackNetherBricks.js'),
     BorderlessGlass        : require('./modules/BorderlessGlass.js'),
     CherryPicking          : require('./modules/CherryPicking.js'),
     CleanBorderlessGlass   : require('./modules/CleanBorderlessGlass.js'),

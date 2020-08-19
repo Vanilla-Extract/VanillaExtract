@@ -60,6 +60,12 @@ sections:
         notcompatable:
           - 1
           - 2
+
+      - id: "BlackNetherBricks"
+        name: "Black Nether Bricks"
+        image: "/images/modules/normal/BlackNetherBricks.png"
+        description: "Changes the texture of Nether Bricks to make them black."
+        origin: "vanillatweaks"
   
   # Terrain
   - id: "terrainSection"
