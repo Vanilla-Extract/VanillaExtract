@@ -14,7 +14,7 @@ A guide on making modules is coming soon so stay tuned! For now check out [the B
 
 These two commits cover updating `README.md` (this file), creating the module's javascript file, adding the module to `/functions/modules.js`, adding the module to the website, and adding the module to `/images`.
 
-To create a module some javascript experience will be helpful but these files have been made so that they are fairly simple to understand.
+To create a module some github and javascript experience will be helpful but these files have been made so that they are fairly simple to understand.
 
 Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the traditional fashion.
 
