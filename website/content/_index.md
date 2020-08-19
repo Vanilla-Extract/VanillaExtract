@@ -196,6 +196,12 @@ sections:
           - 1
           - 2
           - 3
+
+      - id: "UnobtrusiveWater"
+        name: "Unobtrusive Water"
+        image: "/images/modules/normal/UnobtrusiveWater.png"
+        description: "Makes water more transparent so it is easier to see through."
+        origin: "faithfultweaks"
   
   # Glass Modules
   - id: "glassSection"

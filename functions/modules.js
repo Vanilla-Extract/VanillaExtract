@@ -31,6 +31,7 @@ const modulesData = {
     SlicedSwords           : require('./modules/unobtrusive/SlicedSwords.js'),
     UnobtrusiveRain        : require('./modules/unobtrusive/UnobtrusiveRain.js'),
     UnobtrusiveScaffolding : require('./modules/unobtrusive/UnobtrusiveScaffolding.js'),
+    UnobtrusiveWater       : require('./modules/unobtrusive/UnobtrusiveWater.js'),
 
     // Glass
     BorderlessGlass        : require('./modules/glass/BorderlessGlass.js'),

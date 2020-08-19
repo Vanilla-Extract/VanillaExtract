@@ -51,7 +51,9 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - NoVignette
 - ReducedPumpkinBlur
 - SlicedSwords
+- UnobtrusiveRain
 - UnobtrusiveScaffolding
+- UnobtrusiveWater
 
 ### Glass
 
@@ -100,8 +102,6 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - DarkUI
 - MineProgressBar
 - PebblelessDirt
-- UnobtrusiveRain
-- UnobtrusiveWater
 
 ## Making requests to the Cloud Function
 
