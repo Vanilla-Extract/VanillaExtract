@@ -186,6 +186,16 @@ sections:
         image: "/images/modules/normal/SlicedSwords.png"
         description: "Changes the sword texture to be shorter for more visibility."
         origin: "faithfultweaks"
+
+      - id: "UnobtrusiveRain"
+        name: "Unobtrusive Rain"
+        image: "/images/modules/normal/UnobtrusiveRain.png"
+        description: "Makes rain smaller and clearer to allow for better visibility and a nicer effect from rain."
+        origin: "vanillatweaks"
+        notcompatable:
+          - 1
+          - 2
+          - 3
   
   # Glass Modules
   - id: "glassSection"

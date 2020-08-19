@@ -29,6 +29,7 @@ const modulesData = {
     NoVignette             : require('./modules/unobtrusive/NoVignette.js'),
     ReducedPumpkinBlur     : require('./modules/unobtrusive/ReducedPumpkinBlur.js'),
     SlicedSwords           : require('./modules/unobtrusive/SlicedSwords.js'),
+    UnobtrusiveRain        : require('./modules/unobtrusive/UnobtrusiveRain.js'),
     UnobtrusiveScaffolding : require('./modules/unobtrusive/UnobtrusiveScaffolding.js'),
 
     // Glass
