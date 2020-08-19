@@ -8,7 +8,7 @@ on:
       - 'images/**'
 
 jobs:
-  deploy_functions:
+  deploy_images:
     runs-on: ubuntu-latest
     
     steps:
