@@ -2,10 +2,12 @@
     "name": "website",
     "description": "Hugo Website",
     "scripts": {
-        "server": "hugo server --disableFastRender -D",
-        "build-old": "cd ../ && rm -rf public && cd website && hugo",
-        "start": "webpack --mode=development --watch",
-        "build": "webpack --mode=production"
+        "dev:webpack": "webpack --mode=development --watch",
+        "dev:hugo": "hugo server --disableFastRender -D",
+        "dev": "concurrently \"npm run dev:hugo\" \"npm run dev:design\"",
+        "build:webpack": "webpack --mode=production",
+        "build:hugo": "cd ../ && rm -rf public && cd website && hugo",
+        "build": "npm run build:webpack && npm run build:hugo"
     },
     "engines": {
         "node": "10"
@@ -23,7 +25,6 @@
         "node-sass": "^4.14.1",
         "sass": "^1.26.10",
         "sass-loader": "^9.0.3",
-        "style-loader": "^1.2.1",
         "uglifyjs-webpack-plugin": "^2.2.0",
         "webpack": "^4.44.1",
         "webpack-cli": "^3.3.12"
