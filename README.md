@@ -98,8 +98,10 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 
 ### Coming Soon
 
+- AlternateBlockDestruction
 - BrighterNether
 - DarkUI
+- FullyAgedCropMarker
 - MineProgressBar
 - PebblelessDirt
 
@@ -128,13 +130,16 @@ Example response from POST request:
 ## Credits
 
 - [Banakin](https://banakin.github.io): Making the website and various tweaks
+- Doge: FullyAgedCropMarker and AlternateBlockDestruction
 - [The Faithful Team](https://faithful.team/): Making the Faithful Texture Pack
-- [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/): Inspiration
-- [Stridey](https://www.planetminecraft.com/member/stridey/): LowShield
-- Redcoke26: MelonHunger
 - [Nekzuris](https://twitter.com/Nekzuris): ColoredPing
 - Pomik108: RainbowXPBar
+- Redcoke26: MelonHunger
 - Seirin-Blu: Unobtrusive Rain, Unobtrusive Water
+- TheRandomGamerTRG: Making various Tweaks and the infrormation Site
+- [Stridey](https://www.planetminecraft.com/member/stridey/): LowShield
+- [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/): Inspiration
+
 
 ## Tech Used
 
