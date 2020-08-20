@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const path = require('path');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -38,13 +38,10 @@ module.exports = {
         ],
     },
     optimization: {
+    minimize: true,
         minimizer: [
-            new UglifyJsPlugin({
-                cache: true,
-                parallel: true,
-                sourceMap: true
-            })
-        ]
+            new TerserPlugin(),
+        ],
     },
     plugins: [
         new MiniCssExtractPlugin({
