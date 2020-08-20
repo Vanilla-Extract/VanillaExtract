@@ -1,3 +1,5 @@
+import 'bootstrap';
+
 let format = "6";
 let modules = [];
 let glassModule;
@@ -139,7 +141,7 @@ function downloadPack() {
     // Create alert
     $('#creating-alert').show();
     $.post(
-        "https://us-central1-faithfultweaks.cloudfunctions.net/makePack",
+        process.env.NODE_ENV !== 'production' ? "http://localhost:5001/faithfultweaks/us-central1/makePack" : "https://us-central1-faithfultweaks.cloudfunctions.net/makePack",
         {
             "format": format,
             "modules": downloadModules,
@@ -151,7 +153,7 @@ function downloadPack() {
             window.location.href = data.url;
             $('#download-link').attr('href', data.url); // Set download link
             $('#creating-alert').hide(); // Hide old alert
-            $('#created-alert').show(); // Show created alert
+            $('#finished-alert').show(); // Show created alert
         },
         "json"
     ).fail(function(e) {

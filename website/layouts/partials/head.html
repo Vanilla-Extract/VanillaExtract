@@ -21,14 +21,12 @@
   <meta name="twitter:description" content="Pick and choose how you would like to experience the Faithful resource pack.">
 
   <!-- Favicon -->
-  {{ $favicon := resources.Get "favicon.ico"}}
-  <link rel="icon" href="{{ $favicon.RelPermalink }}" type="image/x-icon">
-  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="image/x-icon">
-  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="image/vnd.microsoft.icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
 
   <!-- Custom Styles & Bootsrap -->
-  {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link rel="stylesheet" href="/packaged/main.css">
 
   {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}

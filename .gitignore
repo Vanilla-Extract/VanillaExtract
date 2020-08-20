@@ -2,6 +2,7 @@ serviceaccount.json
 filenames.txt
 
 # Hugo
+website/static/packaged
 website/resources
 public
 

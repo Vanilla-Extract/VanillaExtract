@@ -12,13 +12,14 @@ $theme-colors: (
 );
 
 // Fontawesome
-@import "./fontawesome/fontawesome";
-@import "./fontawesome/brands";
-@import "./fontawesome/regular";
-@import "./fontawesome/solid";
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
 
-@import "./bootstrap/bootstrap"; // Bootstrap
-@import "./footer-clean.scss"; // Footer
+@import '~bootstrap'; // Bootstrap
+@import "footer-clean.scss"; // Footer
 
 .btn {
     border-radius: 999px;
