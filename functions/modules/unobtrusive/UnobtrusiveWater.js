@@ -137,16 +137,19 @@ module.exports = async function(format, archive, bucket){
         return;
     }
 
-    // Add ores to file
+    // Add files to pack
     const promises = formatData.files.map(async (fileData, id) => {
         if (fileData.name) {
+            // If its a normal file
             await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
                 return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
             });
         } else if (fileData.data) {
+            // If its a text file (JSON or mcmeta)
             archive.append(fileData.data, {name: path.join(fileData.path, fileData.inPackName)});
         } else {
-            console.log("Encountered invalid file JSON");
+            // If the map is invalid throw an error
+            console.error("Encountered invalid file map");
         }
     });
     await Promise.all(promises);
