@@ -136,7 +136,7 @@ Example response from POST request:
 - Pomik108: RainbowXPBar
 - Redcoke26: MelonHunger
 - Seirin-Blu: Unobtrusive Rain, Unobtrusive Water
-- TheRandomGamerTRG: Making various Tweaks and the infrormation Site
+- TheRandomGamerTRG: Making the information site and various tweaks
 - [Stridey](https://www.planetminecraft.com/member/stridey/): LowShield
 - [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/): Inspiration
 
