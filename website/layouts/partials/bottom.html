@@ -1,12 +1,15 @@
-
+<!-- jquery -->
 {{ $jquery := resources.Get "js/jquery/jquery.min.js" | resources.Fingerprint }}
 <script src="{{ $jquery.RelPermalink }}"></script>
 
+<!-- popper -->
 {{ $popper := resources.Get "js/popper/popper.min.js" | resources.Fingerprint }}
 <script src="{{ $popper.RelPermalink }}"></script>
 
+<!-- bootstrap -->
 {{ $bootstrap := resources.Get "js/bootstrap/bootstrap.min.js" | resources.Fingerprint }}
 <script src="{{ $bootstrap.RelPermalink }}"></script>
 
+<!-- download script -->
 {{ $script := resources.Get "js/script.js" | resources.Fingerprint | resources.Minify }}
 <script src="{{ $script.RelPermalink }}"></script>

@@ -13,14 +13,16 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     source = "static"
     target = "static"
 
+    # Bootstrap
     [[module.mounts]]
     source = "./node_modules/bootstrap/scss/"
     target = "assets/scss/bootstrap"
-
+    
     [[module.mounts]]
     source = "./node_modules/bootstrap/dist/js"
     target = "assets/js/bootstrap"
 
+    # Font Awesome
     [[module.mounts]]
     source = "./node_modules/@fortawesome/fontawesome-free/scss"
     target = "assets/scss/fontawesome"
@@ -29,10 +31,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     source = "./node_modules/@fortawesome/fontawesome-free/webfonts"
     target = "static/webfonts"
 
+    # jQuery
     [[module.mounts]]
     source = "./node_modules/jquery/dist"
     target = "assets/js/jquery"
 
+    # Popper
     [[module.mounts]]
     source = "./node_modules/popper.js/dist/umd"
     target = "assets/js/popper"
