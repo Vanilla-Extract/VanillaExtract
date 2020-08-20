@@ -98,6 +98,11 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 
 ### Coming Soon
 
+- 3DIronBars
+- 3DLadders
+- 3DLilyPads
+- 3DRails
+- 3DReeds
 - AlternateBlockDestruction
 - BrighterNether
 - DarkUI
