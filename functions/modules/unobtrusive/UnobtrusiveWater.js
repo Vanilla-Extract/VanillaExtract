@@ -16,6 +16,14 @@ const moduleData = {
                 path: "assets/minecraft/textures/block"
             },
             {
+                inPackName: "water_flow.png.mcmeta",
+                path: "assets/minecraft/textures/block",
+                data: `
+                {
+                    "animation": {}
+                }`
+            },
+            {
                 name: "water_overlay.png",
                 inPackName: "water_overlay.png",
                 path: "assets/minecraft/textures/block"
@@ -27,6 +35,7 @@ const moduleData = {
             },
             {
                 inPackName: "water_still.png.mcmeta",
+                path: "assets/minecraft/textures/block",
                 data: `
                 {
                     "animation": {
@@ -51,6 +60,7 @@ const moduleData = {
             },
             {
                 inPackName: "water_flow.png.mcmeta",
+                path: "assets/minecraft/textures/blocks",
                 data: `
                 {
                     "animation": {}
@@ -68,6 +78,7 @@ const moduleData = {
             },
             {
                 inPackName: "water_still.png.mcmeta",
+                path: "assets/minecraft/textures/blocks",
                 data: `
                 {
                     "animation": {
@@ -128,9 +139,15 @@ module.exports = async function(format, archive, bucket){
 
     // Add ores to file
     const promises = formatData.files.map(async (fileData, id) => {
-        await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-            return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
-        });
+        if (fileData.name) {
+            await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
+                return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
+            });
+        } else if (fileData.data) {
+            archive.append(fileData.data, {name: path.join(fileData.path, fileData.inPackName)});
+        } else {
+            console.log("Encountered invalid file JSON");
+        }
     });
     await Promise.all(promises);
 }
