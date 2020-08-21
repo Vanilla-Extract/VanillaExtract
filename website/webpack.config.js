@@ -10,6 +10,7 @@ module.exports = {
         path.resolve('src', 'js', 'script.js'),
         path.resolve('src', 'scss', 'main.scss')
     ],
+    mode: 'production',
     resolve: {
         extensions: ['.js', '.scss'],
         modules: [
