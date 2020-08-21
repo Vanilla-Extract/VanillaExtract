@@ -153,6 +153,7 @@ Example response from POST request:
 - [Canvas](https://github.com/Automattic/node-canvas) - Combining images
 - [Archiver](https://github.com/archiverjs/node-archiver) - Creating the ZIP file
 - [Hugo](https://gohugo.io/) - Website framework
+- [Webpack](https://webpack.js.org/) - Bundler
 - [Bootstrap](https://getbootstrap.com/) - CSS framework for the website
 - [jQuery](https://jquery.com/) - JavaScript Framework for the website
 - [Popper](https://popper.js.org/) - Engine for description popups
