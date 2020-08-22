@@ -68,6 +68,29 @@
     }
 }
 
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+}
+
+.btn-group {
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 25px !important;
+    @include media-breakpoint-down(sm) {
+        display: block;
+    }
+    .btn {
+        padding: 10px;
+        border-radius: unset !important;
+        @include media-breakpoint-down(sm) {
+            display: block;
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
 .article {
     font-size: 20px;
 

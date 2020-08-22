@@ -33,19 +33,26 @@ body {
 }
 
 // Most elements
-.btn-light, .bg-light, .nav-light{
+.btn-light, .bg-light, .nav-light {
     background-color: var(--light) !important;
     border-color: var(--light) !important;
     color: var(--dark) !important;
 }
 
-.btn-dark, .bg-dark, .nav-dark{
+.btn-dark, .bg-dark, .nav-dark {
     background-color: var(--dark) !important;
     border-color: var(--dark) !important;
     color: var(--light) !important;
 }
 
-// Navbar brand
-.navbar-brand{
+// Navbar
+.navbar-brand {
     color: var(--body-dark) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: escape-svg($navbar-light-toggler-icon-bg) !important;
+    @media (prefers-color-scheme: dark) {
+        background-image: escape-svg($navbar-dark-toggler-icon-bg) !important;
+    }
 }

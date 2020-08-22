@@ -1,7 +1,4 @@
 // FILE FROM BOOTSTRAP STUDIO, EDITED BY BANAKIN
-$breakpoint: var(--breakpoint-md);
-$big-breakpoint: var(--breakpoint-lg);
-
 .footer-clean {
   padding: 50px 0;
   background-color: var(--body-light);
@@ -31,7 +28,7 @@ $big-breakpoint: var(--breakpoint-lg);
     }
   }
   .item {
-    @media (max-width: $breakpoint) {
+    @include media-breakpoint-down(md) {
       text-align: center;
       padding-bottom: 20px;
     }
@@ -39,7 +36,7 @@ $big-breakpoint: var(--breakpoint-lg);
     &.social {
       text-align: right;
 
-      @media (max-width: $breakpoint) {
+      @include media-breakpoint-down(md) {
         text-align: center;
       }
 
@@ -56,12 +53,11 @@ $big-breakpoint: var(--breakpoint-lg);
         color: inherit;
         opacity: 0.8;
 
-        @media (max-width: $big-breakpoint) {
+        @include media-breakpoint-down(lg) {
           margin-top: 40px;
         }
-
-        @media (max-width: $breakpoint) {
-            margin-top: 10px;
+        @include media-breakpoint-down(md) {
+          margin-top: 10px;
         }
 
         &:hover {
