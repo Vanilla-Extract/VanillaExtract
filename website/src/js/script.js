@@ -175,14 +175,14 @@ function downloadPack() {
     request.open('POST', url, true);
     // request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
     request.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status == 200) {
             // Request finished
             const data = JSON.parse(this.responseText);
             window.location.href = data.url;
             document.querySelector('#download-link').setAttribute('href', data.url); // Set download link
             document.querySelector('#creating-alert').style.display = 'none'; // Hide old alert
             document.querySelector('#finished-alert').style.display = 'block'; // Show created alert
-        } else if (XMLHttpRequest.DONE) {
+        } else if (this.readyState === 4) {
             // Request error
             document.querySelector('#creating-alert').style.display = 'none'; // Hide old alert
             document.querySelector('#fail-alert').style.display = 'block'; // Show fail alert
