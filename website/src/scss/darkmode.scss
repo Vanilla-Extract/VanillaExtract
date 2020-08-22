@@ -1,0 +1,51 @@
+:root{
+    --body-light: #{$white} !important;
+    --body-dark: #{$gray-900} !important;
+    --light: #{$gray-100} !important;
+    --gray: #{$gray-400} !important;
+    --dark: #{$gray-800} !important;
+
+    @media (prefers-color-scheme: dark) {
+        --body-light: #{$gray-900} !important;
+        --body-dark: #{$white} !important;
+        --light: #{$gray-800} !important;
+        --gray: #{$gray-600} !important;
+        --dark: #{$gray-200} !important;
+    }
+}
+
+// Popover
+.popover-header {
+    background-color: var(--body-light) !important;
+    border-color: var(--body-light) !important;
+    color: var(--body-dark) !important;
+}
+.popover-body {
+    background-color: var(--light) !important;
+    border-color: var(--light) !important;
+    color: var(--dark) !important;
+}
+
+// Body
+body {
+    background-color: var(--body-light) !important;
+    color: var(--body-dark) !important;
+}
+
+// Most elements
+.btn-light, .bg-light, .nav-light{
+    background-color: var(--light) !important;
+    border-color: var(--light) !important;
+    color: var(--dark) !important;
+}
+
+.btn-dark, .bg-dark, .nav-dark{
+    background-color: var(--dark) !important;
+    border-color: var(--dark) !important;
+    color: var(--light) !important;
+}
+
+// Navbar brand
+.navbar-brand{
+    color: var(--body-dark) !important;
+}

@@ -1,0 +1,90 @@
+.btn {
+    border-radius: 999px;
+}
+
+.module-selector {
+    background-color: var(--light);
+    transition: 0.2s;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    width: 160px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--gray);
+    }
+    &.enabled {
+        background-color: var(--dark);
+        color: var(--body-light);
+    }
+    &.vt-origin {
+        border: 4px solid $orange;
+    }
+    &.ft-origin {
+        border: 4px solid $blue;
+    }
+        
+    &.community-origin {
+        border: 4px solid $purple;
+    }
+}
+
+.mod-icon {
+    image-rendering: pixelated !important;
+    border-radius: 10px;
+    image-rendering: crisp-edges !important;
+    height: 85px;
+    width: 85px;
+
+    
+}
+
+#creating-alert, #finished-alert, #fail-alert {
+    display: none;
+}
+
+.alert-link{
+    text-decoration: underline !important;
+}
+
+.collapsible a {
+    &:before {
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    &[aria-expanded=true]:before {
+        content: "\f068";
+    }
+    &[aria-expanded=false]:before {
+        content: "\f067";
+    }
+}
+
+.article {
+    font-size: 20px;
+
+    h1 {
+        font-weight: bold;
+    }
+    h3 {
+        text-decoration: underline;
+    }
+    img {
+        margin-bottom: 16px;
+        width: 100%;
+        max-width: 800px;
+    }
+    .btn {
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 0;
+    }
+}

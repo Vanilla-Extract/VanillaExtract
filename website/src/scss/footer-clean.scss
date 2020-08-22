@@ -1,11 +1,11 @@
-// FILE FROM BOOTSTRAP STUDIO AND TURNED INTO SCSS BY BANAKIN
-$breakpoint: 767px;
-$big-breakpoint: 991px;
+// FILE FROM BOOTSTRAP STUDIO, EDITED BY BANAKIN
+$breakpoint: var(--breakpoint-md);
+$big-breakpoint: var(--breakpoint-lg);
 
 .footer-clean {
   padding: 50px 0;
-  background-color: #fff;
-  color: #4b4c4d;
+  background-color: var(--body-light);
+  color: var(--body-dark);
 
   h3 {
     margin-top: 0;
@@ -51,11 +51,10 @@ $big-breakpoint: 991px;
         display: inline-block;
         text-align: center;
         border-radius: 50%;
-        border: 1px solid #ccc;
         margin-left: 10px;
         margin-top: 22px;
         color: inherit;
-        opacity: 0.75;
+        opacity: 0.8;
 
         @media (max-width: $big-breakpoint) {
           margin-top: 40px;
