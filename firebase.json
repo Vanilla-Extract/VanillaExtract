@@ -13,6 +13,11 @@
     ],
     "redirects": [
       {
+        "source": "/info",
+        "destination": "https://sites.google.com/view/faithfultweaks/",
+        "type": 301
+      },
+      {
         "source": "https://faithfultweaks.web.app/*",
         "destination": "https://faithfultweaks.com/*",
         "type": 301
