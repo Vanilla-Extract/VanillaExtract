@@ -28,6 +28,9 @@
   <!-- Custom Styles & Bootsrap -->
   <link rel="stylesheet" href="/packaged/main.css">
 
+  <!-- AdSense -->
+  <script data-ad-client="ca-pub-9964600489107533" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
   {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
