@@ -40,7 +40,7 @@ exports.deletePacks = functions.pubsub.schedule('0 4 * * *').onRun(async (cxt) =
 
 // Create a zip file from file in storage ----- CLOUD FUNCTION -----
 exports.makePack = functions.https.onRequest(async (req, res) => {
-    res.set('Access-Control-Allow-Origin', process.env.NODE_ENV !== 'production' ? '*' : 'https://faithfultweaks.web.app');
+    res.set('Access-Control-Allow-Origin', process.env.NODE_ENV !== 'production' ? '*' : 'https://faithfultweaks.com');
     res.set('Content-Type', 'application/json');
 
     const bucket = admin.storage().bucket(); // Storage bucket
