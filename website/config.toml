@@ -1,4 +1,4 @@
-baseURL = "https://faithfultweaks.web.app/"
+baseURL = "https://faithfultweaks.com/"
 languageCode = "en-us"
 title = "Faithful Tweaks"
 publishDir = "../public"
