@@ -1,4 +1,4 @@
-[<img src="https://faithfultweaks.web.app/images/logo.png" alt="Faithful Tweaks Logo" width="150px" />](https://faithfultweaks.web.app/)
+[<img src="https://faithfultweaks.com/images/logo.png" alt="Faithful Tweaks Logo" width="150px" />](https://faithfultweaks.com/)
 
 # Faithful Tweaks
 
@@ -144,6 +144,7 @@ Example response from POST request:
 - TheRandomGamerTRG: Making the information site and various tweaks
 - [Stridey](https://www.planetminecraft.com/member/stridey/): LowShield
 - [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/): Inspiration
+- [Ozzymand](https://www.planetminecraft.com/member/ozzymand/): Dark UI textures
 
 
 ## Tech Used

@@ -14,7 +14,7 @@
     "redirects": [
       {
         "source": "/info",
-        "destination": "https://sites.google.com/view/faithfultweaks/",
+        "destination": "https://info.faithfultweaks.com/",
         "type": 301
       },
       {
