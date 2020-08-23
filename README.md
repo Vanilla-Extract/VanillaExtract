@@ -2,13 +2,13 @@
 
 # Faithful Tweaks
 
-<p style="text-align: center; margin: 0 auto; display: block;">
+<p>
     <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Website Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Website%20Deploy/badge.svg"></a>
     <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Functions Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Functions%20Deploy/badge.svg"></a>
     <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Images Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Images%20Deploy/badge.svg"></a>
 </p>
 
-<p style="text-align: center;">
+<p>
     <a href="https://github.com/Banakin/FaithfulTweaks/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Banakin/FaithfulTweaks"></a>
     <a href="https://github.com/Banakin/FaithfulTweaks/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Banakin/FaithfulTweaks"></a>
     <a href="https://github.com/Banakin/FaithfulTweaks/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Banakin/FaithfulTweaks"></a>
