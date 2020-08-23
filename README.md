@@ -2,7 +2,7 @@
 
 # Faithful Tweaks
 
-<p style="text-align: center;">
+<p style="text-align: center; margin: 0 auto;">
     <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Website Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Website%20Deploy/badge.svg"></a>
     <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Functions Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Functions%20Deploy/badge.svg"></a>
     <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Images Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Images%20Deploy/badge.svg"></a>
