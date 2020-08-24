@@ -19,7 +19,7 @@
       },
       {
         "source": "/**",
-        "destination": "https://faithfultweaks.com",
+        "destination": "https://faithfultweaks.com/*",
         "type": 301
       }
     ]
