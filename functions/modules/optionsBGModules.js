@@ -8,7 +8,7 @@ const files = {
     AncientDebrisBG: "AncientDebris.png",
     AndesiteBG: "andesite.png",
     BedrockBG: "bedrock.png",
-    BetterBedrockBG: "BetterBadrock.png",
+    BetterBedrockBG: "BetterBedrock.png",
     BirchPlanksBG: "BirchPlanks.png",
     DarkOakPlanksBG: "DarkOakPlanks.png",
     DioriteBG: "diorite.png",
