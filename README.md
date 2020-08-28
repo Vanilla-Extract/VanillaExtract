@@ -24,6 +24,18 @@ To create a module some github and javascript experience will be helpful but the
 
 Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the traditional fashion.
 
+## Available Versions
+- 1.16.2
+- 1.16
+- 1.15
+- 1.14
+- 1.13
+- 1.12
+- 1.11
+- 1.10
+- 1.9
+- 1.8
+
 ## Available Modules
 
 ### Aesthetic
@@ -122,7 +134,7 @@ Example body of POST request:
 
 ```json
 {
-    "format":  5,
+    "format":  "1.16.2",
     "modules":  ["SlicedSwords", "ReducedPumpkinBlur", "ColoredBows", "OreBorders", "StickyPistonSides"],
     "iconModules": ["MelonHunger", "ColoredPing", "BlueWitherHearts", "RainbowXP"],
     "optionsBackground": "AcaciaPlanksBG",

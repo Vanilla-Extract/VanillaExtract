@@ -48,7 +48,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
 
     // Get body data
-    const format = Number(req.body.format);
+    const format = req.body.format;
     const modules = req.body.modules;
     const iconModules = req.body.iconModules;
     const optionsBackground = req.body.optionsBackground;
@@ -142,29 +142,30 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
 
 // Make the mcmeta file
 function mcMeta(format) {
-    // Get version from pack format
-    let ver;
-    if (format === 1) {
-        ver = "1.6.1 - 1.8.9";
-    } else if (format === 2) {
-        ver = "1.9 - 1.10.2";
-    } else if (format === 3) {
-        ver = "1.11 - 1.12.2";
-    } else if (format === 4) {
-        ver = "1.13 - 1.14.4";
-    } else if (format === 5) {
-        ver = "1.15 - 1.16.1";
-    } else if (format === 6) {
-        ver = "1.16.2";
+    // Get pack format from version
+    let packFormat;
+    if (format == "1.8") {
+        packFormat = 1;
+    } else if (format == "1.9" || format == "1.10") {
+        packFormat = 2;
+    } else if (format == "1.11" || format == "1.12") {
+        packFormat = 3;
+    } else if (format == "1.13" || format == "1.14") {
+        packFormat = 4;
+    } else if (format == "1.15" || format == "1.16") {
+        packFormat = 5;
+    } else if (format == "1.16.2") {
+        packFormat = 6;
     } else {
-        ver = "error making pack"
+        packFormat = 1
+        format = "Error making pack";
     }
 
     return (
 `{
     "pack": {
-        "pack_format": `+format+`,
-        "description": "§aFaithful Tweaks §6- §c`+ver+`\\n§b§nfaithfultweaks.web.app"
+        "pack_format": `+packFormat+`,
+        "description": "§aFaithful Tweaks §6- §c`+format+`\\n§b§nfaithfultweaks.web.app"
     }
 }`
     );
@@ -172,24 +173,6 @@ function mcMeta(format) {
 
 // Make the modules.txt file
 function moduleSelection(format, modules, iconModules, optionsBackground, panoOption) {
-    // Get version from pack format
-    let ver;
-    if (format === 1) {
-        ver = "1.6.1 - 1.8.9";
-    } else if (format === 2) {
-        ver = "1.9 - 1.10.2";
-    } else if (format === 3) {
-        ver = "1.11 - 1.12.2";
-    } else if (format === 4) {
-        ver = "1.13 - 1.14.4";
-    } else if (format === 5) {
-        ver = "1.15 - 1.16.1";
-    } else if (format === 6) {
-        ver = "1.16.2";
-    } else {
-        ver = "error making pack"
-    }
-
     // Make string of modules
     let modStr = '';
     if (modules !== undefined && modules !== null) {
@@ -223,7 +206,7 @@ function moduleSelection(format, modules, iconModules, optionsBackground, panoOp
 
     }
 
-    return ('Faithful Tweaks generated pack\nVersion: '+ver+'\n'+modStr+hudStr+optionsStr+panoStr);
+    return ('Faithful Tweaks generated pack\nVersion: '+format+'\n'+modStr+hudStr+optionsStr+panoStr);
 }
 
 // The credits.txt file contents

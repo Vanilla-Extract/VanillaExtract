@@ -1,4 +1,6 @@
-// ----- IMPORTS -----
+const path = require('path');
+
+// ----- MODULES -----
 const modulesData = {
 //  ModuleID               : require('./path/to/moduleid.js'),
     TestModule             : require('./modules/testModule.js'),
@@ -42,11 +44,40 @@ const modulesData = {
 
 // Figure out which modules to add
 const addModules = async function(format, archive, modules, bucket){
-    const promises = [];
-    modules.forEach((modName) => {
+    // For each module
+    const promises = modules.map(async (modName) => {
         // If the module exists
         if (modulesData[modName] !== undefined && modulesData[modName] !== null) {
-            promises.push(modulesData[modName](format, archive, bucket));
+            // Try to get module path
+            let directory;
+            try {
+                directory = modulesData[modName][format];
+            } catch (e) {
+                // If version has no path return
+                console.log('Invalid Version: '+e);
+                return;
+            }
+            
+            // Make path to files
+            const DLPath = path.join('packfiles', directory);
+
+            // List files
+            await bucket.getFiles({
+                autoPaginate: false,
+                directory: DLPath,
+            }).then(async (data) => {
+                // For each file
+                const promises = data[0].map(async (file) => {
+                    // Download
+                    await file.download().then((fileData) => {
+                        // Remove beginning of path from file name
+                        fileName = file.name.replace(DLPath, '');
+                        // Add file to zip
+                        return archive.append(fileData[0], {name: fileName});
+                    });
+                });
+                await Promise.all(promises);
+            });
         }
     });
     return Promise.all(promises);
