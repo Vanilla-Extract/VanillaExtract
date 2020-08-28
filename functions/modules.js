@@ -1,6 +1,7 @@
 // ----- IMPORTS -----
 const modulesData = {
 //  ModuleID               : require('./path/to/moduleid.js'),
+    TestModule             : require('./modules/testModule.js'),
 
     // Aesthetic
     BlackNetherBricks      : require('./modules/aesthetic/BlackNetherBricks.js'),
