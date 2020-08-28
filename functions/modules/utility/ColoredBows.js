@@ -1,109 +1,21 @@
-const path = require('path');
+// FORMAT REFERENCE
+// 6 = 1.16.2
+// 5 = 1.15-1.16
+// 4 = 1.13-1.14
+// 3 = 1.11-1.12
+// 2 = 1.9-1.10
+// 1 = 1.8
 
-// Module Data
-const moduleData = {
-    format654: {
-        packFilesPath: "modules/utility/ColoredBows/",
-        files: [
-            // Bow
-            {
-                name: "bow.png",
-                inPackName: "bow.png",
-                path: "assets/minecraft/textures/item"
-            },
-            {
-                name: "bow_pulling_0.png",
-                inPackName: "bow_pulling_0.png",
-                path: "assets/minecraft/textures/item"
-            },
-            {
-                name: "bow_pulling_1.png",
-                inPackName: "bow_pulling_1.png",
-                path: "assets/minecraft/textures/item"
-            },
-            {
-                name: "bow_pulling_2.png",
-                inPackName: "bow_pulling_2.png",
-                path: "assets/minecraft/textures/item"
-            },
-            // Crossbow
-            {
-                name: "crossbow_standby.png",
-                inPackName: "crossbow_standby.png",
-                path: "assets/minecraft/textures/item"
-            },
-            {
-                name: "crossbow_pulling_0.png",
-                inPackName: "crossbow_pulling_0.png",
-                path: "assets/minecraft/textures/item"
-            },
-            {
-                name: "crossbow_pulling_1.png",
-                inPackName: "crossbow_pulling_1.png",
-                path: "assets/minecraft/textures/item"
-            },
-            {
-                name: "crossbow_pulling_2.png",
-                inPackName: "crossbow_pulling_2.png",
-                path: "assets/minecraft/textures/item"
-            },
-            {
-                name: "crossbow_arrow.png",
-                inPackName: "crossbow_arrow.png",
-                path: "assets/minecraft/textures/item"
-            },
-            {
-                name: "crossbow_firework.png",
-                inPackName: "crossbow_firework.png",
-                path: "assets/minecraft/textures/item"
-            },
-        ]
-    },
-    format321: {
-        packFilesPath: "modules/utility/ColoredBows/",
-        files: [
-            {
-                name: "bow_pulling_0.png",
-                inPackName: "bow_pulling_0.png",
-                path: "assets/minecraft/textures/items"
-            },
-            {
-                name: "bow_pulling_1.png",
-                inPackName: "bow_pulling_1.png",
-                path: "assets/minecraft/textures/items"
-            },
-            {
-                name: "bow_pulling_2.png",
-                inPackName: "bow_pulling_2.png",
-                path: "assets/minecraft/textures/items"
-            },
-            {
-                name: "bow.png",
-                inPackName: "bow_standby.png",
-                path: "assets/minecraft/textures/items"
-            },
-        ]
-    },
+// File Paths
+module.exports = {
+    "1.16.2":  "/modules/utility/ColoredBows/1.13-1.16.2/",
+    "1.16":    "/modules/utility/ColoredBows/1.13-1.16.2/",
+    "1.15":    "/modules/utility/ColoredBows/1.13-1.16.2/",
+    "1.14":    "/modules/utility/ColoredBows/1.13-1.16.2/",
+    "1.13":    "/modules/utility/ColoredBows/1.13-1.16.2/",
+    "1.12":    "/modules/utility/ColoredBows/1.8-1.12/",
+    "1.11":    "/modules/utility/ColoredBows/1.8-1.12/",
+    "1.10":    "/modules/utility/ColoredBows/1.8-1.12/",
+    "1.9":     "/modules/utility/ColoredBows/1.8-1.12/",
+    "1.8":     "/modules/utility/ColoredBows/1.8-1.12/",
 };
-
-// Module function
-module.exports = async function(format, archive, bucket){
-    // Change data based on format
-    let formatData;
-    if (format === 1 || format === 2 || format === 3) {
-        formatData = moduleData.format321
-    } else if (format === 4 || format === 5 || format === 6) {
-        formatData = moduleData.format654
-    } else {
-        console.log('format not addressed');
-        return;
-    }
-
-    // Add each bow to file
-    const promises = formatData.files.map(async (fileData, id) => {
-        await bucket.file(path.join("packfiles", formatData.packFilesPath, fileData.name)).download().then((data) => {
-            return archive.append(data[0], {name: path.join(fileData.path, fileData.inPackName)});
-        });
-    });
-    await Promise.all(promises);
-}
