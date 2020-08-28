@@ -2,17 +2,25 @@
 title: Home
 
 formats:
-    - id: 1
-      display: "1.6.1 - 1.8.9"
-    - id: 2
-      display: "1.9 - 1.10.2"
-    - id: 3
-      display: "1.11 - 1.12.2"
-    - id: 4
-      display: "1.13 - 1.14.4"
-    - id: 5
-      display: "1.15 - 1.16.1"
-    - id: 6
+    - id: 1-8
+      display: "1.8"
+    - id: 1-9
+      display: "1.9"
+    - id: 1-10
+      display: "1.10"
+    - id: 1-11
+      display: "1.11"
+    - id: 1-12
+      display: "1.12"
+    - id: 1-13
+      display: "1.13"
+    - id: 1-14
+      display: "1.14"
+    - id: 1-15
+      display: "1.15"
+    - id: 1-16
+      display: "1.16"
+    - id: 1-16-2
       display: "1.16.2"
       default: true
 
@@ -22,7 +30,7 @@ formats:
 #       image = The url to the image (should be in the website/static/images/modules/normal/ folder)
 #       description = A description of what the module should do
 #       origin = Where the module came from, should be "community" unless told otherwise (options are vanillatweaks, faithfultweaks, community)
-#       notcompatable = Resource pack formats that the module is incompatible with (options are 1, 2, 3, 4, 5)
+#       notcompatable = Versions that the module is incompatible with (Options are the id's of the format section above)
 
 sections:
   # Aesthetic
@@ -47,10 +55,13 @@ sections:
         description: "Eliminates Honey Block transparency."
         origin: "vanillatweaks"
         notcompatable:
-          - 1
-          - 2
-          - 3
-          - 4
+          - 1-8
+          - 1-9
+          - 1-10
+          - 1-11
+          - 1-12
+          - 1-13
+          - 1-14
 
       - id: "SidewaysNuggets"
         name: "Sideways Nuggets"
@@ -58,8 +69,9 @@ sections:
         description: "Rotates Iron Nuggets to be consistent with the other nugget textures."
         origin: "vanillatweaks"
         notcompatable:
-          - 1
-          - 2
+          - 1-8
+          - 1-9
+          - 1-10
 
       - id: "BlackNetherBricks"
         name: "Black Nether Bricks"
@@ -111,8 +123,9 @@ sections:
         description: "Gives all sides of the Observer block directional indicators which display updates."
         origin: "vanillatweaks"
         notcompatable:
-          - 1
-          - 2
+          - 1-8
+          - 1-9
+          - 1-10
       
       - id: "ColoredBows"
         name: "Colored Bow Stages"
@@ -130,9 +143,12 @@ sections:
         description: "Creates a hole in the top of scaffolding, allowing you to traverse up and down them more comfortably."
         origin: "vanillatweaks"
         notcompatable:
-          - 1
-          - 2
-          - 3
+          - 1-8
+          - 1-9
+          - 1-10
+          - 1-11
+          - 1-12
+          - 1-13
       
       - id: "LowFire"
         name: "Low Fire"
@@ -146,7 +162,7 @@ sections:
         description: "Lowers the sheild when its held"
         origin: "vanillatweaks"
         notcompatable:
-          - 1
+          - 1-8
       
       - id: "NoVignette"
         name: "No Vignette"
@@ -178,8 +194,9 @@ sections:
         description: "Renders the Totem of Undying as completely invisible when in first person mode."
         origin: "vanillatweaks"
         notcompatable:
-          - 1
-          - 2
+          - 1-8
+          - 1-9
+          - 1-10
       
       - id: "SlicedSwords"
         name: "Sliced Swords"
@@ -193,9 +210,12 @@ sections:
         description: "Makes rain smaller and clearer to allow for better visibility and a nicer effect from rain."
         origin: "vanillatweaks"
         notcompatable:
-          - 1
-          - 2
-          - 3
+          - 1-8
+          - 1-9
+          - 1-10
+          - 1-11
+          - 1-12
+          - 1-13
 
       - id: "UnobtrusiveWater"
         name: "Unobtrusive Water"

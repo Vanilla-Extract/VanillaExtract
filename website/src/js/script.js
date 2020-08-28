@@ -1,6 +1,6 @@
 import 'bootstrap';
 
-let format = "6";
+let format = "1-16-2";
 let modules = [];
 let glassModule;
 let iconModules = [];
@@ -73,10 +73,10 @@ function setFormat() {
     this.classList.add("btn-dark");
 
     // Set format to last character of the buttons ID
-    format = this.id.slice(-1);
+    format = this.id.replace('format', '');
 
     // Show all
-    document.querySelectorAll('.hideFormat1, .hideFormat2, .hideFormat3, .hideFormat4, .hideFormat5, .hideFormat6').forEach(e => e.style.display = '');
+    document.querySelectorAll('.module-selector').forEach(e => e.style.display = '');
 
     // Hide incompatible modules
     document.querySelectorAll('.hideFormat'+format).forEach(e => e.style.display = 'none');
@@ -158,6 +158,9 @@ function downloadPack() {
         downloadModules.push(glassModule);
     }
 
+    // Update format to fit version number scheme
+    const version = format.replace('-', '.')
+
     document.querySelectorAll('.alert').forEach(e => e.style.display = 'none'); // Hide alerts
     document.querySelector('#creating-alert').style.display = 'block'; // Create alert
 
@@ -165,7 +168,7 @@ function downloadPack() {
     const request = new XMLHttpRequest(); // Request
     const url = process.env.NODE_ENV !== 'production' ? "http://localhost:5001/faithfultweaks/us-central1/makePack" : "https://us-central1-faithfultweaks.cloudfunctions.net/makePack"; // URL (based on node environment status)
     const data = {
-        "format": format,
+        "format": version,
         "modules": downloadModules,
         "iconModules": iconModules,
         "optionsBackground": optionsBackground,
