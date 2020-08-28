@@ -1,32 +1,13 @@
-const path = require('path');
-
-// Module Data
-const moduleData = {
-    format654321: {
-        packFilesPath: "modules/unobtrusive/ReducedPumpkinBlur/",
-        files: [
-            {
-                name: "pumpkinblurClear.png",
-                inPackName: "pumpkinblur.png",
-                path: "assets/minecraft/textures/misc"
-            },
-        ]
-    },
+// File Paths
+module.exports = {
+    "1.16.2":  "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
+    "1.16":    "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
+    "1.15":    "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
+    "1.14":    "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
+    "1.13":    "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
+    "1.12":    "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
+    "1.11":    "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
+    "1.10":    "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
+    "1.9":     "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
+    "1.8":     "/modules/unobtrusive/ClearPumpkinBlur/1.8-1.16.2/",
 };
-
-// Module function
-module.exports = async function(format, archive, bucket){
-    // Change data based on format
-    let formatData;
-    if (format === 1 || format === 2 || format === 3 || format === 4 || format === 5 || format === 6) {
-        formatData = moduleData.format654321
-    } else {
-        console.log('format not addressed');
-        return;
-    }
-
-    // Add pumpkin overlay
-    await bucket.file(path.join("packfiles", formatData.packFilesPath, formatData.files[0].name)).download().then((data) => {
-        return archive.append(data[0], {name: path.join(formatData.files[0].path, formatData.files[0].inPackName)});
-    });
-}

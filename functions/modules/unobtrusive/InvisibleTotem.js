@@ -1,59 +1,18 @@
-const path = require('path');
+// FORMAT REFERENCE
+// 6 = 1.16.2
+// 5 = 1.15-1.16
+// 4 = 1.13-1.14
+// 3 = 1.11-1.12
+// 2 = 1.9-1.10
+// 1 = 1.8
 
-const moduleData = {
-    format6543: {
-        file: {
-            data: `{
-                "parent": "builtin/generated",
-                "gui_light": "front",
-                "textures": {
-                  "layer0": "minecraft:item/totem_of_undying"
-                },
-                "display": {
-                    "ground": {
-                        "rotation": [ 0, 0, 0 ],
-                        "translation": [ 0, 2, 0],
-                        "scale":[ 0.5, 0.5, 0.5 ]
-                    },
-                    "head": {
-                        "rotation": [ 0, 180, 0 ],
-                        "translation": [ 0, 13, 7],
-                        "scale":[ 1, 1, 1]
-                    },
-                    "thirdperson_righthand": {
-                        "rotation": [ 0, 0, 0 ],
-                        "translation": [ 0, 3, 1 ],
-                        "scale": [ 0.55, 0.55, 0.55 ]
-                    },
-                    "firstperson_righthand": {
-                        "rotation": [ 0, -90, 25 ],
-                        "translation": [ 2, -30, 1.13],
-                        "scale": [ 0.68, 0.68, 0.68 ]
-                    },
-                    "fixed": {
-                        "rotation": [ 0, 180, 0 ],
-                        "scale": [ 1, 1, 1 ]
-                    }
-                }
-            }`,
-            inPackName: "totem_of_undying.json",
-            path: "assets/minecraft/models/item"
-        },
-    },
-}
-
-// Module function
-module.exports = async function(format, archive, bucket){
-    // Change data based on format
-    let formatData;
-    if (format === 3 || format === 4 || format === 5 || format === 6) {
-        formatData = moduleData.format6543
-    } else {
-        console.log('format not addressed');
-        return;
-    }
-
-    // Add each json file to zip
-    archive.append(formatData.file.data, {name: path.join(formatData.file.path, formatData.file.inPackName)});
-    return;
-}
+// File Paths
+module.exports = {
+    "1.16.2":  "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
+    "1.16":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
+    "1.15":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
+    "1.14":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
+    "1.12":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
+    "1.13":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
+    "1.11":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
+};
