@@ -16,6 +16,16 @@
         "source": "/info",
         "destination": "https://info.faithfultweaks.com/",
         "type": 301
+      },
+      {
+        "source": "https://faithfultweaks.web.app/",
+        "destination": "https://faithfultweaks.com/index.html",
+        "type": 301
+      },
+      {
+        "source": "https://faithfultweaks.firebaseapp.com/",
+        "destination": "https://faithfultweaks.com/index.html",
+        "type": 301
       }
     ]
   },
