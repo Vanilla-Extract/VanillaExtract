@@ -1,29 +1,21 @@
-const path = require('path');
+// FORMAT REFERENCE
+// 6 = 1.16.2
+// 5 = 1.15-1.16
+// 4 = 1.13-1.14
+// 3 = 1.11-1.12
+// 2 = 1.9-1.10
+// 1 = 1.8
 
-// Module Data
-const moduleData = {
-    packFilesPath: "modules/aesthetic/UnbundledHayBales/",
-    name: "hay_block_side.png",
-    inPackName: "hay_block_side.png",
-    path654: "assets/minecraft/textures/block",
-    path321: "assets/minecraft/textures/blocks",
+// File Paths
+module.exports = {
+    "1.16.2":  "/modules/aesthetic/UnbundledHayBales/1.13-1.16.2/",
+    "1.16":    "/modules/aesthetic/UnbundledHayBales/1.13-1.16.2/",
+    "1.15":    "/modules/aesthetic/UnbundledHayBales/1.13-1.16.2/",
+    "1.14":    "/modules/aesthetic/UnbundledHayBales/1.13-1.16.2/",
+    "1.13":    "/modules/aesthetic/UnbundledHayBales/1.13-1.16.2/",
+    "1.12":    "/modules/aesthetic/UnbundledHayBales/1.8-1.12/",
+    "1.11":    "/modules/aesthetic/UnbundledHayBales/1.8-1.12/",
+    "1.10":    "/modules/aesthetic/UnbundledHayBales/1.8-1.12/",
+    "1.9":     "/modules/aesthetic/UnbundledHayBales/1.8-1.12/",
+    "1.8":     "/modules/aesthetic/UnbundledHayBales/1.8-1.12/",
 };
-
-// Module function
-module.exports = async function(format, archive, bucket){
-    // Change data based on format
-    let pathData;
-    if (format === 1 || format === 2 || format === 3) {
-        pathData = moduleData.path321;
-    } else if (format === 4 || format === 5 || format === 6) {
-        pathData = moduleData.path654;
-    } else {
-        console.log('format not addressed');
-        return;
-    }
-
-    // Add file
-    await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.name)).download().then((data) => {
-        return archive.append(data[0], {name: path.join(pathData, moduleData.inPackName)});
-    });
-}

@@ -1,47 +1,21 @@
-const path = require('path');
+// FORMAT REFERENCE
+// 6 = 1.16.2
+// 5 = 1.15-1.16
+// 4 = 1.13-1.14
+// 3 = 1.11-1.12
+// 2 = 1.9-1.10
+// 1 = 1.8
 
-// Module Data
-const moduleData = {
-    packFilesPath: "modules/aesthetic/CherryPicking/",
-    cakeTop: {
-        name: "cake_top.png",
-        inPackName: "cake_top.png",
-    },
-    cakeItem: {
-        name: "cake_item.png",
-        inPackName: "cake.png",
-    },
-    format654: {
-        cakeTopPath: "assets/minecraft/textures/block",
-        cakeItemPath: "assets/minecraft/textures/item",
-    },
-    format321: {
-        cakeTopPath: "assets/minecraft/textures/blocks",
-        cakeItemPath: "assets/minecraft/textures/items",
-    },
+// File Paths
+module.exports = {
+    "1.16.2":  "/modules/aesthetic/CherryPicking/1.13-1.16.2/",
+    "1.16":    "/modules/aesthetic/CherryPicking/1.13-1.16.2/",
+    "1.15":    "/modules/aesthetic/CherryPicking/1.13-1.16.2/",
+    "1.14":    "/modules/aesthetic/CherryPicking/1.13-1.16.2/",
+    "1.13":    "/modules/aesthetic/CherryPicking/1.13-1.16.2/",
+    "1.12":    "/modules/aesthetic/CherryPicking/1.8-1.12/",
+    "1.11":    "/modules/aesthetic/CherryPicking/1.8-1.12/",
+    "1.10":    "/modules/aesthetic/CherryPicking/1.8-1.12/",
+    "1.9":     "/modules/aesthetic/CherryPicking/1.8-1.12/",
+    "1.8":     "/modules/aesthetic/CherryPicking/1.8-1.12/",
 };
-
-// Module function
-module.exports = async function(format, archive, bucket){
-    // Change data based on format
-    let formatData;
-    if (format === 1 || format === 2 || format === 3) {
-        formatData = moduleData.format321
-    } else if (format === 4 || format === 5 || format === 6) {
-        formatData = moduleData.format654
-    } else {
-        console.log('format not addressed');
-        return;
-    }
-
-    // Add cake top
-    await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.cakeTop.name)).download().then((data) => {
-        return archive.append(data[0], {name: path.join(formatData.cakeTopPath, moduleData.cakeTop.inPackName)});
-    });
-    // Add cake item
-    await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.cakeItem.name)).download().then((data) => {
-        return archive.append(data[0], {name: path.join(formatData.cakeItemPath, moduleData.cakeItem.inPackName)});
-    });
-
-    return;
-}

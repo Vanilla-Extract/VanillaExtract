@@ -1,29 +1,18 @@
-const path = require('path');
+// FORMAT REFERENCE
+// 6 = 1.16.2
+// 5 = 1.15-1.16
+// 4 = 1.13-1.14
+// 3 = 1.11-1.12
+// 2 = 1.9-1.10
+// 1 = 1.8
 
-// Module Data
-const moduleData = {
-    packFilesPath: "modules/aesthetic/SidewaysNuggets/",
-    name: "iron_nugget.png",
-    inPackName: "iron_nugget.png",
-    path654: "assets/minecraft/textures/item",
-    path3: "assets/minecraft/textures/items",
+// File Paths
+module.exports = {
+    "1.16.2":  "/modules/aesthetic/SidewaysNuggets/1.13-1.16.2/",
+    "1.16":    "/modules/aesthetic/SidewaysNuggets/1.13-1.16.2/",
+    "1.15":    "/modules/aesthetic/SidewaysNuggets/1.13-1.16.2/",
+    "1.14":    "/modules/aesthetic/SidewaysNuggets/1.13-1.16.2/",
+    "1.13":    "/modules/aesthetic/SidewaysNuggets/1.13-1.16.2/",
+    "1.12":    "/modules/aesthetic/SidewaysNuggets/1.11-1.12/",
+    "1.11":    "/modules/aesthetic/SidewaysNuggets/1.11-1.12/",
 };
-
-// Module function
-module.exports = async function(format, archive, bucket){
-    // Change data based on format
-    let pathData;
-    if (format === 3) {
-        pathData = moduleData.path3;
-    } else if (format === 4 || format === 5 || format === 6) {
-        pathData = moduleData.path654;
-    } else {
-        console.log('format not addressed');
-        return;
-    }
-
-    // Add nugget
-    await bucket.file(path.join("packfiles", moduleData.packFilesPath, moduleData.name)).download().then((data) => {
-        return archive.append(data[0], {name: path.join(pathData, moduleData.inPackName)});
-    });
-}
