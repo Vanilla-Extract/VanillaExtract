@@ -388,6 +388,12 @@ sections:
         description: "A partially rebuilt Piglin Bastion."
         origin: "faithfultweaks"
 
+      - id: "EndPano"
+        name: "The End Dimension"
+        image: "/images/modules/panoramas/End.png"
+        description: "An End City"
+        origin: "faithfultweaks"
+
       - id: "SeirinsPano"
         name: "Seirin's Survival World"
         image: "/images/modules/panoramas/Seirin.png"

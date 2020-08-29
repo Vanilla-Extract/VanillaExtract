@@ -101,6 +101,7 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 ### Menu Panorama
 - BastionPano
 - ClassicPano
+- EndPano
 - SeirinsPano
 
 ### Coming Soon

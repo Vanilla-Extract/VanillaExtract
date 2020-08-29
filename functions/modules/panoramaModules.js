@@ -5,12 +5,11 @@ const inPackPath = "assets/minecraft/textures/gui/title/background";
 const folders = {
     ClassicPano: "ClassicPanorama",
     BastionPano: "PiglinBastion",
+    EndPano: "TheEnd",
     SeirinsPano: "SeirinsSurvival",
 };
 
 const addModules = async function(moduleName, archive, bucket){
-
-
     // If it exists
     if (folders[moduleName] !== undefined && folders[moduleName] !== null) {
         // Image 0
