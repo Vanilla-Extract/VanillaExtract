@@ -77,6 +77,9 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - MelonHunger
 - RainbowXP
 
+### UI
+- DarkUI
+
 ### Options Background
 - AcaciaPlanksBG
 - AncientDebrisBG
@@ -116,7 +119,6 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - 3DRails (Needs updating)
 - 3DReeds (Needs updating)
 - BrighterNether (Needs updating)
-- DarkUI (Needs updating)
 
 ## Making requests to the Cloud Function
 Example body of POST request:
