@@ -8,14 +8,15 @@ A guide on installing your custom resource pack.
 ### Step 1:
 Download Faithful x32 from the official sources.
 
-{{< button "https://sites.google.com/view/f32archive/downloads" >}}Legacy Versions (1.6.1 - 1.8.9){{< /button >}}
+{{< button "https://sites.google.com/view/f32archive/downloads" >}}1.6.1 - 1.8.9{{< /button >}}
 {{< button "https://www.curseforge.com/minecraft/texture-packs/faithful-32x/files/2323077" >}}1.10{{< /button >}}
 {{< button "https://faithful.team/faithful-1-11/" >}}1.11{{< /button >}}
 {{< button "https://faithful.team/faithful-1-12/" >}}1.12{{< /button >}}
 {{< button "https://faithful.team/faithful-1-13/" >}}1.13{{< /button >}}
 {{< button "https://faithful.team/faithful-1-14/" >}}1.14{{< /button >}}
 {{< button "https://faithful.team/faithful-1-15/" >}}1.15{{< /button >}}
-{{< button "https://faithful.team/faithful-1-16-2/" >}}1.16{{< /button >}}
+{{< button "https://faithful.team/faithful-1-16-1/" >}}1.16{{< /button >}}
+{{< button "https://faithful.team/faithful-1-16-2/" >}}1.16.2{{< /button >}}
 
 ### Step 2:
 Click on "Options..." in the Main Menu.
