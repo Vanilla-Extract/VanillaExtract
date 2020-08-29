@@ -144,17 +144,17 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
 function mcMeta(format) {
     // Get pack format from version
     let packFormat;
-    if (format == "1.8") {
+    if (format === "1.8") {
         packFormat = 1;
-    } else if (format == "1.9" || format == "1.10") {
+    } else if (format === "1.9" || format === "1.10") {
         packFormat = 2;
-    } else if (format == "1.11" || format == "1.12") {
+    } else if (format === "1.11" || format === "1.12") {
         packFormat = 3;
-    } else if (format == "1.13" || format == "1.14") {
+    } else if (format === "1.13" || format === "1.14") {
         packFormat = 4;
-    } else if (format == "1.15" || format == "1.16") {
+    } else if (format === "1.15" || format === "1.16") {
         packFormat = 5;
-    } else if (format == "1.16.2") {
+    } else if (format === "1.16.2") {
         packFormat = 6;
     } else {
         packFormat = 1
