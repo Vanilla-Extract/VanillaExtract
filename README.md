@@ -1,7 +1,6 @@
 [<img src="https://faithfultweaks.com/images/logo.png" alt="Faithful Tweaks Logo" width="150px" />](https://faithfultweaks.com/)
 
 # Faithful Tweaks
-
 <p>
     <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Website Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Website%20Deploy/badge.svg"></a>
     <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Functions Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Functions%20Deploy/badge.svg"></a>
@@ -15,7 +14,6 @@
 An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/).
 
 ## Creating Modules
-
 A guide on making modules is coming soon so stay tuned! For now check out [the Better Bedrock commit](https://github.com/Banakin/FaithfulTweaks/commit/4591749e34ed5151675eec693b40d28588471928) or [the Black Nether Bricks commit](https://github.com/Banakin/FaithfulTweaks/commit/bdac7167f59ed335b278229e1e11b3ae5a5915e0) (there was an issue with Black Nether Bricks, the fix was made [here](https://github.com/Banakin/FaithfulTweaks/commit/23d536ccdcbd489a6a139f4064c498d7cde491b2)).
 
 These two commits cover updating `README.md` (this file), creating the module's javascript file, adding the module to `/functions/modules.js`, adding the module to the website, and adding the module to `/images`.
@@ -37,9 +35,7 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - 1.8
 
 ## Available Modules
-
 ### Aesthetic
-
 - BlackNetherBricks
 - CherryPicking
 - SidewaysNuggets
@@ -47,12 +43,10 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - UnbundledHayBales
 
 ### Terrain
-
 - BetterBedrock
 - PebblelessCoarseDirt
 
 ### Utility
-
 - BetterObservers
 - ColoredBows
 - DirectionalHoppers
@@ -60,7 +54,6 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - StickyPistonSides
 
 ### Unobtrusive
-
 - AlternateEnchantGlint
 - ClearPumpkinBlur
 - InvisibleTotem
@@ -74,20 +67,17 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - UnobtrusiveWater
 
 ### Glass
-
 - BorderlessGlass
 - CleanBorderlessGlass
 - CleanGlass
 
 ### HUD
-
 - BlueWitherHearts
 - ColoredPing
 - MelonHunger
 - RainbowXP
 
 ### Options Background
-
 - AcaciaPlanksBG
 - AncientDebrisBG
 - AndesiteBG
@@ -109,29 +99,25 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - StoneBG
 
 ### Menu Panorama
-
 - BastionPano
 - ClassicPano
 - SeirinsPano
 
 ### Coming Soon
-
-- 3DIronBars
-- 3DLadders
-- 3DLilyPads
-- 3DRails
-- 3DReeds
 - AlternateBlockDestruction
-- BrighterNether
-- DarkUI
 - FullyAgedCropMarker
 - ProgressBarBlockDestruction
 - PebblelessDirt
+- 3DIronBars (Needs updating)
+- 3DLadders (Needs updating)
+- 3DLilyPads (Needs updating)
+- 3DRails (Needs updating)
+- 3DReeds (Needs updating)
+- BrighterNether (Needs updating)
+- DarkUI (Needs updating)
 
 ## Making requests to the Cloud Function
-
 Example body of POST request:
-
 ```json
 {
     "format":  "1.16.2",
@@ -143,7 +129,6 @@ Example body of POST request:
 ```
 
 Example response from POST request:
-
 ```json
 {
     "url": "https://firebasestorage.googleapis.com/v0/b/faithfultweaks.appspot.com/o/FaithfulTweaks%2F900000000-0000-0000-0000-000000000000.zip?alt=media&token=00000000-0000-0000-0000-000000000000"
@@ -151,7 +136,6 @@ Example response from POST request:
 ```
 
 ## Credits
-
 - [Banakin](https://banakin.github.io): Making the website and various tweaks
 - Doge: FullyAgedCropMarker and AlternateBlockDestruction
 - [The Faithful Team](https://faithful.team/): Making the Faithful Texture Pack
@@ -164,9 +148,7 @@ Example response from POST request:
 - [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/): Inspiration
 - [Ozzymand](https://www.planetminecraft.com/member/ozzymand/): Dark UI textures
 
-
 ## Tech Used
-
 - [Firebase](https://firebase.google.com/) - Backend (API, Hosting, Storage)
 - [node.js](https://nodejs.org/) - Used for the API
 - [Canvas](https://github.com/Automattic/node-canvas) - Combining images
