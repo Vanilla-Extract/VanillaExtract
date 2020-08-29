@@ -16,11 +16,6 @@
         "source": "/info",
         "destination": "https://info.faithfultweaks.com/",
         "type": 301
-      },
-      {
-        "regex": "https?:\/\/faithfultweaks.(?:web.app|firebaseapp.com)?\/(.*)",
-        "destination": "/",
-        "type": 301
       }
     ]
   },
