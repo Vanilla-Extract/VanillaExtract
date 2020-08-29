@@ -18,11 +18,6 @@
         "type": 301
       },
       {
-        "source": "/**",
-        "destination": "https://faithfultweaks.com/index.html",
-        "type": 301
-      },
-      {
         "source": "**",
         "destination": "https://faithfultweaks.com/index.html",
         "type": 301
