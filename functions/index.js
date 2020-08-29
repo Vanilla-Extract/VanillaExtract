@@ -18,7 +18,7 @@ const { v4: uuidv4 } = require('uuid');
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 admin.initializeApp({
-    storageBucket: "faithfultweaks.appspot.com"
+    storageBucket: "faithfultweaks-app.appspot.com"
 });
 
 // Delete all the genrated packs every day (ABOUT MIDNIGHT EST)
