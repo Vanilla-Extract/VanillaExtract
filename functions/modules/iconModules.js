@@ -26,6 +26,7 @@ const addIconModules = async function(modules, archive, bucket){
     
     Hunger:
         1 = Melons
+        2 = Bread
 
     Ping:
         1 = Rainbow
@@ -42,6 +43,8 @@ const addIconModules = async function(modules, archive, bucket){
     modules.forEach((modName) => {
         if (modName === "MelonHunger") {
             hungerMode = 1;
+        } if (modName === "BreadHunger") {
+            hungerMode = 2;
         } else if (modName === "ColoredPing") {
             pingMode = 1;
         } else if (modName === "BlueWitherHearts") {
@@ -67,6 +70,11 @@ const addIconModules = async function(modules, archive, bucket){
         });
     } else if (hungerMode === 1) {
         await bucket.file(path.join("packfiles/modules/hud", "hunger", "melons.png")).download().then((data) => {
+            hungerIcons.src = data[0];
+            return;
+        });
+    } else if (hungerMode === 2) {
+        await bucket.file(path.join("packfiles/modules/hud", "hunger", "bread.png")).download().then((data) => {
             hungerIcons.src = data[0];
             return;
         });

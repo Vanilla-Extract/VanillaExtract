@@ -104,6 +104,7 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - SeirinsPano
 
 ### Coming Soon
+- BreadHunger
 - AlternateBlockDestruction
 - FullyAgedCropMarker
 - ProgressBarBlockDestruction
