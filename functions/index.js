@@ -165,7 +165,7 @@ function mcMeta(format) {
 `{
     "pack": {
         "pack_format": `+packFormat+`,
-        "description": "§aFaithful Tweaks §6- §c`+format+`\\n§b§nfaithfultweaks.web.app"
+        "description": "§aFaithful Tweaks §6- §c`+format+`\\n§b§nfaithfultweaks.com"
     }
 }`
     );
