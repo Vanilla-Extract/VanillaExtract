@@ -8,9 +8,9 @@
 
 // File Paths
 module.exports = {
-    "1.16.2":  "/modules/unobtrusive/LowFire/1.15-1.16.2/",
-    "1.16":    "/modules/unobtrusive/LowFire/1.15-1.16.2/",
-    "1.15":    "/modules/unobtrusive/LowFire/1.15-1.16.2/",
+    "1.16.2":  "/modules/unobtrusive/LowFire/1.15-latest/",
+    "1.16":    "/modules/unobtrusive/LowFire/1.15-latest/",
+    "1.15":    "/modules/unobtrusive/LowFire/1.15-latest/",
     "1.14":    "/modules/unobtrusive/LowFire/1.13-1.14/",
     "1.13":    "/modules/unobtrusive/LowFire/1.13-1.14/",
     "1.12":    "/modules/unobtrusive/LowFire/1.8-1.12/",

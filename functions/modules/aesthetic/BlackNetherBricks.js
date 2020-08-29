@@ -8,9 +8,9 @@
 
 // File Paths
 module.exports = {
-    "1.16.2":  "/modules/aesthetic/BlackNetherBricks/1.15-1.16.2/",
-    "1.16":    "/modules/aesthetic/BlackNetherBricks/1.15-1.16.2/",
-    "1.15":    "/modules/aesthetic/BlackNetherBricks/1.15-1.16.2/",
+    "1.16.2":  "/modules/aesthetic/BlackNetherBricks/1.15-latest/",
+    "1.16":    "/modules/aesthetic/BlackNetherBricks/1.15-latest/",
+    "1.15":    "/modules/aesthetic/BlackNetherBricks/1.15-latest/",
     "1.14":    "/modules/aesthetic/BlackNetherBricks/1.13-1.14/",
     "1.13":    "/modules/aesthetic/BlackNetherBricks/1.13-1.14/",
     "1.12":    "/modules/aesthetic/BlackNetherBricks/1.8-1.12/",

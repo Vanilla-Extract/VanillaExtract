@@ -8,11 +8,11 @@
 
 // File Paths
 module.exports = {
-    "1.16.2":  "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
-    "1.16":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
-    "1.15":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
-    "1.14":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
-    "1.12":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
-    "1.13":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
-    "1.11":    "/modules/unobtrusive/InvisibleTotem/1.11-1.16.2/",
+    "1.16.2":  "/modules/unobtrusive/InvisibleTotem/1.11-latest/",
+    "1.16":    "/modules/unobtrusive/InvisibleTotem/1.11-latest/",
+    "1.15":    "/modules/unobtrusive/InvisibleTotem/1.11-latest/",
+    "1.14":    "/modules/unobtrusive/InvisibleTotem/1.11-latest/",
+    "1.12":    "/modules/unobtrusive/InvisibleTotem/1.11-latest/",
+    "1.13":    "/modules/unobtrusive/InvisibleTotem/1.11-latest/",
+    "1.11":    "/modules/unobtrusive/InvisibleTotem/1.11-latest/",
 };

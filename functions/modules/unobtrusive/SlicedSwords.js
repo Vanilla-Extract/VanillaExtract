@@ -1,7 +1,7 @@
 // File Paths
 module.exports = {
-    "1.16.2":  "/modules/unobtrusive/SlicedSwords/1.16-1.16.2/",
-    "1.16":    "/modules/unobtrusive/SlicedSwords/1.16-1.16.2/",
+    "1.16.2":  "/modules/unobtrusive/SlicedSwords/1.16-latest/",
+    "1.16":    "/modules/unobtrusive/SlicedSwords/1.16-latest/",
     "1.15":    "/modules/unobtrusive/SlicedSwords/1.14-1.15/",
     "1.14":    "/modules/unobtrusive/SlicedSwords/1.14-1.15/",
     "1.13":    "/modules/unobtrusive/SlicedSwords/1.13/",

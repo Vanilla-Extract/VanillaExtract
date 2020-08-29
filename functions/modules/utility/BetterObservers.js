@@ -8,11 +8,11 @@
 
 // File Paths
 module.exports = {
-    "1.16.2":  "/modules/utility/BetterObservers/1.13-1.16.2/",
-    "1.16":    "/modules/utility/BetterObservers/1.13-1.16.2/",
-    "1.15":    "/modules/utility/BetterObservers/1.13-1.16.2/",
-    "1.14":    "/modules/utility/BetterObservers/1.13-1.16.2/",
-    "1.13":    "/modules/utility/BetterObservers/1.13-1.16.2/",
+    "1.16.2":  "/modules/utility/BetterObservers/1.13-latest/",
+    "1.16":    "/modules/utility/BetterObservers/1.13-latest/",
+    "1.15":    "/modules/utility/BetterObservers/1.13-latest/",
+    "1.14":    "/modules/utility/BetterObservers/1.13-latest/",
+    "1.13":    "/modules/utility/BetterObservers/1.13-latest/",
     "1.12":    "/modules/utility/BetterObservers/1.11-1.12/",
     "1.11":    "/modules/utility/BetterObservers/1.11-1.12/",
 };

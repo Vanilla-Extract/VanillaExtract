@@ -8,10 +8,10 @@
 
 // File Paths
 module.exports = {
-    "1.16.2":  "/modules/unobtrusive/UnobtrusiveWater/1.14-1.16.2/",
-    "1.16":    "/modules/unobtrusive/UnobtrusiveWater/1.14-1.16.2/",
-    "1.15":    "/modules/unobtrusive/UnobtrusiveWater/1.14-1.16.2/",
-    "1.14":    "/modules/unobtrusive/UnobtrusiveWater/1.14-1.16.2/",
+    "1.16.2":  "/modules/unobtrusive/UnobtrusiveWater/1.14-latest/",
+    "1.16":    "/modules/unobtrusive/UnobtrusiveWater/1.14-latest/",
+    "1.15":    "/modules/unobtrusive/UnobtrusiveWater/1.14-latest/",
+    "1.14":    "/modules/unobtrusive/UnobtrusiveWater/1.14-latest/",
     "1.13":    "/modules/unobtrusive/UnobtrusiveWater/1.13/",
     "1.12":    "/modules/unobtrusive/UnobtrusiveWater/1.8-1.12/",
     "1.11":    "/modules/unobtrusive/UnobtrusiveWater/1.8-1.12/",
