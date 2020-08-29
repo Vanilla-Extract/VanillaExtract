@@ -159,7 +159,7 @@ function downloadPack() {
     }
 
     // Update format to fit version number scheme
-    const version = format.replace('-', '.')
+    const version = format.replace('-', '.').replace('-', '.'); // Somewhat messy way of making sure both "-"s get changed 
 
     document.querySelectorAll('.alert').forEach(e => e.style.display = 'none'); // Hide alerts
     document.querySelector('#creating-alert').style.display = 'block'; // Create alert
