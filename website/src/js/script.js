@@ -192,8 +192,6 @@ function downloadPack() {
         "optionsBackground": optionsBackground,
         "panoOption": panoOption,
     };
-
-    console.log(downloadModules);
     
     request.open('POST', url, true);
     request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
