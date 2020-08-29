@@ -77,6 +77,7 @@ const addModules = async function(format, archive, modules, bucket){
                     });
                 });
                 await Promise.all(promises);
+                return;
             });
         }
     });
