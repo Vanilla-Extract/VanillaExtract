@@ -8,6 +8,7 @@ const { createCanvas, loadImage, Image } = require('canvas');
 // Figure out which modules to add
 const addIconModules = async function(modules, archive, bucket){
     // Set all modes to default
+    let crosshairMode = 0;
     let hungerMode = 0;
     let pingMode = 0;
     let witherHeartsMode = 0;
@@ -15,6 +16,7 @@ const addIconModules = async function(modules, archive, bucket){
 
     // Image buffer variables
     const defaultIcons = new Image; // Default
+    const crosshairIcons = new Image; // Crosshair
     const hungerIcons = new Image; // Hunger
     const pingIcons = new Image; // Ping
     const witherIcons = new Image;  // Wither
@@ -24,6 +26,8 @@ const addIconModules = async function(modules, archive, bucket){
     ----- KEY FOR ICON MODULE MODES -----
     0 = default
     
+    Crosshair:
+
     Hunger:
         1 = Melons
         2 = Bread
@@ -61,6 +65,14 @@ const addIconModules = async function(modules, archive, bucket){
         defaultIcons.src = data[0];
         return;
     });
+
+    // Get crosshair icons
+    if (crosshairMode === 0) {
+        await bucket.file(path.join("packfiles/modules/hud", "crosshair", "default.png")).download().then((data) => {
+            crosshairIcons.src = data[0];
+            return;
+        });
+    }
 
     // Get hunger icons
     if (hungerMode === 0) {
@@ -128,6 +140,7 @@ const addIconModules = async function(modules, archive, bucket){
 //
     // Draw icons
     ctx.drawImage(defaultIcons, 0, 0);
+    ctx.drawImage(crosshairIcons, 0, 0);
     ctx.drawImage(hungerIcons, 0, 0);
     ctx.drawImage(pingIcons, 0, 0);
     ctx.drawImage(witherIcons, 0, 0);
