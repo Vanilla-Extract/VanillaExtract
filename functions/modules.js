@@ -16,6 +16,9 @@ const modulesData = {
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
     PebblelessCoarseDirt   : require('./modules/terrain/PebblelessCoarseDirt.js'),
 
+    // UI
+    DarkUI                 : require('./modules/ui/DarkUI.js'),
+
     // Utility
     BetterObservers        : require('./modules/utility/BetterObservers.js'),
     ColoredBows            : require('./modules/utility/ColoredBows.js'),

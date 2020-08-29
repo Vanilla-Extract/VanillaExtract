@@ -272,7 +272,17 @@ sections:
         image: "/images/modules/hud/RainbowXP.png"
         description: "Changes the XP bar to a rainbow XP bar."
         origin: "vanillatweaks"
-    
+
+  # UI modules
+  - id: "uiSection"
+    display: "UI Modules"
+    modules:
+      - id: "DarkUI"
+        name: "Dark UI"
+        image: "/images/modules/ui/DarkUI.png"
+        description: "Changes all inventories and UIs to be darker."
+        origin: "vanillatweaks"
+
   # Options Background modules
   - id: "optionsbgSection"
     display: "Options Background"

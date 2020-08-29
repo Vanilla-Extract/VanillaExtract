@@ -3,6 +3,7 @@ import 'bootstrap';
 let format = "1-16-2";
 let modules = [];
 let glassModule;
+let uiModule;
 let iconModules = [];
 let optionsBackground;
 let panoOption;
@@ -52,9 +53,9 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('#terrainSection       >*>*').forEach(e => e.addEventListener('click', setModule));       // Terrain
     document.querySelectorAll('#unobtrusiveSection   >*>*').forEach(e => e.addEventListener('click', setModule));       // Utility
     document.querySelectorAll('#utilitySection       >*>*').forEach(e => e.addEventListener('click', setModule));       // Unobtrusive
-
     document.querySelectorAll('#glassSection         >*>*').forEach(e => e.addEventListener('click', setGlass));        // Glass Modules
     document.querySelectorAll('#hudSection           >*>*').forEach(e => e.addEventListener('click', setIconModule));   // Hud modules
+    document.querySelectorAll('#uiSection            >*>*').forEach(e => e.addEventListener('click', setUiModule));   // UI modules
     document.querySelectorAll('#optionsbgSection     >*>*').forEach(e => e.addEventListener('click', setBackground));   // Backgrounds
     document.querySelectorAll('#panoramasSection     >*>*').forEach(e => e.addEventListener('click', setPano));         // Panoramas
 });
@@ -122,6 +123,20 @@ function setIconModule() {
     this.classList.toggle('enabled'); // Toggle class
 }
 
+// Set glass module function
+function setGlass() {
+    Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => e.classList.remove("enabled"));
+
+    if (this.classList.contains('enabled')) {
+        // If already enabled then disable and clear var
+        uiModule = undefined;
+    } else {
+        // If disabled then enable
+        uiModule = this.id;
+    }
+    this.classList.toggle('enabled'); // Toggle class
+}
+
 // Set background function
 function setBackground() {
     Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => e.classList.remove("enabled"));
@@ -156,6 +171,9 @@ function downloadPack() {
     // If glass is set
     if (glassModule !== undefined) {
         downloadModules.push(glassModule);
+    }
+    if (glassModule !== undefined) {
+        downloadModules.push(uiModule);
     }
 
     // Update format to fit version number scheme
