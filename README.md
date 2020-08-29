@@ -125,7 +125,7 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - BrighterNether
 - DarkUI
 - FullyAgedCropMarker
-- MineProgressBar
+- ProgressBarBlockDestruction
 - PebblelessDirt
 
 ## Making requests to the Cloud Function
