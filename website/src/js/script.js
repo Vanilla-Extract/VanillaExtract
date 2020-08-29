@@ -124,7 +124,7 @@ function setIconModule() {
 }
 
 // Set glass module function
-function setGlass() {
+function setUiModule() {
     Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => e.classList.remove("enabled"));
 
     if (this.classList.contains('enabled')) {
