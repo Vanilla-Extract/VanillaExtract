@@ -18,7 +18,7 @@
         "type": 301
       },
       {
-        "source": "/https?:\/\/faithfultweaks.(?:web.app|firebaseapp.com)?\/(.*)",
+        "regex": "/https?:\/\/faithfultweaks.(?:web.app|firebaseapp.com)?\/(.*)",
         "destination": "/",
         "type": 301
       }
