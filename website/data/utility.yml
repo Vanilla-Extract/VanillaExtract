@@ -1,0 +1,37 @@
+# Utility
+id: "utilitySection"
+display: "Utility"
+modules:
+  - id: "OreBorders"
+    name: "Ore Borders"
+    image: "/images/modules/utility/OreBorders.png"
+    description: "Places a border around ores for easier visibility."
+    origin: "vanillatweaks"
+  
+  - id: "StickyPistonSides"
+    name: "Sticky Piston Sides"
+    image: "/images/modules/utility/StickyPistonSides.png"
+    description: "Displays Slime on the sides of Sticky Pistons to easily differentiate them from regular pistons."
+    origin: "vanillatweaks"
+
+  - id: "DirectionalHoppers"
+    name: "Directional Hoppers"
+    image: "/images/modules/utility/DirectionalHoppers.png"
+    description: "Gives Hoppers arrows on top to indicate in which direction they are pointing."
+    origin: "vanillatweaks"
+
+  - id: "BetterObservers"
+    name: "Better Observers"
+    image: "/images/modules/utility/BetterObservers.png"
+    description: "Gives all sides of the Observer block directional indicators which display updates."
+    origin: "vanillatweaks"
+    notcompatable:
+      - 1-8
+      - 1-9
+      - 1-10
+  
+  - id: "ColoredBows"
+    name: "Colored Bow Stages"
+    image: "/images/modules/utility/ColoredBows.png"
+    description: "Colors the bow handle to show how far back you've pulled." 
+    origin: "faithfultweaks"

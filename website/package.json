@@ -10,7 +10,7 @@
         "dev:hugo": "hugo server --disableFastRender -D",
         "dev": "npm run clear && concurrently --kill-others \"npm:dev:hugo\" \"npm:dev:webpack\"",
         "build:webpack": "webpack",
-        "build:hugo": "hugo",
+        "build:hugo": "hugo --minify",
         "build": "npm run clear && npm run build:webpack && npm run build:hugo"
     },
     "engines": {

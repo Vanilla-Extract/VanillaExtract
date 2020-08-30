@@ -1,0 +1,45 @@
+# Aesthetic
+id: "aestheticSection"
+display: "Aesthetic"
+modules:
+  - id: "CherryPicking"
+    name: "Cherry Picking"
+    image: "/images/modules/aesthetic/CherryPicking.png"
+    description: "Changes the texture of cake to remove the large cherry in the center."
+    origin: "vanillatweaks"
+
+  - id: "UnbundledHayBales"
+    name: "Unbundled Hay Bales"
+    image: "/images/modules/aesthetic/UnbundledHayBales.png"
+    description: "Gets rid of the red strings around Hay Bales."
+    origin: "vanillatweaks"
+
+  - id: "SolidHoney"
+    name: "Solid Honey Blocks"
+    image: "/images/modules/aesthetic/SolidHoney.png"
+    description: "Eliminates Honey Block transparency."
+    origin: "vanillatweaks"
+    notcompatable:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
+
+  - id: "SidewaysNuggets"
+    name: "Sideways Nuggets"
+    image: "/images/modules/aesthetic/SidewaysNuggets.png"
+    description: "Rotates Iron Nuggets to be consistent with the other nugget textures."
+    origin: "vanillatweaks"
+    notcompatable:
+      - 1-8
+      - 1-9
+      - 1-10
+
+  - id: "BlackNetherBricks"
+    name: "Black Nether Bricks"
+    image: "/images/modules/aesthetic/BlackNetherBricks.png"
+    description: "Changes the texture of Nether Bricks to make them black."
+    origin: "vanillatweaks"

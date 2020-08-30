@@ -167,15 +167,6 @@ function setPano() {
 
 // Download the resource pack
 function downloadPack() {
-    let downloadModules = modules;
-    // If glass is set
-    if (glassModule !== undefined) {
-        downloadModules.push(glassModule);
-    }
-    if (uiModule !== undefined) {
-        downloadModules.push(uiModule);
-    }
-
     // Update format to fit version number scheme
     const version = format.replace('-', '.').replace('-', '.'); // Somewhat messy way of making sure both "-"s get changed 
 
@@ -187,7 +178,7 @@ function downloadPack() {
     const url = process.env.NODE_ENV !== 'production' ? "http://localhost:5001/faithfultweaks/us-central1/makePack" : "https://us-central1-faithfultweaks-app.cloudfunctions.net/makePack"; // URL (based on node environment status)
     const data = {
         "format": version,
-        "modules": downloadModules,
+        "modules": modules,
         "iconModules": iconModules,
         "optionsBackground": optionsBackground,
         "panoOption": panoOption,

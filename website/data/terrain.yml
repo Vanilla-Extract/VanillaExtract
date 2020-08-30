@@ -1,0 +1,15 @@
+# Terrain
+id: "terrainSection"
+display: "Terrain"
+modules:
+  - id: "BetterBedrock"
+    name: "Better Bedrock"
+    image: "/images/modules/terrain/BetterBedrock.png"
+    description: "Changes the texture of Bedrock to be less noisy and more natural-looking."
+    origin: "vanillatweaks"
+
+  - id: "PebblelessCoarseDirt"
+    name: "Pebbleless Coarse Dirt"
+    image: "/images/modules/terrain/PebblelessCoarseDirt.png"
+    description: "Gets rid of the white pebbles in Coarse Dirt."
+    origin: "vanillatweaks"

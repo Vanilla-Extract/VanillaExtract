@@ -1,0 +1,9 @@
+# UI modules
+id: "uiSection"
+display: "UI Modules"
+modules:
+  - id: "DarkUI"
+    name: "Dark UI"
+    image: "/images/modules/ui/DarkUI.png"
+    description: "Changes all inventories and UIs to be darker."
+    origin: "vanillatweaks"

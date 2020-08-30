@@ -1,0 +1,21 @@
+# Glass Modules
+id: "glassSection"
+display: "Glass Modules"
+modules:
+  - id: "BorderlessGlass"
+    name: "Borderless Glass"
+    image: "/images/modules/glass/BorderlessGlass.png"
+    description: "Gets rid of the border on the edges of the glass textures to provide for cleaner and more transparent glass."
+    origin: "vanillatweaks"
+
+  - id: "CleanBorderlessGlass"
+    name: "Clean Borderless Glass"
+    image: "/images/modules/glass/CleanBorderlessGlass.png"
+    description: "Gets rid of the border and glass streaks."
+    origin: "vanillatweaks"
+
+  - id: "CleanGlass"
+    name: "Clean Glass"
+    image: "/images/modules/glass/CleanGlass.png"
+    description: "Gets rid of glass streaks, resulting in clean-looking glass."
+    origin: "vanillatweaks"
