@@ -1,4 +1,4 @@
-{{ range $ := .Site.Data.test }}
+{{ range $ := .Site.Data }}
 <div class="bg-light collapsible" style="width: 100%;padding: 15px;border-radius: 20px;margin-bottom: 15px;">
     <a class="btn btn-dark" data-toggle="collapse" aria-expanded="{{ if (eq .id "aestheticSection") }}true{{else}}false{{ end }}" aria-controls="{{ .id }}" href="#{{ .id }}" role="button" style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;">
         {{ .display }}
