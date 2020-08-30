@@ -23,12 +23,4 @@ formats:
     - id: 1-16-2
       display: "1.16.2"
       default: true
-
-# ----- KEY TO MODULES LIST -----
-#       id = The id of your module (set in functions/modules.js inside modulesData) THIS IS CASE SENSITIVE 
-#       name = The name that will display on the website
-#       image = The url to the image (should be in the website/static/images/modules/normal/ folder)
-#       description = A description of what the module should do
-#       origin = Where the module came from, should be "community" unless told otherwise (options are vanillatweaks, faithfultweaks, community)
-#       notcompatable = Versions that the module is incompatible with (Options are the id's of the format section above)
 ---
