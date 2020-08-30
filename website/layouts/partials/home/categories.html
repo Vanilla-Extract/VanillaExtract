@@ -1,4 +1,6 @@
-{{ range $ := .Site.Data }}
+{{ range sort .Site.Data "display"}}
+{{ $categoryScope := . }}
+
 <div class="bg-light collapsible" style="width: 100%;padding: 15px;border-radius: 20px;margin-bottom: 15px;">
     <a class="btn btn-dark" data-toggle="collapse" aria-expanded="{{ if (eq .id "aestheticSection") }}true{{else}}false{{ end }}" aria-controls="{{ .id }}" href="#{{ .id }}" role="button" style="max-width: 100%;width: 100%;min-width: 100%;border-radius: 999px;text-align: left;">
         {{ .display }}
@@ -11,7 +13,7 @@
 
             <!-- Normal modules that don't conflict -->
             {{ if isset . "modules" }}
-                <div class="d-inline-flex justify-content-center flex-wrap flex-wrap" id="{{ if isset $ "customFunctionClass"}}{{ $.customFunctionClass }}{{else}}normalModules{{end}}">
+                <div class="d-inline-flex justify-content-center flex-wrap flex-wrap" id="{{ if isset $categoryScope "customFunctionClass"}}{{ $categoryScope.customFunctionClass }}{{else}}normalModules{{end}}">
                     {{ range sort .modules "name"}}
                             <div id="{{ .id }}" class='module-selector
                                     {{ range .notcompatable }}hideFormat{{ . }} {{ end }}
