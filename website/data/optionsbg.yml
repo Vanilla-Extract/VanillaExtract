@@ -1,7 +1,7 @@
 # Options Background modules
 id: "optionsbgSection"
 display: "Options Background"
-weight: -1
+weight: -3
 customFunctionClass: "optionsbgModules"
 
 modules:

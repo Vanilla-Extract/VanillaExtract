@@ -1,7 +1,7 @@
 # Panoramas Background modules
 id: "panoramasSection"
 display: "Menu Panorama"
-weight: -2
+weight: -4
 customFunctionClass: "panoramasModules"
 
 modules:

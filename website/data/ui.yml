@@ -1,6 +1,8 @@
 # UI modules
 id: "uiSection"
 display: "UI Modules"
+weight: -2
+
 modules:
   - id: "DarkUI"
     name: "Dark UI"

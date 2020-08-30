@@ -1,6 +1,7 @@
 # Hud modules
 id: "hudSection"
 display: "HUD Modules"
+weight: -1
 customFunctionClass: "hudModules"
 
 modules:
