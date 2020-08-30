@@ -1,6 +1,8 @@
 # Options Background modules
 id: "optionsbgSection"
 display: "Options Background"
+customFunctionClass: "optionsbgModules"
+
 modules:
   - id: "AcaciaPlanksBG"
     name: "Acacia Planks"

@@ -1,7 +1,6 @@
 # Section Info
 id: "unobtrusiveSection"
 display: "Unobtrusive"
-customFunctionClass: "iconsModules"
 
 # Modules
 modules:

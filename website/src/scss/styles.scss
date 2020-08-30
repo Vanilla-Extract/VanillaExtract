@@ -77,13 +77,13 @@
     overflow: hidden;
     margin-bottom: 10px;
     border-radius: 25px !important;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         display: block;
     }
     .btn {
         padding: 10px;
         border-radius: unset !important;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             display: block;
             float: none;
             width: 100%;

@@ -1,6 +1,7 @@
 # Hud modules
 id: "hudSection"
 display: "HUD Modules"
+customFunctionClass: "hudModules"
 
 modules:
   - id: "MelonHunger"

@@ -1,10 +1,8 @@
 import 'bootstrap';
 
 let format = "1-16-2";
-let modules = [];
-let glassModule;
-let uiModule;
-let iconModules = [];
+const modules = [];
+const iconModules = [];
 let optionsBackground;
 let panoOption;
 
@@ -46,18 +44,19 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     
     document.querySelector('#downloadPack').addEventListener('click', downloadPack); // Download
-    document.querySelectorAll('#formatGroup          >*').forEach(e => e.addEventListener('click', setFormat)); // Format buttons
+    document.querySelectorAll('#formatGroup                >*').forEach(e => e.addEventListener('click', setFormat));                    // Format buttons
 
     // Modules
-    document.querySelectorAll('#aestheticSection     >*>*').forEach(e => e.addEventListener('click', setModule));       // Aesthetic
-    document.querySelectorAll('#terrainSection       >*>*').forEach(e => e.addEventListener('click', setModule));       // Terrain
-    document.querySelectorAll('#unobtrusiveSection   >*>*').forEach(e => e.addEventListener('click', setModule));       // Utility
-    document.querySelectorAll('#utilitySection       >*>*').forEach(e => e.addEventListener('click', setModule));       // Unobtrusive
-    document.querySelectorAll('#glassSection         >*>*').forEach(e => e.addEventListener('click', setGlass));        // Glass Modules
-    document.querySelectorAll('#hudSection           >*>*').forEach(e => e.addEventListener('click', setIconModule));   // Hud modules
-    document.querySelectorAll('#uiSection            >*>*').forEach(e => e.addEventListener('click', setUiModule));   // UI modules
-    document.querySelectorAll('#optionsbgSection     >*>*').forEach(e => e.addEventListener('click', setBackground));   // Backgrounds
-    document.querySelectorAll('#panoramasSection     >*>*').forEach(e => e.addEventListener('click', setPano));         // Panoramas
+    document.querySelectorAll('#normalModules              >*').forEach(e => e.addEventListener('click', setModule));                  // Normal modules
+    document.querySelectorAll('#normalModulesConflicting   >*').forEach(e => e.addEventListener('click', setModuleConflicting));       // Conflicting normal modules
+
+    // HUD
+    document.querySelectorAll('#hudModules                 >*').forEach(e => e.addEventListener('click', setIconModule));              // Normal modules
+    document.querySelectorAll('#hudModulesConflicting      >*').forEach(e => e.addEventListener('click', setIconModuleConflicting));   // Conflicting normal modules
+
+    // Options and Panoramas
+    document.querySelectorAll('#optionsbgModules           >*').forEach(e => e.addEventListener('click', setBackground));              // Backgrounds
+    document.querySelectorAll('#panoramasModules           >*').forEach(e => e.addEventListener('click', setPano));                    // Panoramas
 });
 
 
@@ -87,82 +86,110 @@ function setFormat() {
 function setModule() {
     if (this.classList.contains('enabled')) {
         // If already enabled then disable
-        let i = modules.indexOf(this.id);
-        modules.splice(i, 1);
+        const i = modules.indexOf(this.id);
+        if (i > -1) {
+            modules.splice(i, 1);
+        }
+        this.classList.remove('enabled'); // Remove class
     } else {
         // If disabled then enable
         modules.push(this.id);
+        this.classList.add('enabled'); // Add class
     }
-    this.classList.toggle('enabled'); // Toggle class
 }
 
-// Set glass module function
-function setGlass() {
-    Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => e.classList.remove("enabled"));
+// Set conflicting module function
+function setModuleConflicting () {
+    // For each sibling
+    Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => {
+        const i = modules.indexOf(e.id);
+        if (i > -1) {
+            modules.splice(i, 1);
+        }
+        e.classList.remove("enabled"); // Remove class
+    });
 
-    if (this.classList.contains('enabled')) {
-        // If already enabled then disable and clear var
-        glassModule = undefined;
+    // If not in list enable
+    const i = modules.indexOf(this.id);
+    if (i === -1) {
+        modules.push(this.id);
+        this.classList.add('enabled'); // Add class
     } else {
-        // If disabled then enable
-        glassModule = this.id;
+        // Else disable
+        modules.splice(i, 1);
+        this.classList.remove("enabled"); // Remove class
     }
-    this.classList.toggle('enabled'); // Toggle class
-}
+};
 
 // Set icon module function
 function setIconModule() {
     if (this.classList.contains('enabled')) {
         // If already enabled then disable
-        let i = iconModules.indexOf(this.id);
-        iconModules.splice(i, 1);
+        const i = iconModules.indexOf(this.id);
+        if (i > -1) {
+            iconModules.splice(i, 1);
+        }
+        this.classList.remove('enabled'); // Remove class
     } else {
         // If disabled then enable
         iconModules.push(this.id);
+        this.classList.add('enabled'); // Add class
     }
-    this.classList.toggle('enabled'); // Toggle class
 }
 
-// Set glass module function
-function setUiModule() {
-    Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => e.classList.remove("enabled"));
+// Set conflicting icon module function
+function setIconModuleConflicting () {
+    // For each sibling
+    Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => {
+        const i = iconModules.indexOf(e.id);
+        if (i > -1) {
+            iconModules.splice(i, 1);
+        }
+        e.classList.remove("enabled"); // Remove class
+    });
 
-    if (this.classList.contains('enabled')) {
-        // If already enabled then disable and clear var
-        uiModule = undefined;
+    // If not in list enable
+    const i = iconModules.indexOf(this.id);
+    if (i === -1) {
+        iconModules.push(this.id);
+        this.classList.add('enabled'); // Add class
     } else {
-        // If disabled then enable
-        uiModule = this.id;
+        // Else disable
+        iconModules.splice(i, 1);
+        this.classList.remove("enabled"); // Remove class
     }
-    this.classList.toggle('enabled'); // Toggle class
-}
+};
 
 // Set background function
 function setBackground() {
+    // For each sibling
     Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => e.classList.remove("enabled"));
 
-    if (this.classList.contains('enabled')) {
-        // If already enabled then disable and clear var
+    // If is var disable
+    if (optionsBackground === this.id) {
         optionsBackground = undefined;
+        this.classList.remove('enabled'); // Remove class
     } else {
-        // If disabled then enable
+        // Else enable
         optionsBackground = this.id;
+        this.classList.add("enabled"); // Add class
     }
-    this.classList.toggle('enabled'); // Toggle class    
 }
 
 // Set pano function
 function setPano() {
+    // For each sibling
     Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => e.classList.remove("enabled"));
 
-    if (this.classList.contains('enabled')) {
-        // If already enabled then disable and clear var
+    // If is var disable
+    if (panoOption === this.id) {
         panoOption = undefined;
+        this.classList.remove('enabled'); // Remove class
     } else {
-        // If disabled then enable
+        // Else enable
         panoOption = this.id;
+        this.classList.add("enabled"); // Add class
     }
-    this.classList.toggle('enabled'); // Toggle class 
 }
 
 // Download the resource pack

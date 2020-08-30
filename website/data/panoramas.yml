@@ -1,6 +1,8 @@
 # Panoramas Background modules
 id: "panoramasSection"
 display: "Menu Panorama"
+customFunctionClass: "panoramasModules"
+
 modules:
   - id: "ClassicPano"
     name: "Classic Panorama"
