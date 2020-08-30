@@ -1,6 +1,7 @@
 # Aesthetic
 id: "aestheticSection"
 display: "Aesthetic"
+
 modules:
   - id: "CherryPicking"
     name: "Cherry Picking"
