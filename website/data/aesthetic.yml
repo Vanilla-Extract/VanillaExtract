@@ -56,3 +56,8 @@ modules:
     image: "/images/modules/aesthetic/AlternateEntities.png"
     description: "Adds variants to a lot of entities."
     origin: "faithfultweaks"
+    
+  - id: "RedGolemFlowers"
+    name: "Red Iron Golem Flowers"
+    image: "/images/modules/aesthetic/RedGolemFlowers.png"
+    description: "Changes the yellow flowers on the Iron Golem skin to red ones in order to match the poppies that they drop."
