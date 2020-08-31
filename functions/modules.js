@@ -21,9 +21,6 @@ const modulesData = {
     LowerGrassSide         : require('./modules/terrain/LowerGrassSide.js'),
     PebblelessCoarseDirt   : require('./modules/terrain/PebblelessCoarseDirt.js'),
 
-    // UI
-    DarkUI                 : require('./modules/ui/DarkUI.js'),
-
     // Utility
     BetterObservers        : require('./modules/utility/BetterObservers.js'),
     BrokenItems            : require('./modules/utility/BrokenItems.js'),
@@ -50,6 +47,9 @@ const modulesData = {
     UnobtrusiveRain        : require('./modules/unobtrusive/UnobtrusiveRain.js'),
     UnobtrusiveScaffolding : require('./modules/unobtrusive/UnobtrusiveScaffolding.js'),
     UnobtrusiveWater       : require('./modules/unobtrusive/UnobtrusiveWater.js'),
+
+    // UI
+    DarkUI                 : require('./modules/ui/DarkUI.js'),
 }
 
 // Figure out which modules to add

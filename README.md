@@ -32,38 +32,47 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 
 ## Available Modules
 ### Aesthetic
+- AlternateEntities
 - BlackNetherBricks
 - CherryPicking
+- CodeCraftedWool
+- PlainLeather
+- RedGolemFlowers
 - SidewaysNuggets
 - SolidHoney
 - UnbundledHayBales
 
 ### Terrain
 - BetterBedrock
+- LowerGrassSide
 - PebblelessCoarseDirt
 
 ### Utility
 - BetterObservers
+- BrokenItems
+- CleanRedstone
 - ColoredBows
 - DirectionalHoppers
+- NetherwartGrowthStage
 - OreBorders
+- SlicedSwords
+- StackedItems
 - StickyPistonSides
 
 ### Unobtrusive
 - AlternateEnchantGlint
+- BorderlessGlass
+- CleanBorderlessGlass
+- CleanGlass
 - ClearPumpkinBlur
 - InvisibleTotem
 - LowFire
 - LowShield
 - NoVignette
 - ReducedPumpkinBlur
-- SlicedSwords
 - UnobtrusiveRain
 - UnobtrusiveScaffolding
 - UnobtrusiveWater
-- BorderlessGlass
-- CleanBorderlessGlass
-- CleanGlass
 
 ### HUD
 - BreadHunger
