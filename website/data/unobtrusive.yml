@@ -36,18 +36,6 @@ modules:
     image: "/images/modules/unobtrusive/NoVignette.png"
     description: "Removes the darkened corners of the screen that occur in darker areas when graphics are set to 'fancy'."
     origin: "vanillatweaks"
-  
-  - id: "ReducedPumpkinBlur"
-    name: "Reduced Pumpkin Blur"
-    image: "/images/modules/unobtrusive/ReducedPumpkinBlur.png"
-    description: "Increases visibility when wearing Pumpkins."
-    origin: "vanillatweaks"
-
-  - id: "ClearPumpkinBlur"
-    name: "Clear Pumpkin Blur"
-    image: "/images/modules/unobtrusive/ClearPumpkinBlur.png"
-    description: "Removes the pumpkin overlay completely when worn."
-    origin: "vanillatweaks"
 
   - id: "AlternateEnchantGlint"
     name: "Alternate Enchantment Glint"
@@ -92,6 +80,22 @@ modules:
 
 # Lists of modules that conflict
 conflictingModules:
+  # Pumpkin Blurs
+  - sortingName: "pumpkin"
+    modules:
+    - id: "ReducedPumpkinBlur"
+      name: "Reduced Pumpkin Blur"
+      image: "/images/modules/unobtrusive/ReducedPumpkinBlur.png"
+      description: "Increases visibility when wearing Pumpkins."
+      origin: "vanillatweaks"
+
+    - id: "ClearPumpkinBlur"
+      name: "Clear Pumpkin Blur"
+      image: "/images/modules/unobtrusive/ClearPumpkinBlur.png"
+      description: "Removes the pumpkin overlay completely when worn."
+      origin: "vanillatweaks"
+  
+  # Glass
   - sortingName: "glass"
     modules:
     - id: "BorderlessGlass"

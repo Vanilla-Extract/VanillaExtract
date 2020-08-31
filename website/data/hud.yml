@@ -4,13 +4,8 @@ display: "HUD Modules"
 weight: -1
 customFunctionClass: "hudModules"
 
+# Modules
 modules:
-  - id: "MelonHunger"
-    name: "Melon Hunger"
-    image: "/images/modules/hud/MelonHunger.png"
-    description: "Replaces hunger bar with melon icons."
-    origin: "faithfultweaks"
-
   - id: "ColoredPing"
     name: "Colored Ping"
     image: "/images/modules/hud/ColoredPing.png"
@@ -28,3 +23,20 @@ modules:
     image: "/images/modules/hud/RainbowXP.png"
     description: "Changes the XP bar to a rainbow XP bar."
     origin: "vanillatweaks"
+
+# Lists of modules that conflict
+conflictingModules:
+  # Hunger modules
+  - sortingName: "hunger"
+    modules:
+    - id: "MelonHunger"
+      name: "Melon Hunger"
+      image: "/images/modules/hud/MelonHunger.png"
+      description: "Replaces hunger bar with melon icons."
+      origin: "faithfultweaks"
+      
+    - id: "BreadHunger"
+      name: "Bread Hunger"
+      image: "/images/modules/hud/BreadHunger.png"
+      description: "Replaces hunger bar with bread icons."
+      origin: "faithfultweaks"

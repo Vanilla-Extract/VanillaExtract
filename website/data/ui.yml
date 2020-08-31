@@ -1,11 +1,16 @@
 # UI modules
-id: "uiSection"
-display: "UI Modules"
+id: "guiSection"
+display: "GUI Modules"
 weight: -2
 
-modules:
-  - id: "DarkUI"
-    name: "Dark UI"
-    image: "/images/modules/ui/DarkUI.png"
-    description: "Changes all inventories and UIs to be darker."
-    origin: "vanillatweaks"
+# Lists of modules that conflict
+conflictingModules:
+  # Inventory UI
+  - sortingName: "inventory"
+    modules:
+    - id: "DarkUI"
+      name: "Dark UI"
+      image: "/images/modules/ui/DarkUI.png"
+      description: "Changes all inventories and UIs to be darker."
+      origin: "vanillatweaks"
+  

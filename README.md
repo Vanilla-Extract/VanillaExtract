@@ -70,12 +70,13 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - CleanGlass
 
 ### HUD
+- BreadHunger
 - BlueWitherHearts
 - ColoredPing
 - MelonHunger
 - RainbowXP
 
-### UI
+### GUI
 - DarkUI
 
 ### Options Background
@@ -106,7 +107,6 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - SeirinsPano
 
 ### Coming Soon
-- BreadHunger
 - AlternateBlockDestruction
 - FullyAgedCropMarker
 - ProgressBarBlockDestruction
