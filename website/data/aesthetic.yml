@@ -61,11 +61,20 @@ modules:
     name: "Red Iron Golem Flowers"
     image: "/images/modules/aesthetic/RedGolemFlowers.png"
     description: "Changes the yellow flowers on the Iron Golem skin to red ones in order to match the poppies that they drop."
+    origin: "faithfultweaks"
     
   - id: "PlainLeather"
     name: "Plain Leather Armor"
     image: "/images/modules/aesthetic/PlainLeather.png"
     description: "Removes the brown overlay from leather armor."
-    
+    origin: "faithfultweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
     
     
