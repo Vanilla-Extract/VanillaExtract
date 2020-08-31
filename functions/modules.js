@@ -6,14 +6,17 @@ const modulesData = {
     TestModule             : require('./modules/testModule.js'),
 
     // Aesthetic
+    AlternateEntities      : require('./modules/aesthetic/AlternateEntities.js'),
     BlackNetherBricks      : require('./modules/aesthetic/BlackNetherBricks.js'),
     CherryPicking          : require('./modules/aesthetic/CherryPicking.js'),
+    CleanRedstone          : require('./modules/aesthetic/CleanRedstone.js'),
     SidewaysNuggets        : require('./modules/aesthetic/SidewaysNuggets.js'),
     SolidHoney             : require('./modules/aesthetic/SolidHoney.js'),
     UnbundledHayBales      : require('./modules/aesthetic/UnbundledHayBales.js'),
 
     // Terrain
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
+    LowerGrassSide         : require('./modules/terrain/LowerGrassSide.js'),
     PebblelessCoarseDirt   : require('./modules/terrain/PebblelessCoarseDirt.js'),
 
     // UI
@@ -21,14 +24,20 @@ const modulesData = {
 
     // Utility
     BetterObservers        : require('./modules/utility/BetterObservers.js'),
+    BrokenItems            : require('./modules/utility/BrokenItems.js'),
     ColoredBows            : require('./modules/utility/ColoredBows.js'),
     DirectionalHoppers     : require('./modules/utility/DirectionalHoppers.js'),
+    NetherwartGrowthStage  : require('./modules/utility/NetherwartGrowthStage.js'),
     OreBorders             : require('./modules/utility/OreBorders.js'),
+    SlicedSwords           : require('./modules/utility/SlicedSwords.js'),
+    StackedItems           : require('./modules/utility/StackedItems.js'),
     StickyPistonSides      : require('./modules/utility/StickyPistonSides.js'),
-    SlicedSwords           : require('./modules/unobtrusive/SlicedSwords.js'),
 
     // Unobtrusive
     AlternateEnchantGlint  : require('./modules/unobtrusive/AlternateEnchantGlint.js'),
+    BorderlessGlass        : require('./modules/unobtrusive/BorderlessGlass.js'),
+    CleanBorderlessGlass   : require('./modules/unobtrusive/CleanBorderlessGlass.js'),
+    CleanGlass             : require('./modules/unobtrusive/CleanGlass.js'),
     ClearPumpkinBlur       : require('./modules/unobtrusive/ClearPumpkinBlur.js'),
     InvisibleTotem         : require('./modules/unobtrusive/InvisibleTotem.js'),
     LowFire                : require('./modules/unobtrusive/LowFire.js'),
@@ -38,9 +47,6 @@ const modulesData = {
     UnobtrusiveRain        : require('./modules/unobtrusive/UnobtrusiveRain.js'),
     UnobtrusiveScaffolding : require('./modules/unobtrusive/UnobtrusiveScaffolding.js'),
     UnobtrusiveWater       : require('./modules/unobtrusive/UnobtrusiveWater.js'),
-    BorderlessGlass        : require('./modules/unobtrusive/BorderlessGlass.js'),
-    CleanBorderlessGlass   : require('./modules/unobtrusive/CleanBorderlessGlass.js'),
-    CleanGlass             : require('./modules/unobtrusive/CleanGlass.js'),
 }
 
 // Figure out which modules to add
