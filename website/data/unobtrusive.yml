@@ -100,18 +100,18 @@ conflictingModules:
     modules:
     - id: "BorderlessGlass"
       name: "Borderless Glass"
-      image: "/images/modules/glass/BorderlessGlass.png"
+      image: "/images/modules/unobtrusive/BorderlessGlass.png"
       description: "Gets rid of the border on the edges of the glass textures to provide for cleaner and more transparent glass."
       origin: "vanillatweaks"
 
     - id: "CleanBorderlessGlass"
       name: "Clean Borderless Glass"
-      image: "/images/modules/glass/CleanBorderlessGlass.png"
+      image: "/images/modules/unobtrusive/CleanBorderlessGlass.png"
       description: "Gets rid of the border and glass streaks."
       origin: "vanillatweaks"
 
     - id: "CleanGlass"
       name: "Clean Glass"
-      image: "/images/modules/glass/CleanGlass.png"
+      image: "/images/modules/unobtrusive/CleanGlass.png"
       description: "Gets rid of glass streaks, resulting in clean-looking glass."
       origin: "vanillatweaks"
