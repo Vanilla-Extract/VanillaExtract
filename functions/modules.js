@@ -38,11 +38,9 @@ const modulesData = {
     UnobtrusiveRain        : require('./modules/unobtrusive/UnobtrusiveRain.js'),
     UnobtrusiveScaffolding : require('./modules/unobtrusive/UnobtrusiveScaffolding.js'),
     UnobtrusiveWater       : require('./modules/unobtrusive/UnobtrusiveWater.js'),
-
-    // Glass
-    BorderlessGlass        : require('./modules/glass/BorderlessGlass.js'),
-    CleanBorderlessGlass   : require('./modules/glass/CleanBorderlessGlass.js'),
-    CleanGlass             : require('./modules/glass/CleanGlass.js'),
+    BorderlessGlass        : require('./modules/unobtrusive/BorderlessGlass.js'),
+    CleanBorderlessGlass   : require('./modules/unobtrusive/CleanBorderlessGlass.js'),
+    CleanGlass             : require('./modules/unobtrusive/CleanGlass.js'),
 }
 
 // Figure out which modules to add

@@ -65,8 +65,6 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - UnobtrusiveRain
 - UnobtrusiveScaffolding
 - UnobtrusiveWater
-
-### Glass
 - BorderlessGlass
 - CleanBorderlessGlass
 - CleanGlass
