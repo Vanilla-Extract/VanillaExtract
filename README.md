@@ -2,19 +2,19 @@
 
 # Faithful Tweaks
 <p>
-    <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Website Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Website%20Deploy/badge.svg"></a>
-    <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Functions Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Functions%20Deploy/badge.svg"></a>
-    <a href="https://github.com/Banakin/FaithfulTweaks/actions"><img alt="Images Deploy" src="https://github.com/Banakin/FaithfulTweaks/workflows/Images%20Deploy/badge.svg"></a>
-    <a href="https://github.com/Banakin/FaithfulTweaks/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Banakin/FaithfulTweaks"></a>
-    <a href="https://github.com/Banakin/FaithfulTweaks/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Banakin/FaithfulTweaks"></a>
-    <a href="https://github.com/Banakin/FaithfulTweaks/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Banakin/FaithfulTweaks"></a>
-    <a href="https://github.com/Banakin/FaithfulTweaks/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Banakin/FaithfulTweaks"></a>
+    <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/actions"><img alt="Website Deploy" src="https://github.com/FaithfulTweaks/FaithfulTweaks/workflows/Website%20Deploy/badge.svg"></a>
+    <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/actions"><img alt="Functions Deploy" src="https://github.com/FaithfulTweaks/FaithfulTweaks/workflows/Functions%20Deploy/badge.svg"></a>
+    <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/actions"><img alt="Images Deploy" src="https://github.com/FaithfulTweaks/FaithfulTweaks/workflows/Images%20Deploy/badge.svg"></a>
+    <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/FaithfulTweaks/FaithfulTweaks"></a>
+    <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/FaithfulTweaks/FaithfulTweaks"></a>
+    <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/FaithfulTweaks/FaithfulTweaks"></a>
+    <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/FaithfulTweaks/FaithfulTweaks"></a>
 </p>
 
 An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/).
 
 ## Creating Modules
-If you're interested in creating a module, please look at [the wiki](https://github.com/Banakin/FaithfulTweaks/wiki).
+If you're interested in creating a module, please look at [the wiki](https://github.com/FaithfulTweaks/FaithfulTweaks/wiki).
 
 Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the traditional fashion.
 
