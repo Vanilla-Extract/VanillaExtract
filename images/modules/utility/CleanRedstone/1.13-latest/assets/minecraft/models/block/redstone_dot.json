@@ -1,0 +1,19 @@
+{
+"ambientocclusion": false,
+    "textures": {
+		"particle": "blocks/redstone_dust_dot",
+        "0": "blocks/redstone_dust_dot"
+    },
+    "elements": [
+        {
+            "name": "quad",
+            "from": [ 0, 0, 0], 
+            "to": [ 16, 0.3, 16 ], 
+            "shade": false,
+            "faces": {
+                "up": { "texture": "#0", "uv": [ 0, 0, 16, 16 ], "tintindex": 0 },
+                "down": { "texture": "#0", "uv": [ 0, 0, 16, 16 ], "tintindex": 0 }
+            }
+        }
+    ]
+}

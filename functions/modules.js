@@ -9,7 +9,7 @@ const modulesData = {
     AlternateEntities      : require('./modules/aesthetic/AlternateEntities.js'),
     BlackNetherBricks      : require('./modules/aesthetic/BlackNetherBricks.js'),
     CherryPicking          : require('./modules/aesthetic/CherryPicking.js'),
-    CleanRedstone          : require('./modules/aesthetic/CleanRedstone.js'),
+    CodeCraftedWool        : require('./modules/aesthetic/CodeCraftedWool.js'),
     PlainLeather           : require('./modules/aesthetic/PlainLeather.js'),
     RedGolemFlowers        : require('./modules/aesthetic/RedGolemFlowers.js'),
     SidewaysNuggets        : require('./modules/aesthetic/SidewaysNuggets.js'),
@@ -27,6 +27,7 @@ const modulesData = {
     // Utility
     BetterObservers        : require('./modules/utility/BetterObservers.js'),
     BrokenItems            : require('./modules/utility/BrokenItems.js'),
+    CleanRedstone          : require('./modules/utility/CleanRedstone.js'),
     ColoredBows            : require('./modules/utility/ColoredBows.js'),
     DirectionalHoppers     : require('./modules/utility/DirectionalHoppers.js'),
     NetherwartGrowthStage  : require('./modules/utility/NetherwartGrowthStage.js'),

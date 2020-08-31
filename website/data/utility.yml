@@ -48,9 +48,15 @@ modules:
     description: "Adds new textures to your items when you stack them." 
     origin: "faithfultweaks"
 
+  - id: "CleanRedstone"
+    name: "Clean Redstone"
+    image: "/images/modules/utility/CleanRedstone.png"
+    description: "Changes the texture of Redstone Dust to a clean solid line."
+    origin: "vanillatweaks"
+
 # Lists of modules that conflict
 conflictingModules:
-  # Pumpkin Blurs
+  # Swords
   - sortingName: "swords"
     modules:
     - id: "SlicedSwords"

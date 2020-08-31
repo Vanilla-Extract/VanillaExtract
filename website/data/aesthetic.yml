@@ -44,12 +44,6 @@ modules:
     image: "/images/modules/aesthetic/BlackNetherBricks.png"
     description: "Changes the texture of Nether Bricks to make them black."
     origin: "vanillatweaks"
-
-  - id: "CleanRedstone"
-    name: "Clean Redstone"
-    image: "/images/modules/aesthetic/CleanRedstone.png"
-    description: "Changes the texture of Redstone Dust to a clean solid line."
-    origin: "vanillatweaks"
   
   - id: "AlternateEntities"
     name: "Alternate Entities"
@@ -77,4 +71,19 @@ modules:
       - 1-13
       - 1-14
     
-    
+# Lists of modules that conflict
+conflictingModules:
+  # Wool
+  - sortingName: "wool"
+    modules:
+    - id: "CodeCraftedWool"
+      name: "Sliced Swords"
+      image: "/images/modules/aesthetic/CodeCraftedWool.png"
+      description: "Makes wool the same style as CodeCrafted's but with 1 pixel edges."
+      origin: "faithfultweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
