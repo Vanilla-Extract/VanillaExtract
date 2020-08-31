@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/swords/netherite_sword/netherite_sword2"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/axes/diamond_axe/diamond_axe1"
+    }
+}

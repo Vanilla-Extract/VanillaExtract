@@ -1,0 +1,36 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/stone_shovel"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.2
+            },
+            "model": "item/shovels/stone_shovel/stone_shovel1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "item/shovels/stone_shovel/stone_shovel2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.6
+            },
+            "model": "item/shovels/stone_shovel/stone_shovel3"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "item/shovels/stone_shovel/stone_shovel4"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/axes/stone_axe/stone_axe2"
+    }
+}

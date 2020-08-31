@@ -1,0 +1,36 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/netherite_leggings"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.2
+            },
+            "model": "item/leggings/netherite_leggings/netherite_leggings1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "item/leggings/netherite_leggings/netherite_leggings2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.6
+            },
+            "model": "item/leggings/netherite_leggings/netherite_leggings3"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "item/leggings/netherite_leggings/netherite_leggings4"
+        }
+    ]
+}

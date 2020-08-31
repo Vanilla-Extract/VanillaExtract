@@ -1,0 +1,36 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/netherite_hoe"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.2
+            },
+            "model": "item/hoes/netherite_hoe/netherite_hoe1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "item/hoes/netherite_hoe/netherite_hoe2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.6
+            },
+            "model": "item/hoes/netherite_hoe/netherite_hoe3"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "item/hoes/netherite_hoe/netherite_hoe4"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/elytra"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.2
+            },
+            "model": "item/elytra/elytra1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "item/elytra/elytra2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.6
+            },
+            "model": "item/elytra/elytra3"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "item/elytra/elytra4"
+        },
+        {
+            "predicate": {
+                "broken": 1
+            },
+            "model": "item/broken_elytra"
+        }
+    ]
+}

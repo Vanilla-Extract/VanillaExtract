@@ -1,0 +1,36 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/iron_chestplate"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.2
+            },
+            "model": "item/chestplates/iron_chestplate/iron_chestplate1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "item/chestplates/iron_chestplate/iron_chestplate2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.6
+            },
+            "model": "item/chestplates/iron_chestplate/iron_chestplate3"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "item/chestplates/iron_chestplate/iron_chestplate4"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/chestplates/golden_chestplate/golden_chestplate1"
+    }
+}

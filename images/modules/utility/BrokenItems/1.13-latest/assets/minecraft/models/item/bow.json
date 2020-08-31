@@ -1,0 +1,182 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/bow"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ -80, 260, -40 ],
+            "translation": [ -1, -2, 2.5 ],
+            "scale": [ 0.9, 0.9, 0.9 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ -80, -280, 40 ],
+            "translation": [ -1, -2, 2.5 ],
+            "scale": [ 0.9, 0.9, 0.9 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, 25 ],
+            "translation": [ 1.13, 3.2, 1.13],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 90, -25 ],
+            "translation": [ 1.13, 3.2, 1.13],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        }
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.2
+            },
+            "model": "item/bows/bow/bow1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "item/bows/bow/bow2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.6
+            },
+            "model": "item/bows/bow/bow3"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "item/bows/bow/bow4"
+        },
+        {
+            "predicate": {
+                "pulling": 1
+            },
+            "model": "item/bow_pulling_0"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.2
+            },
+            "model": "item/bows/pulling0/pulling1"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.4
+            },
+            "model": "item/bows/pulling0/pulling2"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.6
+            },
+            "model": "item/bows/pulling0/pulling3"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "item/bows/pulling0/pulling4"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.65
+            },
+            "model": "item/bow_pulling_1"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.2,
+                "pull": 0.65
+            },
+            "model": "item/bows/pulling1/pulling1"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.4,
+                "pull": 0.65
+            },
+            "model": "item/bows/pulling1/pulling2"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.6,
+                "pull": 0.65
+            },
+            "model": "item/bows/pulling1/pulling3"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.8,
+                "pull": 0.65
+            },
+            "model": "item/bows/pulling1/pulling4"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "item/bow_pulling_2"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.2,
+                "pull": 0.9
+            },
+            "model": "item/bows/pulling2/pulling1"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.4,
+                "pull": 0.9
+            },
+            "model": "item/bows/pulling2/pulling2"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.6,
+                "pull": 0.9
+            },
+            "model": "item/bows/pulling2/pulling3"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "damaged": 1,
+                "damage": 0.8,
+                "pull": 0.9
+            },
+            "model": "item/bows/pulling2/pulling4"
+        }
+    ]
+}

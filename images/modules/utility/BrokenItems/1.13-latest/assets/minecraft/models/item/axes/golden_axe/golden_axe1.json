@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/axes/golden_axe/golden_axe1"
+    }
+}

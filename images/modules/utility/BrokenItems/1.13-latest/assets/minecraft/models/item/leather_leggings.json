@@ -1,0 +1,30 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/leather_leggings",
+        "layer1": "item/leather_leggings_overlay"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.8
+            },
+            "model": "item/leggings/leather_leggings/leather_leggings1"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.5
+            },
+            "model": "item/leggings/leather_leggings/leather_leggings2"
+        },
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.2
+            },
+            "model": "item/leggings/leather_leggings/leather_leggings3"
+        }
+    ]
+}
