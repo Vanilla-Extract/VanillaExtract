@@ -138,6 +138,7 @@ Example response from POST request:
 ```
 
 ## Credits
+⚠ **NOTE** We try to give credit to those that created the textures but we're not great at keeping track. If you believe some textures are yours please contact us and we'll add you to this list (or take your textures down upon request).
 - [Banakin](https://banakin.github.io): Making the website and various tweaks
 - Doge: FullyAgedCropMarker and AlternateBlockDestruction
 - [The Faithful Team](https://faithful.team/): Making the Faithful Texture Pack
