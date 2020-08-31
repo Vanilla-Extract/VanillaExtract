@@ -35,3 +35,14 @@ modules:
     image: "/images/modules/utility/ColoredBows.png"
     description: "Colors the bow handle to show how far back you've pulled." 
     origin: "faithfultweaks"
+
+# Lists of modules that conflict
+conflictingModules:
+  # Pumpkin Blurs
+  - sortingName: "swords"
+    modules:
+    - id: "SlicedSwords"
+      name: "Sliced Swords"
+      image: "/images/modules/utility/SlicedSwords.png"
+      description: "Changes the sword texture to be shorter for more visibility."
+      origin: "faithfultweaks"

@@ -25,6 +25,7 @@ const modulesData = {
     DirectionalHoppers     : require('./modules/utility/DirectionalHoppers.js'),
     OreBorders             : require('./modules/utility/OreBorders.js'),
     StickyPistonSides      : require('./modules/utility/StickyPistonSides.js'),
+    SlicedSwords           : require('./modules/unobtrusive/SlicedSwords.js'),
 
     // Unobtrusive
     AlternateEnchantGlint  : require('./modules/unobtrusive/AlternateEnchantGlint.js'),
@@ -34,7 +35,6 @@ const modulesData = {
     LowShield              : require('./modules/unobtrusive/LowShield.js'),
     NoVignette             : require('./modules/unobtrusive/NoVignette.js'),
     ReducedPumpkinBlur     : require('./modules/unobtrusive/ReducedPumpkinBlur.js'),
-    SlicedSwords           : require('./modules/unobtrusive/SlicedSwords.js'),
     UnobtrusiveRain        : require('./modules/unobtrusive/UnobtrusiveRain.js'),
     UnobtrusiveScaffolding : require('./modules/unobtrusive/UnobtrusiveScaffolding.js'),
     UnobtrusiveWater       : require('./modules/unobtrusive/UnobtrusiveWater.js'),

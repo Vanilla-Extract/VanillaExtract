@@ -52,12 +52,6 @@ modules:
       - 1-8
       - 1-9
       - 1-10
-  
-  - id: "SlicedSwords"
-    name: "Sliced Swords"
-    image: "/images/modules/unobtrusive/SlicedSwords.png"
-    description: "Changes the sword texture to be shorter for more visibility."
-    origin: "faithfultweaks"
 
   - id: "UnobtrusiveRain"
     name: "Unobtrusive Rain"
