@@ -60,102 +60,111 @@ const addIconModules = async function(modules, archive, bucket){
         }
     });
 
-    // Get defualt icons.png
-    await bucket.file(path.join("packfiles/modules/hud", "default.png")).download().then((data) => {
-        defaultIcons.src = data[0];
+    // If nothings set, return.
+    if (crosshairMode === 0 && hungerMode === 0 && pingMode === 0 && witherHeartsMode === 0 && xpMode === 0) {
         return;
-    });
+    } else {
+    // If something is set then create an icons.png file
 
-    // Get crosshair icons
-    if (crosshairMode === 0) {
-        await bucket.file(path.join("packfiles/modules/hud", "crosshair", "default.png")).download().then((data) => {
-            crosshairIcons.src = data[0];
+        // Get defualt icons.png
+        await bucket.file(path.join("packfiles/modules/hud", "default.png")).download().then((data) => {
+            defaultIcons.src = data[0];
             return;
         });
-    }
 
-    // Get hunger icons
-    if (hungerMode === 0) {
-        await bucket.file(path.join("packfiles/modules/hud", "hunger", "default.png")).download().then((data) => {
-            hungerIcons.src = data[0];
-            return;
-        });
-    } else if (hungerMode === 1) {
-        await bucket.file(path.join("packfiles/modules/hud", "hunger", "melons.png")).download().then((data) => {
-            hungerIcons.src = data[0];
-            return;
-        });
-    } else if (hungerMode === 2) {
-        await bucket.file(path.join("packfiles/modules/hud", "hunger", "bread.png")).download().then((data) => {
-            hungerIcons.src = data[0];
-            return;
-        });
-    }
-
-    // Get ping icons
-    if (pingMode === 0) {
-        await bucket.file(path.join("packfiles/modules/hud", "ping", "default.png")).download().then((data) => {
-            pingIcons.src = data[0];
-            return;
-        });
-    } else if (pingMode === 1) {
-        await bucket.file(path.join("packfiles/modules/hud", "ping", "colored.png")).download().then((data) => {
-            pingIcons.src = data[0];
-            return;
-        });
-    }
-
-    // Get wither icons
-    if (witherHeartsMode === 0) {
-        await bucket.file(path.join("packfiles/modules/hud", "witherhearts", "default.png")).download().then((data) => {
-            witherIcons.src = data[0];
-            return;
-        });
-    } else if (witherHeartsMode === 1) {
-        await bucket.file(path.join("packfiles/modules/hud", "witherhearts", "blue.png")).download().then((data) => {
-            witherIcons.src = data[0];
-            return;
-        });
-    }
-
-    // Get XP icons
-    if (xpMode === 0) {
-        await bucket.file(path.join("packfiles/modules/hud", "xp", "default.png")).download().then((data) => {
-            xpIcons.src = data[0];
-            return;
-        });
-    } else if (xpMode === 1) {
-        await bucket.file(path.join("packfiles/modules/hud", "xp", "rainbow.png")).download().then((data) => {
-            xpIcons.src = data[0];
-            return;
-        });
-    }
-
-    // Mix the images together
-    const canvas = createCanvas(512, 512); // Make canvas
-    const ctx = canvas.getContext('2d'); // Canvas context
-
-    // Specify settings
-    ctx.antialias = 'none';
-//
-    // Draw icons
-    ctx.drawImage(defaultIcons, 0, 0);
-    ctx.drawImage(crosshairIcons, 0, 0);
-    ctx.drawImage(hungerIcons, 0, 0);
-    ctx.drawImage(pingIcons, 0, 0);
-    ctx.drawImage(witherIcons, 0, 0);
-    ctx.drawImage(xpIcons, 0, 0);
-    //
-    // Add image to zip archive
-    const iconsPng = canvas.toBuffer(
-        'image/png', 
-        {
-            compressionLevel: 9,
+        // Get crosshair icons
+        if (crosshairMode === 0) {
+            await bucket.file(path.join("packfiles/modules/hud", "crosshair", "default.png")).download().then((data) => {
+                crosshairIcons.src = data[0];
+                return;
+            });
         }
-    );
-    archive.append(iconsPng, {name: path.join("assets/minecraft/textures/gui", "icons.png")});
 
-    return;
+        // Get hunger icons
+        if (hungerMode === 0) {
+            await bucket.file(path.join("packfiles/modules/hud", "hunger", "default.png")).download().then((data) => {
+                hungerIcons.src = data[0];
+                return;
+            });
+        } else if (hungerMode === 1) {
+            await bucket.file(path.join("packfiles/modules/hud", "hunger", "melons.png")).download().then((data) => {
+                hungerIcons.src = data[0];
+                return;
+            });
+        } else if (hungerMode === 2) {
+            await bucket.file(path.join("packfiles/modules/hud", "hunger", "bread.png")).download().then((data) => {
+                hungerIcons.src = data[0];
+                return;
+            });
+        }
+
+        // Get ping icons
+        if (pingMode === 0) {
+            await bucket.file(path.join("packfiles/modules/hud", "ping", "default.png")).download().then((data) => {
+                pingIcons.src = data[0];
+                return;
+            });
+        } else if (pingMode === 1) {
+            await bucket.file(path.join("packfiles/modules/hud", "ping", "colored.png")).download().then((data) => {
+                pingIcons.src = data[0];
+                return;
+            });
+        }
+
+        // Get wither icons
+        if (witherHeartsMode === 0) {
+            await bucket.file(path.join("packfiles/modules/hud", "witherhearts", "default.png")).download().then((data) => {
+                witherIcons.src = data[0];
+                return;
+            });
+        } else if (witherHeartsMode === 1) {
+            await bucket.file(path.join("packfiles/modules/hud", "witherhearts", "blue.png")).download().then((data) => {
+                witherIcons.src = data[0];
+                return;
+            });
+        }
+
+        // Get XP icons
+        if (xpMode === 0) {
+            await bucket.file(path.join("packfiles/modules/hud", "xp", "default.png")).download().then((data) => {
+                xpIcons.src = data[0];
+                return;
+            });
+        } else if (xpMode === 1) {
+            await bucket.file(path.join("packfiles/modules/hud", "xp", "rainbow.png")).download().then((data) => {
+                xpIcons.src = data[0];
+                return;
+            });
+        }
+
+        // Mix the images together
+        const canvas = createCanvas(512, 512); // Make canvas
+        const ctx = canvas.getContext('2d'); // Canvas context
+
+        // Specify settings
+        ctx.antialias = 'none';
+
+        // Draw icons
+        ctx.drawImage(defaultIcons, 0, 0);
+        ctx.drawImage(crosshairIcons, 0, 0);
+        ctx.drawImage(hungerIcons, 0, 0);
+        ctx.drawImage(pingIcons, 0, 0);
+        ctx.drawImage(witherIcons, 0, 0);
+        ctx.drawImage(xpIcons, 0, 0);
+        //
+        // Add image to zip archive
+        const iconsPng = canvas.toBuffer(
+            'image/png', 
+            {
+                compressionLevel: 9,
+            }
+        );
+        archive.append(iconsPng, {name: path.join("assets/minecraft/textures/gui", "icons.png")});
+
+        return;
+    }
+
+    
 }
 
 // ----- EXPORTS -----
