@@ -149,7 +149,7 @@ Example response from POST request:
 - TheRandomGamerTRG: Making the information site and various tweaks
 - [Stridey](https://www.planetminecraft.com/member/stridey/): LowShield
 - [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/): Inspiration
-- [Ozzymand](https://www.planetminecraft.com/member/ozzymand/): Dark UI textures
+- [jogurciQ](https://www.planetminecraft.com/member/jogurciq/): Dark UI textures
 
 ## Tech Used
 - [Firebase](https://firebase.google.com/) - Backend (API, Hosting, Storage)

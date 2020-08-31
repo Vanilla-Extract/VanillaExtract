@@ -9,7 +9,7 @@ modules:
     image: "/images/modules/unobtrusive/UnobtrusiveScaffolding.png"
     description: "Creates a hole in the top of scaffolding, allowing you to traverse up and down them more comfortably."
     origin: "vanillatweaks"
-    notcompatable:
+    notcompatible:
       - 1-8
       - 1-9
       - 1-10
@@ -28,7 +28,7 @@ modules:
     image: "/images/modules/unobtrusive/LowShield.png"
     description: "Lowers the sheild when its held"
     origin: "vanillatweaks"
-    notcompatable:
+    notcompatible:
       - 1-8
   
   - id: "NoVignette"
@@ -48,7 +48,7 @@ modules:
     image: "/images/modules/unobtrusive/InvisibleTotem.png"
     description: "Renders the Totem of Undying as completely invisible when in first person mode."
     origin: "vanillatweaks"
-    notcompatable:
+    notcompatible:
       - 1-8
       - 1-9
       - 1-10
@@ -64,7 +64,7 @@ modules:
     image: "/images/modules/unobtrusive/UnobtrusiveRain.png"
     description: "Makes rain smaller and clearer to allow for better visibility and a nicer effect from rain."
     origin: "vanillatweaks"
-    notcompatable:
+    notcompatible:
       - 1-8
       - 1-9
       - 1-10

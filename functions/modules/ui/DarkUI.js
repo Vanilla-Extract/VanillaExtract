@@ -13,9 +13,4 @@ module.exports = {
     "1.15":    "/modules/ui/DarkUI/1.13-latest/",
     "1.14":    "/modules/ui/DarkUI/1.13-latest/",
     "1.13":    "/modules/ui/DarkUI/1.13-latest/",
-    "1.12":    "/modules/ui/DarkUI/1.8-1.12/",
-    "1.11":    "/modules/ui/DarkUI/1.8-1.12/",
-    "1.10":    "/modules/ui/DarkUI/1.8-1.12/",
-    "1.9":     "/modules/ui/DarkUI/1.8-1.12/",
-    "1.8":     "/modules/ui/DarkUI/1.8-1.12/",
 };

@@ -10,7 +10,7 @@
                 <div class="d-inline-flex justify-content-center flex-wrap flex-wrap" id="{{ if isset $categoryScope "customFunctionClass"}}{{ $categoryScope.customFunctionClass }}{{else}}normalModules{{end}}">
                     {{ range sort .modules "name"}}
                             <div id="{{ .id }}" class='module-selector
-                                    {{ range .notcompatable }}hideFormat{{ . }} {{ end }}
+                                    {{ range .notcompatible }}hideFormat{{ . }} {{ end }}
 
                                     {{ if eq .origin "vanillatweaks" }}
                                         vt-origin
@@ -37,7 +37,7 @@
                     <div class="d-inline-flex justify-content-center flex-wrap" id="{{ if isset $categoryScope "customFunctionClass"}}{{ $categoryScope.customFunctionClass }}{{else}}normalModules{{end}}Conflicting">
                         {{ range sort .modules "name"}}
                                 <div id="{{ .id }}" class='module-selector
-                                        {{ range .notcompatable }}hideFormat{{ . }}{{ end }}
+                                        {{ range .notcompatible }}hideFormat{{ . }}{{ end }}
 
                                         {{ if eq .origin "vanillatweaks" }}
                                             vt-origin

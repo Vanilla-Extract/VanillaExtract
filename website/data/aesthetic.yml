@@ -20,7 +20,7 @@ modules:
     image: "/images/modules/aesthetic/SolidHoney.png"
     description: "Eliminates Honey Block transparency."
     origin: "vanillatweaks"
-    notcompatable:
+    notcompatible:
       - 1-8
       - 1-9
       - 1-10
@@ -34,7 +34,7 @@ modules:
     image: "/images/modules/aesthetic/SidewaysNuggets.png"
     description: "Rotates Iron Nuggets to be consistent with the other nugget textures."
     origin: "vanillatweaks"
-    notcompatable:
+    notcompatible:
       - 1-8
       - 1-9
       - 1-10
