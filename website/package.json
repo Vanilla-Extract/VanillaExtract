@@ -7,7 +7,7 @@
         "clear:nodejs": "rm -rf node_modules",
         "clear": "npm run clear:webpack && npm run clear:hugo",
         "dev:webpack": "webpack --mode=development --watch",
-        "dev:hugo": "hugo server --disableFastRender -D",
+        "dev:hugo": "hugo server --minify --disableFastRender -D",
         "dev": "npm run clear && concurrently --kill-others \"npm:dev:hugo\" \"npm:dev:webpack\"",
         "build:webpack": "webpack",
         "build:hugo": "hugo --minify",
