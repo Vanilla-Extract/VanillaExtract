@@ -36,6 +36,18 @@ modules:
     description: "Colors the bow handle to show how far back you've pulled." 
     origin: "faithfultweaks"
 
+  - id: "NetherwartGrowthStage"
+    name: "Netherwart Growth Stages"
+    image: "/images/modules/utility/NetherwartGrowthStage.png"
+    description: "Improves netherwart growth stage visibility." 
+    origin: "faithfultweaks"
+  
+  - id: "StackedItems"
+    name: "Stacked Items"
+    image: "/images/modules/utility/StackedItems.png"
+    description: "Adds new textures to your items when you stack them." 
+    origin: "faithfultweaks"
+
 # Lists of modules that conflict
 conflictingModules:
   # Pumpkin Blurs
@@ -46,3 +58,9 @@ conflictingModules:
       image: "/images/modules/utility/SlicedSwords.png"
       description: "Changes the sword texture to be shorter for more visibility."
       origin: "faithfultweaks"
+
+    - id: "BrokenItems"
+      name: "Broken Items"
+      image: "/images/modules/utility/BrokenItems.png"
+      description: "Items get more and more broken as they get lower in durability."
+      origin: "vanillatweaks"

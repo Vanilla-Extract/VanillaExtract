@@ -44,3 +44,15 @@ modules:
     image: "/images/modules/aesthetic/BlackNetherBricks.png"
     description: "Changes the texture of Nether Bricks to make them black."
     origin: "vanillatweaks"
+
+  - id: "CleanRedstone"
+    name: "Clean Redstone"
+    image: "/images/modules/aesthetic/CleanRedstone.png"
+    description: "Changes the texture of Redstone Dust to a clean solid line."
+    origin: "vanillatweaks"
+  
+  - id: "AlternateEntities"
+    name: "Alternate Entities"
+    image: "/images/modules/aesthetic/AlternateEntities.png"
+    description: "Adds variants to a lot of entities."
+    origin: "faithfultweaks"
