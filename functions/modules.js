@@ -10,6 +10,7 @@ const modulesData = {
     BlackNetherBricks      : require('./modules/aesthetic/BlackNetherBricks.js'),
     CherryPicking          : require('./modules/aesthetic/CherryPicking.js'),
     CleanRedstone          : require('./modules/aesthetic/CleanRedstone.js'),
+    PlainLeather           : require('./modules/aesthetic/PlainLeather.js'),
     RedGolemFlowers        : require('./modules/aesthetic/RedGolemFlowers.js'),
     SidewaysNuggets        : require('./modules/aesthetic/SidewaysNuggets.js'),
     SolidHoney             : require('./modules/aesthetic/SolidHoney.js'),
