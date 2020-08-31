@@ -77,7 +77,7 @@ conflictingModules:
   - sortingName: "wool"
     modules:
     - id: "CodeCraftedWool"
-      name: "Sliced Swords"
+      name: "CodeCrafted's Wool"
       image: "/images/modules/aesthetic/CodeCraftedWool.png"
       description: "Makes wool the same style as CodeCrafted's but with 1 pixel edges."
       origin: "faithfultweaks"
