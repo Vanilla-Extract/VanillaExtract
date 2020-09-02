@@ -1,14 +1,16 @@
 // ICON MODULES ARE HANDLED DIFFERENTLY THAN REGULAR MODULES
-// Path
-const path = require('path');
+// IMPORTS
+import { Bucket } from '@google-cloud/storage';
+import { Archiver } from "archiver";
+import * as path from 'path';
 
 // Image merging
-const { createCanvas, loadImage, Image } = require('canvas');
+import { createCanvas, Image } from 'canvas';
 
 // Figure out which modules to add
-const addIconModules = async function(modules, archive, bucket){
+export async function addIconModules(modules: string[], archive: Archiver, bucket: Bucket){
     // Set all modes to default
-    let crosshairMode = 0;
+    const crosshairMode = 0;
     let hungerMode = 0;
     let pingMode = 0;
     let witherHeartsMode = 0;
@@ -166,8 +168,3 @@ const addIconModules = async function(modules, archive, bucket){
 
     
 }
-
-// ----- EXPORTS -----
-module.exports = {
-    addIconModules: addIconModules
-};
