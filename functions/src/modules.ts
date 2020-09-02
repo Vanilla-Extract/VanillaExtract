@@ -1,7 +1,9 @@
-const path = require('path');
+import { Archiver } from "archiver";
+import {Bucket} from '@google-cloud/storage';
+import * as path from 'path';
 
 // ----- MODULES -----
-const modulesData = {
+const modulesData: any = {
 //  ModuleID               : require('./path/to/moduleid.js'),
     TestModule             : require('./modules/testModule.js'),
 
@@ -53,7 +55,7 @@ const modulesData = {
 }
 
 // Figure out which modules to add
-const addModules = async function(format, archive, modules, bucket){
+export async function mcModules(format: string, archive: Archiver, modules: string[], bucket: Bucket) {
     // For each module
     const promises = modules.map(async (modName) => {
         // If the module exists
@@ -77,11 +79,12 @@ const addModules = async function(format, archive, modules, bucket){
                 directory: DLPath,
             }).then(async (data) => {
                 // For each file
+                // tslint:disable-next-line: no-shadowed-variable
                 const promises = data[0].map(async (file) => {
                     // Download
                     await file.download().then((fileData) => {
                         // Remove beginning of path from file name
-                        fileName = file.name.replace(DLPath, '');
+                        const fileName = file.name.replace(DLPath, '');
                         // Add file to zip
                         return archive.append(fileData[0], {name: fileName});
                     });
@@ -93,8 +96,3 @@ const addModules = async function(format, archive, modules, bucket){
     });
     return Promise.all(promises);
 }
-
-// ----- EXPORTS -----
-module.exports = {
-    addModules: addModules
-};

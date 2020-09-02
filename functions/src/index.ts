@@ -1,5 +1,5 @@
 // Module Data
-import mcModules = require("./modules.js");
+import { mcModules } from "./modules.js";
 import mcIconModules = require("./modules/iconModules.js");
 import optionsBG = require("./modules/optionsBGModules.js");
 import menuPanorama = require("./modules/panoramaModules.js");
@@ -15,6 +15,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 // Firebase
 import * as functions from 'firebase-functions';
+import { Bucket } from "@google-cloud/storage";
 import * as admin from 'firebase-admin';
 admin.initializeApp({
     storageBucket: "faithfultweaks-app.appspot.com"
@@ -43,7 +44,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     res.set('Access-Control-Allow-Headers', 'Content-Type');
     res.set('Content-Type', 'application/json');
 
-    const bucket = admin.storage().bucket(); // Storage bucket
+    const bucket: Bucket = admin.storage().bucket(); // Storage bucket
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
 
     // Get body data
@@ -86,7 +87,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     });
     
     if (modules !== undefined && modules !== null) {
-        await mcModules.addModules(format, archive, modules, bucket); // Add modules to the pack
+        await mcModules(format, archive, modules, bucket); // Add modules to the pack
     }
 
     if (iconModules !== undefined && iconModules !== null) {
