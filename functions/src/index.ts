@@ -1,5 +1,5 @@
 // Module Data
-import { mcModules } from "./modules";
+import { addModules } from "./modules";
 import { addIconModules } from "./modules/iconModules";
 import { addOptionsBG } from "./modules/optionsBGModules";
 import menuPanorama = require("./modules/panoramaModules.js");
@@ -87,7 +87,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     });
     
     if (modules !== undefined && modules !== null) {
-        await mcModules(format, archive, modules, bucket); // Add modules to the pack
+        await addModules(format, archive, modules, bucket); // Add modules to the pack
     }
 
     if (iconModules !== undefined && iconModules !== null) {
