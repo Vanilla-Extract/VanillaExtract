@@ -3,7 +3,7 @@ import {Bucket} from '@google-cloud/storage';
 import * as path from 'path';
 
 // ----- MODULES -----
-const modulesData: any = {
+const modulesData: Record<string, any> = {
 //  ModuleID               : require('./path/to/moduleid.js'),
     TestModule             : require('./modules/testModule.js'),
 
