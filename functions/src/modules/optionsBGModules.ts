@@ -1,9 +1,11 @@
-const path = require('path');
+import * as path from 'path';
+import { Archiver } from 'archiver';
+import { Bucket } from '@google-cloud/storage';
 
 const packFilesPath = "modules/optionsBG";
 const inPackName = "options_background.png";
 const inPackPath = "assets/minecraft/textures/gui";
-const files = {
+const files: Record<string, string> = {
     AcaciaPlanksBG: "AcaciaPlanks.png",
     AncientDebrisBG: "AncientDebris.png",
     AndesiteBG: "andesite.png",
@@ -25,7 +27,7 @@ const files = {
     StoneBG: "stone.png",
 };
 
-const addModules = async function(moduleName, archive, bucket){
+export async function addOptionsBG(moduleName: string, archive: Archiver, bucket: Bucket){
     // If it exists
     if (files[moduleName] !== undefined && files[moduleName] !== null) {
         await bucket.file(path.join("packfiles", packFilesPath, files[moduleName])).download().then((data) => {
@@ -33,8 +35,4 @@ const addModules = async function(moduleName, archive, bucket){
         });
     }
     return;
-};
-
-module.exports = {
-    addModules: addModules,
 };

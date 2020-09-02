@@ -1,7 +1,7 @@
 // Module Data
-import { mcModules } from "./modules.js";
-import { addIconModules } from "./modules/iconModules.js";
-import optionsBG = require("./modules/optionsBGModules.js");
+import { mcModules } from "./modules";
+import { addIconModules } from "./modules/iconModules";
+import { addOptionsBG } from "./modules/optionsBGModules";
 import menuPanorama = require("./modules/panoramaModules.js");
 
 // Archiver
@@ -95,7 +95,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     }
 
     if (optionsBackground !== undefined && optionsBackground !== null) {
-        await optionsBG.addModules(optionsBackground, archive, bucket); // Add options background
+        await addOptionsBG(optionsBackground, archive, bucket); // Add options background
     }
     
     if (panoOption !== undefined && panoOption !== null) {
