@@ -6,6 +6,10 @@ website/static/packaged
 website/resources
 public
 
+# Functions
+/functions/lib/
+/functions/typings/
+
 # Logs
 logs
 *.log
