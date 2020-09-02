@@ -1,15 +1,17 @@
-const path = require('path');
+import * as path from 'path';
+import { Archiver } from 'archiver';
+import { Bucket } from '@google-cloud/storage';
 
 const packFilesPath = "modules/panoramas";
 const inPackPath = "assets/minecraft/textures/gui/title/background";
-const folders = {
+const folders: Record<string, string> = {
     ClassicPano: "ClassicPanorama",
     BastionPano: "PiglinBastion",
     EndPano: "TheEnd",
     SeirinsPano: "SeirinsSurvival",
 };
 
-const addModules = async function(moduleName, archive, bucket){
+export async function addMenuPanorama(moduleName: string, archive: Archiver, bucket: Bucket){
     // If it exists
     if (folders[moduleName] !== undefined && folders[moduleName] !== null) {
         // Image 0
@@ -43,8 +45,4 @@ const addModules = async function(moduleName, archive, bucket){
         });
     }
     return;
-};
-
-module.exports = {
-    addModules: addModules,
 };

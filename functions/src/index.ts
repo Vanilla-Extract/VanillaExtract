@@ -2,7 +2,7 @@
 import { addModules } from "./modules";
 import { addIconModules } from "./modules/iconModules";
 import { addOptionsBG } from "./modules/optionsBGModules";
-import menuPanorama = require("./modules/panoramaModules.js");
+import { addMenuPanorama } from "./modules/panoramaModules";
 
 // Archiver
 import * as archiver from 'archiver';
@@ -99,7 +99,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     }
     
     if (panoOption !== undefined && panoOption !== null) {
-        await menuPanorama.addModules(panoOption, archive, bucket); // Add menu panorama
+        await addMenuPanorama(panoOption, archive, bucket); // Add menu panorama
     }
 
     await archive.finalize(); // finalize the archive
