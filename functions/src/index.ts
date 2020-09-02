@@ -1,22 +1,21 @@
 // Module Data
-const mcModules = require("./modules.js");
-const mcIconModules = require("./modules/iconModules.js");
-const optionsBG = require("./modules/optionsBGModules.js");
-const menuPanorama = require("./modules/panoramaModules.js");
-
+import mcModules = require("./modules.js");
+import mcIconModules = require("./modules/iconModules.js");
+import optionsBG = require("./modules/optionsBGModules.js");
+import menuPanorama = require("./modules/panoramaModules.js");
 
 // Archiver
-const archiver = require('archiver');
-const fs = require('fs');
-const os = require('os');
-const path = require('path');
+import * as archiver from 'archiver';
+import * as fs from 'fs';
+import * as os from 'os';
+import * as path from 'path';
 
 // Usefull tools
-const { v4: uuidv4 } = require('uuid');
+import { v4 as uuidv4 } from 'uuid';
 
 // Firebase
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
+import * as functions from 'firebase-functions';
+import * as admin from 'firebase-admin';
 admin.initializeApp({
     storageBucket: "faithfultweaks-app.appspot.com"
 });
@@ -48,16 +47,16 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
 
     // Get body data
-    const format = req.body.format;
-    const modules = req.body.modules;
-    const iconModules = req.body.iconModules;
-    const optionsBackground = req.body.optionsBackground;
-    const panoOption = req.body.panoOption;
+    const format: string = req.body.format;
+    const modules: string[] = req.body.modules;
+    const iconModules: string[] = req.body.iconModules;
+    const optionsBackground: string = req.body.optionsBackground;
+    const panoOption: string = req.body.panoOption;
 
     // ----- CREATE THE ARCHIVE -----
-    let output = fs.createWriteStream(tempFilePath); // create a file to stream archive data to.
+    const output = fs.createWriteStream(tempFilePath); // create a file to stream archive data to.
     // init zip file
-    let archive = archiver('zip', {
+    const archive = archiver('zip', {
         zlib: { level: 9 } // Sets the compression level.
     });
 
@@ -102,7 +101,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
         await menuPanorama.addModules(panoOption, archive, bucket); // Add menu panorama
     }
 
-    archive.finalize(); // finalize the archive
+    await archive.finalize(); // finalize the archive
 
     // ----- UPLOAD THE ARCHIVE -----
     const fileUUID = uuidv4();
@@ -141,9 +140,11 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
 });
 
 // Make the mcmeta file
-function mcMeta(format) {
+function mcMeta(format: string) {
+    let formatStr = format;
+
     // Get pack format from version
-    let packFormat;
+    let packFormat: number;
     if (format === "1.8") {
         packFormat = 1;
     } else if (format === "1.9" || format === "1.10") {
@@ -158,21 +159,21 @@ function mcMeta(format) {
         packFormat = 6;
     } else {
         packFormat = 1
-        format = "Error making pack";
+        formatStr = "Error making pack";
     }
 
     return (
 `{
     "pack": {
         "pack_format": `+packFormat+`,
-        "description": "§aFaithful Tweaks §6- §c`+format+`\\n§b§nfaithfultweaks.com"
+        "description": "§aFaithful Tweaks §6- §c`+formatStr+`\\n§b§nfaithfultweaks.com"
     }
 }`
     );
 }
 
 // Make the modules.txt file
-function moduleSelection(format, modules, iconModules, optionsBackground, panoOption) {
+function moduleSelection(format: string, modules: string[], iconModules: string[], optionsBackground: string, panoOption: string) {
     // Make string of modules
     let modStr = '';
     if (modules !== undefined && modules !== null) {
