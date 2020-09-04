@@ -3,16 +3,15 @@ const webpack = require('webpack')
 const path = require('path');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     entry: [
-        path.resolve('src', 'js', 'script.js'),
+        path.resolve('src', 'ts', 'script.ts'),
         path.resolve('src', 'scss', 'main.scss')
     ],
     mode: 'production',
     resolve: {
-        extensions: ['.js', '.scss'],
+        extensions: ['.ts', '.scss'],
         modules: [
             path.resolve(__dirname, "node_modules"),
         ],
@@ -23,6 +22,11 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
             {
                 test: /\.scss$/,
                 use: [
@@ -35,14 +39,11 @@ module.exports = {
             {
                 test: /\.(ttf|woff|woff2|eot|svg|png|jpg|gif|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: 'file-loader'
-              }
+            }
         ],
     },
     optimization: {
-    minimize: true,
-        minimizer: [
-            new TerserPlugin(),
-        ],
+        minimize: true
     },
     plugins: [
         new MiniCssExtractPlugin({

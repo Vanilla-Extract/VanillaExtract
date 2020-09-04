@@ -1,17 +1,18 @@
 import 'bootstrap';
+import $ from 'jquery';
 
-let format = "1-16-2";
-const modules = [];
-const iconModules = [];
-let optionsBackground;
-let panoOption;
+let format: string = "1-16-2";
+const modules: string[] = [];
+const iconModules: string[] = [];
+let optionsBackground: string;
+let panoOption: string;
 
 // When content is loaded
 window.addEventListener('DOMContentLoaded', () => {
     // Hide alerts on close instead of removing them from the dom
     document.querySelectorAll('.alert .close').forEach((e) => {
         e.addEventListener('click', () => {
-            e.parentNode.style.display = 'none';
+            (<HTMLElement>e.parentNode).style.display = 'none';
         });
     });
 
@@ -44,26 +45,26 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     
     document.querySelector('#downloadPack').addEventListener('click', downloadPack); // Download
-    document.querySelectorAll('#formatGroup                >*').forEach(e => e.addEventListener('click', setFormat));                    // Format buttons
+    document.querySelectorAll('#formatGroup                >*').forEach((e: HTMLElement) => e.addEventListener('click', setFormat));                    // Format buttons
 
     // Modules
-    document.querySelectorAll('#normalModules              >*').forEach(e => e.addEventListener('click', setModule));                  // Normal modules
-    document.querySelectorAll('#normalModulesConflicting   >*').forEach(e => e.addEventListener('click', setModuleConflicting));       // Conflicting normal modules
+    document.querySelectorAll('#normalModules              >*').forEach((e: HTMLElement) => e.addEventListener('click', setModule));                  // Normal modules
+    document.querySelectorAll('#normalModulesConflicting   >*').forEach((e: HTMLElement) => e.addEventListener('click', setModuleConflicting));       // Conflicting normal modules
 
     // HUD
-    document.querySelectorAll('#hudModules                 >*').forEach(e => e.addEventListener('click', setIconModule));              // Normal modules
-    document.querySelectorAll('#hudModulesConflicting      >*').forEach(e => e.addEventListener('click', setIconModuleConflicting));   // Conflicting normal modules
+    document.querySelectorAll('#hudModules                 >*').forEach((e: HTMLElement) => e.addEventListener('click', setIconModule));              // Normal modules
+    document.querySelectorAll('#hudModulesConflicting      >*').forEach((e: HTMLElement) => e.addEventListener('click', setIconModuleConflicting));   // Conflicting normal modules
 
     // Options and Panoramas
-    document.querySelectorAll('#optionsbgModules           >*').forEach(e => e.addEventListener('click', setBackground));              // Backgrounds
-    document.querySelectorAll('#panoramasModules           >*').forEach(e => e.addEventListener('click', setPano));                    // Panoramas
+    document.querySelectorAll('#optionsbgModules           >*').forEach((e: HTMLElement) => e.addEventListener('click', setBackground));              // Backgrounds
+    document.querySelectorAll('#panoramasModules           >*').forEach((e: HTMLElement) => e.addEventListener('click', setPano));                    // Panoramas
 });
 
 
 // Set format to the last number of ID
-function setFormat() {
+function setFormat(this: HTMLElement) {
     // Make all buttons light
-    Array.from(this.parentNode.children).forEach(e => {
+    Array.from(this.parentNode.children).forEach((e: HTMLElement) => {
         e.classList.remove("btn-dark");
         e.classList.add("btn-light");
     });
@@ -76,14 +77,14 @@ function setFormat() {
     format = this.id.replace('format', '');
 
     // Show all
-    document.querySelectorAll('.module-selector').forEach(e => e.style.display = '');
+    document.querySelectorAll('.module-selector').forEach((e: HTMLElement) => e.style.display = '');
 
     // Hide incompatible modules
-    document.querySelectorAll('.hideFormat'+format).forEach(e => e.style.display = 'none');
+    document.querySelectorAll('.hideFormat'+format).forEach((e: HTMLElement) => e.style.display = 'none');
 }
 
 // Set module function
-function setModule() {
+function setModule(this: HTMLElement) {
     if (this.classList.contains('enabled')) {
         // If already enabled then disable
         const i = modules.indexOf(this.id);
@@ -99,9 +100,9 @@ function setModule() {
 }
 
 // Set conflicting module function
-function setModuleConflicting () {
+function setModuleConflicting (this: HTMLElement) {
     // For each sibling
-    Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => {
+    Array.prototype.filter.call(this.parentNode.children, (c: HTMLElement) => { return c !== this; }).forEach((e: HTMLElement) => {
         const i = modules.indexOf(e.id);
         if (i > -1) {
             modules.splice(i, 1);
@@ -122,7 +123,7 @@ function setModuleConflicting () {
 };
 
 // Set icon module function
-function setIconModule() {
+function setIconModule(this: HTMLElement) {
     if (this.classList.contains('enabled')) {
         // If already enabled then disable
         const i = iconModules.indexOf(this.id);
@@ -138,9 +139,9 @@ function setIconModule() {
 }
 
 // Set conflicting icon module function
-function setIconModuleConflicting () {
+function setIconModuleConflicting (this: HTMLElement) {
     // For each sibling
-    Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => {
+    Array.prototype.filter.call(this.parentNode.children, (c: HTMLElement) => { return c !== this; }).forEach((e: HTMLElement) => {
         const i = iconModules.indexOf(e.id);
         if (i > -1) {
             iconModules.splice(i, 1);
@@ -161,9 +162,9 @@ function setIconModuleConflicting () {
 };
 
 // Set background function
-function setBackground() {
+function setBackground(this: HTMLElement) {
     // For each sibling
-    Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => e.classList.remove("enabled"));
+    Array.prototype.filter.call(this.parentNode.children, (c: HTMLElement) => { return c !== this; }).forEach((e: HTMLElement) => e.classList.remove("enabled"));
 
     // If is var disable
     if (optionsBackground === this.id) {
@@ -177,9 +178,9 @@ function setBackground() {
 }
 
 // Set pano function
-function setPano() {
+function setPano(this: HTMLElement) {
     // For each sibling
-    Array.prototype.filter.call(this.parentNode.children, c => { return c !== this; }).forEach(e => e.classList.remove("enabled"));
+    Array.prototype.filter.call(this.parentNode.children, (c: HTMLElement) => { return c !== this; }).forEach((e: HTMLElement) => e.classList.remove("enabled"));
 
     // If is var disable
     if (panoOption === this.id) {
@@ -197,12 +198,12 @@ function downloadPack() {
     // Update format to fit version number scheme
     const version = format.replace('-', '.').replace('-', '.'); // Somewhat messy way of making sure both "-"s get changed 
 
-    document.querySelectorAll('.alert').forEach(e => e.style.display = 'none'); // Hide alerts
-    document.querySelector('#creating-alert').style.display = 'block'; // Create alert
+    document.querySelectorAll('.alert').forEach((e: HTMLElement) => e.style.display = 'none'); // Hide alerts
+    (<HTMLElement>document.querySelector('#creating-alert')).style.display = 'block'; // Create alert
 
     // POST Request
     const request = new XMLHttpRequest(); // Request
-    const url = process.env.NODE_ENV !== 'production' ? "http://localhost:5001/faithfultweaks/us-central1/makePack" : "https://us-central1-faithfultweaks-app.cloudfunctions.net/makePack"; // URL (based on node environment status)
+    const url = process.env["NODE_ENV"] !== 'production' ? "http://localhost:5001/faithfultweaks/us-central1/makePack" : "https://us-central1-faithfultweaks-app.cloudfunctions.net/makePack"; // URL (based on node environment status)
     const data = {
         "format": version,
         "modules": modules,
@@ -218,13 +219,13 @@ function downloadPack() {
             // Request finished
             const data = JSON.parse(this.responseText);
             window.location.href = data.url;
-            document.querySelector('#download-link').setAttribute('href', data.url); // Set download link
-            document.querySelector('#creating-alert').style.display = 'none'; // Hide old alert
-            document.querySelector('#finished-alert').style.display = 'block'; // Show created alert
+            (<HTMLElement>document.querySelector('#download-link')).setAttribute('href', data.url); // Set download link
+            (<HTMLElement>document.querySelector('#creating-alert')).style.display = 'none'; // Hide old alert
+            (<HTMLElement>document.querySelector('#finished-alert')).style.display = 'block'; // Show created alert
         } else if (this.readyState === 4) {
             // Request error
-            document.querySelector('#creating-alert').style.display = 'none'; // Hide old alert
-            document.querySelector('#fail-alert').style.display = 'block'; // Show fail alert
+            (<HTMLElement>document.querySelector('#creating-alert')).style.display = 'none'; // Hide old alert
+            (<HTMLElement>document.querySelector('#fail-alert')).style.display = 'block'; // Show fail alert
         }
     };
     request.send(JSON.stringify(data));
