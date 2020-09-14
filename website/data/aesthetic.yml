@@ -115,3 +115,19 @@ conflictingModules:
         - 1-10
         - 1-11
         - 1-12
+        
+  - sortingName: "wood"
+    modules:
+    - id: "GlassDoors"
+      name: "Glass Doors"
+      image: "/images/modules/aesthetic/GlassDoors.png"
+      description: "Adds uniquely shaped glass windows into every door type."
+      origin: "vanillatweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
+        - 1-13
+        - 1-14
