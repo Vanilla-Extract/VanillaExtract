@@ -84,6 +84,20 @@ modules:
       - 1-12
       - 1-13
       - 1-14
+      
+  - id: "RedCrimson"
+    name: "Crimsoner Crimson"
+    image: "/images/modules/aesthetic/RedCrimson.png"
+    description: "Recolors all Crimson Wood related blocks and items to be redder, matching the shades of Crimson Nylium and Wart blocks closer."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
     
 # Lists of modules that conflict
 conflictingModules:
