@@ -70,8 +70,8 @@ modules:
       - 1-12
       - 1-13
       - 1-14
-      
-- id: "SplashEnchanting"
+
+  - id: "SplashEnchanting"
     name: "Splash Bottle o' Enchanting"
     image: "/images/modules/aesthetic/SplashEnchanting.png"
     description: "Makes the Bottle o' Enchanting take the same shape as a splash potion."
