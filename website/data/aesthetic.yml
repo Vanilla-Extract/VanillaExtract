@@ -70,6 +70,34 @@ modules:
       - 1-12
       - 1-13
       - 1-14
+
+  - id: "SplashEnchanting"
+    name: "Splash Bottle o' Enchanting"
+    image: "/images/modules/aesthetic/SplashEnchanting.png"
+    description: "Makes the Bottle o' Enchanting take the same shape as a splash potion."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
+      
+  - id: "RedCrimson"
+    name: "Crimsoner Crimson"
+    image: "/images/modules/aesthetic/RedCrimson.png"
+    description: "Recolors all Crimson Wood related blocks and items to be redder, matching the shades of Crimson Nylium and Wart blocks closer."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
     
 # Lists of modules that conflict
 conflictingModules:
@@ -87,3 +115,19 @@ conflictingModules:
         - 1-10
         - 1-11
         - 1-12
+        
+  - sortingName: "wood"
+    modules:
+    - id: "GlassDoors"
+      name: "Glass Doors"
+      image: "/images/modules/aesthetic/GlassDoors.png"
+      description: "Adds uniquely shaped glass windows into every door type."
+      origin: "vanillatweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
+        - 1-13
+        - 1-14

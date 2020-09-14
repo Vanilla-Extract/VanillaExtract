@@ -41,6 +41,9 @@ Notice: Icon/HUD modules, options background modules, and menu panorama modules 
 - SidewaysNuggets
 - SolidHoney
 - UnbundledHayBales
+- PlainLeather
+- SplashEnchanting
+- RedGolemFlowers
 
 ### Terrain
 - BetterBedrock
