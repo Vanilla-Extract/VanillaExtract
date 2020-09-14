@@ -70,6 +70,20 @@ modules:
       - 1-12
       - 1-13
       - 1-14
+
+- id: "SplashEnchanting"
+    name: "Splash Bottle o' Enchanting"
+    image: "/images/modules/aesthetic/SplashEnchanting.png"
+    description: "Makes the Bottle o' Enchanting take the same shape as a splash potion."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
     
 # Lists of modules that conflict
 conflictingModules:
