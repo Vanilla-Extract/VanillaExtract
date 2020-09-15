@@ -147,3 +147,51 @@ conflictingModules:
         - 1-12
         - 1-13
         - 1-14
+        
+  - sortingName: "sga"
+    modules:
+    - id: "ColorParticle"
+      name: "Colorful Enchanting Particles"
+      image: "/images/modules/aesthetic/ColorParticle.png"
+      description: "Makes the particles that come from bookshelves around an Enchanting Table nice and colorful!"
+      origin: "vanillatweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
+        - 1-13
+        - 1-14
+        
+  - sortingName: "EndRod"
+    modules:
+    - id: "EndlessRod"
+      name: "Endless End Rods"
+      image: "/images/modules/aesthetic/EndlessRod.png"
+      description: "Removes the purple nub from the End Rod altogether."
+      origin: "vanillatweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
+        - 1-13
+        - 1-14
+
+  - sortingName: "EndRod"
+    modules:
+    - id: "PinkRod"
+      name: "Pink End Rods"
+      image: "/images/modules/aesthetic/PinkRod.png"
+      description: "Changes the grey base of the End Rods to pink."
+      origin: "vanillatweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
+        - 1-13
+        - 1-14
