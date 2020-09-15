@@ -147,3 +147,19 @@ conflictingModules:
         - 1-12
         - 1-13
         - 1-14
+        
+  - sortingName: "sga"
+    modules:
+    - id: "ColorParticle"
+      name: "Colorful Enchanting Particles"
+      image: "/images/modules/aesthetic/ColorParticle.png"
+      description: "Makes the particles that come from bookshelves around an Enchanting Table nice and colorful!"
+      origin: "vanillatweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
+        - 1-13
+        - 1-14
