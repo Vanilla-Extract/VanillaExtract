@@ -98,6 +98,50 @@ modules:
       - 1-12
       - 1-13
       - 1-14
+      
+  - id: "AnimatedCampfire"
+    name: "Animated Campfire Items"
+    image: "/images/modules/aesthetic/AnimatedCampfire.png"
+    description: "Animates Campfire and Soul Campfire items."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
+
+  - id: "DesatPurpur"
+    name: "Less Purple Purpur"
+    image: "/images/modules/aesthetic/DesatPurpur.png"
+    description: "Desaturates the color of all Purpur blocks."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
+      
+  - id: "OldNetherite"
+    name: "Classic Netherite Armor"
+    image: "/images/modules/aesthetic/OldNetherite.png"
+    description: "Netherite armor in the style of the other armors."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
+      - 1-15
+
     
 # Lists of modules that conflict
 conflictingModules:
