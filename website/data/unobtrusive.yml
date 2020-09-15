@@ -6,7 +6,7 @@ display: "Unobtrusive"
 modules:
   - id: "UnobtrusiveScaffolding"
     name: "Unobtrusive Scaffolding"
-    image: "/images/modules/unobtrusive/UnobtrusiveScaffolding.png"
+    image: "/images/modules/unobtrusive/UnobtrusiveScaffolding/1.14-latest/assets/minecraft/textures/block/scaffolding_top.png"
     description: "Creates a hole in the top of scaffolding, allowing you to traverse up and down them more comfortably."
     origin: "vanillatweaks"
     notcompatible:
