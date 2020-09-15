@@ -131,3 +131,19 @@ conflictingModules:
         - 1-12
         - 1-13
         - 1-14
+        
+  - sortingName: "slime"
+    modules:
+    - id: "SolidSlime"
+      name: "Solid Slime"
+      image: "/images/modules/aesthetic/SolidSlime.png"
+      description: "Eliminates Slime Block Transparency."
+      origin: "vanillatweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
+        - 1-13
+        - 1-14
