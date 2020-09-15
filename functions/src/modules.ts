@@ -23,8 +23,10 @@ const modulesData: Record<string, any> = {
     PinkRod                : require('./modules/aesthetic/PinkRod.js'),
     EndlessRod             : require('./modules/aesthetic/EndlessRod.js'),
     GlassDoors             : require('./modules/aesthetic/GlassDoors.js'),
-    ColorParticles         : require('./modules/aesthetic/ColorParticles.js'),
-    
+    ColorParticle          : require('./modules/aesthetic/ColorParticle.js'),
+    AnimatedCampfire       : require('./modules/aesthetic/AnimatedCampfire.js'),
+    DesatPurpur            : require('./modules/aesthetic/DesatPurpur.js'),
+    OldNetherite           : require('./modules/aesthetic/OldNetherite.js'),
 
     // Terrain
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
