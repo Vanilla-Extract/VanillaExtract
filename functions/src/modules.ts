@@ -17,6 +17,14 @@ const modulesData: Record<string, any> = {
     SidewaysNuggets        : require('./modules/aesthetic/SidewaysNuggets.js'),
     SolidHoney             : require('./modules/aesthetic/SolidHoney.js'),
     UnbundledHayBales      : require('./modules/aesthetic/UnbundledHayBales.js'),
+    SplashEnchanting       : require('./modules/aesthetic/SplashEnchanting.js'),
+    SolidSlime             : require('./modules/aesthetic/SolidSlime.js'),
+    RedCrimson             : require('./modules/aesthetic/RedCrimson.js'),
+    PinkRod                : require('./modules/aesthetic/PinkRod.js'),
+    EndlessRod             : require('./modules/aesthetic/EndlessRod.js'),
+    GlassDoors             : require('./modules/aesthetic/GlassDoors.js'),
+    ColorParticles         : require('./modules/aesthetic/ColorParticles.js'),
+    
 
     // Terrain
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
