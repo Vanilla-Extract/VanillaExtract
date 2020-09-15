@@ -1,0 +1,32 @@
+{
+	"credit": "Model Created by Stridey",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/end_rod",
+		"end_rod": "block/end_rod"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 16, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "texture": "#end_rod"},
+				"east": {"uv": [0, 0, 2, 16], "texture": "#end_rod"},
+				"south": {"uv": [0, 0, 2, 16], "texture": "#end_rod"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#end_rod"},
+				"up": {"uv": [2, 0, 4, 2], "texture": "#end_rod", "cullface": "up"},
+				"down": {"uv": [2, 0, 4, 2], "texture": "#end_rod", "cullface": "down"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"head": {
+			"rotation": [-60, 0, 0],
+			"translation": [0, 5, -9]
+		}
+	}
+}
