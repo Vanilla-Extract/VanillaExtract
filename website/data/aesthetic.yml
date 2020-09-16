@@ -165,6 +165,12 @@ modules:
     image: "/images/modules/aesthetic/AlternateDestruction.png"
     description: "Changes the breaking texture of blocks to a messy ring around the outside."
     origin: "vanillatweaks"
+    
+  - id: "DifferentStems"
+    name: "Different Stems"
+    image: "/images/modules/aesthetic/DifferentStems.png"
+    description: "Changes the Melon and Pumpkin stems to make them more curvaceous and natural looking."
+    origin: "vanillatweaks"
 
 # Lists of modules that conflict
 conflictingModules:
