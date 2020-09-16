@@ -177,11 +177,11 @@ modules:
       - 1-10
       - 1-11
       - 1-12
-    
-  - id: "DifferentStems"
-    name: "Different Stems"
-    image: "/images/modules/aesthetic/DifferentStems.png"
-    description: "Changes the Melon and Pumpkin stems to make them more curvaceous and natural looking."
+  
+  - id: "SolidSlime"
+    name: "Solid Slime"
+    image: "/images/modules/aesthetic/SolidSlime.png"
+    description: "Eliminates Slime Block Transparency."
     origin: "vanillatweaks"
     notcompatible:
       - 1-8
@@ -189,20 +189,8 @@ modules:
       - 1-10
       - 1-11
       - 1-12
-  
-  - id: "SolidSlime"
-  name: "Solid Slime"
-  image: "/images/modules/aesthetic/SolidSlime.png"
-  description: "Eliminates Slime Block Transparency."
-  origin: "vanillatweaks"
-  notcompatible:
-    - 1-8
-    - 1-9
-    - 1-10
-    - 1-11
-    - 1-12
-    - 1-13
-    - 1-14
+      - 1-13
+      - 1-14
     
   - id: "ColorParticle"
     name: "Colorful Enchanting Particles"
@@ -217,6 +205,19 @@ modules:
       - 1-12
       - 1-13
       - 1-14
+      
+  - id: "DifferentStems"
+    name: "Different Stems"
+    image: "/images/modules/aesthetic/DifferentStems.png"
+    description: "Changes the Melon and Pumpkin stems to make them more curvaceous and natural looking."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+
 
 # Lists of modules that conflict
 conflictingModules:
