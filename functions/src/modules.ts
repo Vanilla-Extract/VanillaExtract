@@ -29,7 +29,7 @@ const modulesData: Record<string, any> = {
     OldNetherite           : require('./modules/aesthetic/OldNetherite.js'),
     FlintArrow             : require('./modules/aesthetic/FlintArrow.js'),
     JappaSpectralArrow     : require('./modules/aesthetic/JappaSpectralArrow.js'),
-    AlternateDestruction   : require('./modules/aesthetic/AltnerateDestruction.js'),
+    AlternateDestruction   : require('./modules/aesthetic/AlternateDestruction.js'),
 
     // Terrain
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
