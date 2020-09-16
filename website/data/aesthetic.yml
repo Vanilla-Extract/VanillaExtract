@@ -142,7 +142,18 @@ modules:
       - 1-14
       - 1-15
 
-    
+  - id: "FlintArrow"
+    name: "Flint Tipped Arrow"
+    image: "/images/modules/aesthetic/FlintArrow.png"
+    description: "Changes arrow sprites and entities to have Flint colored tips."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+
 # Lists of modules that conflict
 conflictingModules:
   # Wool
