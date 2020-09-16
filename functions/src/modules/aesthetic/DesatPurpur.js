@@ -8,7 +8,7 @@
 
 // File Paths
 module.exports = {
-    "1.16.2":  "/modules/aesthetic/AnimatedCampfire/1.15-latest/",
-    "1.16":    "/modules/aesthetic/AnimatedCampfire/1.15-latest/",
-    "1.15":    "/modules/aesthetic/AnimatedCampfire/1.15-latest/",
+    "1.16.2":  "/modules/aesthetic/DesatPurpur/1.15-latest/",
+    "1.16":    "/modules/aesthetic/DesatPurpur/1.15-latest/",
+    "1.15":    "/modules/aesthetic/DesatPurpur/1.15-latest/",
 };
