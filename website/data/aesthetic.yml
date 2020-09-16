@@ -153,6 +153,18 @@ modules:
       - 1-10
       - 1-11
       - 1-12
+      
+  - id: "JappaSpectralArrow"
+    name: "Consistent Spectral Arrow"
+    image: "/images/modules/aesthetic/JappaSpectralArrow.png"
+    description: "Changes the Spectral Arrow entity to be more consistant with its item."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
 
 # Lists of modules that conflict
 conflictingModules:

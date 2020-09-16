@@ -28,6 +28,7 @@ const modulesData: Record<string, any> = {
     DesatPurpur            : require('./modules/aesthetic/DesatPurpur.js'),
     OldNetherite           : require('./modules/aesthetic/OldNetherite.js'),
     FlintArrow             : require('./modules/aesthetic/FlintArrow.js'),
+    JappaSpectralArrow     : require('./modules/aesthetic/JappaSpectralArrow.js'),
 
     // Terrain
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
