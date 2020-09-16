@@ -30,6 +30,7 @@ const modulesData: Record<string, any> = {
     FlintArrow             : require('./modules/aesthetic/FlintArrow.js'),
     JappaSpectralArrow     : require('./modules/aesthetic/JappaSpectralArrow.js'),
     AlternateDestruction   : require('./modules/aesthetic/AlternateDestruction.js'),
+    DifferentStems         : require('./modules/aesthetic/DifferentStems.js'),
 
     // Terrain
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
