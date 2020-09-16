@@ -27,6 +27,7 @@ const modulesData: Record<string, any> = {
     AnimatedCampfire       : require('./modules/aesthetic/AnimatedCampfire.js'),
     DesatPurpur            : require('./modules/aesthetic/DesatPurpur.js'),
     OldNetherite           : require('./modules/aesthetic/OldNetherite.js'),
+    FlintArrow             : require('./modules/aesthetic/FlintArrow.js'),
 
     // Terrain
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
