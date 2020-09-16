@@ -159,12 +159,12 @@ modules:
     image: "/images/modules/aesthetic/JappaSpectralArrow.png"
     description: "Changes the Spectral Arrow entity to be more consistant with its item."
     origin: "vanillatweaks"
-    notcompatible:
-      - 1-8
-      - 1-9
-      - 1-10
-      - 1-11
-      - 1-12
+      
+  - id: "AlternateDestruction"
+    name: "Alternate Block Destruction"
+    image: "/images/modules/aesthetic/AlternateDestruction.png"
+    description: "Changes the breaking texture of blocks to a messy ring around the outside."
+    origin: "vanillatweaks"
 
 # Lists of modules that conflict
 conflictingModules:
