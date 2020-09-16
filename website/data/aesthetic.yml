@@ -218,6 +218,18 @@ modules:
       - 1-11
       - 1-12
 
+  - id: "BedIcons"
+    name: "Bed Icons"
+    image: "/images/modules/aesthetic/BedIcons.png"
+    description: "Changes Bed item models to look like regular items (with updated textures) like before 1.12."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+
 
 # Lists of modules that conflict
 conflictingModules:
