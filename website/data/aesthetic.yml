@@ -165,6 +165,34 @@ modules:
     image: "/images/modules/aesthetic/AlternateDestruction.png"
     description: "Changes the breaking texture of blocks to a messy ring around the outside."
     origin: "vanillatweaks"
+  
+  - id: "SolidSlime"
+  name: "Solid Slime"
+  image: "/images/modules/aesthetic/SolidSlime.png"
+  description: "Eliminates Slime Block Transparency."
+  origin: "vanillatweaks"
+  notcompatible:
+    - 1-8
+    - 1-9
+    - 1-10
+    - 1-11
+    - 1-12
+    - 1-13
+    - 1-14
+    
+  - id: "ColorParticle"
+    name: "Colorful Enchanting Particles"
+    image: "/images/modules/aesthetic/ColorParticle.png"
+    description: "Makes the particles that come from bookshelves around an Enchanting Table nice and colorful!"
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
 
 # Lists of modules that conflict
 conflictingModules:
@@ -199,38 +227,6 @@ conflictingModules:
         - 1-13
         - 1-14
         
-  - sortingName: "slime"
-    modules:
-    - id: "SolidSlime"
-      name: "Solid Slime"
-      image: "/images/modules/aesthetic/SolidSlime.png"
-      description: "Eliminates Slime Block Transparency."
-      origin: "vanillatweaks"
-      notcompatible:
-        - 1-8
-        - 1-9
-        - 1-10
-        - 1-11
-        - 1-12
-        - 1-13
-        - 1-14
-        
-  - sortingName: "sga"
-    modules:
-    - id: "ColorParticle"
-      name: "Colorful Enchanting Particles"
-      image: "/images/modules/aesthetic/ColorParticle.png"
-      description: "Makes the particles that come from bookshelves around an Enchanting Table nice and colorful!"
-      origin: "vanillatweaks"
-      notcompatible:
-        - 1-8
-        - 1-9
-        - 1-10
-        - 1-11
-        - 1-12
-        - 1-13
-        - 1-14
-        
   - sortingName: "EndRod"
     modules:
     - id: "EndlessRod"
@@ -246,9 +242,6 @@ conflictingModules:
         - 1-12
         - 1-13
         - 1-14
-
-  - sortingName: "EndRod"
-    modules:
     - id: "PinkRod"
       name: "Pink End Rods"
       image: "/images/modules/aesthetic/PinkRod.png"
