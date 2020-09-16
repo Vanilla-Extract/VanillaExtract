@@ -32,6 +32,7 @@ const modulesData: Record<string, any> = {
     AlternateDestruction   : require('./modules/aesthetic/AlternateDestruction.js'),
     DifferentStems         : require('./modules/aesthetic/DifferentStems.js'),
     BedIcons               : require('./modules/aesthetic/BedIcons.js'),
+    SmoothWarped           : require('./modules/aesthetic/SmoothWarped.js'),
 
     // Terrain
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
