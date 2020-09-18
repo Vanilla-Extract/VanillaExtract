@@ -1,4 +1,5 @@
 # Terrain
+weight: 1
 id: "terrainSection"
 display: "Terrain"
 modules:
