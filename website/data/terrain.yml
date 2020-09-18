@@ -1,5 +1,5 @@
 # Terrain
-weight: 1
+weight: 2 #This is the position on the site, it doesn't push up or down
 id: "terrainSection"
 display: "Terrain"
 modules:
