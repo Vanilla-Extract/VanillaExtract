@@ -289,7 +289,7 @@ conflictingModules:
       name: "Softer Wool"
       image: "/images/modules/aesthetic/SofterWool.png"
       description: "Lowers the contrast and smoothens all wool blocks."
-      origin: "faithfultweaks"
+      origin: "vanillatweaks"
       notcompatible:
         - 1-8
         - 1-9
