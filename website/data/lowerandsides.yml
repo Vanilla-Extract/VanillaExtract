@@ -1,0 +1,11 @@
+# Lower and and sides
+weight: 1
+id: "sidesSection"
+display: "Lower and Sides"
+modules:
+
+  - id: "LowerGrassSide"
+    name: "Lower Grass Sides"
+    image: "/images/modules/sides/LowerGrassSide.png"
+    description: "Lowers the sides of Grass Blocks (and grass like blocks) to provide a smoother and greener landscape."
+    origin: "vanillatweaks"
