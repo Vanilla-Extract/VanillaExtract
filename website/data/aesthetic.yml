@@ -243,11 +243,11 @@ modules:
       - 1-12
 
   - id: "SmoothWarped"
-     name: "Smoother Warped Planks"
-     image: "/images/modules/aesthetic/SmoothWarped.png"
-     description: "Removes the harsh contrast from Warped Planks."
-     origin: "vanillatweaks"
-     notcompatible:
+    name: "Smoother Warped Planks"
+    image: "/images/modules/aesthetic/SmoothWarped.png"
+    description: "Removes the harsh contrast from Warped Planks."
+    origin: "vanillatweaks"
+    notcompatible:
       - 1-8
       - 1-9
       - 1-10
@@ -258,11 +258,11 @@ modules:
       - 1-15
       
   - id: "GreenJungle"
-     name: "Green Jungle Wood"
-     image: "/images/modules/aesthetic/GreenJungle.png"
-     description: "Recolors all Jungle Wood related blocks and items to a nicely jungly shade of green."
-     origin: "vanillatweaks"
-     notcompatible:
+    name: "Green Jungle Wood"
+    image: "/images/modules/aesthetic/GreenJungle.png"
+    description: "Recolors all Jungle Wood related blocks and items to a nicely jungly shade of green."
+    origin: "vanillatweaks"
+    notcompatible:
       - 1-8
       - 1-9
       - 1-10
