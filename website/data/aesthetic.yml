@@ -242,6 +242,32 @@ modules:
       - 1-11
       - 1-12
 
+  - id: "SmoothWarped"
+     name: "Smoother Warped Planks"
+     image: "/images/modules/aesthetic/SmoothWarped.png"
+     description: "Removes the harsh contrast from Warped Planks."
+     origin: "vanillatweaks"
+     notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14 
+      - 1-15
+      
+  - id: "GreenJungle"
+     name: "Green Jungle Wood"
+     image: "/images/modules/aesthetic/GreenJungle.png"
+     description: "Recolors all Jungle Wood related blocks and items to a nicely jungly shade of green."
+     origin: "vanillatweaks"
+     notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
 
 # Lists of modules that conflict
 conflictingModules:
@@ -261,7 +287,7 @@ conflictingModules:
         - 1-12
     - id: "SofterWool"
       name: "Softer Wool"
-      image: "/images/modules/aesthetic/SmoothWool.png"
+      image: "/images/modules/aesthetic/SofterWool.png"
       description: "Lowers the contrast and smoothens all wool blocks."
       origin: "faithfultweaks"
       notcompatible:
@@ -287,31 +313,6 @@ conflictingModules:
         - 1-13
         - 1-14
         - 1-15
-    - id: "SmoothWarped"
-      name: "Smoother Warped Planks"
-      image: "/images/modules/aesthetic/SmoothWarped.png"
-      description: "Removes the harsh contrast from Warped Planks."
-      origin: "vanillatweaks"
-      notcompatible:
-        - 1-8
-        - 1-9
-        - 1-10
-        - 1-11
-        - 1-12
-        - 1-13
-        - 1-14 
-        - 1-15
-    - id: "GreenJungle"
-      name: "Green Jungle Wood"
-      image: "/images/modules/aesthetic/SmoothWarped.png"
-      description: "Recolors all Jungle Wood related blocks and items to a nicely jungly shade of green."
-      origin: "vanillatweaks"
-      notcompatible:
-        - 1-8
-        - 1-9
-        - 1-10
-        - 1-11
-        - 1-12
         
   - sortingName: "EndRod"
     modules:
