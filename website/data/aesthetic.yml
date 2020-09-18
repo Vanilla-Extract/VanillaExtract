@@ -230,6 +230,18 @@ modules:
       - 1-11
       - 1-12
 
+  - id: "UniqueDyes"
+    name: "Unique Dyes"
+    image: "/images/modules/aesthetic/UniqueDyes.png"
+    description: "Adds variation to the dyes by making each one of them different."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+
 
 # Lists of modules that conflict
 conflictingModules:
@@ -240,6 +252,17 @@ conflictingModules:
       name: "CodeCrafted's Wool"
       image: "/images/modules/aesthetic/CodeCraftedWool.png"
       description: "Makes wool the same style as CodeCrafted's but with 1 pixel edges."
+      origin: "faithfultweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
+    - id: "SofterWool"
+      name: "Softer Wool"
+      image: "/images/modules/aesthetic/SmoothWool.png"
+      description: "Lowers the contrast and smoothens all wool blocks."
       origin: "faithfultweaks"
       notcompatible:
         - 1-8
@@ -278,6 +301,17 @@ conflictingModules:
         - 1-13
         - 1-14 
         - 1-15
+    - id: "GreenJungle"
+      name: "Green Jungle Wood"
+      image: "/images/modules/aesthetic/SmoothWarped.png"
+      description: "Recolors all Jungle Wood related blocks and items to a nicely jungly shade of green."
+      origin: "vanillatweaks"
+      notcompatible:
+        - 1-8
+        - 1-9
+        - 1-10
+        - 1-11
+        - 1-12
         
   - sortingName: "EndRod"
     modules:
