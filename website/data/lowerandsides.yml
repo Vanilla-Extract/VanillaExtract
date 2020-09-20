@@ -17,6 +17,7 @@ modules:
     origin: "vanillatweaks"
 
     
+conflictingModules:    
   - sortingName: "grass"
     modules:
     - id: "LowerGrass"
