@@ -1,4 +1,5 @@
 # Terrain
+weight: 2
 id: "terrainSection"
 display: "Terrain"
 modules:
@@ -18,12 +19,6 @@ modules:
     name: "Pebbleless Dirt"
     image: "/images/modules/terrain/PebblelessDirt.png"
     description: "Gets rid of the white pebbles in Dirt."
-    origin: "vanillatweaks"
-
-  - id: "LowerGrassSide"
-    name: "Lower Grass Sides"
-    image: "/images/modules/terrain/LowerGrassSide.png"
-    description: "Lowers the sides of Grass Blocks (and grass like blocks) to provide a smoother and greener landscape."
     origin: "vanillatweaks"
     
   - id: "BrighterNether"

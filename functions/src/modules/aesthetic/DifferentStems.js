@@ -8,9 +8,9 @@
 
 // File Paths
 module.exports = {
-    "1.16.2":  "/modules/aesthetic/AlternateDestruction/1.13-latest/",
-    "1.16":    "/modules/aesthetic/AlternateDestruction/1.13-latest/",
-    "1.15":    "/modules/aesthetic/AlternateDestruction/1.13-latest/",
-    "1.14":    "/modules/aesthetic/AlternateDestruction/1.13-latest/",
-    "1.13":    "/modules/aesthetic/AlternateDestruction/1.13-latest/",
+    "1.16.2":  "/modules/aesthetic/DifferentStems/1.13-latest/",
+    "1.16":    "/modules/aesthetic/DifferentStems/1.13-latest/",
+    "1.15":    "/modules/aesthetic/DifferentStems/1.13-latest/",
+    "1.14":    "/modules/aesthetic/DifferentStems/1.13-latest/",
+    "1.13":    "/modules/aesthetic/DifferentStems/1.13-latest/",
 };
