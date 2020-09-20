@@ -60,10 +60,12 @@ const modulesData: Record<string, any> = {
     SidesGrass             : require('./modules/sides/SidesGrass.js'),
     SidesMycelium          : require('./modules/sides/SidesMycelium.js'),
     SidesSnow              : require('./modules/sides/SidesSnow.js'),
-    SidesPaths             : require('./modules/sides/SidesPath.js'),
+    SidesPaths             : require('./modules/sides/SidesPaths.js'),
     SidesPodzol            : require('./modules/sides/SidesPodzol.js'),
     SidesWarped            : require('./modules/sides/SidesWarped.js'),
-    
+    ShorterGrass           : require('./modules/sides/ShorterGrass.js'),
+    ShorterTallGrass       : require('./modules/sides/ShorterTallGrass.js'),
+     
     // Utility
     BetterObservers        : require('./modules/utility/BetterObservers.js'),
     BrokenItems            : require('./modules/utility/BrokenItems.js'),
