@@ -65,7 +65,7 @@ const modulesData: Record<string, any> = {
     SidesWarped            : require('./modules/sides/SidesWarped.js'),
     ShorterGrass           : require('./modules/sides/ShorterGrass.js'),
     ShorterTallGrass       : require('./modules/sides/ShorterTallGrass.js'),
-     
+
     // Utility
     BetterObservers        : require('./modules/utility/BetterObservers.js'),
     BrokenItems            : require('./modules/utility/BrokenItems.js'),
