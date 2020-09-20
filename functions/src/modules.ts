@@ -63,7 +63,7 @@ const modulesData: Record<string, any> = {
     SidesPaths             : require('./modules/sides/SidesPath.js'),
     SidesPodzol            : require('./modules/sides/SidesPodzol.js'),
     SidesWarped            : require('./modules/sides/SidesWarped.js'),
-    
+
     // Utility
     BetterObservers        : require('./modules/utility/BetterObservers.js'),
     BrokenItems            : require('./modules/utility/BrokenItems.js'),
