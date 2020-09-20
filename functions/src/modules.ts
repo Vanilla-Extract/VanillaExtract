@@ -49,7 +49,20 @@ const modulesData: Record<string, any> = {
     WhiterSnow             : require('./modules/terrain/WhiterSnow.js'),
     
     // Lower and Sides
-    LowerGrassSide         : require('./modules/sides/LowerGrassSide.js'),
+    LowerCrimson           : require('./modules/sides/LowerCrimson.js'),
+    LowerGrass             : require('./modules/sides/LowerGrass.js'),
+    LowerMycelium          : require('./modules/sides/LowerMycelium.js'),
+    LowerPaths             : require('./modules/sides/LowerPaths.js'),
+    LowerPodzol            : require('./modules/sides/LowerPodzol.js'),
+    LowerSnow              : require('./modules/sides/LowerSnow.js'),
+    LowerWarped            : require('./modules/sides/LowerWarped.js'),
+    SidesCrimson           : require('./modules/sides/SidesCrimson.js'),
+    SidesGrass             : require('./modules/sides/SidesGrass.js'),
+    SidesMycelium          : require('./modules/sides/SidesMycelium.js'),
+    SidesSnow              : require('./modules/sides/SidesSnow.js'),
+    SidesPaths             : require('./modules/sides/SidesPath.js'),
+    SidesPodzol            : require('./modules/sides/SidesPodzol.js'),
+    SidesWarped            : require('./modules/sides/SidesWarped.js'),
 
     // Utility
     BetterObservers        : require('./modules/utility/BetterObservers.js'),
