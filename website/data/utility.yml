@@ -60,6 +60,50 @@ modules:
       - 1-11
       - 1-12
 
+  - id: "CropMarker"
+    name: "Fully Aged Crop Marker"
+    image: "/images/modules/utility/CropMarker.png"
+    description: "Marks all fully developed crops with an animated exclamation point above them."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      
+  - id: "AgedKelp"
+    name: "Age 25 Kelp"
+    image: "/images/modules/utility/CropMarker.png"
+    description: "Adds flowers to the top of kelp plants when they are fully grown.\n[age=25]"
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+
+  - id: "MineProgress"
+    name: "Mine Progress Bar"
+    image: "/images/modules/utility/MineProgress.png"
+    description: "Changes the breaking texture of blocks to be a clean ring around the outside."
+    origin: "vanillatweaks"
+    
+  - id: "ClearPatterns"
+    name: "Age 25 Kelp"
+    image: "/images/modules/utility/ClearPatterns.png"
+    description: "Gives all the Banner Pattern items unique and appropriate textures."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+
+
+
 # Lists of modules that conflict
 conflictingModules:
   # Swords

@@ -67,10 +67,13 @@ const modulesData: Record<string, any> = {
     ShorterTallGrass       : require('./modules/sides/ShorterTallGrass.js'),
 
     // Utility
+    AgedKelp               : require('./modules/utility/AgedKelp.js'),
     BetterObservers        : require('./modules/utility/BetterObservers.js'),
     BrokenItems            : require('./modules/utility/BrokenItems.js'),
     CleanRedstone          : require('./modules/utility/CleanRedstone.js'),
+    ClearPatterns          : require('./modules/utility/ClearPatterns.js'),
     ColoredBows            : require('./modules/utility/ColoredBows.js'),
+    CropMarker             : require('./modules/utility/CropMarker.js'),
     DirectionalHoppers     : require('./modules/utility/DirectionalHoppers.js'),
     NetherwartGrowthStage  : require('./modules/utility/NetherwartGrowthStage.js'),
     OreBorders             : require('./modules/utility/OreBorders.js'),
