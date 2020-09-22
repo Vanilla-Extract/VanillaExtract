@@ -74,7 +74,7 @@ modules:
       
   - id: "AgedKelp"
     name: "Age 25 Kelp"
-    image: "/images/modules/utility/CropMarker.png"
+    image: "/images/modules/utility/AgedKelp.png"
     description: "Adds flowers to the top of kelp plants when they are fully grown.\n[age=25]"
     origin: "vanillatweaks"
     notcompatible:
@@ -91,7 +91,7 @@ modules:
     origin: "vanillatweaks"
     
   - id: "ClearPatterns"
-    name: "Age 25 Kelp"
+    name: "Clear Banner Patterns"
     image: "/images/modules/utility/ClearPatterns.png"
     description: "Gives all the Banner Pattern items unique and appropriate textures."
     origin: "vanillatweaks"
