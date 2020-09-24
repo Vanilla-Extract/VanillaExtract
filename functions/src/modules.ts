@@ -77,6 +77,7 @@ const modulesData: Record<string, any> = {
     DirectionalHoppers     : require('./modules/utility/DirectionalHoppers.js'),
     NetherwartGrowthStage  : require('./modules/utility/NetherwartGrowthStage.js'),
     OreBorders             : require('./modules/utility/OreBorders.js'),
+    RedstonePower          : require('./modules/utility/RedstonePower.js'),
     SlicedSwords           : require('./modules/utility/SlicedSwords.js'),
     StackedItems           : require('./modules/utility/StackedItems.js'),
     StickyPistonSides      : require('./modules/utility/StickyPistonSides.js'),
