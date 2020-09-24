@@ -102,6 +102,17 @@ modules:
       - 1-11
       - 1-12
 
+  - id: "RedstonePower"
+    name: "Redstone Power Levels"
+    image: "/images/modules/utility/RedstonePower.png"
+    description: "Displays the strength of the redstone signal above Redstone Dust."
+    origin: "vanillatweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
 
 
 # Lists of modules that conflict
