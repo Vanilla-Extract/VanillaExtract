@@ -21,6 +21,6 @@ formats:
     - id: 1-16
       display: "1.16"
     - id: 1-16-2
-      display: "1.16.2"
+      display: "1.16.2 - Latest"
       default: true
 ---
