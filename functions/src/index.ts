@@ -81,10 +81,11 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     archive.append(moduleSelection(format, modules, iconModules, optionsBackground, panoOption), {name: 'modules.txt'}); // add modules.txt file
     archive.append(creditsTxt, {name: 'credits.txt'}); // add credits.txt file
     
-    // Download and add pack icon
-    await bucket.file('packfiles/pack.png').download().then((data) => {
-        return archive.append(data[0], {name: 'pack.png'});
-    });
+    // Add pack icon
+    // await bucket.file('packfiles/pack.png').download().then((data) => {
+    //     return archive.append(data[0], {name: 'pack.png'});
+    // });
+    archive.file('./images/pack.png', {name: 'pack.png'});
     
     if (modules !== undefined && modules !== null) {
         await addModules(format, archive, modules, bucket); // Add modules to the pack
