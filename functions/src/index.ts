@@ -46,6 +46,7 @@ admin.initializeApp({
 
 // });
 
+// app.post('/', ----- EXPRESS STUFF
 // Create a zip file from file in storage ----- CLOUD FUNCTION -----
 exports.makePack = functions.https.onRequest(async (req, res) => {
     res.set('Access-Control-Allow-Origin', process.env.NODE_ENV !== 'production' ? '*' : 'https://faithfultweaks.com');
@@ -93,7 +94,7 @@ exports.makePack = functions.https.onRequest(async (req, res) => {
     // await bucket.file('packfiles/pack.png').download().then((data) => {
     //     return archive.append(data[0], {name: 'pack.png'});
     // });
-    archive.file('images/pack.png', {name: 'pack.png'});
+    archive.file(path.join('images', 'pack.png'), {name: 'pack.png'});
     
     if (modules !== undefined && modules !== null) {
         await addModules(format, archive, modules, bucket); // Add modules to the pack
