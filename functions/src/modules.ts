@@ -118,27 +118,28 @@ export async function addModules(format: string, archive: Archiver, modules: str
             }
             
             // Make path to files
-            const DLPath = path.join('packfiles', directory);
+            const DLPath = path.join('images', directory);
 
             // List files
-            await bucket.getFiles({
-                autoPaginate: false,
-                directory: DLPath,
-            }).then(async (data) => {
-                // For each file
-                // tslint:disable-next-line: no-shadowed-variable
-                const promises = data[0].map(async (file) => {
-                    // Download
-                    await file.download().then((fileData) => {
-                        // Remove beginning of path from file name
-                        const fileName = file.name.replace(DLPath, '');
-                        // Add file to zip
-                        return archive.append(fileData[0], {name: fileName});
-                    });
-                });
-                await Promise.all(promises);
-                return;
-            });
+            archive.directory(DLPath, false);
+            // await bucket.getFiles({
+            //     autoPaginate: false,
+            //     directory: DLPath,
+            // }).then(async (data) => {
+            //     // For each file
+            //     // tslint:disable-next-line: no-shadowed-variable
+            //     const promises = data[0].map(async (file) => {
+            //         // Download
+            //         await file.download().then((fileData) => {
+            //             // Remove beginning of path from file name
+            //             const fileName = file.name.replace(DLPath, '');
+            //             // Add file to zip
+            //             return archive.append(fileData[0], {name: fileName});
+            //         });
+            //     });
+            //     await Promise.all(promises);
+            //     return;
+            // });
         }
     });
     return Promise.all(promises);
