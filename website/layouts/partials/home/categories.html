@@ -23,6 +23,10 @@
                                 {{ if isset . "description" }}
                                     data-toggle="popover" title="{{ .name }}" data-content="{{ .description }}"
                                 {{ end }}
+
+                                {{ if isset . "preview" }}
+                                    data-preview="{{ .preview }}"
+                                {{ end }}
                             >
                                 <img class='mod-icon' src="{{ .image }}">
                                 <h5 style="margin-top: 10px;">{{ .name }}</h5>
@@ -49,6 +53,10 @@
 
                                     {{ if isset . "description" }}
                                         data-toggle="popover" title="{{ .name }}" data-content="{{ .description }}"
+                                    {{ end }}
+
+                                    {{ if isset . "preview" }}
+                                        data-preview="{{ .preview }}"
                                     {{ end }}
                                 >
                                     <img class='mod-icon' src="{{ .image }}">

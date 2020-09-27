@@ -47,6 +47,9 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#downloadPack').addEventListener('click', downloadPack); // Download
     document.querySelectorAll('#formatGroup                >*').forEach((e: HTMLElement) => e.addEventListener('click', setFormat));                    // Format buttons
 
+    // Hover previews
+    document.querySelectorAll('.module-selector').forEach((e: HTMLElement) => e.addEventListener('mouseover', moduleHover));
+
     // Modules
     document.querySelectorAll('#normalModules              >*').forEach((e: HTMLElement) => e.addEventListener('click', setModule));                  // Normal modules
     document.querySelectorAll('#normalModulesConflicting   >*').forEach((e: HTMLElement) => e.addEventListener('click', setModuleConflicting));       // Conflicting normal modules
@@ -81,6 +84,18 @@ function setFormat(this: HTMLElement) {
 
     // Hide incompatible modules
     document.querySelectorAll('.hideFormat'+format).forEach((e: HTMLElement) => e.style.display = 'none');
+}
+
+function moduleHover(this: HTMLElement) {
+    let defaultImage: string = "/images/previews/default.svg";
+    if (this.getAttribute('data-preview') != null) {
+        document.getElementById('previewImage').setAttribute('src', this.getAttribute('data-preview'));
+        setTimeout(() => { 
+            document.getElementById('previewImage').setAttribute('src', defaultImage);
+        }, 2000);
+    } else {
+        document.getElementById('previewImage').setAttribute('src', defaultImage);
+    }
 }
 
 // Set module function
