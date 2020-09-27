@@ -19,7 +19,7 @@ If you're interested in creating a module, please look at [the wiki](https://git
 Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the traditional fashion.
 
 ## Available Versions
-- 1.16.2
+- 1.16.2 - Latest
 - 1.16
 - 1.15
 - 1.14
