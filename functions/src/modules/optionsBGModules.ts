@@ -30,9 +30,11 @@ const files: Record<string, string> = {
 export async function addOptionsBG(moduleName: string, archive: Archiver, bucket: Bucket){
     // If it exists
     if (files[moduleName] !== undefined && files[moduleName] !== null) {
-        await bucket.file(path.join("packfiles", packFilesPath, files[moduleName])).download().then((data) => {
-            return archive.append(data[0], {name: path.join(inPackPath, inPackName)});
-        });
+        
+        archive.file(path.join('images', packFilesPath, files[moduleName]), {name: path.join(inPackPath, inPackName)})
+        // await bucket.file(path.join("packfiles", packFilesPath, files[moduleName])).download().then((data) => {
+        //     return archive.append(data[0], {name: path.join(inPackPath, inPackName)});
+        // });
     }
     return;
 };
