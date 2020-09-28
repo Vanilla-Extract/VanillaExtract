@@ -41,7 +41,6 @@ const modulesData: Record<string, any> = {
     BetterBedrock          : require('./modules/terrain/BetterBedrock.js'),
     BrighterNether         : require('./modules/terrain/BrighterNether.js'),
     CircularSnM            : require('./modules/terrain/CircularSnM.js'),
-    ClearWater             : require('./modules/terrain/ClearWater.js'),
     PebblelessCoarseDirt   : require('./modules/terrain/PebblelessCoarseDirt.js'),
     PebblelessDirt         : require('./modules/terrain/PebblelessDirt.js'),
     SmoothOak              : require('./modules/terrain/SmoothOak.js'),

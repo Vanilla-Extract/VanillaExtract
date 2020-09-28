@@ -67,7 +67,7 @@ modules:
       - 1-13
 
   - id: "UnobtrusiveWater"
-    name: "Unobtrusive Water"
+    name: "Clearer Water"
     image: "/images/modules/unobtrusive/UnobtrusiveWater.png"
     description: "Makes water more transparent so it is easier to see through."
     origin: "faithfultweaks"
