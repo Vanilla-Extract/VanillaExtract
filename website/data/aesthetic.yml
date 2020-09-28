@@ -101,6 +101,7 @@ modules:
     origin: "vanillatweaks"
     conflicting:
       - BrighterNether
+      - GlassDoors
     notcompatible:
       - 1-8
       - 1-9
@@ -260,6 +261,7 @@ modules:
     origin: "vanillatweaks"
     conflicting:
       - BrighterNether
+      - GlassDoors
     notcompatible:
       - 1-8
       - 1-9
@@ -275,6 +277,8 @@ modules:
     image: "/images/modules/aesthetic/GreenJungle.png"
     description: "Recolors all Jungle Wood related blocks and items to a nicely jungly shade of green."
     origin: "vanillatweaks"
+    conflicting:
+      - GlassDoors
     notcompatible:
       - 1-8
       - 1-9
@@ -347,6 +351,10 @@ modules:
     image: "/images/modules/aesthetic/GlassDoors.png"
     description: "Adds uniquely shaped glass windows into every door type."
     origin: "vanillatweaks"
+    conflicting:
+      - RedCrimson
+      - GreenJungle
+      - SmoothWarped
     notcompatible:
       - 1-8
       - 1-9
