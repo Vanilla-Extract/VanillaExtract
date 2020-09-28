@@ -39,6 +39,7 @@ modules:
     description: "Brightens the textures of the blocks commonly found in the Nether."
     origin: "vanillatweaks"
     conflicting:
+      - GlassDoors
       - OreBorders
       - UniformOres
       - BlackNetherBricks

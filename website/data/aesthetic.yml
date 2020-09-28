@@ -354,6 +354,7 @@ modules:
     description: "Adds uniquely shaped glass windows into every door type."
     origin: "vanillatweaks"
     conflicting:
+      - BrighterNether
       - RedCrimson
       - GreenJungle
       - SmoothWarped
