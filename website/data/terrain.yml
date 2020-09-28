@@ -77,6 +77,8 @@ modules:
     image: "/images/modules/terrain/UniformOres.png"
     description: "All ores have the same shape."
     origin: "vanillatweaks"
+    conflicting:
+      - OreBorders
     notcompatible:
         - 1-8
         - 1-9
