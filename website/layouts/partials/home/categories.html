@@ -9,7 +9,7 @@
             {{ if isset . "modules" }}
                 <div class="d-inline-flex justify-content-center flex-wrap flex-wrap" id="{{ if isset $categoryScope "customFunctionClass"}}{{ $categoryScope.customFunctionClass }}{{else}}normalModules{{end}}">
                     {{ range sort (sort .modules "name") "weight" "desc" }}
-                            <div id="{{ .id }}" class='module-selector
+                            <div id="{{ .id }}" tabindex="0" class='module-selector
                                     {{ range .notcompatible }}hideFormat{{ . }} {{ end }}
 
                                     {{ if eq .origin "vanillatweaks" }}
@@ -44,7 +44,7 @@
                 {{ range sort .conflictingModules "sortingName" }}
                     <div class="d-inline-flex justify-content-center flex-wrap" id="{{ if isset $categoryScope "customFunctionClass"}}{{ $categoryScope.customFunctionClass }}{{else}}normalModules{{end}}Conflicting">
                         {{ range sort (sort .modules "name") "weight" "desc" }}
-                                <div id="{{ .id }}" class='module-selector
+                                <div id="{{ .id }}" tabindex="0" class='module-selector
                                         {{ range .notcompatible }}hideFormat{{ . }} {{ end }}
 
                                         {{ if eq .origin "vanillatweaks" }}
