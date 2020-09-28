@@ -9,6 +9,7 @@ modules:
     origin: "vanillatweaks"
     conflicting:
       - UniformOres
+      - BrighterNether
   
   - id: "StickyPistonSides"
     name: "Sticky Piston Sides"

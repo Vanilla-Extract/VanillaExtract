@@ -27,6 +27,8 @@ modules:
     description: "Brightens the textures of the blocks commonly found in the Nether."
     origin: "vanillatweaks"
     conflicting:
+      - OreBorders
+      - UniformOres
       - BlackNetherBricks
       - RedCrimson
       - NetherwartGrowthStage
@@ -88,6 +90,7 @@ modules:
     origin: "vanillatweaks"
     conflicting:
       - OreBorders
+      - BrighterNether
     notcompatible:
         - 1-8
         - 1-9
