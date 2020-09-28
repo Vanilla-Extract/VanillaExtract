@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
         // Description popovers
         $('[data-toggle="popover"]').popover({
             placement : 'top',
-            trigger : 'hover'
+            trigger : 'manual'
         });
     // Boostrap 5
         // document.querySelectorAll('[data-toggle="popover"]').forEach((e) => {
@@ -47,8 +47,10 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#downloadPack').addEventListener('click', downloadPack); // Download
     document.querySelectorAll('#formatGroup                >*').forEach((e: HTMLElement) => e.addEventListener('click', setFormat));                    // Format buttons
 
-    // Hover previews
+    // Hover
     document.querySelectorAll('.module-selector').forEach((e: HTMLElement) => e.addEventListener('mouseover', moduleHover));
+    // Mouse leave
+    document.querySelectorAll('.module-selector').forEach((e: HTMLElement) => e.addEventListener('mouseleave', moduleMouseLeave));
 
     // Modules
     document.querySelectorAll('#normalModules              >*').forEach((e: HTMLElement) => e.addEventListener('click', setModule));                  // Normal modules
@@ -86,31 +88,76 @@ function setFormat(this: HTMLElement) {
     document.querySelectorAll('.hideFormat'+format).forEach((e: HTMLElement) => e.style.display = 'none');
 }
 
+// On hover
 function moduleHover(this: HTMLElement) {
-    let defaultImage: string = "/images/previews/default.svg";
+    // Show popover
+    let popoverContent: string;
+    if (this.getAttribute('data-content') != null) {
+        popoverContent = this.getAttribute('data-content');
+    }
+    
+
+    // Set preview
     if (this.getAttribute('data-preview') != null) {
         document.getElementById('previewImage').setAttribute('src', this.getAttribute('data-preview'));
-        setTimeout(() => { 
-            document.getElementById('previewImage').setAttribute('src', defaultImage);
-        }, 2000);
-    } else {
-        document.getElementById('previewImage').setAttribute('src', defaultImage);
     }
+
+    // Set bg if a conflict is selected
+    if (this.getAttribute('data-conflicting') != null) {
+        const conflicts: Array<string> = this.getAttribute('data-conflicting').split(' ');
+        let styledConflicts = "Cannot enable because you have selected at least one of the following: ";
+        conflicts.forEach((e, i) => {
+            if (i === 0) {
+                styledConflicts = styledConflicts + document.getElementById(e).children[1].textContent;
+            } else {
+                styledConflicts = styledConflicts + ", " + document.getElementById(e).children[1].textContent;
+            }
+        })
+        styledConflicts = styledConflicts + ".";
+
+        if (conflicts.some(r=> modules.includes(r))) {
+            this.style.backgroundColor = "var(--danger)";
+            this.style.color = "#ffffff";
+            this.setAttribute('data-content', styledConflicts);
+        }
+    }
+
+    $(this).popover("show");
+    if (popoverContent != null || popoverContent != undefined) {
+        this.setAttribute('data-content', popoverContent);
+    } else {
+        this.removeAttribute('data-content');
+    }
+}
+
+// After hover
+function moduleMouseLeave(this: HTMLElement) {
+    // Hide popover
+    $(this).popover("hide");
+
+    // Reset preview
+    document.getElementById('previewImage').setAttribute('src', "/images/previews/default.svg");
+
+    // Reset background
+    this.style.removeProperty('background-color');
+    this.style.removeProperty('color');
 }
 
 // Set module function
 function setModule(this: HTMLElement) {
-    if (this.classList.contains('enabled')) {
-        // If already enabled then disable
-        const i = modules.indexOf(this.id);
-        if (i > -1) {
-            modules.splice(i, 1);
+    if (!(this.getAttribute('data-conflicting') != null && this.getAttribute('data-conflicting').split(' ').some(r=> modules.includes(r)))) {
+        if (this.classList.contains('enabled')) {
+            // If already enabled then disable
+            const i = modules.indexOf(this.id);
+            if (i > -1) {
+                modules.splice(i, 1);
+            }
+            this.classList.remove('enabled'); // Remove class
+        } else {
+            // If disabled then enable
+            modules.push(this.id);
+            this.classList.add('enabled'); // Add class
         }
-        this.classList.remove('enabled'); // Remove class
-    } else {
-        // If disabled then enable
-        modules.push(this.id);
-        this.classList.add('enabled'); // Add class
     }
 }
 
