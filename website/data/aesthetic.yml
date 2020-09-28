@@ -45,6 +45,8 @@ modules:
     image: "/images/modules/aesthetic/BlackNetherBricks.png"
     description: "Changes the texture of Nether Bricks to make them black."
     origin: "vanillatweaks"
+    conflicting:
+      - BrighterNether
   
   - id: "AlternateEntities"
     name: "Alternate Entities"
@@ -97,6 +99,8 @@ modules:
     image: "/images/modules/aesthetic/RedCrimson.png"
     description: "Recolors all Crimson Wood related blocks and items to be redder, matching the shades of Crimson Nylium and Wart blocks closer."
     origin: "vanillatweaks"
+    conflicting:
+      - BrighterNether
     notcompatible:
       - 1-8
       - 1-9
@@ -254,6 +258,8 @@ modules:
     image: "/images/modules/aesthetic/SmoothWarped.png"
     description: "Removes the harsh contrast from Warped Planks."
     origin: "vanillatweaks"
+    conflicting:
+      - BrighterNether
     notcompatible:
       - 1-8
       - 1-9

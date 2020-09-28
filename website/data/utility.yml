@@ -43,6 +43,8 @@ modules:
     image: "/images/modules/utility/NetherwartGrowthStage.png"
     description: "Improves netherwart growth stage visibility." 
     origin: "faithfultweaks"
+    conflicting:
+      - BrighterNether
   
   - id: "StackedItems"
     name: "Stacked Items"

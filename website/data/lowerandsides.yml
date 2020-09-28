@@ -154,6 +154,8 @@ conflictingModules:
       image: "/images/modules/sides/LowerCrimson.png"
       description: "Lowers the sides of Crimson Nylium Blocks to provide a smoother and redder landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - BrighterNether
       notcompatible:
         - 1-8
         - 1-9
@@ -169,6 +171,8 @@ conflictingModules:
       image: "/images/modules/sides/SidesCrimson.png"
       description: "Completely covers the sides of Crimson Nylium Blocks to provide a smoother and redder landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - BrighterNether
       notcompatible:
         - 1-8
         - 1-9
@@ -186,6 +190,8 @@ conflictingModules:
       image: "/images/modules/sides/LowerWarped.png"
       description: "Lowers the sides of Warped Blocks to provide a smoother and bluer landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - BrighterNether
       notcompatible:
         - 1-8
         - 1-9
@@ -201,6 +207,8 @@ conflictingModules:
       image: "/images/modules/sides/SidesWarped.png"
       description: "Completely covers the sides of Warped Blocks to provide a smoother and bluer landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - BrighterNether
       notcompatible:
         - 1-8
         - 1-9

@@ -26,6 +26,15 @@ modules:
     image: "/images/modules/terrain/BrighterNether.png"
     description: "Brightens the textures of the blocks commonly found in the Nether."
     origin: "vanillatweaks"
+    conflicting:
+      - BlackNetherBricks
+      - RedCrimson
+      - NetherwartGrowthStage
+      - SmoothWarped
+      - LowerCrimson
+      - SidesCrimson
+      - LowerWarped
+      - SidesWarped
     notcompatible:
         - 1-8
         - 1-9
