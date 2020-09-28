@@ -159,6 +159,8 @@ modules:
     image: "/images/modules/aesthetic/FlintArrow.png"
     description: "Changes arrow sprites and entities to have Flint colored tips."
     origin: "vanillatweaks"
+    conflicting:
+      - ColoredBows
     notcompatible:
       - 1-8
       - 1-9

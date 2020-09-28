@@ -38,6 +38,8 @@ modules:
     image: "/images/modules/utility/ColoredBows.png"
     description: "Colors the bow handle to show how far back you've pulled." 
     origin: "faithfultweaks"
+    conflicting:
+      - FlintArrow
 
   - id: "NetherwartGrowthStage"
     name: "Netherwart Growth Stages"
