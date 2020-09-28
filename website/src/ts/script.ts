@@ -163,24 +163,26 @@ function setModule(this: HTMLElement) {
 
 // Set conflicting module function
 function setModuleConflicting (this: HTMLElement) {
-    // For each sibling
-    Array.prototype.filter.call(this.parentNode.children, (c: HTMLElement) => { return c !== this; }).forEach((e: HTMLElement) => {
-        const i = modules.indexOf(e.id);
-        if (i > -1) {
-            modules.splice(i, 1);
-        }
-        e.classList.remove("enabled"); // Remove class
-    });
+    if (!(this.getAttribute('data-conflicting') != null && this.getAttribute('data-conflicting').split(' ').some(r=> modules.includes(r)))) {
+        // For each sibling
+        Array.prototype.filter.call(this.parentNode.children, (c: HTMLElement) => { return c !== this; }).forEach((e: HTMLElement) => {
+            const i = modules.indexOf(e.id);
+            if (i > -1) {
+                modules.splice(i, 1);
+            }
+            e.classList.remove("enabled"); // Remove class
+        });
 
-    // If not in list enable
-    const i = modules.indexOf(this.id);
-    if (i === -1) {
-        modules.push(this.id);
-        this.classList.add('enabled'); // Add class
-    } else {
-        // Else disable
-        modules.splice(i, 1);
-        this.classList.remove("enabled"); // Remove class
+        // If not in list enable
+        const i = modules.indexOf(this.id);
+        if (i === -1) {
+            modules.push(this.id);
+            this.classList.add('enabled'); // Add class
+        } else {
+            // Else disable
+            modules.splice(i, 1);
+            this.classList.remove("enabled"); // Remove class
+        }
     }
 };
 
