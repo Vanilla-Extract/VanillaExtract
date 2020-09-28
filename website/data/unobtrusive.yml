@@ -71,6 +71,14 @@ modules:
     image: "/images/modules/unobtrusive/UnobtrusiveWater.png"
     description: "Makes water more transparent so it is easier to see through."
     origin: "faithfultweaks"
+  
+  - id: "SlicedSwords"
+    name: "Sliced Swords"
+    image: "/images/modules/unobtrusive/SlicedSwords.png"
+    description: "Changes the sword texture to be shorter for more visibility."
+    origin: "faithfultweaks"
+    conflicting:
+      - BrokenItems
 
 # Lists of modules that conflict
 conflictingModules:

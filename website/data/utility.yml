@@ -7,6 +7,8 @@ modules:
     image: "/images/modules/utility/OreBorders.png"
     description: "Places a border around ores for easier visibility."
     origin: "vanillatweaks"
+    conflicting:
+      - UniformOres
   
   - id: "StickyPistonSides"
     name: "Sticky Piston Sides"
@@ -113,21 +115,11 @@ modules:
       - 1-10
       - 1-11
       - 1-12
-
-
-# Lists of modules that conflict
-conflictingModules:
-  # Swords
-  - sortingName: "swords"
-    modules:
-    - id: "SlicedSwords"
-      name: "Sliced Swords"
-      image: "/images/modules/utility/SlicedSwords.png"
-      description: "Changes the sword texture to be shorter for more visibility."
-      origin: "faithfultweaks"
-
-    - id: "BrokenItems"
-      name: "Broken Items"
-      image: "/images/modules/utility/BrokenItems.png"
-      description: "Items get more and more broken as they get lower in durability."
-      origin: "vanillatweaks"
+  
+  - id: "BrokenItems"
+    name: "Broken Items"
+    image: "/images/modules/utility/BrokenItems.png"
+    description: "Items get more and more broken as they get lower in durability."
+    origin: "vanillatweaks"
+    conflicting:
+      - SlicedSwords

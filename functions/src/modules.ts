@@ -78,7 +78,6 @@ const modulesData: Record<string, any> = {
     NetherwartGrowthStage  : require('./modules/utility/NetherwartGrowthStage.js'),
     OreBorders             : require('./modules/utility/OreBorders.js'),
     RedstonePower          : require('./modules/utility/RedstonePower.js'),
-    SlicedSwords           : require('./modules/utility/SlicedSwords.js'),
     StackedItems           : require('./modules/utility/StackedItems.js'),
     StickyPistonSides      : require('./modules/utility/StickyPistonSides.js'),
 
@@ -93,6 +92,7 @@ const modulesData: Record<string, any> = {
     LowShield              : require('./modules/unobtrusive/LowShield.js'),
     NoVignette             : require('./modules/unobtrusive/NoVignette.js'),
     ReducedPumpkinBlur     : require('./modules/unobtrusive/ReducedPumpkinBlur.js'),
+    SlicedSwords           : require('./modules/unobtrusive/SlicedSwords.js'),
     UnobtrusiveRain        : require('./modules/unobtrusive/UnobtrusiveRain.js'),
     UnobtrusiveScaffolding : require('./modules/unobtrusive/UnobtrusiveScaffolding.js'),
     UnobtrusiveWater       : require('./modules/unobtrusive/UnobtrusiveWater.js'),

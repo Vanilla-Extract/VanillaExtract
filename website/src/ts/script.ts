@@ -49,8 +49,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Hover
     document.querySelectorAll('.module-selector').forEach((e: HTMLElement) => e.addEventListener('mouseover', moduleHover));
+    document.querySelectorAll('.module-selector').forEach((e: HTMLElement) => e.addEventListener('focus', moduleHover));
     // Mouse leave
     document.querySelectorAll('.module-selector').forEach((e: HTMLElement) => e.addEventListener('mouseleave', moduleMouseLeave));
+    document.querySelectorAll('.module-selector').forEach((e: HTMLElement) => e.addEventListener('blur', moduleMouseLeave));
 
     // Modules
     document.querySelectorAll('#normalModules              >*').forEach((e: HTMLElement) => e.addEventListener('click', setModule));                  // Normal modules
