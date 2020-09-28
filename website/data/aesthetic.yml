@@ -45,6 +45,8 @@ modules:
     image: "/images/modules/aesthetic/BlackNetherBricks.png"
     description: "Changes the texture of Nether Bricks to make them black."
     origin: "vanillatweaks"
+    conflicting:
+      - BrighterNether
   
   - id: "AlternateEntities"
     name: "Alternate Entities"
@@ -97,6 +99,9 @@ modules:
     image: "/images/modules/aesthetic/RedCrimson.png"
     description: "Recolors all Crimson Wood related blocks and items to be redder, matching the shades of Crimson Nylium and Wart blocks closer."
     origin: "vanillatweaks"
+    conflicting:
+      - BrighterNether
+      - GlassDoors
     notcompatible:
       - 1-8
       - 1-9
@@ -154,6 +159,8 @@ modules:
     image: "/images/modules/aesthetic/FlintArrow.png"
     description: "Changes arrow sprites and entities to have Flint colored tips."
     origin: "vanillatweaks"
+    conflicting:
+      - ColoredBows
     notcompatible:
       - 1-8
       - 1-9
@@ -254,6 +261,9 @@ modules:
     image: "/images/modules/aesthetic/SmoothWarped.png"
     description: "Removes the harsh contrast from Warped Planks."
     origin: "vanillatweaks"
+    conflicting:
+      - BrighterNether
+      - GlassDoors
     notcompatible:
       - 1-8
       - 1-9
@@ -269,6 +279,8 @@ modules:
     image: "/images/modules/aesthetic/GreenJungle.png"
     description: "Recolors all Jungle Wood related blocks and items to a nicely jungly shade of green."
     origin: "vanillatweaks"
+    conflicting:
+      - GlassDoors
     notcompatible:
       - 1-8
       - 1-9
@@ -341,6 +353,10 @@ modules:
     image: "/images/modules/aesthetic/GlassDoors.png"
     description: "Adds uniquely shaped glass windows into every door type."
     origin: "vanillatweaks"
+    conflicting:
+      - RedCrimson
+      - GreenJungle
+      - SmoothWarped
     notcompatible:
       - 1-8
       - 1-9

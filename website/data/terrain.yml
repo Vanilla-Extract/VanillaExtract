@@ -20,12 +20,35 @@ modules:
     image: "/images/modules/terrain/PebblelessDirt.png"
     description: "Gets rid of the white pebbles in Dirt."
     origin: "vanillatweaks"
+    conflicting:
+      - WhiterSnow
+      - LowerGrass
+      - SidesGrass
+      - LowerMycelium
+      - SidesMycelium
+      - LowerPaths
+      - SidesPaths
+      - LowerPodzol
+      - SidesPodzol
+      - LowerSnow
+      - SidesSnow
     
   - id: "BrighterNether"
     name: "Brighter Nether"
     image: "/images/modules/terrain/BrighterNether.png"
     description: "Brightens the textures of the blocks commonly found in the Nether."
     origin: "vanillatweaks"
+    conflicting:
+      - OreBorders
+      - UniformOres
+      - BlackNetherBricks
+      - RedCrimson
+      - NetherwartGrowthStage
+      - SmoothWarped
+      - LowerCrimson
+      - SidesCrimson
+      - LowerWarped
+      - SidesWarped
     notcompatible:
         - 1-8
         - 1-9
@@ -40,18 +63,6 @@ modules:
     name: "Circular Sun and Moon"
     image: "/images/modules/terrain/CircularSnM.png"
     description: "Replaces the default square sun and moon, with a circular sun and moon."
-    origin: "vanillatweaks"
-    notcompatible:
-        - 1-8
-        - 1-9
-        - 1-10
-        - 1-11
-        - 1-12
-        
-  - id: "ClearWater"
-    name: "Clearer Water"
-    image: "/images/modules/terrain/ClearWater.png"
-    description: "Makes Water Clearer."
     origin: "vanillatweaks"
     notcompatible:
         - 1-8
@@ -79,6 +90,7 @@ modules:
     origin: "vanillatweaks"
     conflicting:
       - OreBorders
+      - BrighterNether
     notcompatible:
         - 1-8
         - 1-9
@@ -91,6 +103,10 @@ modules:
     image: "/images/modules/terrain/WhiterSnow.png"
     description: "Removes the blue tint from snow."
     origin: "vanillatweaks"
+    conflicting:
+      - SidesSnow
+      - LowerSnow
+      - PebblelessDirt
     notcompatible:
         - 1-8
         - 1-9

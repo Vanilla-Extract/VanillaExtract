@@ -24,6 +24,8 @@ conflictingModules:
       image: "/images/modules/sides/LowerGrass.png"
       description: "Lowers the sides of Grass Blocks to provide a smoother and greener landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -36,6 +38,8 @@ conflictingModules:
       image: "/images/modules/sides/SidesGrass.png"
       description: "Completely covers the sides of Grass Blocks to provide a smoother and greener landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -50,6 +54,8 @@ conflictingModules:
       image: "/images/modules/sides/LowerMycelium.png"
       description: "Lowers the sides of Mycelium Blocks to provide a smoother and mushroomier landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -62,6 +68,8 @@ conflictingModules:
       image: "/images/modules/sides/SidesMycelium.png"
       description: "Completely covers the sides of Mycelium Blocks to provide a smoother and mushroomier landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -76,6 +84,8 @@ conflictingModules:
       image: "/images/modules/sides/LowerPaths.png"
       description: "Lowers the sides of Path Blocks to provide a smoother-looking pathway."
       origin: "vanillatweaks"
+      conflicting:
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -88,6 +98,8 @@ conflictingModules:
       image: "/images/modules/sides/SidesPaths.png"
       description: "Completely covers the sides of Path Blocks to provide a smoother-looking pathway."
       origin: "vanillatweaks"
+      conflicting:
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -102,6 +114,8 @@ conflictingModules:
       image: "/images/modules/sides/LowerPodzol.png"
       description: "Lowers the sides of Podzol Blocks to provide a smoother and more consistent landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -114,6 +128,8 @@ conflictingModules:
       image: "/images/modules/sides/SidesPodzol.png"
       description: "Completely covers the sides of Podzol Blocks to provide a smoother and more consistent landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -128,6 +144,9 @@ conflictingModules:
       image: "/images/modules/sides/LowerSnow.png"
       description: "Lowers the sides of Snow Blocks to provide a smoother and whiter snowy landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - WhiterSnow
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -140,6 +159,9 @@ conflictingModules:
       image: "/images/modules/sides/SidesSnow.png"
       description: "Completely covers the sides of Snow Blocks to provide a smoother and whiter snowy landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - WhiterSnow
+        - PebblelessDirt
       notcompatible:
         - 1-8
         - 1-9
@@ -154,6 +176,8 @@ conflictingModules:
       image: "/images/modules/sides/LowerCrimson.png"
       description: "Lowers the sides of Crimson Nylium Blocks to provide a smoother and redder landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - BrighterNether
       notcompatible:
         - 1-8
         - 1-9
@@ -169,6 +193,8 @@ conflictingModules:
       image: "/images/modules/sides/SidesCrimson.png"
       description: "Completely covers the sides of Crimson Nylium Blocks to provide a smoother and redder landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - BrighterNether
       notcompatible:
         - 1-8
         - 1-9
@@ -186,6 +212,8 @@ conflictingModules:
       image: "/images/modules/sides/LowerWarped.png"
       description: "Lowers the sides of Warped Blocks to provide a smoother and bluer landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - BrighterNether
       notcompatible:
         - 1-8
         - 1-9
@@ -201,6 +229,8 @@ conflictingModules:
       image: "/images/modules/sides/SidesWarped.png"
       description: "Completely covers the sides of Warped Blocks to provide a smoother and bluer landscape."
       origin: "vanillatweaks"
+      conflicting:
+        - BrighterNether
       notcompatible:
         - 1-8
         - 1-9

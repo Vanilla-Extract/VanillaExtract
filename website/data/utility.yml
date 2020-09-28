@@ -9,6 +9,7 @@ modules:
     origin: "vanillatweaks"
     conflicting:
       - UniformOres
+      - BrighterNether
   
   - id: "StickyPistonSides"
     name: "Sticky Piston Sides"
@@ -37,12 +38,16 @@ modules:
     image: "/images/modules/utility/ColoredBows.png"
     description: "Colors the bow handle to show how far back you've pulled." 
     origin: "faithfultweaks"
+    conflicting:
+      - FlintArrow
 
   - id: "NetherwartGrowthStage"
     name: "Netherwart Growth Stages"
     image: "/images/modules/utility/NetherwartGrowthStage.png"
     description: "Improves netherwart growth stage visibility." 
     origin: "faithfultweaks"
+    conflicting:
+      - BrighterNether
   
   - id: "StackedItems"
     name: "Stacked Items"
