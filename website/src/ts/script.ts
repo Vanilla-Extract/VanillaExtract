@@ -98,7 +98,6 @@ function moduleHover(this: HTMLElement) {
         popoverContent = this.getAttribute('data-content');
     }
     
-
     // Set preview
     if (this.getAttribute('data-preview') != null) {
         document.getElementById('previewImage').setAttribute('src', this.getAttribute('data-preview'));
@@ -106,18 +105,29 @@ function moduleHover(this: HTMLElement) {
 
     // Set bg if a conflict is selected
     if (this.getAttribute('data-conflicting') != null) {
+        // Turn conflicts into array
         const conflicts: Array<string> = this.getAttribute('data-conflicting').split(' ');
-        let styledConflicts = "Cannot enable because you have selected at least one of the following: ";
-        conflicts.forEach((e, i) => {
-            if (i === 0) {
-                styledConflicts = styledConflicts + document.getElementById(e).children[1].textContent;
-            } else {
-                styledConflicts = styledConflicts + ", " + document.getElementById(e).children[1].textContent;
-            }
-        })
-        styledConflicts = styledConflicts + ".";
 
+        // If there are conflicts active then do the following
         if (conflicts.some(r=> modules.includes(r))) {
+            // Make popover text
+            let styledConflicts = "Cannot enable because you have selected the following: ";
+            const conflictList: Array<string> = conflicts.filter(e => modules.indexOf(e) !== -1);
+
+            conflictList.forEach((e, i) => {
+                if (i === 0) {
+                    styledConflicts = styledConflicts + document.getElementById(e).children[1].textContent;
+                } else if (i === (conflictList.length - 1) && conflictList.length === 2) {
+                    styledConflicts = styledConflicts + " and " + document.getElementById(e).children[1].textContent;
+                } else if (i === (conflictList.length - 1)) {
+                    styledConflicts = styledConflicts + ", and " + document.getElementById(e).children[1].textContent;
+                } else {
+                    styledConflicts = styledConflicts + ", " + document.getElementById(e).children[1].textContent;
+                }
+            })
+            styledConflicts = styledConflicts + ".";
+
+            // Change background and text color
             this.style.backgroundColor = "var(--danger)";
             this.style.color = "#ffffff";
             this.setAttribute('data-content', styledConflicts);
