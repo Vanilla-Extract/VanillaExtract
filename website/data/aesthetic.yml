@@ -51,6 +51,12 @@ modules:
     image: "/images/modules/aesthetic/AlternateEntities.png"
     description: "Adds variants to a lot of entities."
     origin: "faithfultweaks"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
     
   - id: "RedGolemFlowers"
     name: "Red Iron Golem Flowers"
