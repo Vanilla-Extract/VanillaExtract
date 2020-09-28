@@ -20,6 +20,18 @@ modules:
     image: "/images/modules/terrain/PebblelessDirt.png"
     description: "Gets rid of the white pebbles in Dirt."
     origin: "vanillatweaks"
+    conflicting:
+      - WhiterSnow
+      - LowerGrass
+      - SidesGrass
+      - LowerMycelium
+      - SidesMycelium
+      - LowerPaths
+      - SidesPaths
+      - LowerPodzol
+      - SidesPodzol
+      - LowerSnow
+      - SidesSnow
     
   - id: "BrighterNether"
     name: "Brighter Nether"
@@ -91,6 +103,10 @@ modules:
     image: "/images/modules/terrain/WhiterSnow.png"
     description: "Removes the blue tint from snow."
     origin: "vanillatweaks"
+    conflicting:
+      - SidesSnow
+      - LowerSnow
+      - PebblelessDirt
     notcompatible:
         - 1-8
         - 1-9
