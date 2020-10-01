@@ -20,6 +20,12 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/FaithfulTweaks/FaithfulTweaks/master/screenshot.png"></img></p>
 
+## Get Tn Touch
+- Come visit us on [Discord](https://discord.gg/kBMEmDD)
+- Create [an issue](https://github.com/FaithfulTweaks/FaithfulTweaks/issues/new)
+- Check us out on [Twitter](https://twitter.com/faithfultweaks)
+- Join us on [Reddit](https://www.reddit.com/r/FaithfulTweaks/)
+
 ## Creating Modules
 If you're interested in creating a module, please look at **[the wiki](https://github.com/FaithfulTweaks/FaithfulTweaks/wiki)**.
 
