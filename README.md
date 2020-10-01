@@ -21,10 +21,7 @@
 <p align="center"><img src="https://raw.githubusercontent.com/FaithfulTweaks/FaithfulTweaks/master/screenshot.png"></img></p>
 
 ## Creating Modules
-If you're interested in creating a module, please look at [the wiki](https://github.com/FaithfulTweaks/FaithfulTweaks/wiki).
-
-Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the traditional fashion.
-
+If you're interested in creating a module, please look at **[the wiki](https://github.com/FaithfulTweaks/FaithfulTweaks/wiki)**.
 
 ## Making requests to the Cloud Function
 Example body of POST request:
