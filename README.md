@@ -1,12 +1,12 @@
 <h1 align="center">
     <br>
-    <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/FaithfulTweaks/FaithfulTweaks/master/website/static/images/logo.png" alt="Markdownify" width="150"></a>
+    <a href="https://faithfultweaks.com/"><img src="https://raw.githubusercontent.com/FaithfulTweaks/FaithfulTweaks/master/website/static/images/logo.png" alt="Faithful Tweaks" width="150"></a>
     <br>
     Faithful Tweaks
     <br>
 </h1>
 
-<h4 align="center">An open source recreation of <a href="https://vanillatweaks.net/picker/resource-packs/">Vanilla Tweaks</a> for the Faithful x32 Texturepack by <a href="https://faithful.team/">The Faithful Team</a>.</h4>
+<p align="center">An open source recreation of <a href="https://vanillatweaks.net/picker/resource-packs/">Vanilla Tweaks</a> for the Faithful x32 Texturepack by <a href="https://faithful.team/">The Faithful Team</a>.</p>
 
 <p align="center">
     <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/actions"><img alt="Website Deploy" src="https://github.com/FaithfulTweaks/FaithfulTweaks/workflows/Website%20Deploy/badge.svg"></a>
