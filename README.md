@@ -1,7 +1,14 @@
-[<img src="https://faithfultweaks.com/images/logo.png" alt="Faithful Tweaks Logo" width="150px" />](https://faithfultweaks.com/)
+<h1 align="center">
+    <br>
+    <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/FaithfulTweaks/FaithfulTweaks/master/website/static/images/logo.png" alt="Markdownify" width="150"></a>
+    <br>
+    Faithful Tweaks
+    <br>
+</h1>
 
-# Faithful Tweaks
-<p>
+<h4 align="center">An open source recreation of <a href="https://vanillatweaks.net/picker/resource-packs/">Vanilla Tweaks</a> for the Faithful x32 Texturepack by <a href="https://faithful.team/">The Faithful Team</a>.</h4>
+
+<p align="center">
     <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/actions"><img alt="Website Deploy" src="https://github.com/FaithfulTweaks/FaithfulTweaks/workflows/Website%20Deploy/badge.svg"></a>
     <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/actions"><img alt="Functions Deploy" src="https://github.com/FaithfulTweaks/FaithfulTweaks/workflows/Functions%20Deploy/badge.svg"></a>
     <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/actions"><img alt="Images Deploy" src="https://github.com/FaithfulTweaks/FaithfulTweaks/workflows/Images%20Deploy/badge.svg"></a>
@@ -11,120 +18,13 @@
     <a href="https://github.com/FaithfulTweaks/FaithfulTweaks/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/FaithfulTweaks/FaithfulTweaks"></a>
 </p>
 
-An open source recreation of [Vanilla Tweaks](https://vanillatweaks.net/picker/resource-packs/) for the Faithful x32 Texturepack by [The Faithful Team](https://faithful.team/).
+<p align="center"><img src="https://raw.githubusercontent.com/FaithfulTweaks/FaithfulTweaks/master/screenshot.png"></img></p>
 
 ## Creating Modules
 If you're interested in creating a module, please look at [the wiki](https://github.com/FaithfulTweaks/FaithfulTweaks/wiki).
 
 Notice: Icon/HUD modules, options background modules, and menu panorama modules are not implemented in the traditional fashion.
 
-## Available Versions
-- 1.16.2 - Latest
-- 1.16
-- 1.15
-- 1.14
-- 1.13
-- 1.12
-- 1.11
-- 1.10
-- 1.9
-- 1.8
-
-## Available Modules
-### Aesthetic
-- AlternateEntities
-- BlackNetherBricks
-- CherryPicking
-- CodeCraftedWool
-- PlainLeather
-- RedGolemFlowers
-- SidewaysNuggets
-- SolidHoney
-- UnbundledHayBales
-- PlainLeather
-- SplashEnchanting
-- RedGolemFlowers
-
-### Terrain
-- BetterBedrock
-- LowerGrassSide
-- PebblelessCoarseDirt
-
-### Utility
-- BetterObservers
-- BrokenItems
-- CleanRedstone
-- ColoredBows
-- DirectionalHoppers
-- NetherwartGrowthStage
-- OreBorders
-- SlicedSwords
-- StackedItems
-- StickyPistonSides
-
-### Unobtrusive
-- AlternateEnchantGlint
-- BorderlessGlass
-- CleanBorderlessGlass
-- CleanGlass
-- ClearPumpkinBlur
-- InvisibleTotem
-- LowFire
-- LowShield
-- NoVignette
-- ReducedPumpkinBlur
-- UnobtrusiveRain
-- UnobtrusiveScaffolding
-- UnobtrusiveWater
-
-### HUD
-- BreadHunger
-- BlueWitherHearts
-- ColoredPing
-- MelonHunger
-- RainbowXP
-
-### GUI
-- DarkUI
-
-### Options Background
-- AcaciaPlanksBG
-- AncientDebrisBG
-- AndesiteBG
-- BedrockBG
-- BetterBedrockBG
-- BirchPlanksBG
-- DarkOakPlanksBG
-- DioriteBG
-- EndStoneBG
-- GraniteBG
-- HoneycombBG
-- JunglePlanksBG
-- NetherrackBG
-- NetherrackBrightBG
-- OakPlanksBG
-- ObsidianBG
-- PebblelessDirtBG
-- SprucePlanksBG
-- StoneBG
-
-### Menu Panorama
-- BastionPano
-- ClassicPano
-- EndPano
-- SeirinsPano
-
-### Coming Soon
-- AlternateBlockDestruction
-- FullyAgedCropMarker
-- ProgressBarBlockDestruction
-- PebblelessDirt
-- 3DIronBars (Needs updating)
-- 3DLadders (Needs updating)
-- 3DLilyPads (Needs updating)
-- 3DRails (Needs updating)
-- 3DReeds (Needs updating)
-- BrighterNether (Needs updating)
 
 ## Making requests to the Cloud Function
 Example body of POST request:
