@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "item/flint_and_steel/flint_and_steel2"
-    }
-}
