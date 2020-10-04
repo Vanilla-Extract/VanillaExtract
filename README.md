@@ -21,7 +21,7 @@
 <p align="center"><img src="https://raw.githubusercontent.com/FaithfulTweaks/FaithfulTweaks/master/screenshot.png"></img></p>
 
 ## Get Tn Touch
-- 💬 Come visit us on [Discord](https://discord.gg/kBMEmDD)
+- 💬 Come visit us on [Discord](https://discord.gg/av85z28)
 - ❗️ Create [an issue](https://github.com/FaithfulTweaks/FaithfulTweaks/issues/new)
 - 🦜 Check us out on [Twitter](https://twitter.com/faithfultweaks)
 - 🔈 Join us on [Reddit](https://www.reddit.com/r/FaithfulTweaks/)
