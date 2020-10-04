@@ -94,18 +94,20 @@ app.post('/makePack', async (req, res) => {
     // ----- UPLOAD THE ARCHIVE -----
     const fileID = nanoid(5);
 
-    const newPackPath = path.join('FaithfulTweaks' + fileID + '.zip'); // New file upload path
+    const newPackPath = path.join('VanillaExtract/' + fileID + '.zip'); // New file upload path
     
     // Log and upload when file has been made
     output.on('close', async () => {
         console.log('Archiver has been finalized and the output file descriptor has closed. File size: ' + archive.pointer() + ' bytes');
         
         // Actual upload
-        dbx.filesUpload({path: newPackPath, contents: fs.readFileSync(tempFilePath)})
-        .then(()=>{
-            dbx.sharingCreateSharedLinkWithSettings({path: newPackPath})
-            .then(shareLink => {
-                res.status(200).send({ "url": shareLink.url });
+        await dbx.filesUpload({path: newPackPath, contents: fs.readFileSync(tempFilePath)})
+        .then(async () => {
+            await dbx.filesGetTemporaryLink({path: newPackPath})
+            .then(file => {
+                console.log(file.link);
+                
+                res.status(200).send({ "url": file.link });
                 fs.unlinkSync(tempFilePath);
             })
             .catch(error => console.error(error));
