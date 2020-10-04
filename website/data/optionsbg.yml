@@ -99,3 +99,8 @@ modules:
     name: "Stone"
     image: "/images/modules/optionsbg/stone.png"
     origin: "vanillatweaks"
+  
+  - id: "MelonBG"
+    name: "Melon"
+    image: "/images/modules/optionsbg/Melon.png"
+    origin: "DTRW191"
