@@ -1,6 +1,5 @@
 import * as path from 'path';
 import { Archiver } from 'archiver';
-import { Bucket } from '@google-cloud/storage';
 
 const packFilesPath = "modules/panoramas";
 const inPackPath = "assets/minecraft/textures/gui/title/background";
@@ -11,7 +10,7 @@ const folders: Record<string, string> = {
     SeirinsPano: "SeirinsSurvival",
 };
 
-export async function addMenuPanorama(moduleName: string, archive: Archiver, bucket: Bucket){
+export async function addMenuPanorama(moduleName: string, archive: Archiver){
     // If it exists
     if (folders[moduleName] !== undefined && folders[moduleName] !== null) {
         // Image 0

@@ -1,6 +1,5 @@
 // ICON MODULES ARE HANDLED DIFFERENTLY THAN REGULAR MODULES
 // IMPORTS
-import { Bucket } from '@google-cloud/storage';
 import { Archiver } from "archiver";
 import * as path from 'path';
 
@@ -8,7 +7,7 @@ import * as path from 'path';
 import { createCanvas, Image } from 'canvas';
 
 // Figure out which modules to add
-export async function addIconModules(modules: string[], archive: Archiver, bucket: Bucket){
+export async function addIconModules(modules: string[], archive: Archiver){
     // Set all modes to default
     const crosshairMode = 0;
     let hungerMode = 0;

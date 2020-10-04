@@ -1,6 +1,5 @@
 import * as path from 'path';
 import { Archiver } from 'archiver';
-import { Bucket } from '@google-cloud/storage';
 
 const packFilesPath = "modules/optionsBG";
 const inPackName = "options_background.png";
@@ -27,7 +26,7 @@ const files: Record<string, string> = {
     StoneBG: "stone.png",
 };
 
-export async function addOptionsBG(moduleName: string, archive: Archiver, bucket: Bucket){
+export async function addOptionsBG(moduleName: string, archive: Archiver){
     // If it exists
     if (files[moduleName] !== undefined && files[moduleName] !== null) {
         

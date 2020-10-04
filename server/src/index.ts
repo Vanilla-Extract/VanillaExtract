@@ -11,7 +11,15 @@ import * as os from 'os';
 import * as path from 'path';
 
 // Usefull tools
-import { v4 as uuidv4 } from 'uuid';
+import { nanoid } from 'nanoid';
+
+// Dotenv
+import * as dotenv from "dotenv";
+dotenv.config();
+
+// Dropbox
+import { Dropbox } from 'dropbox';
+const dbx = new Dropbox ({ accessToken: process.env.DROPBOX_TOKEN }); // Dropbox instance
 
 // Express
 import * as express from "express";
@@ -26,7 +34,6 @@ app.post('/makePack', async (req, res) => {
     res.set('Access-Control-Allow-Headers', 'Content-Type');
     res.set('Content-Type', 'application/json');
 
-    const bucket: Bucket = admin.storage().bucket(); // Storage bucket
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
 
     // Get body data
@@ -64,63 +71,49 @@ app.post('/makePack', async (req, res) => {
     archive.append(creditsTxt, {name: 'credits.txt'}); // add credits.txt file
     
     // Add pack icon
-    // await bucket.file('packfiles/pack.png').download().then((data) => {
-    //     return archive.append(data[0], {name: 'pack.png'});
-    // });
     archive.file(path.join('images', 'pack.png'), {name: 'pack.png'});
     
     if (modules !== undefined && modules !== null) {
-        await addModules(format, archive, modules, bucket); // Add modules to the pack
+        await addModules(format, archive, modules); // Add modules to the pack
     }
 
     if (iconModules !== undefined && iconModules !== null) {
-        await addIconModules(iconModules, archive, bucket); // Add icon modules to icons.png
+        await addIconModules(iconModules, archive); // Add icon modules to icons.png
     }
 
     if (optionsBackground !== undefined && optionsBackground !== null) {
-        await addOptionsBG(optionsBackground, archive, bucket); // Add options background
+        await addOptionsBG(optionsBackground, archive); // Add options background
     }
     
     if (panoOption !== undefined && panoOption !== null) {
-        await addMenuPanorama(panoOption, archive, bucket); // Add menu panorama
+        await addMenuPanorama(panoOption, archive); // Add menu panorama
     }
 
     await archive.finalize(); // finalize the archive
 
     // ----- UPLOAD THE ARCHIVE -----
-    const fileUUID = uuidv4();
-    const tokenUUID = uuidv4();
+    const fileID = nanoid(5);
 
-    const newPackPath = path.join('FaithfulTweaks', fileUUID + '.zip'); // New file upload path
-
-    // Metadata
-    const metadata = {
-        contentType: 'application/zip',
-        metadata: {
-            firebaseStorageDownloadTokens: tokenUUID,
-        }
-    };
+    const newPackPath = path.join('FaithfulTweaks' + fileID + '.zip'); // New file upload path
     
     // Log and upload when file has been made
     output.on('close', async () => {
         console.log('Archiver has been finalized and the output file descriptor has closed. File size: ' + archive.pointer() + ' bytes');
         
         // Actual upload
-        await bucket.upload(tempFilePath, {
-            destination: newPackPath,
-            metadata: metadata,
-        }).then((data) => {
-            const file = data[0];
-            // Respond with URL
-            res.status(200).send({ "url": "https://firebasestorage.googleapis.com/v0/b/" + bucket.name + "/o/" + encodeURIComponent(file.name) + "?alt=media&token=" + tokenUUID });
-            fs.unlinkSync(tempFilePath); // Unlink file
-            return;
-        });
+        dbx.filesUpload({path: newPackPath, contents: fs.readFileSync(tempFilePath)})
+        .then(()=>{
+            dbx.sharingCreateSharedLinkWithSettings({path: newPackPath})
+            .then(shareLink => {
+                res.status(200).send({ "url": shareLink.url });
+                fs.unlinkSync(tempFilePath);
+            })
+            .catch(error => console.error(error));
+        })
+        .catch(error => console.error(error));
     });
 
     output.on('end', () => { console.log('Data has been drained'); }); // Log when file is drained
-
-    
 });
 
 // Make the mcmeta file
