@@ -14,41 +14,14 @@ import * as path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 
 // Express
-// import * as express from "express";
-// const app = express();
-// const port: number = 3000;
-// app.use(express.json()) // for parsing application/json
-// app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+import * as express from "express";
+const app = express();
+const port: number = 3000;
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-// Firebase
-import * as functions from 'firebase-functions';
-import { Bucket } from "@google-cloud/storage";
-import * as admin from 'firebase-admin';
-admin.initializeApp({
-    credential: admin.credential.applicationDefault(),
-    storageBucket: "vanilla-extract.appspot.com"
-});
-
-// Delete all the genrated packs every day (ABOUT MIDNIGHT EST)
-exports.deletePacks = functions.pubsub.schedule('0 4 * * *').onRun(async (cxt) => {
-    const bucket = admin.storage().bucket(); // Storage bucket
-
-    // Delete everything in FaithfulTweaks/
-    bucket.deleteFiles({
-        prefix: 'FaithfulTweaks/'
-    }, (err) => {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log('All the zip files FaithfulTweaks/ have been deleted');
-        }
-    });
-
-});
-
-// app.post('/', ----- EXPRESS STUFF
 // Create a zip file from file in storage ----- CLOUD FUNCTION -----
-exports.makePack = functions.https.onRequest(async (req, res) => {
+app.post('/', async (req, res) => {
     res.set('Access-Control-Allow-Origin', process.env.NODE_ENV !== 'production' ? '*' : 'https://faithfultweaks.com');
     res.set('Access-Control-Allow-Headers', 'Content-Type');
     res.set('Content-Type', 'application/json');
@@ -230,6 +203,6 @@ This pack is a modification of The Faithful 32x pack.
 Modifications are based off of/inspired by the packs by Vanilla tweaks.`
 
 // Have express app listen on the set port
-// app.listen(port, () => {
-//     console.log(`Example app listening at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`);
+});
