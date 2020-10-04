@@ -5,7 +5,6 @@ import * as path from 'path';
 // ----- MODULES -----
 const modulesData: Record<string, any> = {
 //  ModuleID               : require('./path/to/moduleid.js'),
-    TestModule             : require('./modules/testModule.js'),
 
     // Aesthetic
     AlternateDestruction   : require('./modules/aesthetic/AlternateDestruction.js'),
