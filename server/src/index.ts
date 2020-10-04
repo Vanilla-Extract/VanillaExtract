@@ -16,12 +16,12 @@ import { v4 as uuidv4 } from 'uuid';
 // Express
 import * as express from "express";
 const app = express();
-const port: number = 3000;
+const port: number = process.env["NODE_ENV"] !== 'production' ? 5000 : 443; // 5000 local 443 deployed (do whatever you want just use https im production please)
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 // Create a zip file from file in storage ----- CLOUD FUNCTION -----
-app.post('/', async (req, res) => {
+app.post('/makePack', async (req, res) => {
     res.set('Access-Control-Allow-Origin', process.env.NODE_ENV !== 'production' ? '*' : 'https://faithfultweaks.com');
     res.set('Access-Control-Allow-Headers', 'Content-Type');
     res.set('Content-Type', 'application/json');
