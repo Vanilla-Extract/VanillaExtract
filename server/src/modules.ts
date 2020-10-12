@@ -1,20 +1,21 @@
 import { Archiver } from "archiver";
 import * as path from 'path';
+import * as fs from 'fs';
 
 // ----- MODULES -----
 const modulesData: Record<string, any> = {
-//  ModuleID               : require('./path/to/moduleid.js'),
+//  ModuleID               : './path/to/moduleid.json',
 
     // Optifine
-    AlternateEntities      : require('./modules/optifine/AlternateEntities.js'),
-    BlackNetherBricks      : require('./modules/optifine/BlackNetherBricks.js'),
-    CherryPicking          : require('./modules/optifine/CherryPicking.js'),
-    CodeCraftedWool        : require('./modules/optifine/CodeCraftedWool.js'),
-    PlainLeather           : require('./modules/optifine/PlainLeather.js'),
-    RedGolemFlowers        : require('./modules/optifine/RedGolemFlowers.js'),
-    SidewaysNuggets        : require('./modules/optifine/SidewaysNuggets.js'),
-    SolidHoney             : require('./modules/optifine/SolidHoney.js'),
-    UnbundledHayBales      : require('./modules/optifine/UnbundledHayBales.js'),
+    AlternateEntities      : '/optifine/AlternateEntities.json',
+    BlackNetherBricks      : '/optifine/BlackNetherBricks.json',
+    CherryPicking          : '/optifine/CherryPicking.json',
+    CodeCraftedWool        : '/optifine/CodeCraftedWool.json',
+    PlainLeather           : '/optifine/PlainLeather.json',
+    RedGolemFlowers        : '/optifine/RedGolemFlowers.json',
+    SidewaysNuggets        : '/optifine/SidewaysNuggets.json',
+    SolidHoney             : '/optifine/SolidHoney.json',
+    UnbundledHayBales      : '/optifine/UnbundledHayBales.json',
 }
 
 // Figure out which modules to add
@@ -23,10 +24,12 @@ export async function addModules(format: string, archive: Archiver, modules: str
     const promises = modules.map(async (modName) => {
         // If the module exists
         if (modulesData[modName] !== undefined && modulesData[modName] !== null) {
+            const obj = JSON.parse(fs.readFileSync(path.join('./src/modules/', modulesData[modName]), 'utf8'));
+
             // Try to get module path
             let directory;
             try {
-                directory = modulesData[modName][format];
+                directory = obj[format];
             } catch (e) {
                 // If version has no path return
                 console.log('Invalid Version: '+e);
@@ -38,24 +41,6 @@ export async function addModules(format: string, archive: Archiver, modules: str
 
             // List files
             archive.directory(DLPath, false);
-            // await bucket.getFiles({
-            //     autoPaginate: false,
-            //     directory: DLPath,
-            // }).then(async (data) => {
-            //     // For each file
-            //     // tslint:disable-next-line: no-shadowed-variable
-            //     const promises = data[0].map(async (file) => {
-            //         // Download
-            //         await file.download().then((fileData) => {
-            //             // Remove beginning of path from file name
-            //             const fileName = file.name.replace(DLPath, '');
-            //             // Add file to zip
-            //             return archive.append(fileData[0], {name: fileName});
-            //         });
-            //     });
-            //     await Promise.all(promises);
-            //     return;
-            // });
         }
     });
     return Promise.all(promises);

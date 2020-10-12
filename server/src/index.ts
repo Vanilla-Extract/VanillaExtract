@@ -1,8 +1,8 @@
 // Module Data
 import { addModules } from "./modules";
-import { addIconModules } from "./modules/iconModules";
-import { addOptionsBG } from "./modules/optionsBGModules";
-import { addMenuPanorama } from "./modules/panoramaModules";
+import { addIconModules } from "./iconModules";
+import { addOptionsBG } from "./optionsBGModules";
+import { addMenuPanorama } from "./panoramaModules";
 
 // Archiver
 import * as archiver from 'archiver';
