@@ -7,7 +7,7 @@
     <a href="https://github.com/Vanilla-Extract/VanillaExtract/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Vanilla-Extract/VanillaExtract"></a>
     <a href="https://github.com/Vanilla-Extract/VanillaExtract/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Vanilla-Extract/VanillaExtract"></a>
     <a href="https://github.com/Vanilla-Extract/VanillaExtract/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Vanilla-Extract/VanillaExtract"></a>
-    <a href="https://github.com/Vanilla-Extract/VanillaExtracts/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Vanilla-Extract/VanillaExtract"></a>
+    <a href="https://github.com/Vanilla-Extract/VanillaExtract/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Vanilla-Extract/VanillaExtract"></a>
 </p>
 
-A group of people making Minecraft Resource Packs to make the already great Minecraft experience even better!
+An open source recreation of Vanilla Tweaks for the communities creations by the Vanilla Extract Team!
