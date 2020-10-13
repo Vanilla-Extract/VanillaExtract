@@ -93,8 +93,8 @@ app.post('/makePack', async (req, res) => {
 
     // ----- UPLOAD THE ARCHIVE -----
     const fileID = nanoid(5);
-
-    const newPackPath = path.join('VanillaExtract/' + fileID + '.zip'); // New file upload path
+    // 'Apps', 'VanillaExtract',
+    const newPackPath = path.join(fileID + '.zip'); // New file upload path
     
     // Log and upload when file has been made
     output.on('close', async () => {
