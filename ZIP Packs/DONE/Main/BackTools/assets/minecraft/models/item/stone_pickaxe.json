@@ -1,0 +1,31 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"particle": "item/stone_pickaxe",
+		"layer0": "item/stone_pickaxe"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 8],
+			"to": [16, 16, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#layer0"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#missing"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [70, 0, 0],
+			"translation": [-5.75, -6.25, 7.5]
+		},
+		"firstperson_lefthand": {
+			"scale": [0, 0, 0]
+		}
+	}
+}
