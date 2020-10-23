@@ -1,0 +1,3 @@
+The .ZIP files in this folder are all resource packs,
+And the folder contains the raw images for reference.
+Choose the one which you would most like and install it like you usually would a resource pack.
