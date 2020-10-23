@@ -11,7 +11,8 @@ import * as os from 'os';
 import * as path from 'path';
 
 // Usefull tools
-import { nanoid } from 'nanoid';
+import { customAlphabet } from 'nanoid'
+const nanoid = customAlphabet('1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ', 10);
 
 // Dotenv
 import * as dotenv from "dotenv";
@@ -22,18 +23,21 @@ import { Dropbox } from 'dropbox';
 const dbx = new Dropbox ({ accessToken: process.env.DROPBOX_TOKEN }); // Dropbox instance
 
 // Express
-import * as express from "express";
+import * as express from 'express';
+import * as cors from 'cors';
 const app = express();
 const port: number = process.env["NODE_ENV"] !== 'production' ? 5000 : 443; // 5000 local 443 deployed (do whatever you want just use https im production please)
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+// CORS
+app.use(cors({
+    origin: process.env.NODE_ENV !== 'production' ? '*' : 'https://faithfultweaks.com',
+    allowedHeaders: 'Content-Type',
+    methods: "POST",
+}));
 
 // Create a zip file from file in storage ----- CLOUD FUNCTION -----
 app.post('/makePack', async (req, res) => {
-    res.set('Access-Control-Allow-Origin', process.env.NODE_ENV !== 'production' ? '*' : 'https://faithfultweaks.com');
-    res.set('Access-Control-Allow-Headers', 'Content-Type');
-    res.set('Content-Type', 'application/json');
-
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
 
     // Get body data
@@ -92,27 +96,31 @@ app.post('/makePack', async (req, res) => {
     await archive.finalize(); // finalize the archive
 
     // ----- UPLOAD THE ARCHIVE -----
-    const fileID = nanoid(5);
+    const fileID = nanoid();
     // 'Apps', 'VanillaExtract',
-    const newPackPath = path.join(fileID + '.zip'); // New file upload path
+    const newPackPath = `/VanillaExtract_${fileID}.zip`; // New file upload path
     
     // Log and upload when file has been made
-    output.on('close', async () => {
+    output.on('close', () => {
         console.log('Archiver has been finalized and the output file descriptor has closed. File size: ' + archive.pointer() + ' bytes');
         
-        // Actual upload
-        await dbx.filesUpload({path: newPackPath, contents: fs.readFileSync(tempFilePath)})
-        .then(async () => {
-            await dbx.filesGetTemporaryLink({path: newPackPath})
-            .then(file => {
-                console.log(file.link);
-                
-                res.status(200).send({ "url": file.link });
-                fs.unlinkSync(tempFilePath);
+        fs.readFile(tempFilePath, 'utf8', (err, contents) => {
+            if (err) {
+                console.log('Error: ', err);
+            }
+
+            // Actual upload
+            dbx.filesUpload({path: newPackPath, contents: contents})
+            .then(async () => {
+                dbx.filesGetTemporaryLink({path: newPackPath})
+                .then((response: any) => {                    
+                    res.status(200).send({ "url": response.result.link });
+                    fs.unlinkSync(tempFilePath);
+                })
+                .catch(error => console.error(error));
             })
             .catch(error => console.error(error));
-        })
-        .catch(error => console.error(error));
+        });
     });
 
     output.on('end', () => { console.log('Data has been drained'); }); // Log when file is drained
