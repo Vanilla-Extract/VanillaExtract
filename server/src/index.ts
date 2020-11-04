@@ -104,7 +104,7 @@ app.post('/makePack', async (req, res) => {
     output.on('close', () => {
         console.log('Archiver has been finalized and the output file descriptor has closed. File size: ' + archive.pointer() + ' bytes');
         
-        fs.readFile(tempFilePath, 'utf8', (err, contents) => {
+        fs.readFile(tempFilePath, (err, contents) => {
             if (err) {
                 console.log('Error: ', err);
             }
