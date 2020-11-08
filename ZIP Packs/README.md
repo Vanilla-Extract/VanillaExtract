@@ -1,5 +1,6 @@
 # Aesthetic
 <br>
+
 - Name: Jungle Grass | ID: JungleGrass
 
 - Name: Realistic Coal | ID: RealCoal
@@ -29,6 +30,7 @@ h
 
 # Utility
 <br>
+
 - Name: Outlined Armour | ID: OutlinedArmour
 
 - Name: Short Swords | ID: ShortSwords
@@ -37,10 +39,12 @@ h
 
 # Gui
 <br>
+
 - Name: Simpler Armour Icon | ID: SimplerArmourIcon 
 
 - Name: Clean XP Bar | ID: CleanXPBar
 
 # Fixes
 <br>
+
 - Name: Bone Colored Bonemeal | ID: BoneColoredBonemeal
