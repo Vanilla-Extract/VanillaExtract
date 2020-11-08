@@ -19,14 +19,32 @@
 
 - Name: Blackerite | ID: Blackerite
 
+- Name: Better Blaze Textures | ID: BetterBlazeTextures
+
+- Name: Orelike Items | ID: OrelikeItems
+
+- Name: More Ores | ID: MoreOres
+
+- Name: Concrete Bricks | ID: ConcreteBricks
+
+- Name: Prettier Pressure Plates | ID: PrettierPressurePlates
+
+- Name: Purple Ender | ID: PurpleEnder
+
+- Name: Phanotom Elytra | ID: PhantomElytra
+
 
 # Animation
 <br>
-h
+
+- Name: Animated Selector Arrows | ID: AnimatedSelectorArrows
 
 # Connected Textures
 <br>
-h
+
+- Name: Connected Sea Lanterns | ID: ConnectedSeaLanterns
+
+- Name: 
 
 # Utility
 <br>
@@ -37,6 +55,12 @@ h
 
 - Name: Netherite Utilities | ID: NetheriteUtilities
 
+- Name: Potion Icons | ID: PotionIcons
+
+- Name: Eggmoticons | ID: Eggmoticons
+
+- Name: Bow Charge Indecator | ID: BowChargeIndecator
+
 # Gui
 <br>
 
@@ -44,7 +68,20 @@ h
 
 - Name: Clean XP Bar | ID: CleanXPBar
 
+- Name: Bar GUI | ID: BarGUI
+
+# Elytra
+<br>
+
+- Name: Phantom Elytra | ID: PhantomElytra
+
+- Name: Ender Dragon Elytra | ID: EnderDragonElytra
+
+- Name: Bat Elytra
+
 # Fixes
 <br>
 
 - Name: Bone Colored Bonemeal | ID: BoneColoredBonemeal
+
+- Name Off-Center Fix | ID: OffCenterFix
