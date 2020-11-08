@@ -77,7 +77,39 @@
 
 - Name: Ender Dragon Elytra | ID: EnderDragonElytra
 
-- Name: Bat Elytra
+- Name: Vanilla Extract Elytra | ID: VanillaExtractElytra
+
+- Name: Black Elytra | ID: BlackElytra
+
+- Name: Blue Elytra | ID: BlueElytra
+
+- Name: Brown Elytra | ID: BrownElytra
+
+- Name: Cyan Elytra | ID: CyanElytra
+
+- Name: Gray Elytra | ID: GrayElytra
+
+- Name: Green Elytra | ID: GreenElytra
+
+- Name: Light Blue Elytra | ID: LightBlueElytra
+
+- Name: Light Gray Elytra | ID: LightGrayElytra
+
+- Name: Lime Elytra | ID: LimeElytra
+
+- Name: Magenta Elytra | ID: MagentaElytra
+
+- Name: Orange Elytra | ID: OrangeElytra
+
+- Name: Pink Elytra | ID: PinkElytra
+
+- Name: Purple Elytra | ID: PurpleElytra
+
+- Name: Red Elytra | ID: RedElytra
+
+- Name: White Elytra | ID: WhiteElytra
+
+- Name: Yellow Elytra | Yellow Elytra
 
 # Fixes
 <br>
