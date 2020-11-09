@@ -33,6 +33,17 @@
 
 - Name: Phanotom Elytra | ID: PhantomElytra
 
+- Name: Stacked Items | ID: StackedItems
+
+- Name: Brown Leather | ID: BrownLeather
+
+- Name: Better Door Items | ID: BetterDoorItems
+
+- Name: Consistent Zombie | ID: ConsistentZombie
+
+- Name: Better Netherwart Item | ID: BetterNetheriteItem
+
+- Name: Nether Portal Ender Chest | ID: NetherPortalEnderChest
 
 # Animation
 <br>
@@ -44,7 +55,13 @@
 
 - Name: Connected Sea Lanterns | ID: ConnectedSeaLanterns
 
-- Name: 
+- Name: Connected Diamond Blocks | ID: ConnectedDiamondBlocks
+
+- Name: Connected Gold Blocks | ID: ConnectedGoldBlocks
+
+- Name: Connected Polished Stones | ID: ConnectedPolishedStones
+
+- Name: Connected Logs | ID: ConnectedLogs
 
 # Utility
 <br>
@@ -60,6 +77,10 @@
 - Name: Eggmoticons | ID: Eggmoticons
 
 - Name: Bow Charge Indecator | ID: BowChargeIndecator
+
+- Name: Visual Enchanted Books | ID: VisualEnchantedBooks
+
+- Name: Outlined Wool | ID: OutlinedWool
 
 # Gui
 <br>
@@ -116,4 +137,6 @@
 
 - Name: Bone Colored Bonemeal | ID: BoneColoredBonemeal
 
-- Name Off-Center Fix | ID: OffCenterFix
+- Name: Off-Center Fix | ID: OffCenterFix
+
+- Name: Boat Oar Fix | ID: BoatOarFix
