@@ -1,6 +1,6 @@
-# Aesthetic
-id: "AestheticSection"
-display: "Aesthetic"
+# Elytra
+id: "elytraSection"
+display: "Elytra"
 
 modules:
   - id: "CherryPicking"
