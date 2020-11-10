@@ -1,5 +1,3 @@
-[<img src="https://cdn.discordapp.com/attachments/750815939687219412/751234992939597954/512x_Circle_Border.png" alt="Vanilla Extract Logo" width="150px" />](https://vanilla-extract.web.app)
-
 # Vanilla Extract [<img src="https://cdn.discordapp.com/attachments/750815939687219412/751234992939597954/512x_Circle_Border.png" alt="Vanilla Extract Logo" width="150px" />](https://vanilla-extract.web.app)
 <p>
     <a href="https://github.com/Vanilla-Extract/VanillaExtract/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Vanilla-Extract/VanillaExtract"></a>
