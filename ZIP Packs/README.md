@@ -70,6 +70,8 @@
 
 - Name: Short Swords | ID: ShortSwords
 
+- Name: Sliced Swords | ID: SlicedSwords
+
 - Name: Netherite Utilities | ID: NetheriteUtilities
 
 - Name: Potion Icons | ID: PotionIcons

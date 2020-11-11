@@ -1,0 +1,28 @@
+# Fixes
+id: "fixesSection"
+display: "Fixes"
+
+modules:
+  - id: "OffCenterFix"
+    name: "Off-Center Fix"
+    image: "/images/modules/fixes/OffCenterFix.png"
+    description: "Cetners blocks that are off-center."
+    origin: "vanillaextract"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
+  - id: "BoneColoredBonemeal"
+    name: "Bone Colored Bonemeal"
+    image: "/images/modules/fixes/BoneColoredBonemeal.png"
+    description: "Makes bonemeal use the bone color palette."
+    origin: "vanillaextract"
+  - id: "BoatOarFix"
+    name: "Boat Oar Fix"
+    image: "/images/modules/fixes/BoatOarFix.png"
+    description: "Recolors the oars on boat items to be consistent with the entity."
+    origin: "vanillaextract"
