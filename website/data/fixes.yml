@@ -18,6 +18,6 @@ modules:
       - 1-14
   - id: "BoneColoredBonemeal"
     name: "Bone Colored Bonemeal"
-    image: "server/images/modules/fixes/BoneColoredBonemeal.png"
+    image: "/images/modules/fixes/BoneColoredBonemeal.png"
     description: "Makes bonemeal use the bone color palette."
     origin: "vanillaextract"
