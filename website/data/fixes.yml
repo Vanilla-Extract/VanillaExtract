@@ -21,3 +21,8 @@ modules:
     image: "/images/modules/fixes/BoneColoredBonemeal.png"
     description: "Makes bonemeal use the bone color palette."
     origin: "vanillaextract"
+  - id: "BoatOarFix"
+    name: "Boat Oar Fix"
+    image: "/images/modules/fixes/BoatOarFix.png"
+    description: "Recolors the oars on boat items to be consistent with the entity."
+    origin: "vanillaextract"
