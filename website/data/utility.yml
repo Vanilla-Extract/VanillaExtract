@@ -1,21 +1,13 @@
-# Fixes
-id: "fixesSection"
-display: "Fixes"
+# Utility
+id: "utilitySection"
+display: "Utility"
 
 modules:
-  - id: "OffCenterFix"
-    name: "Off-Center Fix"
-    image: "/images/modules/fixes/OffCenterFix.png"
-    description: "Cetners blocks that are off-center."
+  - id: "OutlinedArmour"
+    name: "Outlined Armour"
+    image: "/images/modules/utility/OutlinedArmour.png"
+    description: "Makes armour just an outline so you can see player's skins."
     origin: "vanillaextract"
-    notcompatible:
-      - 1-8
-      - 1-9
-      - 1-10
-      - 1-11
-      - 1-12
-      - 1-13
-      - 1-14
   - id: "BoneColoredBonemeal"
     name: "Bone Colored Bonemeal"
     image: "/images/modules/fixes/BoneColoredBonemeal.png"
