@@ -36,6 +36,9 @@ app.use(cors({
     methods: "POST",
 }));
 
+// serve a get request to keep the server alive with uptime robot
+app.get("/keepalive", (req, res) => res.send("hello world"))
+
 // Create a zip file from file in storage ----- CLOUD FUNCTION -----
 app.post('/makePack', async (req, res) => {
     const tempFilePath = path.join(os.tmpdir(), 'texturepack.zip'); // Zip path
