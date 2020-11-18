@@ -156,7 +156,7 @@ function mcMeta(format: string) {
 `{
     "pack": {
         "pack_format": `+packFormat+`,
-        "description": "§aFaithful Tweaks §6- §c`+formatStr+`\\n§b§nfaithfultweaks.com"
+        "description": [{"text":"Vanilla Extract","color":"#2AC77B"},{"text":" `+formatStr+`\nvanilla-extract.netlify.app","color":"gray"}]
     }
 }`
     );
@@ -197,7 +197,7 @@ function moduleSelection(format: string, modules: string[], iconModules: string[
 
     }
 
-    return ('Faithful Tweaks generated pack\nVersion: '+format+'\n'+modStr+hudStr+optionsStr+panoStr);
+    return ('Vanilla Extract generated pack\nVersion: '+format+'\n'+modStr+hudStr+optionsStr+panoStr);
 }
 
 // The credits.txt file contents
