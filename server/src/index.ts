@@ -197,7 +197,7 @@ function moduleSelection(format: string, modules: string[], iconModules: string[
 
     }
 
-    return ('Faithful Tweaks generated pack\nVersion: '+format+'\n'+modStr+hudStr+optionsStr+panoStr);
+    return ('Vanilla Extract generated pack\nVersion: '+format+'\n'+modStr+hudStr+optionsStr+panoStr);
 }
 
 // The credits.txt file contents
