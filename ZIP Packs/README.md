@@ -45,6 +45,8 @@
 
 - Name: Nether Portal Ender Chest | ID: NetherPortalEnderChest
 
+- Name: Netherite Utilities | ID: NetheriteUtilities
+
 # Animation
 <br>
 
@@ -72,7 +74,6 @@
 
 - Name: Sliced Swords | ID: SlicedSwords
 
-- Name: Netherite Utilities | ID: NetheriteUtilities
 
 - Name: Potion Icons | ID: PotionIcons
 
@@ -80,7 +81,7 @@
 
 - Name: Bow Charge Indecator | ID: BowChargeIndecator
 
-- Name: Visual Enchanted Books | ID: VisualEnchantedBooks
+- Name: Visual Exclusive Enchantments | ID: VisualExclusiveEnchantments
 
 - Name: Outlined Wool | ID: OutlinedWool
 
