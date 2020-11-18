@@ -279,7 +279,7 @@ function downloadPack() {
 
     // POST Request
     const request = new XMLHttpRequest(); // Request
-    const url = process.env["NODE_ENV"] !== 'production' ? "http://localhost:5000/makePack" : "https://example.com/makePack"; // URL (based on node environment status)
+    const url = process.env["NODE_ENV"] !== 'production' ? "http://localhost:5000/makePack" : "https://vanillaextract.beatso1.repl.co/makePack"; // URL (based on node environment status)
     const data = {
         "format": version,
         "modules": modules,
