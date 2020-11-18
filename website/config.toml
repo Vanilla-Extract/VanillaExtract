@@ -1,4 +1,4 @@
-baseURL = "https://vanilla-extract.web.app/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Vanilla Extract"
 publishDir = "../public"
