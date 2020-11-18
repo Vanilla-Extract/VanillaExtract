@@ -1,12 +1,5 @@
 {
-    "1.16.2":  "/modules/fixes/OffCenterFix/1.8-latest/",
-    "1.16":    "/modules/fixes/OffCenterFix/1.8-latest/",
-    "1.15":    "/modules/fixes/OffCenterFix/1.8-latest/",
-    "1.14":    "/modules/fixes/OffCenterFix/1.8-latest/",
-    "1.13":    "/modules/fixes/OffCenterFix/1.8-latest/",
-    "1.12":    "/modules/fixes/OffCenterFix/1.8-latest/",
-    "1.11":    "/modules/fixes/OffCenterFix/1.8-latest/",
-    "1.10":    "/modules/fixes/OffCenterFix/1.8-latest/",
-    "1.9":     "/modules/fixes/OffCenterFix/1.8-latest/",
-    "1.8":     "/modules/fixes/OffCenterFix/1.8-latest/"
+    "1.16.2":  "/modules/fixes/OffCenterFix/1.15-latest/",
+    "1.16":    "/modules/fixes/OffCenterFix/1.15-latest/",
+    "1.15":    "/modules/fixes/OffCenterFix/1.15-latest/"
 }
