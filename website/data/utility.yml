@@ -17,7 +17,7 @@ modules:
     name: "Potion Icons"
     image: "/images/modules/utility/PotionIcons.png"
     description: "Tweaks the shape of potion bottles to match the status effect symbol."
-    origin: "vanillaextract"
+    origin: "vanillatweaks"
   - id: "Eggmoticons"
     name: "Eggmoticons"
     image: "/images/modules/utility/PotionIcons.png"
