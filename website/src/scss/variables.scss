@@ -1,15 +1,9 @@
 // Variables
-$orange: #ed9741; // Orange
+$orange: #e29f00; // Orange
 $blue: #5870f7; // Blue
 $purple: #b200ff; // Purple
 $green: #2ac77b; // Purple
-$discord: #7289DA; // Discord
+$discord: #7289da; // Discord
 $primary: $orange; // Set primary to orange
 
-$theme-colors: (
-  "orange": $orange,
-  "purple": $purple,
-  "blue": $blue,
-  "green": $green,
-  "discord": $discord,
-);
+$theme-colors: ("orange": $orange, "purple": $purple, "blue": $blue, "green": $green, "discord": $discord);

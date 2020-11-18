@@ -14,8 +14,8 @@
 
                                     {{ if eq .origin "vanillatweaks" }}
                                         vt-origin
-                                    {{ else if eq .origin "faithfultweaks" }}
-                                        ft-origin
+                                    {{ else if eq .origin "optifine" }}
+                                        of-origin
                                     {{ else if eq .origin "vanillaextract" }}
                                         ve-origin
                                     {{ else }}
@@ -53,10 +53,10 @@
                                             vt-origin
                                         {{ else if eq .origin "faithfultweaks" }}
                                             ft-origin
+                                        {{ else if eq .origin "optifine" }}
+                                            of-origin
                                         {{ else if eq .origin "vanillaextract" }}
                                             ve-origin
-                                        {{ else }}
-                                            community-origin
                                         {{ end }}'
 
                                     {{ if isset . "description" }}
