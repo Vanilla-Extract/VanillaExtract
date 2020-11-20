@@ -20,7 +20,7 @@ modules:
     origin: "vanillatweaks"
   - id: "Eggmoticons"
     name: "Eggmoticons"
-    image: "/images/modules/utility/PotionIcons.png"
+    image: "/images/modules/utility/Eggmoticons.png"
     description: "Eggmoticons is a texture pack that adds the face of each mob to its respective egg. (Requires OptiFine)"
     origin: "vanillatweaks"
   - id: "VisualExclusiveEnchantments"
