@@ -1,6 +1,7 @@
 import 'bootstrap';
 import $ from 'jquery';
 
+let shouldDisableDl: boolean = true;
 let format: string = "1-16-2";
 const modules: string[] = [];
 const iconModules: string[] = [];
@@ -170,6 +171,9 @@ function setModule(this: HTMLElement) {
             modules.push(this.id);
             this.classList.add('enabled'); // Add class
         }
+
+        // Check if button should be disabled
+        disableDownload();
     }
 }
 
@@ -195,6 +199,9 @@ function setModuleConflicting (this: HTMLElement) {
             modules.splice(i, 1);
             this.classList.remove("enabled"); // Remove class
         }
+
+        // Check if button should be disabled
+        disableDownload();
     }
 };
 
@@ -212,6 +219,9 @@ function setIconModule(this: HTMLElement) {
         iconModules.push(this.id);
         this.classList.add('enabled'); // Add class
     }
+
+    // Check if button should be disabled
+    disableDownload();
 }
 
 // Set conflicting icon module function
@@ -235,6 +245,9 @@ function setIconModuleConflicting (this: HTMLElement) {
         iconModules.splice(i, 1);
         this.classList.remove("enabled"); // Remove class
     }
+
+    // Check if button should be disabled
+    disableDownload();
 };
 
 // Set background function
@@ -251,6 +264,9 @@ function setBackground(this: HTMLElement) {
         optionsBackground = this.id;
         this.classList.add("enabled"); // Add class
     }
+
+    // Check if button should be disabled
+    disableDownload();
 }
 
 // Set pano function
@@ -267,42 +283,60 @@ function setPano(this: HTMLElement) {
         panoOption = this.id;
         this.classList.add("enabled"); // Add class
     }
+
+    // Check if button should be disabled
+    disableDownload();
+}
+
+// Check download diable status
+function disableDownload() {
+    shouldDisableDl = ((modules.length == 0) && (iconModules.length == 0) && (optionsBackground == undefined) && (panoOption == undefined));
+    let downloadButton = document.getElementById('downloadPack');
+    if (shouldDisableDl) {
+        downloadButton.classList.add('disabled');
+        downloadButton.setAttribute("tabindex", "-1");
+    } else {
+        downloadButton.classList.remove('disabled');
+        downloadButton.setAttribute("tabindex", "0");
+    }
 }
 
 // Download the resource pack
 function downloadPack() {
-    // Update format to fit version number scheme
-    const version = format.replace('-', '.').replace('-', '.'); // Somewhat messy way of making sure both "-"s get changed 
+    if (!shouldDisableDl) {
+        // Update format to fit version number scheme
+        const version = format.replace('-', '.').replace('-', '.'); // Somewhat messy way of making sure both "-"s get changed 
 
-    document.querySelectorAll('.alert').forEach((e: HTMLElement) => e.style.display = 'none'); // Hide alerts
-    (<HTMLElement>document.querySelector('#creating-alert')).style.display = 'block'; // Create alert
+        document.querySelectorAll('.alert').forEach((e: HTMLElement) => e.style.display = 'none'); // Hide alerts
+        (<HTMLElement>document.querySelector('#creating-alert')).style.display = 'block'; // Create alert
 
-    // POST Request
-    const request = new XMLHttpRequest(); // Request
-    const url = process.env["NODE_ENV"] !== 'production' ? "http://localhost:5000/makePack" : "https://vanillaextract.beatso1.repl.co/makePack"; // URL (based on node environment status)
-    const data = {
-        "format": version,
-        "modules": modules,
-        "iconModules": iconModules,
-        "optionsBackground": optionsBackground,
-        "panoOption": panoOption,
-    };
-    
-    request.open('POST', url, true);
-    request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    request.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status == 200) {
-            // Request finished
-            const data = JSON.parse(this.responseText);
-            window.location.href = data.url;
-            (<HTMLElement>document.querySelector('#download-link')).setAttribute('href', data.url); // Set download link
-            (<HTMLElement>document.querySelector('#creating-alert')).style.display = 'none'; // Hide old alert
-            (<HTMLElement>document.querySelector('#finished-alert')).style.display = 'block'; // Show created alert
-        } else if (this.readyState === 4) {
-            // Request error
-            (<HTMLElement>document.querySelector('#creating-alert')).style.display = 'none'; // Hide old alert
-            (<HTMLElement>document.querySelector('#fail-alert')).style.display = 'block'; // Show fail alert
-        }
-    };
-    request.send(JSON.stringify(data));
+        // POST Request
+        const request = new XMLHttpRequest(); // Request
+        const url = process.env["NODE_ENV"] !== 'production' ? "http://localhost:5000/makePack" : "https://vanillaextract.beatso1.repl.co/makePack"; // URL (based on node environment status)
+        const data = {
+            "format": version,
+            "modules": modules,
+            "iconModules": iconModules,
+            "optionsBackground": optionsBackground,
+            "panoOption": panoOption,
+        };
+        
+        request.open('POST', url, true);
+        request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        request.onreadystatechange = function() {
+            if (this.readyState === 4 && this.status == 200) {
+                // Request finished
+                const data = JSON.parse(this.responseText);
+                window.location.href = data.url;
+                (<HTMLElement>document.querySelector('#download-link')).setAttribute('href', data.url); // Set download link
+                (<HTMLElement>document.querySelector('#creating-alert')).style.display = 'none'; // Hide old alert
+                (<HTMLElement>document.querySelector('#finished-alert')).style.display = 'block'; // Show created alert
+            } else if (this.readyState === 4) {
+                // Request error
+                (<HTMLElement>document.querySelector('#creating-alert')).style.display = 'none'; // Hide old alert
+                (<HTMLElement>document.querySelector('#fail-alert')).style.display = 'block'; // Show fail alert
+            }
+        };
+        request.send(JSON.stringify(data));
+    }
 }
