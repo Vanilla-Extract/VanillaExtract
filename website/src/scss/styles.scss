@@ -1,5 +1,9 @@
 .btn {
 	border-radius: 999px;
+
+	&.disabled {
+		cursor: default;
+	}
 }
 
 .module-selector {
