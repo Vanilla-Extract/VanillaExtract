@@ -79,7 +79,7 @@
 
 - Name: Eggmoticons | ID: Eggmoticons
 
-- Name: Bow Charge Indecator | ID: BowChargeIndecator
+- Name: Bow Charge Indicator | ID: BowChargeIndicator
 
 - Name: Visual Exclusive Enchantments | ID: VisualExclusiveEnchantments
 
