@@ -28,9 +28,9 @@ modules:
     image: "/images/modules/utility/VisualExclusiveEnchantments.png"
     description: "Makes all exclusive enchantments visible by making them have unique textures that fit with the enchantment. (Requires OptiFine)"
     origin: "vanillatweaks"
-  - id: "BowChargeIndecator"
-    name: "Bow Charge Indecator"
-    image: "/images/modules/utility/BowChargeIndecator.png"
+  - id: "BowChargeIndicator"
+    name: "Bow Charge Indicator"
+    image: "/images/modules/utility/BowChargeIndicator.png"
     description: "Each bow and crossbow stage has a color to signify how close it is to shooting."
     origin: "vanillaextract"
     # Swords
