@@ -6,16 +6,15 @@ import * as fs from 'fs';
 const modulesData: Record<string, any> = {
 //  ModuleID               : './path/to/moduleid.json',
 
-    // Optifine
-    AlternateEntities      : '/optifine/AlternateEntities.json',
-    BlackNetherBricks      : '/optifine/BlackNetherBricks.json',
-    CherryPicking          : '/optifine/CherryPicking.json',
-    CodeCraftedWool        : '/optifine/CodeCraftedWool.json',
-    PlainLeather           : '/optifine/PlainLeather.json',
-    RedGolemFlowers        : '/optifine/RedGolemFlowers.json',
-    SidewaysNuggets        : '/optifine/SidewaysNuggets.json',
-    SolidHoney             : '/optifine/SolidHoney.json',
-    UnbundledHayBales      : '/optifine/UnbundledHayBales.json',
+    // Fixes
+    BoatOarFix      : '/fixes/BoatOarFix.json',
+    BBoneColoredBonemeal      : '/fixes/BoneColoredBonemeal.json',
+    OffCenterFix          : '/fixes/OffCenterFix.json',
+    // Utility
+    BowChargeIndecator          : '/utility/BowChargeIndecator.json',
+    OutlinedWool          : '/utility/OutlinedWool.json',
+    ShortSwords          : '/utility/ShortSwords.json',
+    SlicedSwords          : '/utility/SlicedSwords.json',
 }
 
 // Figure out which modules to add
