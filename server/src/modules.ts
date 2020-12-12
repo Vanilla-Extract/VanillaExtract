@@ -6,6 +6,8 @@ import * as fs from 'fs';
 const modulesData: Record<string, any> = {
 //  ModuleID               : './path/to/moduleid.json',
 
+    // Animation
+    AnimatedSelectorArrows      : '/animation/AnimatedSelectorArrows.json',
     // Fixes
     BoatOarFix      : '/fixes/BoatOarFix.json',
     BoneColoredBonemeal      : '/fixes/BoneColoredBonemeal.json',

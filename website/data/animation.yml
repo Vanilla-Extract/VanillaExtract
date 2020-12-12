@@ -1,0 +1,10 @@
+# Animation
+id: "animationSection"
+display: "Animation"
+
+modules:
+  - id: "AnimatedSelectorArrows"
+    name: "Animated Selector Arrows"
+    image: "/images/modules/animation/AnimatedSelectorArrows.png"
+    description: "Animates the selector arrows for the Server/World/Resource Pack Menus. Requires Optifine!"
+    origin: "vanillaextract"
