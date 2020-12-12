@@ -8,6 +8,7 @@ const modulesData: Record<string, any> = {
 
     // Animation
     AnimatedSelectorArrows      : '/animation/AnimatedSelectorArrows.json',
+    FurnaceAnimations       : '/animation/FurnaceAnimations.json',
     // Fixes
     BoatOarFix      : '/fixes/BoatOarFix.json',
     BoneColoredBonemeal      : '/fixes/BoneColoredBonemeal.json',
