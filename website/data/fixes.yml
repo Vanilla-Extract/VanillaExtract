@@ -26,3 +26,17 @@ modules:
     image: "/images/modules/fixes/BoatOarFix.png"
     description: "Recolors the oars on boat items to be consistent with the entity."
     origin: "vanillaextract"
+  - id: "CrimsonNyliumTopFix"
+    name: "Crimson Nylium Top Fix"
+    image: "/images/modules/fixes/CrimsonNyliumTopFix.png"
+    description: "Removes the netherrack peeking through the top of crimson nylium"
+    origin: "vanillaextract"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
+      - 1-15
