@@ -29,7 +29,7 @@ modules:
   - id: "CrimsonNyliumTopFix"
     name: "Crimson Nylium Top Fix"
     image: "/images/modules/fixes/CrimsonNyliumTopFix.png"
-    description: "Removes the netherrack peeking through the top of crimson nylium"
+    description: "Removes the netherrack peeking through the top of crimson nylium."
     origin: "vanillaextract"
     notcompatible:
       - 1-8
