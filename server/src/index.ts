@@ -206,7 +206,21 @@ Vanilla Tweaks by Xisumavoid: https://www.xisumavoid.com/vanillatweaks
 Faithful Textures by xMrVizzy: https://faithful.team
 
 This pack is a modification of The Faithful 32x pack. 
-Modifications are based off of/inspired by the packs by Vanilla tweaks.`
+Modifications are based off of/inspired by the packs by Vanilla tweaks.
+
+Credits for Individual Packs:
+- Furnace Animations:
+    The Following Assets Were Used With Permission Of The Creators From The Following Resource Packs:
+
+    Animated Furnace: https://www.planetminecraft.com/texture-pack/animated-furnace/                                            🎨The Sailor
+    Front Furnace Texture (animation)
+
+    Animated Furnaces: https://www.planetminecraft.com/texture-pack/animated-furnaces-4718601/                                   🎨Daggsy
+    Bottom Blast Furnace Texture (still)
+
+    Clear Vanilla: https://www.planetminecraft.com/texture-pack/clear-vanilla-resource-pack/                                 🎨TalMelamed 
+    Side Furnace Texture (still) -Top Furnace Texture (still)
+`
 
 // Have express app listen on the set port
 app.listen(port, () => {
