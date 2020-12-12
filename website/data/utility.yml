@@ -6,7 +6,7 @@ modules:
   - id: "OutlinedArmour"
     name: "Outlined Armor"
     image: "/images/modules/utility/OutlinedArmour.png"
-    description: "Makes armour just an outline so you can see player's skins."
+    description: "Makes armor just an outline so you can see player's skins."
     origin: "vanillaextract"
   - id: "OutlinedWool"
     name: "Outlined Wool"
