@@ -52,6 +52,8 @@
 
 - Name: Animated Selector Arrows | ID: AnimatedSelectorArrows
 
+- Name: Furnace Animations | ID: FurnaceAnimations
+
 # Connected Textures
 <br>
 
