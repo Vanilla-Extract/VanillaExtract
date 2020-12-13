@@ -1,0 +1,22 @@
+{
+"block.minecraft.crimson_stem": "Tyrian Stem",
+"block.minecraft.stripped_crimson_stem": "Stripped Tyrian Stem",
+"block.minecraft.crimson_hyphae": "Tyrian Hyphae",
+"block.minecraft.stripped_crimson_hyphae": "Stripped Tyrian Hyphae",
+"block.minecraft.crimson_nylium": "Tyrian Nylium",
+"block.minecraft.crimson_fungus": "Tyrian Fungus",
+"block.minecraft.crimson_roots": "Tyrian Roots",
+"block.minecraft.crimson_planks": "Tyrian Planks",
+"block.minecraft.crimson_slab": "Tyrian Slab",
+"block.minecraft.crimson_pressure_plate": "Tyrian Pressure Plate",
+"block.minecraft.crimson_fence": "Tyrian Fence",
+"block.minecraft.crimson_trapdoor": "Tyrian Trapdoor",
+"block.minecraft.crimson_fence_gate": "Tyrian Fence Gate",
+"block.minecraft.crimson_stairs": "Tyrian Stairs",
+"block.minecraft.crimson_button": "Tyrian Button",
+"block.minecraft.crimson_door": "Tyrian Door",
+"block.minecraft.crimson_sign": "Tyrian Sign",
+"block.minecraft.crimson_wall_sign": "Tyrian Wall Sign",
+"block.minecraft.potted_crimson_fungus": "Potted Tyrian Fungus",
+"biome.minecraft.crimson_forest": "Tyrian Forest"
+}

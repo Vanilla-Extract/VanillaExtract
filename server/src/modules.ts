@@ -15,6 +15,7 @@ const modulesData: Record<string, any> = {
     CrimsonNyliumTopFix     : '/fixes/CrimsonNyliumTopFix.json',
     OffCenterFix          : '/fixes/OffCenterFix.json',
     // Fun
+    CrimsonToTyrian     : '/fun/CrimsonToTyrian.json',
     StickTrident        : '/fun/StickTrident.json',
     // Utility
     BowChargeIndicator          : '/utility/BowChargeIndicator.json',
