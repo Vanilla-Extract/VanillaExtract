@@ -6,7 +6,7 @@ modules:
   - id: "OffCenterFix"
     name: "Off-Center Fix"
     image: "/images/modules/fixes/OffCenterFix.png"
-    description: "Cetners blocks that are off-center."
+    description: "Centers blocks that are off-center."
     origin: "vanillaextract"
     notcompatible:
       - 1-8

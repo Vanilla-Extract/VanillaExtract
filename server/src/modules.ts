@@ -14,6 +14,8 @@ const modulesData: Record<string, any> = {
     BoneColoredBonemeal      : '/fixes/BoneColoredBonemeal.json',
     CrimsonNyliumTopFix     : '/fixes/CrimsonNyliumTopFix.json',
     OffCenterFix          : '/fixes/OffCenterFix.json',
+    // Fun
+    StickTrident        : '/fun/StickTrident.json',
     // Utility
     BowChargeIndicator          : '/utility/BowChargeIndicator.json',
     OutlinedWool          : '/utility/OutlinedWool.json',

@@ -1,0 +1,16 @@
+# Fun
+id: "funSection"
+display: "Fun"
+
+modules:
+  - id: "StickTrident"
+    name: "Stick Trident"
+    image: "/images/modules/fun/StickTrident.png"
+    description: "Changes the trident texture to match the texture of a stick."
+    origin: "vanillaextract"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
