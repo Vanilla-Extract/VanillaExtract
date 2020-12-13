@@ -28,3 +28,8 @@ modules:
       - 1-13
       - 1-14
       - 1-15
+  - id: "BonemealColoredBones"
+    name: "Bonemeal Colored Bones"
+    image: "/images/modules/fixes/BonemealColoredBones.png"
+    description: "Makes bones use the bonemeal color palette."
+    origin: "vanillaextract"
