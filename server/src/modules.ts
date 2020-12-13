@@ -9,12 +9,18 @@ const modulesData: Record<string, any> = {
     // Animation
     AnimatedSelectorArrows      : '/animation/AnimatedSelectorArrows.json',
     FurnaceAnimations       : '/animation/FurnaceAnimations.json',
+    // Connected Texures
+    ConnectedGoldAndDiamondBlocks       : '/connectedTextures/ConnectedGoldAndDiamondBlocks.json',
+    ConnectedSpawners       : '/connectedTextures/ConnectedSpawners.json',
     // Fixes
     BoatOarFix      : '/fixes/BoatOarFix.json',
     BoneColoredBonemeal      : '/fixes/BoneColoredBonemeal.json',
+    BonemealColoredBones        : '/fixes/BonemealColoredBones.json',
     CrimsonNyliumTopFix     : '/fixes/CrimsonNyliumTopFix.json',
     OffCenterFix          : '/fixes/OffCenterFix.json',
+    ReverseGlisteringMelon      : '/fixes/ReverseGlisteringMelon.json',
     // Fun
+    CrimsonToTyrian     : '/fun/CrimsonToTyrian.json',
     StickTrident        : '/fun/StickTrident.json',
     // Utility
     BowChargeIndicator          : '/utility/BowChargeIndicator.json',

@@ -14,3 +14,17 @@ modules:
       - 1-10
       - 1-11
       - 1-12
+  - id: "CrimsonToTyrian"
+    name: "Crimson To Tyrian"
+    image: "/images/modules/fun/CrimsonToTyrian.png"
+    description: "Renames all crimson elements to tyrian, the closest shade of red to crimson."
+    origin: "vanillaextract"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
+      - 1-15

@@ -21,6 +21,11 @@ modules:
     image: "/images/modules/fixes/BoneColoredBonemeal.png"
     description: "Makes bonemeal use the bone color palette."
     origin: "vanillaextract"
+  - id: "BonemealColoredBones"
+    name: "Bonemeal Colored Bones"
+    image: "/images/modules/fixes/BonemealColoredBones.png"
+    description: "Makes bones use the bonemeal color palette."
+    origin: "vanillaextract"
   - id: "BoatOarFix"
     name: "Boat Oar Fix"
     image: "/images/modules/fixes/BoatOarFix.png"
@@ -40,3 +45,8 @@ modules:
       - 1-13
       - 1-14
       - 1-15
+  - id: "ReverseGlisteringMelon"
+    name: "Reverse Glistering Melon"
+    image: "/images/modules/fixes/ReverseGlisteringMelon.png"
+    description: "Reverses the texture of the glistering melon slice to make it consistent with the melon slice texture."
+    origin: "vanillaextract"
