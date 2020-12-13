@@ -26,7 +26,7 @@ modules:
       - 1-8
   - id: "BlackElytra"
     name: "Black Elytra"
-    image: "/images/modules/elytra?BlackElytra.png"
+    image: "/images/modules/elytra/BlackElytra.png"
     description: "Makes Elytra black"
     origin: "vanillaextract"
     notcompatible:
