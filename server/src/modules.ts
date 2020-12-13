@@ -12,6 +12,7 @@ const modulesData: Record<string, any> = {
     // Fixes
     BoatOarFix      : '/fixes/BoatOarFix.json',
     BoneColoredBonemeal      : '/fixes/BoneColoredBonemeal.json',
+    BonemealColoredBones        : '/fixes/BonemealColoredBones.json',
     CrimsonNyliumTopFix     : '/fixes/CrimsonNyliumTopFix.json',
     OffCenterFix          : '/fixes/OffCenterFix.json',
     // Fun
