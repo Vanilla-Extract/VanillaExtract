@@ -1,58 +1,66 @@
-:root{
-    --body-light: #{$white} !important;
-    --body-dark: #{$gray-900} !important;
-    --light: #{$gray-100} !important;
-    --gray: #{$gray-400} !important;
-    --dark: #{$gray-800} !important;
+:root {
+	--body-light: #{$white} !important;
+	--body-dark: #{$gray-900} !important;
+	--light: #{$gray-100} !important;
+	--gray: #{$gray-400} !important;
+	--dark: #{$gray-800} !important;
+	--scrollbar-thumb-dark: #{#343a40} !important;
+	--scrollbar-track-dark: #{#f8f9fa} !important;
 
-    @media (prefers-color-scheme: dark) {
-        --body-light: #{$gray-900} !important;
-        --body-dark: #{$white} !important;
-        --light: #{$gray-800} !important;
-        --gray: #{$gray-600} !important;
-        --dark: #{$gray-200} !important;
-    }
+	@media (prefers-color-scheme: dark) {
+		--body-light: #{$gray-900} !important;
+		--body-dark: #{$white} !important;
+		--light: #{$gray-800} !important;
+		--gray: #{$gray-600} !important;
+		--dark: #{$gray-200} !important;
+		--scrollbar-thumb-dark: #{#e9ecef} !important;
+		--scrollbar-track-dark: #{#343a40} !important;
+	}
 }
 
 // Popover
 .popover-header {
-    background-color: var(--body-light) !important;
-    border-color: var(--body-light) !important;
-    color: var(--body-dark) !important;
+	background-color: var(--body-light) !important;
+	border-color: var(--body-light) !important;
+	color: var(--body-dark) !important;
 }
 .popover-body {
-    background-color: var(--light) !important;
-    border-color: var(--light) !important;
-    color: var(--dark) !important;
+	background-color: var(--light) !important;
+	border-color: var(--light) !important;
+	color: var(--dark) !important;
 }
 
 // Body
 body {
-    background-color: var(--body-light) !important;
-    color: var(--body-dark) !important;
+	background-color: var(--body-light) !important;
+	color: var(--body-dark) !important;
 }
 
 // Most elements
-.btn-light, .bg-light, .nav-light {
-    background-color: var(--light) !important;
-    border-color: var(--light) !important;
-    color: var(--dark) !important;
+.btn-light,
+.bg-light,
+.nav-light {
+	background-color: var(--light) !important;
+	border-color: var(--light) !important;
+	color: var(--dark) !important;
 }
 
-.btn-dark, .bg-dark, .nav-dark {
-    background-color: var(--dark) !important;
-    border-color: var(--dark) !important;
-    color: var(--light) !important;
+.btn-dark,
+.bg-dark,
+.nav-dark {
+	background-color: var(--dark) !important;
+	border-color: var(--dark) !important;
+	color: var(--light) !important;
 }
 
 // Navbar
 .navbar-brand {
-    color: var(--body-dark) !important;
+	color: var(--body-dark) !important;
 }
 
 .navbar-toggler-icon {
-    background-image: escape-svg($navbar-light-toggler-icon-bg) !important;
-    @media (prefers-color-scheme: dark) {
-        background-image: escape-svg($navbar-dark-toggler-icon-bg) !important;
-    }
+	background-image: escape-svg($navbar-light-toggler-icon-bg) !important;
+	@media (prefers-color-scheme: dark) {
+		background-image: escape-svg($navbar-dark-toggler-icon-bg) !important;
+	}
 }

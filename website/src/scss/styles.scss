@@ -1,3 +1,16 @@
+// Better Scrollbar: By Chromus
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: var(--scrollbar-track-dark);
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 25px;
+	background-color: var(--scrollbar-thumb-dark);
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 .btn {
 	border-radius: 999px;
 
@@ -35,7 +48,7 @@
 		border: 4px solid $purple;
 	}
 	&.of-origin {
-		border: 4px solid $blue;
+		border: 4px solid $orange;
 	}
 
 	h5 {
