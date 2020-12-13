@@ -1,0 +1,15 @@
+# Connected Textures
+id: "connectedTexturesSection"
+display: "Connected Textures"
+
+modules:
+  - id: "ConnectedGoldAndDiamondBlocks"
+    name: "Connected Gold and Diamond Blocks"
+    image: "/images/modules/connectedTextures/ConnectedGoldAndDiamondBlocks.png"
+    description: "Connects the textures of gold and diamond blocks placed next to each other. Requires Optifine!"
+    origin: "vanillaextract"
+    - id: "ConnectedSpawners"
+    name: "Connected Spawners"
+    image: "/images/modules/connectedTextures/ConnectedSpawners.png"
+    description: "Connects the textures of spawners placed next to each other. Requires Optifine!"
+    origin: "vanillaextract"
