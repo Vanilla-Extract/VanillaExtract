@@ -48,5 +48,5 @@ modules:
     - id: "ReverseGlisteringMelon"
       name: "Reverse Glistering Melon"
       image: "/images/modules/fixes/ReverseGlisteringMelon.png"
-      description: "Reverses the texture of the glistering melon slice to make it consistent with the melon slice."
+      description: "Reverses the texture of the glistering melon slice to make it consistent with the melon slice texture."
       origin: "vanillaextract"
