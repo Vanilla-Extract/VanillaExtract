@@ -9,6 +9,7 @@ const modulesData: Record<string, any> = {
 	// Aesthetic
 	BetterPowdersAndDusts: '/aesthetic/BetterPowdersAndDusts.json',
 	ChiseledFaces: '/aesthetic/ChiseledFaces.json',
+	CreamierMilk: '/aesthetic/CreamierMilk.json',
 	RealisticCoal: '/aesthetic/RealisticCoal.json',
 	UniqueSeaPickleItem: '/aesthetic/UniqueSeaPickleItem.json',
 	// Animation
