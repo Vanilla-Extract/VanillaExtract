@@ -23,7 +23,7 @@
                                     {{ end }}'
 
                                 {{ if (and (isset . "description") (isset . "author")) }}
-                                    data-toggle="popover" title="{{ .name }}" data-content="{{ .description }} <br /> <strong>By {{ .author }}</strong>"
+                                    data-toggle="popover" title="{{ .name }}" data-content="{{ .description }} <hr /> <strong>By {{ .author }}</strong>"
                                 {{ else if isset . "description" }}
                                     data-toggle="popover" title="{{ .name }}" data-content="{{ .description }}"
                                 {{ else if isset . "author" }}
