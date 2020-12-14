@@ -6,6 +6,8 @@ import * as fs from 'fs';
 const modulesData: Record<string, any> = {
 	//  ModuleID               : './path/to/moduleid.json',
 
+	// Aesthetic
+	UniqueSeaPickleItem: '/aesthetic/UniqueSeaPickleItem.json',
 	// Animation
 	AnimatedSelectorArrows: '/animation/AnimatedSelectorArrows.json',
 	FurnaceAnimations: '/animation/FurnaceAnimations.json',
