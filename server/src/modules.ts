@@ -18,6 +18,7 @@ const modulesData: Record<string, any> = {
 	BoneColoredBonemeal: '/fixes/BoneColoredBonemeal.json',
     	ConsistentDoorItems: '/fixes/ConsistentDoorItems.json',
 	CrimsonNyliumTopFix: '/fixes/CrimsonNyliumTopFix.json',
+	HeartParticleFix: '/fixes/HeartParticleFix.json',
 	OffCenterFix: '/fixes/OffCenterFix.json',
 	RedstoneDustFix: '/fixes/RedstoneDustFix.json',
 	ReverseGlisteringMelon: '/fixes/ReverseGlisteringMelon.json',

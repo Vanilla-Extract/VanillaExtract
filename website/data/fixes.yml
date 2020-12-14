@@ -55,3 +55,8 @@ modules:
     image: "/images/modules/fixes/RedstoneDustFix.png"
     description: "Adds a missing pixel in redstone wires to connect them."
     origin: "vanillaextract"
+  - id: "HeartParticleFix"
+    name: "Heart Particle Fix"
+    image: "/images/modules/fixes/HeartParticleFix.png"
+    description: "Makes an odd number of heart particles appear, instead of an even numuber."
+    origin: "vanillaextract"
