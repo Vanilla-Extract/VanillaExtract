@@ -87,7 +87,7 @@ modules:
     author: "StormDragon77"
   - id: "CleanerShulkers"
     name: "Cleaner Shulkers"
-    image: "/images/modules/aesthetic/PurpleEnder.png"
+    image: "/images/modules/aesthetic/CleanerShulkers.png"
     description: "Removes the scraggly line from around shulkers."
     origin: "vanillaextract"
     author: "7eventy7"
