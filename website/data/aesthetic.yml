@@ -21,6 +21,8 @@ modules:
     description: "Changes the texture of coal to make it more realistic."
     origin: "vanillaextract"
     author: "BrotherEarth967"
+    conflicting:
+      - UniqueProcessedOres
   - id: "BetterPowdersAndDusts"
     name: "Better Powders and Dusts"
     image: "/images/modules/aesthetic/BetterPowdersAndDusts.png"
@@ -128,3 +130,4 @@ modules:
     author: "BrotherEarth967"
     conflicting:
       - BetterPowdersAndDusts
+      - RealisticCoal
