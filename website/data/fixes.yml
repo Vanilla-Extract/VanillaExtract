@@ -40,6 +40,11 @@ modules:
       - 1-13
       - 1-14
       - 1-15
+  - id: "ConsistentDoorItems"
+    name: "Consistent Door Items"
+    image: "/images/modules/fixes/ConsistentDoorItems.png"
+    description: "Makes door item textures consistent with each other."
+    origin: "vanillaextract"
   - id: "ReverseGlisteringMelon"
     name: "Reverse Glistering Melon"
     image: "/images/modules/fixes/ReverseGlisteringMelon.png"
