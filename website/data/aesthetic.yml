@@ -39,3 +39,43 @@ modules:
     description: "Makes milk look creamier."
     origin: "vanillaextract"
     author: "Chubins"
+  - id: "RockierStoneTools"
+    name: "Rockier Stone Tools"
+    image: "/images/modules/aesthetic/RockierStoneTools.png"
+    description: "Makes stone tools look more rocky."
+    origin: "vanillaextract"
+    author: "Chubins"
+  - id: "WholePumpkinPie"
+    name: "Whole Pumpkin Pie"
+    image: "/images/modules/aesthetic/WholePumpkinPie.png"
+    description: "Adds back the missing slice from pumpkin pie."
+    origin: "vanillaextract"
+    author: "Chubins"
+  - id: "ChineseLanterns"
+    name: "Chinese Lanterns"
+    image: "/images/modules/aesthetic/ChineseLanterns.png"
+    description: "Textures lanterns in the style of Chinese lanterns."
+    origin: "vanillaextract"
+    author: "astroidbuster"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+  - id: "NetheriteLodestone"
+    name: "Netherite Lodestone"
+    image: "/images/modules/aesthetic/NetheriteLodestone.png"
+    description: "Makes lodestones use the netherite color pallete."
+    origin: "vanillaextract"
+    author: "iloveflareon"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
+      - 1-14
+      - 1-15

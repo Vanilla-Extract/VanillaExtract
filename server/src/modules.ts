@@ -8,10 +8,14 @@ const modulesData: Record<string, any> = {
 
 	// Aesthetic
 	BetterPowdersAndDusts: '/aesthetic/BetterPowdersAndDusts.json',
+	ChineseLanterns: '/aesthetic/ChineseLanterns.json',
 	ChiseledFaces: '/aesthetic/ChiseledFaces.json',
 	CreamierMilk: '/aesthetic/CreamierMilk.json',
+	NetheriteLodestone: '/aesthetic/NetheriteLodestone.json',
 	RealisticCoal: '/aesthetic/RealisticCoal.json',
+	RockierStoneTools: '/aesthetic/RockierStoneTools.json',
 	UniqueSeaPickleItem: '/aesthetic/UniqueSeaPickleItem.json',
+	WholePumpkinPie: '/aesthetic/WholePumpkinPie.json',
 	// Animation
 	AnimatedSelectorArrows: '/animation/AnimatedSelectorArrows.json',
 	FurnaceAnimations: '/animation/FurnaceAnimations.json',
