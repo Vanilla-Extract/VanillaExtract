@@ -32,6 +32,7 @@ const modulesData: Record<string, any> = {
 	// Utility
 	BackTools: '/utility/BackTools.json',
 	BowChargeIndicator: '/utility/BowChargeIndicator.json',
+	Eggmoticons: '/utility/Eggmoticons.json',
 	NoEnchantmentGlint: '/utility/NoEnchantmentGlint.json',
 	OutlinedWool: '/utility/OutlinedWool.json',
 	ShortSwords: '/utility/ShortSwords.json',
