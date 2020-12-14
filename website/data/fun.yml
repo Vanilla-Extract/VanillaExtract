@@ -8,6 +8,7 @@ modules:
     image: "/images/modules/fun/StickTrident.png"
     description: "Changes the trident texture to match the texture of a stick."
     origin: "vanillaextract"
+    author: "DTRW191"
     notcompatible:
       - 1-8
       - 1-9
@@ -19,6 +20,7 @@ modules:
     image: "/images/modules/fun/CrimsonToTyrian.png"
     description: "Renames all crimson elements to tyrian, the closest shade of red to crimson."
     origin: "vanillaextract"
+    author: "Blackbone"
     notcompatible:
       - 1-8
       - 1-9
@@ -33,3 +35,4 @@ modules:
     image: "/images/modules/fixes/BonemealColoredBones.png"
     description: "Makes bones use the bonemeal color palette."
     origin: "vanillaextract"
+    author: "Blackbone"

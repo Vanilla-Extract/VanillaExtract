@@ -14,6 +14,7 @@ modules:
     image: "/images/modules/animation/FurnaceAnimations.png"
     description: "Adds animation to the top and all sides of the furnace, blast furnace and smoker workstations."
     origin: "vanillaextract"
+    author: "7eventy7"
     notcompatible:
       - 1-8
       - 1-9

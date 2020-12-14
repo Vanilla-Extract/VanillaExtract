@@ -145,5 +145,6 @@ conflictingModules:
         image: "/images/modules/elytra/VeteranElytra.png"
         description: "Makes Elytra look like the Veteran Cape"
         origin: "vanillaextract"
+        author: "Blackbone"
         notcompatible:
           - 1-8
