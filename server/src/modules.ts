@@ -39,7 +39,6 @@ const modulesData: Record<string, any> = {
 	SlicedSwords: '/utility/SlicedSwords.json',
 	OutlinedArmour: '/utility/OutlinedArmour.json',
 	PotionIcons: '/utility/PotionIcons.json',
-	Eggmoticons: '/utility/Eggmoticons.json',
 	VisualExclusiveEnchantments: '/utility/VisualExclusiveEnchantments.json'
 };
 
