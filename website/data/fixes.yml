@@ -74,3 +74,8 @@ modules:
     image: "/images/modules/fixes/ConsistentBlazeItems.png"
     description: "Changes the textures of blaze items to make them consistent with the texture of the blaze."
     origin: "vanillaextract"
+  - id: "ConsistentZombie"
+    name: "Consistent Zombie"
+    image: "/images/modules/fixes/ConsistentZombie.png"
+    description: "Makes the texture of the zombie consistent with the textures of husks and drowned."
+    origin: "vanillaextract"
