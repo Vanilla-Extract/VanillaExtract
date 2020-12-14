@@ -18,6 +18,7 @@ const modulesData: Record<string, any> = {
     	ConsistentDoorItems: '/fixes/ConsistentDoorItems.json',
 	CrimsonNyliumTopFix: '/fixes/CrimsonNyliumTopFix.json',
 	OffCenterFix: '/fixes/OffCenterFix.json',
+	RedstoneDustFix: '/fixes/RedstoneDustFix.json',
 	ReverseGlisteringMelon: '/fixes/ReverseGlisteringMelon.json',
 	// Fun
 	CrimsonToTyrian: '/fun/CrimsonToTyrian.json',

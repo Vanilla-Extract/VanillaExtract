@@ -50,3 +50,8 @@ modules:
     image: "/images/modules/fixes/ReverseGlisteringMelon.png"
     description: "Reverses the texture of the glistering melon slice to make it consistent with the melon slice texture."
     origin: "vanillaextract"
+  - id: "RedstoneDustFix"
+    name: "Redstone Dust Fix"
+    image: "/images/modules/fixes/RedstoneDustFix.png"
+    description: "Adds a missing pixel in redstone wires to connect them."
+    origin: "vanillaextract"
