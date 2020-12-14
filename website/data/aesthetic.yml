@@ -4,7 +4,7 @@ display: "Aesthetic"
 
 modules:
   - id: "UniqueSeaPickleItem"
-    name: "Unique Sea Pickle"
+    name: "Unique Sea Pickle Item"
     image: "/images/modules/aesthetic/UniqueSeaPickleItem.png"
     description: "Changes the texture of the sea pickle item to be unique from its block form."
     origin: "vanillaextract"
