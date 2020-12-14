@@ -13,3 +13,8 @@ modules:
     image: "/images/modules/connectedTextures/ConnectedSpawners.png"
     description: "Connects the textures of spawners placed next to each other. (Requires OptiFine)"
     origin: "optifine"
+  - id: "ConnectedLogs"
+    name: "Connected Logs"
+    image: "/images/modules/connectedTextures/ConnectedLogs.png"
+    description: "Connects the textures of logs placed next to each other. (Requires OptiFine)"
+    origin: "optifine"

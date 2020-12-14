@@ -9,7 +9,8 @@ const modulesData: Record<string, any> = {
 	// Animation
 	AnimatedSelectorArrows: '/animation/AnimatedSelectorArrows.json',
 	// Connected Texures
-	ConnectedGoldAndDiamondBlocks: '/connectedTextures/ConnectedGoldAndDiamondBlocks.json',
+    ConnectedGoldAndDiamondBlocks: '/connectedTextures/ConnectedGoldAndDiamondBlocks.json',
+    ConnectedLogs: '/connectedTextures/ConnectedLogs.json'
 	ConnectedSpawners: '/connectedTextures/ConnectedSpawners.json',
 	// Fixes
 	BoatOarFix: '/fixes/BoatOarFix.json',
