@@ -25,6 +25,12 @@
                                 {{ if isset . "description" }}
                                     data-toggle="popover" title="{{ .name }}" data-content="{{ .description }}"
                                 {{ end }}
+                                {{ if isset . "author" }}
+                                    data-toggle="popover" title="{{ .name }}" data-content="By {{ .author }}"
+                                {{ end }}
+                                {{ if (and (isset . "description") (isset . "author")) }}
+                                    data-toggle="popover" title="{{ .name }}" data-content="{{ .description }} By {{ .author }}"
+                                {{ end }}
 
                                 {{ if isset . "preview" }}
                                     data-preview="{{ .preview }}"
@@ -61,6 +67,12 @@
 
                                     {{ if isset . "description" }}
                                         data-toggle="popover" title="{{ .name }}" data-content="{{ .description }}"
+                                    {{ end }}
+                                    {{ if isset . "author" }}
+                                        data-toggle="popover" title="{{ .name }}" data-content="By {{ .author }}"
+                                    {{ end }}
+                                    {{ if (and (isset . "description") (isset . "author")) }}
+                                        data-toggle="popover" title="{{ .name }}" data-content="{{ .description }} By {{ .author }}"
                                     {{ end }}
 
                                     {{ if isset . "preview" }}

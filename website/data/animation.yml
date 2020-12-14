@@ -8,6 +8,7 @@ modules:
     image: "/images/modules/animation/AnimatedSelectorArrows.png"
     description: "Animates the selector arrows for the Server/World/Resource Pack Menus. (Requires OptiFine)"
     origin: "optifine"
+    author: "RikuLaxion"
   - id: "FurnaceAnimations"
     name: "Furnace Animations"
     image: "/images/modules/animation/FurnaceAnimations.png"
