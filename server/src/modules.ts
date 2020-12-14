@@ -13,9 +13,13 @@ const modulesData: Record<string, any> = {
 	CleanerShulkers: '/aesthetic/CleanerShulkers.json',
 	CreamierMilk: '/aesthetic/CreamierMilk.json',
 	NetheriteLodestone: '/aesthetic/NetheriteLodestone.json',
+	PaintBuckets: '/aesthetic/PaintBuckets.json',
 	PurpleEnder: '/aesthetic/PurpleEnder.json',
 	RealisticCoal: '/aesthetic/RealisticCoal.json',
 	RockierStoneTools: '/aesthetic/RockierStoneTools.json',
+	SeaPickleCandles: '/aesthetic/SeaPickleCandles.json',
+	TextlessTNT: '/aesthetic/TextlessTNT.json',
+	UniqueProcessedOres: '/aesthetic/UniqueProcessedOres.json',
 	UniqueSeaPickleItem: '/aesthetic/UniqueSeaPickleItem.json',
 	WholePumpkinPie: '/aesthetic/WholePumpkinPie.json',
 	// Animation

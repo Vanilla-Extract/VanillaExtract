@@ -91,3 +91,33 @@ modules:
     description: "Removes the scraggly line from around shulkers."
     origin: "vanillaextract"
     author: "7eventy7"
+  - id: "PaintBuckets"
+    name: "Paint Buckets"
+    image: "/images/modules/aesthetic/PaintBuckets.png"
+    description: "Changes dyes into paint buckets."
+    origin: "vanillaextract"
+    author: "iloveflareon"
+  - id: "SeaPickleCandles"
+    name: "Sea Pickle Candles"
+    image: "/images/modules/aesthetic/SeaPickleCandles.png"
+    description: "Retextures sea pickles that are not in water to candles. (Candles glow with OptiFine)"
+    origin: "vanillaextract"
+    author: "astroidbuster"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+  - id: "TextlessTNT"
+    name: "Textless TNT"
+    image: "/images/modules/aesthetic/TextlessTNT.png"
+    description: "Removes the text from the side of TNT"
+    origin: "vanillaextract"
+    author: "Tamu"
+  - id: "UniqueProcessedOres"
+    name: "Unique Processed Ores"
+    image: "/images/modules/aesthetic/UniqueProcessedOres.png"
+    description: "Makes the processed form of each ores unique"
+    origin: "vanillaextract"
+    author: "BrotherEarth967"
