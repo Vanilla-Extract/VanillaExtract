@@ -21,7 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	// Description popovers
 	$('[data-toggle="popover"]').popover({
 		placement: 'top',
-		trigger: 'manual'
+		trigger: 'manual',
+		html: true,
 	});
 	// Boostrap 5
 	// document.querySelectorAll('[data-toggle="popover"]').forEach((e) => {
