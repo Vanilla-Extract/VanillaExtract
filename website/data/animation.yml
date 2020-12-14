@@ -8,3 +8,15 @@ modules:
     image: "/images/modules/animation/AnimatedSelectorArrows.png"
     description: "Animates the selector arrows for the Server/World/Resource Pack Menus. (Requires OptiFine)"
     origin: "optifine"
+  - id: "FurnaceAnimations"
+    name: "Furnace Animations"
+    image: "/images/modules/animation/FurnaceAnimations.png"
+    description: "Adds animation to the top and all sides of the furnace, blast furnace and smoker workstations."
+    origin: "vanillaextract"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+      - 1-13
