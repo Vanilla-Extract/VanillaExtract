@@ -26,3 +26,9 @@ modules:
     author: "Chromus"
     conflicting:
       - ShortSwords
+  - id: "LowerFire"
+    name: "Lower Fire"
+    image: "/images/modules/unobtrusive/LowerFire.png"
+    description: "Lowers the height of fire."
+    origin: "vanillaextract"
+    author: "7eventy7"

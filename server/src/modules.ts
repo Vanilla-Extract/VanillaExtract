@@ -10,6 +10,7 @@ const modulesData: Record<string, any> = {
 	BetterPowdersAndDusts: '/aesthetic/BetterPowdersAndDusts.json',
 	ChineseLanterns: '/aesthetic/ChineseLanterns.json',
 	ChiseledFaces: '/aesthetic/ChiseledFaces.json',
+	CleanerShulkers: '/aesthetic/CleanerShulkers.json',
 	CreamierMilk: '/aesthetic/CreamierMilk.json',
 	NetheriteLodestone: '/aesthetic/NetheriteLodestone.json',
 	PurpleEnder: '/aesthetic/PurpleEnder.json',
@@ -39,9 +40,11 @@ const modulesData: Record<string, any> = {
 	ReverseGlisteringMelon: '/fixes/ReverseGlisteringMelon.json',
 	// Fun
 	CrimsonToTyrian: '/fun/CrimsonToTyrian.json',
+	ReallyShortSwords: '/fun/ReallyShortSwords.json',
 	StickTrident: '/fun/StickTrident.json',
 	BonemealColoredBones: '/fun/BonemealColoredBones.json',
 	// Unobtrusive
+	LowerFire: '/unobtrusive/LowerFire.json',
 	NoEnchantmentGlint: '/unobtrusive/NoEnchantmentGlint.json',
 	ShortSwords: '/unobtrusive/ShortSwords.json',
 	SlicedSwords: '/unobtrusive/SlicedSwords.json',
