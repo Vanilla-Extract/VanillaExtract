@@ -8,7 +8,6 @@ const modulesData: Record<string, any> = {
 
 	// Animation
 	AnimatedSelectorArrows: '/animation/AnimatedSelectorArrows.json',
-	FurnaceAnimations: '/animation/FurnaceAnimations.json',
 	// Connected Texures
 	ConnectedGoldAndDiamondBlocks: '/connectedTextures/ConnectedGoldAndDiamondBlocks.json',
 	ConnectedSpawners: '/connectedTextures/ConnectedSpawners.json',
