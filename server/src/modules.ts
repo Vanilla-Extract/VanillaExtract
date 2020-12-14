@@ -25,6 +25,7 @@ const modulesData: Record<string, any> = {
 	BonemealColoredBones: '/fun/BonemealColoredBones.json',
 	// Utility
 	BowChargeIndicator: '/utility/BowChargeIndicator.json',
+		NoEnchantmentGlint: '/utility/NoEnchantmentGlint.json',
 	OutlinedWool: '/utility/OutlinedWool.json',
 	ShortSwords: '/utility/ShortSwords.json',
 	SlicedSwords: '/utility/SlicedSwords.json',

@@ -48,3 +48,8 @@ modules:
     origin: "vanillaextract"
     conflicting:
       - ShortSwords
+  - id: "NoEnchantmentGlint"
+    name: "No Enchantment Glint"
+    image: "/images/modules/utility/NoEnchantmentGlint.png"
+    description: "Removes the glint from enchanted items."
+    origin: "vanillaextract"
