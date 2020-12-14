@@ -21,8 +21,15 @@ modules:
   - id: "Eggmoticons"
     name: "Eggmoticons"
     image: "/images/modules/utility/Eggmoticons.png"
-    description: "Eggmoticons is a texture pack that adds the face of each mob to its respective egg. (Requires OptiFine)"
-    origin: "optifine"
+    description: "Adds the face of each mob to its respective spawn egg."
+    origin: "vanillaextract"
+    author: "stiw91"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
   - id: "VisualExclusiveEnchantments"
     name: "Visual Exclusive Enchantments"
     image: "/images/modules/utility/VisualExclusiveEnchantments.png"
