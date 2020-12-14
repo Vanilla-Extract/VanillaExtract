@@ -60,3 +60,12 @@ modules:
     image: "/images/modules/fixes/HeartParticleFix.png"
     description: "Makes an odd number of heart particles appear, instead of an even numuber."
     origin: "vanillaextract"
+  - id: "ConsistentMooshroomEyes"
+    name: "Consistent Mooshroom Eyes"
+    image: "/images/modules/fixes/ConsistentMooshroomEyes.png"
+    description: "Makes mooshroom eyes the same as cow eyes."
+    origin: "vanillaextract"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
