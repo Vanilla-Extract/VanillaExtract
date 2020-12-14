@@ -30,6 +30,7 @@ const modulesData: Record<string, any> = {
 	StickTrident: '/fun/StickTrident.json',
 	BonemealColoredBones: '/fun/BonemealColoredBones.json',
 	// Utility
+	BackTools: '/utility/BackTools.json',
 	BowChargeIndicator: '/utility/BowChargeIndicator.json',
 	NoEnchantmentGlint: '/utility/NoEnchantmentGlint.json',
 	OutlinedWool: '/utility/OutlinedWool.json',

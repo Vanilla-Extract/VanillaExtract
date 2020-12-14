@@ -53,3 +53,8 @@ modules:
     image: "/images/modules/utility/NoEnchantmentGlint.png"
     description: "Removes the glint from enchanted items."
     origin: "vanillaextract"
+  - id: "BackTools"
+    name: "Back Tools"
+    image: "/images/modules/utility/BackTools.png"
+    description: "Makes tools in the offhand appear on the player's back."
+    origin: "vanillaextract"
