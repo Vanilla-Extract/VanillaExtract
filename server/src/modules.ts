@@ -29,14 +29,15 @@ const modulesData: Record<string, any> = {
 	CrimsonToTyrian: '/fun/CrimsonToTyrian.json',
 	StickTrident: '/fun/StickTrident.json',
 	BonemealColoredBones: '/fun/BonemealColoredBones.json',
+	// Unobtrusive
+	NoEnchantmentGlint: '/unobtrusive/NoEnchantmentGlint.json',
+	ShortSwords: '/unobtrusive/ShortSwords.json',
+	SlicedSwords: '/unobtrusive/SlicedSwords.json',
 	// Utility
 	BackTools: '/utility/BackTools.json',
 	BowChargeIndicator: '/utility/BowChargeIndicator.json',
 	Eggmoticons: '/utility/Eggmoticons.json',
-	NoEnchantmentGlint: '/utility/NoEnchantmentGlint.json',
 	OutlinedWool: '/utility/OutlinedWool.json',
-	ShortSwords: '/utility/ShortSwords.json',
-	SlicedSwords: '/utility/SlicedSwords.json',
 	OutlinedArmour: '/utility/OutlinedArmour.json',
 	PotionIcons: '/utility/PotionIcons.json',
 	VisualExclusiveEnchantments: '/utility/VisualExclusiveEnchantments.json'

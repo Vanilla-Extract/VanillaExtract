@@ -1,0 +1,28 @@
+# Unobtrusive
+id: "unobtrusiveSection"
+display: "Unobtrusive"
+
+modules:
+  - id: "NoEnchantmentGlint"
+    name: "No Enchantment Glint"
+    image: "/images/modules/unobtrusive/NoEnchantmentGlint.png"
+    description: "Removes the glint from enchanted items."
+    origin: "vanillaextract"
+    author: "BrotherEarth967"
+  # Swords
+  - id: "ShortSwords"
+    name: "Short Swords"
+    image: "/images/modules/unobtrusive/ShortSwords.png"
+    description: "Makes swords shorter."
+    origin: "vanillaextract"
+    author: "Chromus"
+    conflicting:
+      - SlicedSwords
+  - id: "SlicedSwords"
+    name: "Sliced Swords"
+    image: "/images/modules/unobtrusive/SlicedSwords.png"
+    description: "Slices the top of swords off."
+    origin: "vanillaextract"
+    author: "Chromus"
+    conflicting:
+      - ShortSwords
