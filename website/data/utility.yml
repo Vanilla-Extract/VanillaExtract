@@ -8,11 +8,13 @@ modules:
     image: "/images/modules/utility/OutlinedArmour.png"
     description: "Makes armor just an outline so you can see player's skins."
     origin: "vanillaextract"
+    author: "Chromus"
   - id: "OutlinedWool"
     name: "Outlined Wool"
     image: "/images/modules/utility/OutlinedWool.png"
     description: "Gives wool an outline."
     origin: "vanillaextract"
+    author: "Chromus"
   - id: "PotionIcons"
     name: "Potion Icons"
     image: "/images/modules/utility/PotionIcons.png"
@@ -40,12 +42,14 @@ modules:
     image: "/images/modules/utility/BowChargeIndicator.png"
     description: "Each bow and crossbow stage has a color to signify how close it is to shooting."
     origin: "vanillaextract"
+    author: "Chromus"
     # Swords
   - id: "ShortSwords"
     name: "Short Swords"
     image: "/images/modules/utility/ShortSwords.png"
     description: "Makes swords shorter."
     origin: "vanillaextract"
+    author: "Chromus"
     conflicting:
       - SlicedSwords
   - id: "SlicedSwords"
@@ -53,6 +57,7 @@ modules:
     image: "/images/modules/utility/SlicedSwords.png"
     description: "Slices the top of swords off."
     origin: "vanillaextract"
+    author: "Chromus"
     conflicting:
       - ShortSwords
   - id: "NoEnchantmentGlint"
@@ -60,8 +65,10 @@ modules:
     image: "/images/modules/utility/NoEnchantmentGlint.png"
     description: "Removes the glint from enchanted items."
     origin: "vanillaextract"
+    author: "BrotherEarth967"
   - id: "BackTools"
     name: "Back Tools"
     image: "/images/modules/utility/BackTools.png"
     description: "Makes tools in the offhand appear on the player's back."
     origin: "vanillaextract"
+    author: "AbdulPlayz03"
