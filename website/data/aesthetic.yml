@@ -79,3 +79,9 @@ modules:
       - 1-13
       - 1-14
       - 1-15
+  - id: "PurpleEnder"
+    name: "Purple Ender"
+    image: "/images/modules/aesthetic/PurpleEnder.png"
+    description: "Makes all Ender elements look more purple to match the colors of The End."
+    origin: "vanillaextract"
+    author: "StormDragon77"

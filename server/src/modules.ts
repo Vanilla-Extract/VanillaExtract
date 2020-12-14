@@ -12,6 +12,7 @@ const modulesData: Record<string, any> = {
 	ChiseledFaces: '/aesthetic/ChiseledFaces.json',
 	CreamierMilk: '/aesthetic/CreamierMilk.json',
 	NetheriteLodestone: '/aesthetic/NetheriteLodestone.json',
+	PurpleEnder: '/aesthetic/PurpleEnder.json',
 	RealisticCoal: '/aesthetic/RealisticCoal.json',
 	RockierStoneTools: '/aesthetic/RockierStoneTools.json',
 	UniqueSeaPickleItem: '/aesthetic/UniqueSeaPickleItem.json',
@@ -22,6 +23,7 @@ const modulesData: Record<string, any> = {
 	// Connected Texures
 	ConnectedGoldAndDiamondBlocks: '/connectedTextures/ConnectedGoldAndDiamondBlocks.json',
 	ConnectedLogs: '/connectedTextures/ConnectedLogs.json',
+	ConnectedSeaLanterns: '/connectedTextures/ConnectedSeaLanterns.json',
 	ConnectedSpawners: '/connectedTextures/ConnectedSpawners.json',
 	// Fixes
 	BoatOarFix: '/fixes/BoatOarFix.json',
