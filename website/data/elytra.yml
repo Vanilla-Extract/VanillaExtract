@@ -140,3 +140,10 @@ conflictingModules:
         origin: "vanillaextract"
         notcompatible:
           - 1-8
+      - id: "VeteranElytra"
+        name: "Veteran Elytra"
+        image: "/images/modules/elytra/VeteranElytra.png"
+        description: "Makes Elytra look like the Veteran Cape"
+        origin: "vanillaextract"
+        notcompatible:
+          - 1-8
