@@ -16,8 +16,8 @@ const modulesData: Record<string, any> = {
 	AnimatedSelectorArrows: '/animation/AnimatedSelectorArrows.json',
 	FurnaceAnimations: '/animation/FurnaceAnimations.json',
 	// Connected Texures
-   	ConnectedGoldAndDiamondBlocks: '/connectedTextures/ConnectedGoldAndDiamondBlocks.json',
-    	ConnectedLogs: '/connectedTextures/ConnectedLogs.json',
+	ConnectedGoldAndDiamondBlocks: '/connectedTextures/ConnectedGoldAndDiamondBlocks.json',
+	ConnectedLogs: '/connectedTextures/ConnectedLogs.json',
 	ConnectedSpawners: '/connectedTextures/ConnectedSpawners.json',
 	// Fixes
 	BoatOarFix: '/fixes/BoatOarFix.json',
