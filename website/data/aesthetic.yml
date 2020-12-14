@@ -27,6 +27,9 @@ modules:
     description: "Updates the textures for powders and dusts."
     origin: "vanillaextract"
     author: "Macarena"
+    conflicting:
+      - PaintBuckets
+      - UniqueProcessedOres
   - id: "ChiseledFaces"
     name: "Chiseled Faces"
     image: "/images/modules/aesthetic/ChiseledFaces.png"
@@ -97,6 +100,8 @@ modules:
     description: "Changes dyes into paint buckets."
     origin: "vanillaextract"
     author: "iloveflareon"
+    conflicting:
+      - BetterPowdersAndDusts
   - id: "SeaPickleCandles"
     name: "Sea Pickle Candles"
     image: "/images/modules/aesthetic/SeaPickleCandles.png"
@@ -121,3 +126,5 @@ modules:
     description: "Makes the processed form of each ores unique"
     origin: "vanillaextract"
     author: "BrotherEarth967"
+    conflicting:
+      - BetterPowdersAndDusts

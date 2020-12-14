@@ -18,6 +18,7 @@ modules:
     author: "Chromus"
     conflicting:
       - SlicedSwords
+      - ReallyShortSwords
   - id: "SlicedSwords"
     name: "Sliced Swords"
     image: "/images/modules/unobtrusive/SlicedSwords.png"
@@ -26,6 +27,7 @@ modules:
     author: "Chromus"
     conflicting:
       - ShortSwords
+      - ReallyShortSwords
   - id: "LowerFire"
     name: "Lower Fire"
     image: "/images/modules/unobtrusive/LowerFire.png"

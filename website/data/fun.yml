@@ -42,3 +42,6 @@ modules:
     description: "Makes shorts VERY small."
     origin: "vanillaextract"
     author: "DTRW191"
+    conflicting:
+      - ShortSwords
+      - SlicedSwords
