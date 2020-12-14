@@ -7,6 +7,7 @@ const modulesData: Record<string, any> = {
 	//  ModuleID               : './path/to/moduleid.json',
 
 	// Aesthetic
+	RealisticCoal: '/aesthetic/RealisticCoal.json',
 	UniqueSeaPickleItem: '/aesthetic/UniqueSeaPickleItem.json',
 	// Animation
 	AnimatedSelectorArrows: '/animation/AnimatedSelectorArrows.json',

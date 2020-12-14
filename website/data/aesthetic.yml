@@ -15,3 +15,9 @@ modules:
       - 1-10
       - 1-11
       - 1-12
+  - id: "RealisticCoal"
+    name: "RealisticCoal"
+    image: "/images/modules/aesthetic/RealisticCoal.png"
+    description: "Changes the texture of coal to make it more realistic."
+    origin: "vanillaextract"
+    author: "BrotherEarth967"
