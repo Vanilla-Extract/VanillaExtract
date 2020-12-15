@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "block/pumpkin_bottom",
+        "top": "block/pumpkin_top",
+        "side": "block/pumpkin_side"
+    }
+}
