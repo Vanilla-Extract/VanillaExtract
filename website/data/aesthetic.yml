@@ -208,18 +208,24 @@ modules:
     description: "Retextures melon and pumpkin items to be unique from their block forms."
     origin: "vanillaextract"
     author: "Macarena"
+    conflicting:
+      - VisuallyStackedItems
   - id: "BetterEggColor"
     name: "Better Egg Color"
     image: "/images/modules/aesthetic/BetterEggColor.png"
     description: "Gives eggs a darker, more realistic color."
     origin: "vanillaextract"
     author: "StormDragon77"
+    conflicting:
+      - VisuallyStackedItems
   - id: "SeamlessGlass"
     name: "Seamless Glass"
     image: "/images/modules/aesthetic/SeamlessGlass.png"
     description: "Removes the seam from glass."
     origin: "vanillaextract"
     author: "Technodono"
+    conflicting:
+      - VisuallyStackedItems
   - id: "LapisEnchantingTable"
     name: "Lapis Enchanting Table"
     image: "/images/modules/aesthetic/LapisEnchantingTable.png"

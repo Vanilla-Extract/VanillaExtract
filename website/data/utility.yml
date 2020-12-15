@@ -73,3 +73,6 @@ modules:
       - BonemealColoredBones
       - ItemlessItemFrame
       - DyeBowls
+      - UniqueMelonPumpkinItems
+      - BetterEggColor
+      - SeamlessGlass
