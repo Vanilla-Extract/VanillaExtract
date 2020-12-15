@@ -55,7 +55,6 @@ const modulesData: Record<string, any> = {
 	NoEnchantmentGlint: '/unobtrusive/NoEnchantmentGlint.json',
 	ShortSwords: '/unobtrusive/ShortSwords.json',
 	SlicedSwords: '/unobtrusive/SlicedSwords.json',
-	UnobstructiveArmor: '/unobtrusive/UnobstructiveArmor.json',
 	// Utility
 	BackTools: '/utility/BackTools.json',
 	BowChargeIndicator: '/utility/BowChargeIndicator.json',
