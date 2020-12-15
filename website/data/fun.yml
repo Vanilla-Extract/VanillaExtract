@@ -36,6 +36,8 @@ modules:
     description: "Makes bones use the bonemeal color palette."
     origin: "vanillaextract"
     author: "Blackbone"
+    conflicting:
+      - VisuallyStackedItems
   - id: "ReallyShortSwords"
     name: "Really Short Swords"
     image: "/images/modules/fun/ReallyShortSwords.png"

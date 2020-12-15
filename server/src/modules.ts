@@ -63,7 +63,8 @@ const modulesData: Record<string, any> = {
 	OutlinedWool: '/utility/OutlinedWool.json',
 	OutlinedArmour: '/utility/OutlinedArmour.json',
 	PotionIcons: '/utility/PotionIcons.json',
-	VisualExclusiveEnchantments: '/utility/VisualExclusiveEnchantments.json'
+	VisualExclusiveEnchantments: '/utility/VisualExclusiveEnchantments.json',
+	VisuallyStackedItems: '/utility/VisuallyStackedItems.json'
 };
 
 // Figure out which modules to add

@@ -23,6 +23,8 @@ modules:
     description: "Makes bonemeal use the bone color palette."
     origin: "vanillaextract"
     author: "Chromus"
+    conflicting:
+      - VisuallyStackedItems
   - id: "BoatOarFix"
     name: "Boat Oar Fix"
     image: "/images/modules/fixes/BoatOarFix.png"
@@ -50,12 +52,16 @@ modules:
     description: "Makes door item textures consistent with each other."
     origin: "vanillaextract"
     author: "StormDragon77"
+    conflicting:
+      - VisuallyStackedItems
   - id: "ReverseGlisteringMelon"
     name: "Reverse Glistering Melon"
     image: "/images/modules/fixes/ReverseGlisteringMelon.png"
     description: "Reverses the texture of the glistering melon slice to make it consistent with the melon slice texture."
     origin: "vanillaextract"
     author: "Chubins"
+    conflicting:
+      - VisuallyStackedItems
   - id: "RedstoneDustFix"
     name: "Redstone Dust Fix"
     image: "/images/modules/fixes/RedstoneDustFix.png"
@@ -84,6 +90,8 @@ modules:
     description: "Changes the textures of blaze items to make them consistent with the texture of the blaze."
     origin: "vanillaextract"
     author: "StormDragon77"
+    conflicting:
+      - VisuallyStackedItems
   - id: "ConsistentZombie"
     name: "Consistent Zombie"
     image: "/images/modules/fixes/ConsistentZombie.png"

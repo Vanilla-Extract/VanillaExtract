@@ -9,6 +9,8 @@ modules:
     description: "Changes the texture of the sea pickle item to be unique from its block form."
     origin: "vanillaextract"
     author: "BrotherEarth967"
+    conflicting:
+      - VisuallyStackedItems
     notcompatible:
       - 1-8
       - 1-9
@@ -23,6 +25,7 @@ modules:
     author: "BrotherEarth967"
     conflicting:
       - UniqueProcessedOres
+      - VisuallyStackedItems
   - id: "BetterPowdersAndDusts"
     name: "Better Powders and Dusts"
     image: "/images/modules/aesthetic/BetterPowdersAndDusts.png"
@@ -32,6 +35,7 @@ modules:
     conflicting:
       - PaintBuckets
       - UniqueProcessedOres
+      - VisuallyStackedItems
   - id: "ChiseledFaces"
     name: "Chiseled Faces"
     image: "/images/modules/aesthetic/ChiseledFaces.png"
@@ -56,12 +60,16 @@ modules:
     description: "Adds back the missing slice from pumpkin pie."
     origin: "vanillaextract"
     author: "Chubins"
+    conflicting:
+      - VisuallyStackedItems
   - id: "ChineseLanterns"
     name: "Chinese Lanterns"
     image: "/images/modules/aesthetic/ChineseLanterns.png"
     description: "Textures lanterns in the style of Chinese lanterns."
     origin: "vanillaextract"
     author: "astroidbuster"
+    conflicting:
+      - VisuallyStackedItems
     notcompatible:
       - 1-8
       - 1-9
@@ -90,6 +98,8 @@ modules:
     description: "Makes all Ender elements look more purple to match the colors of The End."
     origin: "vanillaextract"
     author: "StormDragon77"
+    conflicting:
+      - VisuallyStackedItems
   - id: "CleanerShulkers"
     name: "Cleaner Shulkers"
     image: "/images/modules/aesthetic/CleanerShulkers.png"
@@ -104,6 +114,7 @@ modules:
     author: "iloveflareon"
     conflicting:
       - BetterPowdersAndDusts
+      - VisuallyStackedItems
   - id: "SeaPickleCandles"
     name: "Sea Pickle Candles"
     image: "/images/modules/aesthetic/SeaPickleCandles.png"
@@ -131,6 +142,7 @@ modules:
     conflicting:
       - BetterPowdersAndDusts
       - RealisticCoal
+      - VisuallyStackedItems
   - id: "BlackBlackstone"
     name: "Black Blackstone"
     image: "/images/modules/aesthetic/BlackBlackstone.png"

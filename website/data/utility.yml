@@ -51,3 +51,23 @@ modules:
     description: "Makes tools in the offhand appear on the player's back."
     origin: "vanillaextract"
     author: "AbdulPlayz03"
+  - id: "VisuallyStackedItems"
+    name: "Visually Stacked Items"
+    image: "/images/modules/utility/VisuallyStackedItems.png"
+    description: "Makes stacked item textures appear stacked. (Requires OptiFine)"
+    origin: "optifine"
+    author: "RikuLaxion"
+    conflicting:
+      - BetterPowdersAndDusts
+      - RealisticCoal
+      - UniqueProcessedOres
+      - PaintBuckets
+      - PurpleEnder
+      - ChineseLanterns
+      - WholePumpkinPie
+      - UniqueSeaPickleItem
+      - ConsistentDoorItems
+      - ReverseGlisteringMelon
+      - BoneColoredBonemeal
+      - ConsistentBlazeItems
+      - BonemealColoredBones

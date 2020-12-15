@@ -220,6 +220,9 @@ Credits for Individual Packs:
 
     Clear Vanilla: https://www.planetminecraft.com/texture-pack/clear-vanilla-resource-pack/                                 🎨TalMelamed 
     Side Furnace Texture (still) -Top Furnace Texture (still)
+
+- Visually Stacked Items:
+    Vaderman24
 `
 
 // Have express app listen on the set port
