@@ -71,3 +71,5 @@ modules:
       - BoneColoredBonemeal
       - ConsistentBlazeItems
       - BonemealColoredBones
+      - ItemlessItemFrame
+      - DyeBowls

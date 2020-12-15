@@ -36,6 +36,7 @@ modules:
       - PaintBuckets
       - UniqueProcessedOres
       - VisuallyStackedItems
+      - DyeBowls
   - id: "ChiseledFaces"
     name: "Chiseled Faces"
     image: "/images/modules/aesthetic/ChiseledFaces.png"
@@ -115,6 +116,7 @@ modules:
     conflicting:
       - BetterPowdersAndDusts
       - VisuallyStackedItems
+      - DyeBowls
   - id: "SeaPickleCandles"
     name: "Sea Pickle Candles"
     image: "/images/modules/aesthetic/SeaPickleCandles.png"
@@ -170,3 +172,27 @@ modules:
     description: "Improves the textures and models of pressure plates."
     origin: "vanillaextract"
     author: "BrotherEarth967"
+  - id: "ItemlessItemFrame"
+    name: "Itemless Item Frame"
+    image: "/images/modules/aesthetic/ItemlessItemFrame.png"
+    description: "Removes the sword item from inside the empty item frame."
+    origin: "vanillaextract"
+    author: "Chubins"
+    conflicting:
+      - VisuallyStackedItems
+  - id: "SmootherBedrock"
+    name: "Smoother Bedrock"
+    image: "/images/modules/aesthetic/SmootherBedrock.png"
+    description: "Makes bedrock smoother and more visually pleasing."
+    origin: "vanillaextract"
+    author: "Chubins"
+  - id: "DyeBowls"
+    name: "Dye Bowls"
+    image: "/images/modules/aesthetic/DyeBowls.png"
+    description: "Changes dyes into bowls with dye."
+    origin: "vanillaextract"
+    author: "Blackbone"
+    conflicting:
+      - BetterPowdersAndDusts
+      - VisuallyStackedItems
+      - PaintBuckets
