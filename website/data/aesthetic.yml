@@ -146,3 +146,15 @@ modules:
       - 1-13
       - 1-14
       - 1-15
+  - id: "RoundLogs"
+    name: "Round Logs"
+    image: "/images/modules/aesthetic/RoundLogs.png"
+    description: "Makes the inside of logs round."
+    origin: "vanillaextract"
+    author: "Chromus"
+  - id: "BetterPressurePlates"
+    name: "Better Pressure Plates"
+    image: "/images/modules/aesthetic/BetterPressurePlates.png"
+    description: "Improves the textures and models of pressure plates."
+    origin: "vanillaextract"
+    author: "BrotherEarth967"

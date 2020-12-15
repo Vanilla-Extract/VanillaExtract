@@ -8,6 +8,7 @@ const modulesData: Record<string, any> = {
 
 	// Aesthetic
 	BetterPowdersAndDusts: '/aesthetic/BetterPowdersAndDusts.json',
+	BetterPressurePlates: '/aesthetic/BetterPressurePlates.json',
 	BlackBlackstone: '/aesthetic/BlackBlackstone.json',
 	ChineseLanterns: '/aesthetic/ChineseLanterns.json',
 	ChiseledFaces: '/aesthetic/ChiseledFaces.json',
@@ -18,6 +19,7 @@ const modulesData: Record<string, any> = {
 	PurpleEnder: '/aesthetic/PurpleEnder.json',
 	RealisticCoal: '/aesthetic/RealisticCoal.json',
 	RockierStoneTools: '/aesthetic/RockierStoneTools.json',
+	RoundLogs: '/aesthetic/RoundLogs.json',
 	SeaPickleCandles: '/aesthetic/SeaPickleCandles.json',
 	TextlessTNT: '/aesthetic/TextlessTNT.json',
 	UniqueProcessedOres: '/aesthetic/UniqueProcessedOres.json',
@@ -53,6 +55,7 @@ const modulesData: Record<string, any> = {
 	NoEnchantmentGlint: '/unobtrusive/NoEnchantmentGlint.json',
 	ShortSwords: '/unobtrusive/ShortSwords.json',
 	SlicedSwords: '/unobtrusive/SlicedSwords.json',
+	UnobstructiveArmor: '/unobtrusive/UnobstructiveArmor.json',
 	// Utility
 	BackTools: '/utility/BackTools.json',
 	BowChargeIndicator: '/utility/BowChargeIndicator.json',
