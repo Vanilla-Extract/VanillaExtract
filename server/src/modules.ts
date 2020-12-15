@@ -8,6 +8,7 @@ const modulesData: Record<string, any> = {
 
 	// Aesthetic
 	BetterPowdersAndDusts: '/aesthetic/BetterPowdersAndDusts.json',
+	BlackBlackstone: '/aesthetic/BlackBlackstone.json',
 	ChineseLanterns: '/aesthetic/ChineseLanterns.json',
 	ChiseledFaces: '/aesthetic/ChiseledFaces.json',
 	CleanerShulkers: '/aesthetic/CleanerShulkers.json',
