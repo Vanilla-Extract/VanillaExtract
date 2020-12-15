@@ -118,10 +118,10 @@ function moduleHover(this: HTMLElement) {
 		popoverContent = this.getAttribute('data-content');
 	}
 
-	// Set preview
-	if (this.getAttribute('data-preview') != null) {
-		document.getElementById('previewImage').setAttribute('src', this.getAttribute('data-preview'));
-	}
+	// // Set preview
+	// if (this.getAttribute('data-preview') != null) {
+	// 	document.getElementById('previewImage').setAttribute('src', this.getAttribute('data-preview'));
+	// }
 
 	// Set bg if a conflict is selected
 	if (this.getAttribute('data-conflicting') != null) {
@@ -167,8 +167,8 @@ function moduleMouseLeave(this: HTMLElement) {
 	// Hide popover
 	$(this).popover('hide');
 
-	// Reset preview
-	document.getElementById('previewImage').setAttribute('src', '/images/previews/default.svg');
+	// // Reset preview
+	// document.getElementById('previewImage').setAttribute('src', '/images/previews/default.svg');
 
 	// Reset background
 	this.style.removeProperty('background-color');
