@@ -107,6 +107,8 @@ modules:
     description: "Removes the scraggly line from around shulkers."
     origin: "vanillaextract"
     author: "7eventy7"
+    notcompatible:
+      - 1-8
   - id: "PaintBuckets"
     name: "Paint Buckets"
     image: "/images/modules/aesthetic/PaintBuckets.png"
