@@ -269,3 +269,25 @@ modules:
       - 1-13
       - 1-14
       - 1-15
+  - id: "HexagonalPrismarineBricks"
+    name: "Hexagonal Prismarine Bricks"
+    image: "/images/modules/aesthetic/HexagonalPrismarineBricks.png"
+    description: "Makes prismarine bricks hexagonal."
+    origin: "vanillaextract"
+    author: "Pythagoras_314"
+    notcompatible:
+      - 1-8
+      - 1-9
+      - 1-10
+      - 1-11
+      - 1-12
+    conflicting:
+      - SmallUniformBricks
+  - id: "SmallUniformBricks"
+    name: "Small Uniform Bricks"
+    image: "/images/modules/aesthetic/SmallUniformBricks.png"
+    description: "Makes all types of bricks uniform."
+    origin: "vanillaextract"
+    author: "Pythagoras_314"
+    conflicting:
+      - HexagonalPrismarineBricks
