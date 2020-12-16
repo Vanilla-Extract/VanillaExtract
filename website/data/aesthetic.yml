@@ -251,6 +251,7 @@ modules:
     author: "Blackbone"
     conflicting:
       - VisuallyStackedItems
+      - ConsistentDoorItems
   - id: "BlackerNetherite"
     name: "Blacker Netherite"
     image: "/images/modules/aesthetic/BlackerNetherite.png"

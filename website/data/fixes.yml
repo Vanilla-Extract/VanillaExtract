@@ -54,6 +54,7 @@ modules:
     author: "StormDragon77"
     conflicting:
       - VisuallyStackedItems
+      - GlassDoors
   - id: "ReverseGlisteringMelon"
     name: "Reverse Glistering Melon"
     image: "/images/modules/fixes/ReverseGlisteringMelon.png"
