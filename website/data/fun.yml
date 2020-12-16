@@ -18,7 +18,7 @@ modules:
   - id: "CrimsonToTyrian"
     name: "Crimson To Tyrian"
     image: "/images/modules/fun/CrimsonToTyrian.png"
-    description: "Renames all crimson elements to tyrian, the closest shade of red to crimson."
+    description: "Renames all crimson elements to tyrian, the closest to the actual colour of the crimson wood."
     origin: "vanillaextract"
     author: "Blackbone"
     notcompatible:
