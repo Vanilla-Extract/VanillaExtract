@@ -79,7 +79,7 @@ const modulesData: Record<string, any> = {
 	VisualExclusiveEnchantments: '/utility/VisualExclusiveEnchantments.json',
 	VisuallyStackedItems: '/utility/VisuallyStackedItems.json',
 	VisualEnchantmentBooks: '/utility/VisualEnchantmentBooks.json',
-	TextIcons: '/utility/TextIcons.json'
+	TextIcons: '/utility/TextIcons.json',
 };
 
 // Figure out which modules to add

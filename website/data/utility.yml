@@ -88,6 +88,6 @@ modules:
   - id: "VisualEnchantmentBooks"
     name: "Visual Enchantment Books"
     image: "/images/modules/utility/VisualEnchantmentBooks.png"
-    description: "Gives each enchantment book a texture based on the enchantment it has."
+    description: "Gives each enchantment book a texture based on the enchantment it has. (Requires OptiFine)"
     origin: "optifine"
     author: "RikuLaxion"
