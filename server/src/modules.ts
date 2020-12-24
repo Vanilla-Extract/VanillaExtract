@@ -58,11 +58,12 @@ const modulesData: Record<string, any> = {
 	OffCenterFix: '/fixes/OffCenterFix.json',
 	RedstoneDustFix: '/fixes/RedstoneDustFix.json',
 	ReverseGlisteringMelon: '/fixes/ReverseGlisteringMelon.json',
+	BonemealColoredBones: '/fixes/BonemealColoredBones.json',
 	// Fun
 	CrimsonToTyrian: '/fun/CrimsonToTyrian.json',
 	ReallyShortSwords: '/fun/ReallyShortSwords.json',
 	StickTrident: '/fun/StickTrident.json',
-	BonemealColoredBones: '/fun/BonemealColoredBones.json',
+
 	// Unobtrusive
 	LowerFire: '/unobtrusive/LowerFire.json',
 	NoEnchantmentGlint: '/unobtrusive/NoEnchantmentGlint.json',
@@ -76,7 +77,9 @@ const modulesData: Record<string, any> = {
 	OutlinedArmour: '/utility/OutlinedArmour.json',
 	PotionIcons: '/utility/PotionIcons.json',
 	VisualExclusiveEnchantments: '/utility/VisualExclusiveEnchantments.json',
-	VisuallyStackedItems: '/utility/VisuallyStackedItems.json'
+	VisuallyStackedItems: '/utility/VisuallyStackedItems.json',
+	VisualEnchantmentBooks: '/utility/VisualEnchantmentBooks.json',
+	TextIcons: '/utility/TextIcons.json'
 };
 
 // Figure out which modules to add

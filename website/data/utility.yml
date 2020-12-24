@@ -78,3 +78,16 @@ modules:
       - SeamlessGlass
       - GlassDoors
       - BlackerNetherite
+      - BoneColoredBonemeal
+  - id: "TextIcons"
+    name: "Text Icons"
+    image: "/images/modules/utility/TextIcons.png"
+    description: "Adds icons to item names to make it easier to know what things do."
+    origin: "vanillaextract"
+    author: "RikuLaxion"
+  - id: "VisualEnchantmentBooks"
+    name: "Visual Enchantment Books"
+    image: "/images/modules/utility/VisualEnchantmentBooks.png"
+    description: "Gives each enchantment book a texture based on the enchantment it has."
+    origin: "optifine"
+    author: "RikuLaxion"
