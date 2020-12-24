@@ -86,7 +86,7 @@ modules:
     origin: "vanillaextract"
     author: "RikuLaxion"
     conflicting:
-      -CrimsonToTyrian
+      - CrimsonToTyrian
   - id: "VisualEnchantmentBooks"
     name: "Visual Enchantment Books"
     image: "/images/modules/utility/VisualEnchantmentBooks.png"
