@@ -30,8 +30,8 @@ modules:
       - 1-13
       - 1-14
       - 1-15
-
-      - VisuallyStackedItems
+    conflicting:
+      - TextIcons
   - id: "ReallyShortSwords"
     name: "Really Short Swords"
     image: "/images/modules/fun/ReallyShortSwords.png"

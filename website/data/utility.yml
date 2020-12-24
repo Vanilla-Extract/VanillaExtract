@@ -85,6 +85,8 @@ modules:
     description: "Adds icons to item names to make it easier to know what things do."
     origin: "vanillaextract"
     author: "RikuLaxion"
+    conflicting:
+      -CrimsonToTyrian
   - id: "VisualEnchantmentBooks"
     name: "Visual Enchantment Books"
     image: "/images/modules/utility/VisualEnchantmentBooks.png"
