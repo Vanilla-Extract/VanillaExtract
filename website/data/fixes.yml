@@ -72,7 +72,7 @@ modules:
   - id: "HeartParticleFix"
     name: "Heart Particle Fix"
     image: "/images/modules/fixes/HeartParticleFix.png"
-    description: "Makes an odd number of heart particles appear, instead of an even numuber."
+    description: "Makes an odd number of heart particles appear, instead of an even number."
     origin: "vanillaextract"
     author: "Chubins"
   - id: "ConsistentMooshroomEyes"
