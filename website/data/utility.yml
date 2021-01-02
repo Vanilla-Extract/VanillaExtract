@@ -33,12 +33,12 @@ modules:
       - 1-10
       - 1-11
       - 1-12
-  - id: "VisualExclusiveEnchantments"
-    name: "Visual Exclusive Enchantments"
-    image: "/images/modules/utility/VisualExclusiveEnchantments.png"
-    description: "Makes all exclusive enchantments visible by making them have unique textures that fit with the enchantment. (Requires OptiFine)"
-    origin: "optifine"
-    author: "astroidbuster"
+ # - id: "VisualExclusiveEnchantments"
+  #  name: "Visual Exclusive Enchantments"
+  #  image: "/images/modules/utility/VisualExclusiveEnchantments.png"
+  #  description: "Makes all exclusive enchantments visible by making them have unique textures that fit with the enchantment. (Requires OptiFine)"
+ #   origin: "optifine"
+ #   author: "astroidbuster"
   - id: "BowChargeIndicator"
     name: "Bow Charge Indicator"
     image: "/images/modules/utility/BowChargeIndicator.png"
