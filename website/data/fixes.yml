@@ -31,6 +31,8 @@ modules:
     description: "Recolors the oars on boat items to be consistent with the entity."
     origin: "vanillaextract"
     author: "StormDragon77"
+    notcompatible:
+      - 1-8
   - id: "CrimsonNyliumTopFix"
     name: "Crimson Nylium Top Fix"
     image: "/images/modules/fixes/CrimsonNyliumTopFix.png"

@@ -51,6 +51,8 @@ modules:
     description: "Makes tools in the offhand appear on the player's back."
     origin: "vanillaextract"
     author: "AbdulPlayz03"
+    notcompatible:
+      - 1-8
   - id: "VisuallyStackedItems"
     name: "Visually Stacked Items"
     image: "/images/modules/utility/VisuallyStackedItems.png"
