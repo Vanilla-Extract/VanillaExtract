@@ -156,7 +156,7 @@ function mcMeta(format: string) {
 `{
     "pack": {
         "pack_format": `+packFormat+`,
-        "description": [{"text":"Vanilla Extract","color":"#2AC77B"},{"text":" `+formatStr+`\nvanilla-extract.netlify.app","color":"gray"}]
+        "description": [{"text":"Vanilla Extract","color":"#2AC77B"},{"text":" `+formatStr+`\nvanilla-extract.tk","color":"gray"}]
     }
 }`
     );
