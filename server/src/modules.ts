@@ -8,10 +8,12 @@ const modulesData: Record<string, any> = {
 
 	// Aesthetic
 	BetterEggColor: '/aesthetic/BetterEggColor.json',
+	BetterNetherWart: '/aesthetic/BetterNetherWart.json',
 	BetterPowdersAndDusts: '/aesthetic/BetterPowdersAndDusts.json',
 	BetterPressurePlates: '/aesthetic/BetterPressurePlates.json',
 	BlackBlackstone: '/aesthetic/BlackBlackstone.json',
 	BlackerNetherite: '/aesthetic/BlackerNetherite.json',
+	BrownLeather: '/aesthetic/BrownLeather.json',
 	ChineseLanterns: '/aesthetic/ChineseLanterns.json',
 	ChiseledFaces: '/aesthetic/ChiseledFaces.json',
 	CleanerShulkers: '/aesthetic/CleanerShulkers.json',
@@ -38,12 +40,14 @@ const modulesData: Record<string, any> = {
 	UniqueProcessedOres: '/aesthetic/UniqueProcessedOres.json',
 	UniqueSeaPickleItem: '/aesthetic/UniqueSeaPickleItem.json',
 	WholePumpkinPie: '/aesthetic/WholePumpkinPie.json',
+	WoodToBark: '/aesthetic/WoodToBark.json',
 	// Animation
 	AnimatedSelectorArrows: '/animation/AnimatedSelectorArrows.json',
 	FurnaceAnimations: '/animation/FurnaceAnimations.json',
 	// Connected Texures
 	ConnectedGoldAndDiamondBlocks: '/connectedTextures/ConnectedGoldAndDiamondBlocks.json',
 	ConnectedLogs: '/connectedTextures/ConnectedLogs.json',
+	ConnectedPolishedStones: '/connectedTextures/ConnectedPolishedStones.json',
 	ConnectedSeaLanterns: '/connectedTextures/ConnectedSeaLanterns.json',
 	ConnectedSpawners: '/connectedTextures/ConnectedSpawners.json',
 	// Fixes

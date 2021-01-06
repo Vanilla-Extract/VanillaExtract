@@ -293,3 +293,25 @@ modules:
     author: "Pythagoras_314"
     conflicting:
       - HexagonalPrismarineBricks
+  - id: "BetterNetherWart"
+    name: "Better Nether Wart"
+    image: "/images/modules/aesthetic/BetterNetherWart.png"
+    description: "Makes the nether wart item look more like the block."
+    origin: "vanillaextract"
+    author: "StormDragon77"
+    conflicting:
+      - VisuallyStackedItems
+  - id: "BrownLeather"
+    name: "Brown Leather"
+    image: "/images/modules/aesthetic/BrownLeather.png"
+    description: "Makes leather brown."
+    origin: "vanillaextract"
+    author: "StormDragon77"
+    conflicting:
+      - VisuallyStackedItems
+  - id: "WoodToBark"
+    name: "Wood To Bark"
+    image: "/images/modules/aesthetic/WoodToBark.png"
+    description: "Renames wood to bark."
+    origin: "vanillaextract"
+    author: "Chubins"

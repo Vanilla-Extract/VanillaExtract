@@ -81,6 +81,8 @@ modules:
       - GlassDoors
       - BlackerNetherite
       - BoneColoredBonemeal
+      - BetterNetherWart
+      - BrownLeather
   - id: "TextIcons"
     name: "Text Icons"
     image: "/images/modules/utility/TextIcons.png"

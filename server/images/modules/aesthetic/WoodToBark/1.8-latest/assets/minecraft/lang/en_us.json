@@ -1,0 +1,18 @@
+{
+  "block.minecraft.oak_wood": "Oak Bark",
+  "block.minecraft.spruce_wood": "Spruce Bark",
+  "block.minecraft.birch_wood": "Birch Bark",
+  "block.minecraft.jungle_wood": "Jungle Bark",
+  "block.minecraft.acacia_wood": "Acacia Bark",
+  "block.minecraft.warped_hyphae": "Warped Bark",
+  "block.minecraft.stripped_warped_hyphae": "Stripped Warped Bark",
+  "block.minecraft.crimson_hyphae": "Crimson Bark",
+  "block.minecraft.stripped_crimson_hyphae": "Stripped Crimson Bark",
+  "block.minecraft.stripped_oak_wood": "Stripped Oak Bark",
+  "block.minecraft.stripped_spruce_wood": "Stripped Spruce Bark",
+  "block.minecraft.stripped_birch_wood": "Stripped Birch Bark",
+  "block.minecraft.stripped_jungle_wood": "Stripped Jungle Bark",
+  "block.minecraft.stripped_acacia_wood": "Stripped Acacia Bark",
+  "block.minecraft.stripped_dark_oak_wood": "Stripped Dark Oak Bark",
+  "block.minecraft.dark_oak_wood": "Dark Oak Bark"
+}
