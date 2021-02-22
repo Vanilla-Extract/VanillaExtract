@@ -12,6 +12,7 @@ conflictingModules:
         image: "/images/modules/elytra/PhantomElytra.png"
         description: "Makes Elytra look like Phantom Membrane"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "EnderDragonElytra"
@@ -19,6 +20,7 @@ conflictingModules:
         image: "/images/modules/elytra/EnderDragonElytra.png"
         description: "Makes Elytra look like the Ender Dragon"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "VanillaExtractElytra"
@@ -26,6 +28,7 @@ conflictingModules:
         image: "/images/modules/elytra/VanillaExtractElytra.png"
         description: "Makes Elytra have the Vanilla Extract logo on it"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "BlackElytra"
@@ -33,6 +36,7 @@ conflictingModules:
         image: "/images/modules/elytra/BlackElytra.png"
         description: "Makes Elytra black"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "BlueElytra"
@@ -40,6 +44,7 @@ conflictingModules:
         image: "/images/modules/elytra/BlueElytra.png"
         description: "Makes Elytra blue"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "BrownElytra"
@@ -47,6 +52,7 @@ conflictingModules:
         image: "/images/modules/elytra/BrownElytra.png"
         description: "Makes Elytra brown"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "CyanElytra"
@@ -54,6 +60,7 @@ conflictingModules:
         image: "/images/modules/elytra/CyanElytra.png"
         description: "Makes Elytra cyan"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "GrayElytra"
@@ -61,6 +68,7 @@ conflictingModules:
         image: "/images/modules/elytra/GrayElytra.png"
         description: "Makes Elytra gray"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "GreenElytra"
@@ -68,6 +76,7 @@ conflictingModules:
         image: "/images/modules/elytra/GreenElytra.png"
         description: "Makes Elytra green"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "LightBlueElytra"
@@ -75,6 +84,7 @@ conflictingModules:
         image: "/images/modules/elytra/LightBlueElytra.png"
         description: "Makes Elytra light blue"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "LightGrayElytra"
@@ -82,6 +92,7 @@ conflictingModules:
         image: "/images/modules/elytra/LightGrayElytra.png"
         description: "Makes Elytra light gray"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "LimeElytra"
@@ -89,6 +100,7 @@ conflictingModules:
         image: "/images/modules/elytra/LimeElytra.png"
         description: "Makes Elytra lime"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "MagentaElytra"
@@ -96,6 +108,7 @@ conflictingModules:
         image: "/images/modules/elytra/MagentaElytra.png"
         description: "Makes Elytra magenta"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "OrangeElytra"
@@ -103,6 +116,7 @@ conflictingModules:
         image: "/images/modules/elytra/OrangeElytra.png"
         description: "Makes Elytra orange"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "PinkElytra"
@@ -110,6 +124,7 @@ conflictingModules:
         image: "/images/modules/elytra/PinkElytra.png"
         description: "Makes Elytra pink"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "PurpleElytra"
@@ -117,6 +132,7 @@ conflictingModules:
         image: "/images/modules/elytra/PurpleElytra.png"
         description: "Makes Elytra purple"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "RedElytra"
@@ -124,6 +140,7 @@ conflictingModules:
         image: "/images/modules/elytra/RedElytra.png"
         description: "Makes Elytra red"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "WhiteElytra"
@@ -131,6 +148,7 @@ conflictingModules:
         image: "/images/modules/elytra/WhiteElytra.png"
         description: "Makes Elytra white"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "YellowElytra"
@@ -138,6 +156,7 @@ conflictingModules:
         image: "/images/modules/elytra/YellowElytra.png"
         description: "Makes Elytra yellow"
         origin: "vanillaextract"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
       - id: "VeteranElytra"
@@ -146,5 +165,6 @@ conflictingModules:
         description: "Makes Elytra look like the Veteran Cape"
         origin: "vanillaextract"
         author: "Blackbone"
+        author: "astroidbuster"
         notcompatible:
           - 1-8
