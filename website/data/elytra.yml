@@ -10,7 +10,7 @@ conflictingModules:
       - id: "PhantomElytra"
         name: "Phantom Elytra"
         image: "/images/modules/elytra/PhantomElytra.png"
-        description: "Makes Elytra look like Phantom Membrane"
+        description: "Makes the elytra look like phantom wings"
         origin: "vanillaextract"
         author: "astroidbuster"
         notcompatible:
