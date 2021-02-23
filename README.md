@@ -10,7 +10,7 @@
 
 Hello there, and welcome to the official Vanilla Extract website repository!
 ### What is Vanilla Extract?
-Created very recently in 2020, Vanilla Extract (or just VE) is a new Minecraft resource/data pack picker, similar to [Vanilla Tweaks](https://vanillatweaks.net). Being under construction right now, our website is not quite at the finish line yet. For now, you can visit our [temporary site](https://sites.google.com/view/vanillaextract), or our [Github links page](https://github.com/Vanilla-Extract/TempDownloadLinks/tree/main/Packs) to get our same quality packs!
+Created very recently in 2020, Vanilla Extract (or just VE) is a new Minecraft resource/data pack picker, similar to [Vanilla Tweaks](https://vanillatweaks.net). To visit our website, go to [this link](https://vanilla-extract.tk). If a pack is not downloading (Right now the Visually Stacked Items module is bugged), you can download it from our old repo [here](https://github.com/Vanilla-Extract/TempDownloadLinks/tree/main/Packs). Just click the "Go to file" button and look up your pack! *note that some packs names will differ from our official site*
 
 ## I'm interested, how can I join?
 Thanks for checking us out! Whether you qustions, make packs, mods, or just want to stay on the side and everything in between, you can join us via [this link](https://discord.io/vanillaextract).
