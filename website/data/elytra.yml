@@ -165,6 +165,6 @@ conflictingModules:
         description: "Makes Elytra look like the Veteran Cape"
         origin: "vanillaextract"
         author: "Blackbone"
-        author: "astroidbuster"
+        author: "Blackbone"
         notcompatible:
           - 1-8
