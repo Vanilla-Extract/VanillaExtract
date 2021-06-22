@@ -16,7 +16,7 @@ Created very recently in 2020, Vanilla Extract (or just VE) is a new Minecraft r
 Thanks for checking us out! Whether you qustions, make packs, mods, or just want to stay on the side and everything in between, you can join us via [this link](https://discord.io/vanillaextract).
 
 # Team
-- [Chromus](https://www.planetminecraft.com/member/chromus_-_ve/)
+- [Chromus](https://www.planetminecraft.com/member/chromus)
 - [iloveflareon](https://www.planetminecraft.com/member/iloveflareon/)
 - [BrotherEarth967](https://www.planetminecraft.com/member/brotherearth967_-ve/)
 - Ender
