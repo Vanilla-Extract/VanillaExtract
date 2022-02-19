@@ -31,7 +31,7 @@ Listed in Alphabetical Order
 - iloveflareon - Texture & Datapack Team
 - LeonNikolai - Datapack Team
 - Macarena - Texture Team
-- NotToxic - Texture & Datapack Team
+- NotToxic - Texture Team
 - RikuLaxion - Texture & Datapack Team
 - Soulspark - Datapack Team
 - StormDragon77 - Texture Team
