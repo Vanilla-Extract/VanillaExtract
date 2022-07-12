@@ -8,9 +8,11 @@
     <a href="https://github.com/Vanilla-Extract/VanillaExtract/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Vanilla-Extract/VanillaExtract"></a>
 </p>
 
+# This site is not working properly and we are working on a new site, if you want to download any packs i advise you to go [here](https://github.com/Vanilla-Extract/TempDownloadLinks/tree/main/Packs). Remember that most packs will be outdated and may not work.
+
 Hello there, and welcome to the official Vanilla Extract website repository!
 ## What is Vanilla Extract?
-Created very recently in 2020, Vanilla Extract (or just VE) is a Minecraft resource pack picker, similar to [Vanilla Tweaks](https://vanillatweaks.net). To visit our website, go to [this link](https://vanilla-extract.tk). If a pack is not downloading (Right now the [Visually Stacked Items module is bugged](https://github.com/Vanilla-Extract/TempDownloadLinks/blob/main/Packs/RikuLaxion/Familiar%20Stacked%20Items.zip)), you can download it from our old repo [here](https://github.com/Vanilla-Extract/TempDownloadLinks/tree/main/Packs). Just click the "Go to file" button and look up your pack! *note that some packs names will differ from our official site*
+Created very recently in 2020, Vanilla Extract (or just VE) is a Minecraft resource pack picker, similar to [Vanilla Tweaks](https://vanillatweaks.net). To visit our website, go to [this link](https://vanilla-extract.tk). If a pack is not downloading (Right now the site doesn't work), you can download it from our old repo [here](https://github.com/Vanilla-Extract/TempDownloadLinks/tree/main/Packs). Just click the "Go to file" button and look up your pack! *note that some packs names will differ from our official site*
 
 ## I'm interested, how can I join?
 Thanks for checking us out! Whether you qustions, make packs, mods, or just want to stay on the side and everything in between, you can join our Discord via [this link](https://discord.io/vanillaextract).
